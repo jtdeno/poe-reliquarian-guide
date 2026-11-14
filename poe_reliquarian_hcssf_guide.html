@@ -233,39 +233,44 @@ const tasks=[
 {id:'lab-eternal',phase:'Labyrinth',title:'Eternal Lab complete: The Arkhon\'s Tools'}
 ];
 const passiveStages=[
-{id:'done',name:'Already allocated',subtitle:'Your first 11 passive points',state:'completed',description:'Completion is loaded only from the reviewed character snapshot.',steps:[
-{id:'p01',name:'Spell Damage and Intelligence',detail:'Scion spell-damage starting node, heading toward Harrier.',type:'established'},
-{id:'p02',name:'Spell Damage #1',detail:'First connected small Spell Damage node.',type:'established'},
-{id:'p03',name:'Spell Damage #2',detail:'Second connected small Spell Damage node.',type:'established'},
-{id:'p04',name:'Spell Damage #3',detail:'Third connected small Spell Damage node.',type:'established'},
-{id:'p05',name:'Harrier',detail:'Named notable: useful movement speed; cast speed does not scale mine throwing.',type:'established'},
-{id:'p06',name:'+10 Intelligence #1',detail:'First Intelligence travel node northeast of Harrier.',type:'established'},
-{id:'p07',name:'+10 Intelligence #2',detail:'Second Intelligence travel node.',type:'established'},
-{id:'p08',name:'Mine Damage',detail:'Small node leading to Destructive Apparatus.',type:'established'},
-{id:'p09',name:'Mine Throwing Speed',detail:'Small node immediately before Destructive Apparatus.',type:'established'},
+{id:'done',name:'Already allocated',subtitle:'Opening route → Constitution',state:'completed',description:'These checkpoints are confirmed in the current snapshot and mapped to PoB tree 3_29. The connected chain from the Scion start is Life and Strength → two Physical Damage nodes → Path of the Warrior → life route → Constitution.',steps:[
+{id:'p01',name:'Spell Damage and Intelligence',detail:'Scion starting node.',type:'established'},
+{id:'p02',name:'Spell Damage #1',detail:'Connected small spell damage node.',type:'established'},
+{id:'p03',name:'Spell Damage #2',detail:'Connected small spell damage node.',type:'established'},
+{id:'p04',name:'Spell Damage #3',detail:'Connected small spell damage node.',type:'established'},
+{id:'p05',name:'Harrier',detail:'Movement speed is useful; cast speed does not scale mine throwing.',type:'established'},
+{id:'p06',name:'+10 Intelligence #1',detail:'Travel toward the mine route.',type:'established'},
+{id:'p07',name:'+10 Intelligence #2',detail:'Travel toward the mine route.',type:'established'},
+{id:'p08',name:'Mine Damage',detail:'Connected small mine damage node.',type:'established'},
+{id:'p09',name:'Mine Throwing Speed',detail:'Connected small mine throwing speed node.',type:'established'},
 {id:'p10',name:'Destructive Apparatus',detail:'Mine duration and throwing speed notable.',type:'established'},
-{id:'p11',name:'Mine Mastery · detonate while moving',detail:'Your selected early utility mastery; keep until you have a suitable alternative.',type:'established'}]},
-{id:'next',name:'Take next',subtitle:'Constitution: prioritize maximum life',state:'next',description:'Corrected 3_29 starting route. Check the reviewed snapshot: this route and Constitution may already be allocated. Future routing remains a separate decision.',steps:[
-{id:'p12',name:'Life and Strength · Scion start',detail:'Verified 3_29 node 55373: +12 maximum Life and +5 Strength. Connects to Physical Damage node 17674.',type:'documented'},
-{id:'p13',name:'Physical Damage · Scion start #1',detail:'Verified 3_29 node 17674: connects 55373 to 13782.',type:'documented'},
-{id:'p14',name:'Physical Damage · Scion start #2',detail:'Verified 3_29 node 13782: connects 17674 to Path of the Warrior (12702).',type:'documented'},
-{id:'p15',name:'Path of the Warrior',detail:'The next notable on this branch: +20 Strength, 50 Armour, and otherwise wasted physical damage. We may respec this later.',type:'documented'},
-{id:'p16',name:'Connected travel / life nodes toward Constitution',detail:'Allocate the shortest visibly CONNECTED path from Path of the Warrior toward the lower-left Scion life wheel. Exact small-node names/count remain unverified for 3.30; treat as one route checkpoint, not a single passive point.',type:'verify'},
-{id:'p17',name:'Constitution',detail:'Named notable: 10% increased maximum Life and +20 maximum Life. Take as soon as you can connect to it.',type:'documented'},
-{id:'p18',name:'Nearby increased Maximum Life small nodes',detail:'Finish the efficient life nodes directly surrounding Constitution. Number and ordering depend on the entry side; do not add irrelevant physical-damage branches.',type:'verify'},
-{id:'p19',name:'Life Mastery · +30 maximum Life (optional)',detail:'Take only if this mastery exists in your current 3.30 tree and the point is better than a 5–6% life small node.',type:'verify'}]},
-{id:'mid',name:'After Constitution',subtitle:'Mine damage / mine capacity',state:'planned',description:'Specific notable targets, but NOT a fully validated connector-by-connector 3.30 tree. Small travel paths must be selected on the live tree before allocating.',steps:[
-{id:'p20',name:'Blast Waves',detail:'Take small mine/area nodes on the connected approach, then the named notable. Grants increased mine area damage and area of effect after detonation.',type:'verify'},
-{id:'p21',name:'Explosive Elements',detail:'Mine damage penetrates 10% elemental resistance. Strong once Pyroclast Mine is your main skill.',type:'verify'},
-{id:'p22',name:'Mine Mastery · enemy damage reduction (optional)',detail:'If available from a connected mine cluster, take “Each Mine applies 2% reduced Damage dealt to Enemies near it, up to 10%” for tough bosses.',type:'verify'},
-{id:'p23',name:'Volatile Mines',detail:'Detonation speed and +3 placed mine capacity. Prioritize when boss pre-stacking feels limited.',type:'verify'},
-{id:'p24',name:'Efficient Explosives',detail:'30% increased mine mana reservation efficiency and 15% additional-detonation chance. Helps once mana reservation is restrictive.',type:'verify'}]},
-{id:'late',name:'Later / maps',subtitle:'Survival-first points',state:'planned',description:'These are targeted defensive clusters, not a precise map route. Do not burn points traveling across the tree to reach all of them indiscriminately; choose efficient nearby nodes when you reach each area.',steps:[
-{id:'p25',name:'Revenge of the Hunted',detail:'Life and evasion in Ranger-side tree; take if accessible efficiently from your eventual mine path.',type:'verify'},
-{id:'p26',name:'Blood Drinker',detail:'Maximum life on the Shadow/Ranger side. Choose the life path, not any attack-leech nodes.',type:'verify'},
-{id:'p27',name:'Written in Blood',detail:'Hybrid life/ES notable near Shadow/Witch area; optional if your path reaches it efficiently.',type:'verify'},
-{id:'p28',name:'Spell suppression passives',detail:'Use the nearest efficient spell-suppression cluster and rare evasion gear to reach 100% suppression before difficult maps.',type:'verify'},
-{id:'p29',name:'Additional life / recovery',detail:'Fill nearby life nodes and relevant life/mine masteries rather than gambling the character on damage.',type:'verify'}]}
+{id:'p11',name:'Mine Mastery · Detonate while moving',detail:'Selected mastery effect 21313.',type:'established'},
+{id:'p12',name:'Life and Strength · 55373',detail:'+12 maximum Life and +5 Strength.',type:'documented'},
+{id:'p13',name:'Physical Damage · 17674',detail:'Connected travel node toward Path of the Warrior.',type:'documented'},
+{id:'p14',name:'Physical Damage · 13782',detail:'Connected travel node into Path of the Warrior.',type:'documented'},
+{id:'p15',name:'Path of the Warrior · 12702',detail:'+20 Strength and +50 Armour; physical damage does not improve spell mines.',type:'documented'},
+{id:'p16',name:'Constitution approach · life connectors',detail:'The Life nodes on the route toward Constitution are allocated. The exact ordering can vary by entry side.',type:'documented'},
+{id:'p17',name:'Constitution · 55485',detail:'+20 maximum Life and 10% increased maximum Life.',type:'documented'},
+{id:'p18',name:'Adjacent Constitution life nodes',detail:'The allocated surrounding 5% life nodes are verified in the current snapshot.',type:'documented'}]},
+{id:'p19stage',name:'1 · Life Mastery',subtitle:'Next defensive stop',state:'next',description:'From your allocated Constitution life wheel, check for an efficient connected route toward the nearby Life Mastery in the Barbarism area. The named mastery node is Life Mastery (4139), reached from Barbarism (53118) in the matching 3_29 data. Verify intervening connections on the live tree before spending travel points.',steps:[
+{id:'p19',name:'Life Mastery · +30 maximum Life',detail:'Choose the explicit “+30 to maximum Life” mastery effect (effect 47642). It is the simple flat-life option. Allocate only after confirming the mastery is connected and the point cost is reasonable.',type:'verify'}]},
+{id:'blast',name:'2 · Blast Waves',subtitle:'Mine area damage and coverage',state:'planned',description:'After the life mastery, consider Blast Waves (6233) if its route is reasonably close. In 3_29 it connects through Mine Area of Effect (40751) and grants mine area damage and area of effect after detonating recently. This is a target route, not a confirmed connector-by-connector allocation from your current tree.',steps:[
+{id:'p20',name:'Blast Waves · 6233',detail:'Target notable. Verify the connected approach and point cost from your current allocated tree. Skip or defer if it requires a long detour through low-value nodes.',type:'verify'}]},
+{id:'explosive',name:'3 · Explosive Elements',subtitle:'Elemental penetration for Pyroclast',state:'planned',description:'Target Explosive Elements (61689) for mine damage penetration. It sits in the mine cluster near Volatile Mines; PoB 3_29 shows two incoming connectors, so select a connected route in your live tree and avoid assuming which side is shortest.',steps:[
+{id:'p21',name:'Explosive Elements · 61689',detail:'Target notable grants Mine Damage Penetrates 10% Elemental Resistances. Prioritize after core life if the verified route is efficient.',type:'verify'}]},
+{id:'volatile',name:'4 · Volatile Mines',subtitle:'Detonation speed and mine capacity',state:'planned',description:'Volatile Mines (9055) is part of the same 3_29 mine cluster as Explosive Elements. The cluster topology supports a shared approach; confirm actual connector nodes and avoid duplicating travel.',steps:[
+{id:'p23',name:'Volatile Mines · 9055',detail:'Target notable grants +3 maximum placed mines, detonation speed, and mine duration. Take if the added capacity materially helps boss setup.',type:'verify'},
+{id:'p22',name:'Mine Mastery · reduced enemy damage (optional)',detail:'At an allocated mine mastery, choose “Each Mine applies 2% reduced Damage dealt to Enemies near it, up to 10%” (effect 47823) if available in the current mastery options. This is defensive and optional.',type:'verify'}]},
+{id:'efficient',name:'5 · Efficient Explosives',subtitle:'Only if reservation needs it',state:'planned',description:'This is a separate mine cluster. The 3_29 route to Efficient Explosives (44102) passes through Mine Damage and Reservation Efficiency (18661) from connector 42006. Check the distance from your current tree; skip if it costs too many travel points.',steps:[
+{id:'p24',name:'Efficient Explosives · 44102',detail:'Grants 30% increased mine reservation efficiency and 15% chance for mines to detonate an additional time. Take when reservation is restrictive or the route is efficient.',type:'verify'}]},
+{id:'respec',name:'6 · Respec later',subtitle:'Only after an alternate life route is connected',state:'planned',description:'The two physical damage travel nodes (17674 and 13782) do not scale spell mines. They are temporary route cost. Keep them until you have allocated and verified a second connected route that preserves Constitution and all needed life nodes.',steps:[
+{id:'p30',name:'Refund Physical Damage nodes · 17674 and 13782',detail:'Respec these two nodes only after a replacement route is fully connected and Constitution remains allocated. Keep Life and Strength (55373) and Path of the Warrior (12702) unless the live tree proves they can also be removed without disconnecting valuable nodes. No refund is recommended now.',type:'verify'}]},
+{id:'late',name:'7 · Later / maps',subtitle:'Nearby life, suppression, and recovery',state:'planned',description:'Targets farther across the tree are conditional. Prioritize the closest efficient life and spell-suppression route on your actual tree; do not travel to every named cluster by default.',steps:[
+{id:'p25',name:'Revenge of the Hunted · 53114',detail:'Life, evasion, and spell suppression while on Full Life. Target if the route is efficient.',type:'verify'},
+{id:'p26',name:'Blood Drinker · 27788',detail:'Life and life recovery on kill. Lower boss value; optional if nearby.',type:'verify'},
+{id:'p27',name:'Written in Blood · 18769',detail:'Life and Energy Shield; optional only if your route reaches the Shadow area efficiently.',type:'verify'},
+{id:'p28',name:'Spell suppression passives',detail:'Use a nearby efficient cluster to improve suppression; exact cluster depends on your final route.',type:'verify'},
+{id:'p29',name:'Additional life / recovery',detail:'Fill useful nearby life nodes and defensive masteries.',type:'verify'}]}
 ];
 const allPassiveSteps=passiveStages.flatMap(stage=>stage.steps.map(step=>({...step,stageId:stage.id})));
 const acts=[
@@ -294,11 +299,11 @@ function verifiedTaskSet(){return new Set((progress?.progress?.completedTaskIds|
 function verifiedPassiveSet(){return new Set((progress?.progress?.completedPassiveIds||[]).filter(id=>validPassiveIds.has(id)))}
 function saveNotes(){try{localStorage.setItem(notesKey,JSON.stringify({notes,version:2}));$('saveStatus').textContent='Notes saved locally in this browser.'}catch{$('saveStatus').textContent='Browser storage unavailable; export notes to keep a copy.'}}
 function taskHTML(id){const t=tasks.find(x=>x.id===id);if(!t)return'';const done=verifiedTaskSet().has(id);return `<div class="task ${done?'done':''}" role="listitem"><span class="status-mark ${done?'confirmed':'pending'}" aria-label="${done?'Confirmed':'Unverified'}">${done?'✓':'?'}</span><span>${safeText(t.title)}</span><span class="tag ${done?'green':''}">${done?'Confirmed':'Unverified'}</span></div>`}
-let selectedPassiveStage='next';
+let selectedPassiveStage='p19stage';
 function nextPassive(){const done=verifiedPassiveSet();return allPassiveSteps.find(n=>!done.has(n.id))}
 function renderPassives(){const done=verifiedPassiveSet();
   $('passiveStageButtons').innerHTML=passiveStages.map(st=>`<button type="button" data-passive-stage="${st.id}" class="${st.id===selectedPassiveStage?'on':''}">${safeText(st.name)}</button>`).join('');
-  const st=passiveStages.find(x=>x.id===selectedPassiveStage)||passiveStages[1];
+  const st=passiveStages.find(x=>x.id===selectedPassiveStage)||passiveStages.find(x=>x.id==='p19stage');
   $('passiveStageContent').innerHTML=`<article class="card passive-group"><div class="passive-stage-header"><div><div class="kicker">${safeText(st.subtitle)}</div><h3>${safeText(st.name)}</h3><p class="hint" style="max-width:740px">${safeText(st.description)}</p></div><span class="tag ${st.id==='next'?'gold':'green'}">${st.steps.filter(x=>done.has(x.id)).length} confirmed / ${st.steps.length}</span></div><div class="tasklist" style="gap:0">${st.steps.map((x,i)=>`<div class="passive-entry ${done.has(x.id)?'done':''}"><span class="status-mark ${done.has(x.id)?'confirmed':'pending'}">${done.has(x.id)?'✓':'?'}</span><div class="number">${allPassiveSteps.findIndex(z=>z.id===x.id)+1}</div><span><strong class="passive-name">${safeText(x.name)}</strong><span class="microtag ${x.type==='verify'?'uncertain':''}">${done.has(x.id)?'Confirmed':x.type==='verify'?'Route unverified':'Not confirmed'}</span><small class="hint">${safeText(x.detail)}</small></span></div>`).join('')}</div></article>`;
   $('passiveProgressTitle').textContent=`${allPassiveSteps.filter(x=>done.has(x.id)).length} / ${allPassiveSteps.length} confirmed`;
   $('passiveProgressBar').style.width=`${Math.round(100*done.size/allPassiveSteps.length)}%`;
