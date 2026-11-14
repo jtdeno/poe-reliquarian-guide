@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10151a" />
+  <meta name="guide-capabilities" content="github-character-v1" />
+  <title>Reliquarian Mines | HCSSF Build Companion</title>
+  <style>
+    :root{--bg:#0c1116;--sidebar:#121920;--panel:#151e26;--panel2:#1b2730;--line:#2c3d49;--muted:#9bacb7;--text:#e9efef;--accent:#e7b86c;--accentdim:#ad803b;--good:#72c6a3;--blue:#80bce8;--danger:#e6a59c}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:radial-gradient(circle at top right,#1b242c 0,transparent 35%),var(--bg);font:15px/1.58 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:#eec98d;text-underline-offset:3px}a:hover{color:#fff}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.25}h1{font:700 clamp(25px,4vw,38px)/1.1 Georgia,serif;letter-spacing:.01em}h2{font-size:23px;margin-bottom:12px}h3{font-size:17px;margin-bottom:9px}p{color:#ccd6da}strong{color:#f7f5ef}small{color:var(--muted)}
+    .app{display:grid;grid-template-columns:258px minmax(0,1fr);min-height:100vh}.sidebar{background:var(--sidebar);border-right:1px solid var(--line);padding:25px 18px;position:sticky;top:0;height:100vh;overflow:auto}.brand{display:flex;align-items:center;gap:10px;padding:4px 10px 19px;border-bottom:1px solid var(--line);margin-bottom:16px}.crest{display:grid;place-items:center;width:39px;height:39px;border:1px solid var(--accentdim);border-radius:11px;color:var(--accent);font:700 25px Georgia,serif;background:#2a2924}.brand small{display:block;font-size:11px;letter-spacing:1.4px;text-transform:uppercase}.brand b{font-size:16px}
+    .nav{display:grid;gap:5px}.nav button{border:1px solid transparent;border-radius:9px;color:#c4d0d4;background:transparent;padding:10px 12px;text-align:left;display:flex;gap:10px;align-items:center;width:100%;transition:background .15s}.nav button:hover,.nav button.active{background:#24313a;color:#fff}.nav button.active{border-color:#46523f;box-shadow:inset 3px 0 var(--accent)}.nav button span{font-size:16px;color:var(--accent);width:19px;text-align:center}.aside-foot{border-top:1px solid var(--line);margin-top:20px;padding:15px 9px 0;color:var(--muted);font-size:12px}
+    main{max-width:1350px;padding:36px clamp(17px,4vw,54px) 75px;width:100%;min-width:0}.top{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:20px;margin-bottom:22px}.eyebrow{font-size:11px;font-weight:750;text-transform:uppercase;color:var(--accent);letter-spacing:2px;margin-bottom:8px}.subtitle{font-size:15px;max-width:750px;color:var(--muted);margin:10px 0 0}.top-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.pill{border:1px solid #6a5635;background:#332b23;color:#f1d09c;border-radius:999px;font-size:12px;padding:6px 11px;font-weight:750}.muted-pill{background:#202a33;border-color:#384b58;color:#c4d3d8}
+    .searchrow{margin-bottom:23px;display:flex;gap:10px;flex-wrap:wrap}.search{background:#101820;border:1px solid #39505e;border-radius:10px;color:var(--text);width:min(500px,100%);padding:12px 14px}.search:focus,input:focus,select:focus,textarea:focus{outline:2px solid #c3964d;outline-offset:2px}.btn{border:1px solid #6d5632;background:#4b3922;color:#ffe0a5;padding:9px 13px;border-radius:9px;font-weight:650}.btn:hover{background:#61492a}.btn.secondary{background:#202b33;color:#d6e4e9;border-color:#3d5261}.btn.secondary:hover{background:#293945}.btn.ghost{border-color:transparent;background:transparent;color:var(--muted)}.btn.danger{border-color:#79493d;color:#ebae9a;background:#3a2420}
+    .tabs{display:none}.tabs.active{display:block;animation:fade .18s ease-in}@keyframes fade{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}.card{background:linear-gradient(155deg,#19232b,#141c23);border:1px solid var(--line);border-radius:14px;padding:21px;min-width:0}.card.slim{padding:16px 19px}.col4{grid-column:span 4}.col6{grid-column:span 6}.col8{grid-column:span 8}.col12{grid-column:span 12}.card.gold{border-color:#6c5534;background:linear-gradient(145deg,#2b2924,#171f25)}.card.green{border-color:#3c6558}.card h3{color:#f5eedf}.hint{font-size:13px;color:var(--muted)}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.25px;color:var(--accent);font-weight:800;margin-bottom:9px}.hero-stat{font:700 32px Georgia,serif;color:#f8e3ba}.progress{height:9px;border-radius:20px;background:#354149;overflow:hidden;margin:9px 0}.progress>div{height:100%;background:linear-gradient(90deg,#a98342,#e3bc73);width:0;transition:width .2s}.sectionlead{color:var(--muted);margin-bottom:21px}.note{border-left:3px solid var(--accentdim);padding:10px 14px;background:#242722;border-radius:5px 10px 10px 5px;color:#e9dfca;margin:16px 0}.note.warning{border-color:#c7836d;background:#312521;color:#f2ccc1}.note.good{border-color:#72b69b;background:#192c28;color:#bedfce}
+    .tasklist{display:grid;gap:9px}.task{display:flex;align-items:flex-start;gap:11px;background:#1b2831;border:1px solid #344651;border-radius:9px;padding:11px 13px;cursor:pointer}.task:hover{border-color:#8f7950}.task input{accent-color:#c9974b;margin-top:5px;min-width:16px;height:16px}.task span{flex:1}.task.done span{text-decoration:line-through;color:#a4b6b9}.tag{font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.7px;padding:4px 7px;border-radius:5px;background:#293b46;color:#a9d3e4;white-space:nowrap}.tag.green{background:#1e3e35;color:#9ad9b7}.tag.gold{background:#483b27;color:#efd098}
+    .steps{display:grid;gap:12px}.step{display:flex;gap:12px;align-items:start}.number{border:1px solid #766039;background:#3c3427;min-width:31px;height:31px;border-radius:9px;display:grid;place-items:center;font-size:12px;font-weight:800;color:#f4d39b}.step p{margin:4px 0;color:#c7d2d7;font-size:13px}
+    .tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse}th{text-align:left;color:var(--accent);font-size:12px;letter-spacing:.5px;text-transform:uppercase;font-weight:750;background:#222d35}th,td{padding:11px 12px;border-bottom:1px solid #31414a;vertical-align:top}td{color:#d3dfe2;font-size:14px}tr:last-child td{border-bottom:none}td:first-child{font-weight:650;color:#f0f0e8}.subtabs{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 19px}.subtabs button{border:1px solid #42525b;border-radius:9px;background:#1b2831;color:#dae2e6;padding:8px 12px;font-weight:650}.subtabs button.on{border-color:#bc9259;color:#f9dbab;background:#483824}.gemline{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:12px 0}.gem{border:1px solid #51616f;padding:6px 10px;border-radius:7px;background:#222e38;font-size:12px;font-weight:650}.gem.b{border-color:#4777a7;color:#b3d5fd}.gem.g{border-color:#417e67;color:#bbf1ce}.gem.r{border-color:#95664c;color:#ffd0b5}.gemline .plus{color:#778a94}.mini{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.select{color:var(--text);background:#1c2932;border:1px solid #445b66;padding:8px 10px;border-radius:8px}.field{display:grid;gap:5px}.field label{font-size:12px;color:#b6c6cd;font-weight:700}.field input,.field select{color:var(--text);background:#1c2932;border:1px solid #445b66;padding:9px 10px;border-radius:8px;min-width:95px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.section-header{margin:25px 0 12px}.section-header:first-child{margin-top:0}.drop{border:1px solid var(--line);border-radius:10px;background:var(--panel);margin-bottom:10px;overflow:hidden}details.drop>summary{cursor:pointer;padding:14px 17px;list-style-position:inside;color:#f0eee6;font-weight:750}details.drop[open]>summary{background:#273039;border-bottom:1px solid var(--line)}.dropcontent{padding:17px}.dropcontent p:last-child{margin-bottom:0}.callout{font-size:12px;padding:9px 10px;color:#b9ced5;background:#192932;border-radius:7px}
+    .notes{width:100%;min-height:230px;resize:vertical;border:1px solid #51606a;border-radius:10px;padding:15px;color:#e7edef;background:#0d151b;line-height:1.65}.muted{color:var(--muted)}.footer{margin-top:33px;border-top:1px solid #2c3944;padding-top:16px;font-size:12px;color:#92a4ad}.result{padding:10px 13px;border:1px solid var(--line);border-radius:8px;background:#1a252e;text-align:left;width:100%;color:var(--text);display:block;margin-bottom:8px}.result:hover{border-color:var(--accent)}.result small{display:block}.hidden{display:none!important}
+    .passive-entry{display:grid;grid-template-columns:28px 34px minmax(0,1fr);gap:10px;align-items:start;padding:12px 11px;border-bottom:1px solid #33444e;cursor:pointer}.passive-entry:last-child{border-bottom:0}.passive-entry:hover{background:#26343f}.passive-entry input{accent-color:#e7b86c;width:18px;height:18px;margin:5px 0}.passive-entry .number{min-width:30px;height:30px}.passive-entry.done .passive-name{text-decoration:line-through;color:#91b2a7}.passive-entry .hint{display:block;margin-top:2px}.passive-entry .microtag{display:inline-block;border:1px solid #536573;border-radius:5px;padding:1px 6px;font-size:10px;color:#c1d1dc;margin-left:7px;font-weight:650}.passive-entry .microtag.uncertain{border-color:#9a6a51;color:#f0bca7}.passive-group{overflow:hidden;margin-top:12px}.passive-stage-header{display:flex;justify-content:space-between;gap:10px;align-items:start;flex-wrap:wrap;margin-bottom:14px}
+
+    .pob-alert{padding:14px 15px;border:1px solid #476270;border-radius:10px;background:#1a2833;margin:12px 0}.pob-alert.urgent{border-color:#a95348;background:#36221e}.pob-alert.warning{border-color:#a78245;background:#302920}.pob-alert.good{border-color:#42745b;background:#1c3029}.pob-alert.unknown{border-color:#536570;background:#202a31}.pob-alert strong{display:block}.pob-alert p{margin:4px 0 0;font-size:13px}.pob-alert .tag{float:right}.pob-summary{display:flex;gap:9px;flex-wrap:wrap;margin:8px 0 20px}.pob-summary span{background:#24343d;border:1px solid #40535d;padding:7px 11px;border-radius:9px;font-size:13px}.pob-confirm{background:#272d21;border:1px solid #685c31;border-radius:12px;padding:18px;margin-top:14px}.pob-import-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.pob-evidence{font-size:12px;color:var(--muted);margin-top:7px}.pob-history{font-size:12px;color:#a6c2c2}.pob-gear{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.pob-gear>div{border:1px solid #354854;background:#202e38;padding:9px 12px;border-radius:7px}.pob-gear b{display:block;font-size:12px;color:var(--accent)}.pob-gear span{font-size:13px}.pob-gear small{display:block}.pob-task-suggestion{padding:9px 11px;background:#20332e;color:#b7dfc5;border-radius:7px;font-size:13px;margin:4px 0}
+    .status-mark{font-weight:800;display:grid;place-items:center;flex:0 0 21px;width:21px;height:21px;border-radius:50%;border:1px solid #627986;background:#253641;color:#e8dfcd}
+    .status-mark.confirmed{background:#214237;border-color:#418464;color:#a7e4bf}
+    .status-mark.pending{background:#33343b;border-color:#61646c;color:#b8c3cc}
+    .stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .stat-grid>div{background:#21313a;border-radius:9px;padding:9px 12px}
+    .stat-grid small{display:block}.stat-grid b{font-size:20px}
+    .task{cursor:default}.passive-entry{cursor:default}
+    @media(max-width:760px){.pob-gear{grid-template-columns:1fr}}
+    @media(max-width:1100px){.col4{grid-column:span 6}.col8{grid-column:span 12}}
+    @media(max-width:760px){.app{display:block}.sidebar{position:sticky;top:0;z-index:5;width:100%;height:auto;padding:10px 12px;overflow:visible;border-right:0;border-bottom:1px solid #3b454c}.brand{margin:0 0 7px;padding:0 3px 7px}.crest{width:29px;height:29px;font-size:20px}.brand small{font-size:9px}.brand b{font-size:13px}.nav{display:flex;gap:6px;overflow-x:auto;padding:0 0 4px;scrollbar-width:thin}.nav button{flex:0 0 auto;font-size:12px;padding:7px 10px;gap:5px;width:auto}.nav button span{font-size:13px;width:auto}.aside-foot{display:none}main{padding:20px 14px 60px}.col4,.col6,.col8{grid-column:span 12}.card{padding:17px}.two-col{grid-template-columns:1fr}.search{width:100%}.top{gap:8px}.hero-stat{font-size:27px}h1{font-size:28px}th,td{font-size:12px;padding:9px 8px}}
+    @media print{.sidebar,.top-actions,.searchrow,.btn,.subtabs{display:none!important}.app{display:block}main{max-width:none;padding:10px}.tabs{display:block!important;page-break-before:always}.card{break-inside:avoid;background:#fff!important;color:#111!important;border:1px solid #aaa}p,td,.subtitle,.hint{color:#111!important}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" aria-label="Build guide navigation">
+    <div class="brand"><div class="crest">R</div><div><b>RELIQUARIAN</b><small>HCSSF Build Companion</small></div></div>
+    <nav class="nav" id="mainNav">
+      <button class="active" data-tab="home"><span>⌂</span> Overview</button>
+      <button data-tab="character"><span>♧</span> My Character</button>
+      <button data-tab="passives"><span>◇</span> Passive Tree</button>
+      <button data-tab="campaign"><span>▤</span> Campaign</button>
+      <button data-tab="gems"><span>✧</span> Gems & Links</button>
+      <button data-tab="gear"><span>⬡</span> Gear & Flasks</button>
+      <button data-tab="ascendancy"><span>♜</span> Labyrinth</button>
+      <button data-tab="checklist"><span>☑</span> Checklist</button>
+      <button data-tab="notes"><span>✎</span> My Notes</button>
+    </nav>
+    <div class="aside-foot"><b>PoE 1 · Patch 3.30</b><br>Stormblast Mine → Pyroclast Mine<br>Scion → Reliquarian<br><br>Build status from GitHub. Only personal notes live in your browser.</div>
+  </aside>
+  <main>
+    <header class="top">
+      <div><div class="eyebrow">Your build reference · No more scrolling</div><h1>Pyroclast Reliquarian</h1><p class="subtitle">Your HCSSF build guide and latest reviewed character snapshot. Upload PoB files in ChatGPT; published updates arrive from GitHub.</p></div>
+      <div class="top-actions"><span class="pill">HCSSF</span><span class="pill muted-pill">3.30</span></div>
+    </header>
+    <div class="searchrow"><input class="search" id="searchInput" type="search" placeholder="Search build guide: Constitution, Skitterbots, flask…" aria-label="Search build guide"><button class="btn secondary" id="clearSearch">Clear</button></div>
+    <div id="searchResults" class="hidden" aria-live="polite"></div>
+
+    <section class="tabs active" id="home" data-title="Overview">
+      <article class="card col12" id="homePobAudit" style="margin-bottom:16px"><div class="kicker">Latest HCSSF review</div><p class="hint">Loading character-progress.json...</p></article>
+      <div class="grid">
+        <article class="card col8 gold">
+          <div class="kicker">Your next unchecked passive</div><h2 id="homeNextPassive">Loading build progress…</h2>
+          <p>Your opening <strong>Destructive Apparatus + Mine Mastery</strong> route was confirmed. Later numeric passive IDs have not been mapped to names yet. Do not spend points on a route you've already taken.</p>
+          <div class="steps">
+            <div class="step"><div class="number">1</div><div><strong>Return to Scion's start</strong><p>Branch from the central starting region. Keep your existing mine nodes allocated.</p></div></div>
+            <div class="step"><div class="number">2</div><div><strong>Plan a route toward Constitution</strong><p>Click-by-click guidance and a completion checklist are now in the Passive Tree tab.</p></div></div>
+            <div class="step"><div class="number">3</div><div><strong>Work into the Constitution life cluster</strong><p>Follow the connected small life/travel nodes in your actual tree. The final notable is Constitution, followed by optional remaining life nodes.</p></div></div>
+          </div>
+          <div class="note warning"><b>Passive-tree caution:</b> The Constitution plan is provisional. Your PoB shows additional numeric passive IDs, so the next named passive must be verified before allocating more points.</div>
+          <button class="btn" data-go="passives">Open passive plan →</button>
+        </article>
+        <article class="card col4">
+          <div class="kicker">Your character</div>
+          <div class="mini" style="gap:12px;margin-bottom:16px">
+            <div class="field"><span class="hint">Level</span><strong id="level" class="hero-stat">…</strong></div>
+            <div class="field"><span class="hint">Act</span><strong id="act">Unconfirmed</strong></div>
+          </div>
+          <div class="kicker">Milestone progress</div><div class="mini" style="justify-content:space-between"><div class="hero-stat" id="progressNumber">0 / 0</div><span class="tag green" id="progressPercent">0%</span></div><div class="progress"><div id="progressFill"></div></div><p class="hint">Published confirmed milestones. Unknown milestones are not treated as incomplete.</p>
+          <button class="btn secondary" data-go="character">View character report →</button> <button class="btn secondary" data-go="checklist">Open full checklist →</button>
+        </article>
+        <article class="card col6"><div class="kicker">Right now</div><h3 id="currentActTitle">Act 1 · Stormblast Mine</h3><p id="currentActDescription">Use Stormblast Mine with Swift Assembly and Added Lightning Damage when available.</p><button class="btn secondary" data-go="campaign">Open my act →</button></article>
+        <article class="card col6"><div class="kicker">Quick reminders</div><div class="tasklist">
+          <div class="callout">⚔ <b>Weapon:</b> Wand or sceptre + shield. Prioritize applicable spell damage; later +1 fire spell gems.</div>
+          <div class="callout">◆ <b>Armour:</b> Life, resistances, correct links first. Armour/Evasion or Evasion/ES are strong long-term options.</div>
+          <div class="callout">○ <b>3.29 sockets:</b> White by default; any gem fits any socket. Matching colored sockets give a quality bonus.</div>
+        </div></article>
+      </div>
+    </section>
+
+
+    <section class="tabs" id="character" data-title="My Character">
+      <div class="mini" style="justify-content:space-between;align-items:start"><div><h2>Current character · Latest reviewed PoB</h2><p class="sectionlead">This is a published snapshot, not a live link to your game. Send your next PoB XML in ChatGPT for a review; the website reads the approved result from GitHub.</p></div><span class="pill">Read-only from GitHub</span></div>
+      <div class="card slim" style="margin-bottom:16px"><div class="kicker">Snapshot provenance</div><div id="characterMeta" class="hint">Loading published snapshot…</div><p class="hint" id="syncStatus" role="status">Loading data…</p><a href="/updates">View local update status ↗</a></div>
+      <div class="grid">
+        <article class="card col8"><div class="kicker">Priorities</div><h3>What to fix first</h3><div id="characterActions"></div></article>
+        <article class="card col4"><div class="kicker">Vitals &amp; resistances</div><h3 id="characterIdentity">Loading…</h3><div id="characterStats"></div></article>
+        <article class="card col12"><div class="kicker">Detailed review</div><h3>Fix ASAP · Improve · Looks good · Verify</h3><div id="characterFindings"></div></article>
+        <article class="card col6"><h3>Equipped skill groups</h3><div id="characterSkills" class="tasklist"></div></article>
+        <article class="card col6"><h3>Equipment snapshot</h3><div id="characterGear" class="tasklist"></div></article>
+      </div>
+      <div class="note warning"><b>HCSSF note:</b> Absence from the PoB or missing name-mapping evidence means <b>unverified</b>, not that an item, passive, or quest is definitely incomplete. The character's act must be supplied separately.</div>
+    </section>
+
+    <section class="tabs" id="passives" data-title="Passive Tree">
+      <div class="mini" style="justify-content:space-between;align-items:start;margin-bottom:12px"><div><h2 style="margin-bottom:4px">Passive tree · Ordered allocation</h2><p class="sectionlead" style="margin-bottom:4px">A read-only passive plan. Completed flags come only from the published review. Other nodes are unverified, not automatically incomplete.</p></div><span class="pill">Working HCSSF route</span></div>
+      <div class="note warning"><strong>Important accuracy note:</strong> This is <em>not</em> a verified 3.30 PoB tree export. The 11-point Harrier → Destructive Apparatus route is recorded from your existing character. The proposed next branch through Path of the Warrior is an unconfirmed leveling route, but the exact chain of unnamed connectors from there to Constitution has not been independently confirmed for 3.30. I am deliberately not inventing node counts or adjacency. Anything after those four clicks is a <b>target order</b>, not an exact one-click-at-a-time path.</div>
+      <div class="grid">
+        <article class="card col8 gold">
+          <div class="kicker">Provisional next passive plan</div>
+          <h3>Start a new branch from Scion's center</h3>
+          <p>You've finished <strong>Destructive Apparatus + Mine Mastery</strong>. Leave that route intact. From Scion's starting circle, follow its <strong>lower / physical-damage branch</strong> toward <strong>Path of the Warrior</strong>. These planned steps are listed below, but may already have been taken. After that, aim for <strong>Constitution</strong> and allocate the connecting maximum-life nodes shown on your actual tree.</p>
+          <p class="hint">The Path of the Warrior points are temporary travel for a fire mine build. Don't waste additional nodes on physical damage just for damage's sake.</p>
+          <div class="mini"><button class="btn secondary" type="button" id="nextPassiveBtn">Show my next unchecked node</button><span id="nextPassiveLabel" class="hint" aria-live="polite"></span></div>
+        </article>
+        <article class="card col4"><div class="kicker">Passive confirmations</div><h3 id="passiveProgressTitle">0 / 0 completed</h3><div class="progress"><div id="passiveProgressBar"></div></div><p class="hint">Only verified passives count as confirmed. The plan can change after our next PoB analysis.</p><button class="btn secondary" type="button" id="copyPassiveBtn">Copy remaining nodes</button></article>
+      </div>
+      <div class="subtabs" id="passiveStageButtons" aria-label="Choose passive tree stage"></div>
+      <div id="passiveStageContent"></div>
+      <div class="grid" style="margin-top:16px">
+        <article class="card col6"><h3>Future notable order (milestones)</h3><div class="tablewrap"><table><thead><tr><th>Priority</th><th>Target</th><th>Reason</th></tr></thead><tbody>
+          <tr><td>1</td><td><strong>Constitution</strong> plus nearby small life passives</td><td>Survive the campaign</td></tr>
+          <tr><td>2</td><td><strong>Blast Waves</strong></td><td>Mine area damage and area of effect</td></tr>
+          <tr><td>3</td><td><strong>Explosive Elements</strong></td><td>Elemental penetration for Pyroclast Mine</td></tr>
+          <tr><td>4</td><td><strong>Volatile Mines</strong></td><td>More mine capacity and faster detonation</td></tr>
+          <tr><td>5</td><td><strong>Efficient Explosives</strong></td><td>Mine reservation and extra detonation chance</td></tr>
+          <tr><td>6</td><td><strong>Life / suppression clusters</strong></td><td>Prioritize defenses as you approach maps</td></tr>
+        </tbody></table></div><p class="hint">These are exact notable names, <em>not</em> a verified route between them. The order may change to avoid inefficient detours once a 3.30 passive export is available.</p></article>
+        <article class="card col6"><h3>Respec plan</h3><div class="steps">
+          <div class="step"><div class="number">1</div><div><strong>Keep Destructive Apparatus</strong><p>Its mine throwing speed and the mastery are useful throughout the campaign.</p></div></div>
+          <div class="step"><div class="number">2</div><div><strong>Path of the Warrior is temporary</strong><p>Physical damage does not boost our elemental spell mines. Later refund any unnecessary physical-damage starting nodes only after a second, connected path keeps Constitution allocated.</p></div></div>
+          <div class="step"><div class="number">3</div><div><strong>Review mastery choices</strong><p>Once Automation + Detonate Mines is available, consider replacing the movement-detonation Mine Mastery with life regeneration if your tree offers the option and the interaction works for your setup.</p></div></div>
+          <div class="step"><div class="number">4</div><div><strong>Do not overinvest in crit</strong><p>This is a life-based, non-crit Pyroclast version. Leave Devastating Devices and Successive Detonations until a deliberate crit respec.</p></div></div>
+        </div></article>
+      </div>
+      <div class="card slim" style="margin-top:16px"><h3>Tree references</h3><p class="hint">Use <a target="_blank" rel="noopener noreferrer" href="https://www.pathofexile.com/passive-skill-tree">GGG's live passive tree</a> for the actual connections. Named mine notable effects are cross-checked against <a target="_blank" rel="noopener noreferrer" href="https://poedb.tw/us/Mine">PoEDB's mine passive reference</a>. The Path of the Warrior opening is also documented in <a target="_blank" rel="noopener noreferrer" href="https://pobarchives.com/build/df7NFYHi">an older Scion leveling route</a>, not a 3.30-specific export.</p></div>
+    </section>
+
+    <section class="tabs" id="campaign" data-title="Campaign">
+      <h2>Campaign walkthrough</h2><p class="sectionlead">Select your act for the short version. Expand other acts as needed, without digging through old chat messages.</p>
+      <div class="subtabs" id="actButtons"></div><div id="actContent"></div>
+    </section>
+
+    <section class="tabs" id="gems" data-title="Gems & Links">
+      <h2>Gems & skill links</h2><p class="sectionlead">These are practical progression setups. Vendor accessibility can vary by class and quest; use Siosa in Act 3 or Lilly in Act 6 when needed.</p>
+      <div class="grid">
+        <article class="card col6"><div class="kicker">Levels 1–27</div><h3>Stormblast Mine · 3–4 link</h3><div class="gemline"><span class="gem b">Stormblast Mine</span><span class="plus">+</span><span class="gem g">Swift Assembly</span><span class="plus">+</span><span class="gem b">Added Lightning Damage</span><span class="plus">+</span><span class="gem g">Trap and Mine Damage</span></div><p class="hint">Start with any 2- or 3-link, then improve. Mine placement and movement matter more than perfect gear.</p></article>
+        <article class="card col6"><div class="kicker">Level 28+</div><h3>Pyroclast Mine · 4-link</h3><div class="gemline"><span class="gem b">Pyroclast Mine</span><span class="plus">+</span><span class="gem g">Swift Assembly</span><span class="plus">+</span><span class="gem g">Trap and Mine Damage</span><span class="plus">+</span><span class="gem b">Controlled Destruction</span></div><p class="hint">Regular Pyroclast Mine for the first version, not Pyroclast Mine of Sabotage.</p></article>
+        <article class="card col6"><div class="kicker">5–6 link upgrades</div><h3>Additional supports</h3><div class="gemline"><span class="gem b">Charged Mines</span><span class="gem r">Fire Penetration</span></div><p>Choose links based on available mana and how comfortable mine reservation feels. Verify best damage supports in PoB later.</p></article>
+        <article class="card col6"><div class="kicker">Quality of life</div><h3>Automation</h3><div class="gemline"><span class="gem b">Automation</span><span class="plus">+</span><span class="gem w">Detonate Mines</span></div><p>Convenient automatic detonation. Turn it off when you want to pre-stack mines for boss phases. Avoid duplicating the moving-detonation mastery unnecessarily.</p></article>
+        <article class="card col12"><h3>Utility and auras</h3><div class="tablewrap"><table><thead><tr><th>Gem</th><th>Purpose</th><th>When</th></tr></thead><tbody>
+          <tr><td>Flame Dash</td><td>Movement and escape</td><td>From early Act 1</td></tr>
+          <tr><td>Orb of Storms</td><td>Early lightning help</td><td>Acts 1–2</td></tr>
+          <tr><td>Summon Skitterbots</td><td>Shock/chill; later synergizes with The Arkhon's Tools</td><td>Level 16+, if mana allows</td></tr>
+          <tr><td>Flammability</td><td>Boss fire-resistance debuff</td><td>Act 3 onward</td></tr>
+          <tr><td>Purity of Elements</td><td>Resistances and elemental ailment immunity</td><td>Act 3 onward, if needed</td></tr>
+          <tr><td>Bear Trap</td><td>Optional single-target support</td><td>When accessible</td></tr>
+          <tr><td>Steelskin / Molten Shell</td><td>Guard skill; Molten Shell only with meaningful armour</td><td>As gear supports it</td></tr>
+        </tbody></table></div><div class="note"><b>Important:</b> Aura reservation and mine reservation compete for mana. Don't force Purity of Elements + Skitterbots if you can't throw a proper boss sequence.</div></article>
+      </div>
+    </section>
+
+    <section class="tabs" id="gear" data-title="Gear & Flasks">
+      <h2>Gear, armour and flasks</h2><p class="sectionlead">The Hardcore order of operations: links → life → capped resistances → useful base defenses → damage upgrades.</p>
+      <div class="grid">
+        <article class="card col6"><div class="kicker">Weapon setup</div><h3>Wand or sceptre + shield</h3><p>Both mine skills are spells, so raw weapon attack DPS is irrelevant. A shield adds life, resistances and defenses.</p><ol><li>For Stormblast: spell damage and lightning spell levels.</li><li>For Pyroclast: +1 fire spell gems, spell/fire damage, added fire to spells.</li><li>Mine throwing speed matters; cast speed does not speed up mine throwing.</li></ol></article>
+        <article class="card col6"><div class="kicker">Armour choice</div><h3>Armour/Evasion or Evasion/ES</h3><p>Both are good. Armour/Evasion helps build physical mitigation and attack avoidance. Evasion/ES offers a buffer and useful suppression-capable bases.</p><p><b>While leveling:</b> choose the stronger life + resistance + linked-socket item, regardless of base type.</p><div class="callout">White sockets are the normal 3.29+ system. Don't spend currency fixing socket colors for usability.</div></article>
+        <article class="card col12"><h3>Item-by-item priority</h3><div class="tablewrap"><table><thead><tr><th>Slot</th><th>Campaign</th><th>Later</th></tr></thead><tbody>
+        <tr><td>Wand / sceptre</td><td>Spell damage, relevant added spell damage</td><td>+1 to fire/all spell gems, spell/fire damage</td></tr>
+        <tr><td>Shield</td><td>Life and resists</td><td>Defensive shield with life, resists, block</td></tr>
+        <tr><td>Chest</td><td>Best 3- or 4-link with good survivability</td><td>5-link, defenses, life</td></tr>
+        <tr><td>Helmet / gloves</td><td>Life and elemental resistances</td><td>Suppression where available, chaos resist</td></tr>
+        <tr><td>Boots</td><td>Movement speed, life</td><td>25–30% movement speed + defenses</td></tr>
+        <tr><td>Rings / amulet</td><td>Resists, attributes, life</td><td>Life, mana comfort, +1 fire gems if obtainable</td></tr>
+        <tr><td>Belt</td><td>Life and resistance</td><td>High life and flask / defensive benefits</td></tr>
+        </tbody></table></div></article>
+        <article class="card col6"><h3>Campaign flasks</h3><div class="tasklist"><div class="callout">2 × Life flasks (one fast/instant)</div><div class="callout">1 × Quicksilver (speed)</div><div class="callout">1 × Mana flask while required</div><div class="callout">1 × Granite or Jade once available</div></div></article>
+        <article class="card col6"><h3>Mapping flasks</h3><div class="tasklist"><div class="callout">1–2 × Life flasks, depending on recovery</div><div class="callout">1 × Quicksilver</div><div class="callout">1 × Granite</div><div class="callout">1 × Jade</div></div><p class="hint">Adjust for the specific dangers you encounter. Get useful ailment/bleed management where possible.</p></article>
+      </div>
+    </section>
+
+    <section class="tabs" id="ascendancy" data-title="Labyrinth">
+      <h2>Reliquarian Labyrinth plan</h2><p class="sectionlead">The build's major identity comes online later. Do not rush dangerous labs with poor life or uncapped resistances.</p>
+      <div class="grid">
+        <article class="card col6"><div class="kicker">Normal · Area level 33</div><h3>Two Passive Point nodes</h3><p>Reliquarian's first Labyrinth does not grant a unique-derived effect. Invest the points into regular passives.</p><div id="labNormal"></div></article>
+        <article class="card col6"><div class="kicker">Cruel · Area level 55</div><h3>The Brass Dome</h3><p><strong>+5% maximum elemental resistances</strong> and no extra damage taken from critical strikes. Strength stops granting its usual maximum-life bonus. You must actually gear up to your raised resistance cap.</p><div id="labCruel"></div></article>
+        <article class="card col6"><div class="kicker">Merciless · Area level 68</div><h3>Foulborn Tremor Rod</h3><p>Mines can be detonated an additional time and have <strong>50% increased effect of auras from mines</strong>. Main mechanical power spike for our Pyroclast strategy.</p><div id="labMerciless"></div></article>
+        <article class="card col6"><div class="kicker">Eternal · Area level 75</div><h3>The Arkhon's Tools</h3><p>Skitterbots gain Scorch and enhanced non-damaging ailment effect. Only rush this if your gear and defenses justify the risk.</p><div id="labEternal"></div></article>
+      </div>
+      <div class="note">Reliquarian 3.30 mechanics: <a href="https://poedb.tw/us/Reliquarian" target="_blank" rel="noopener noreferrer">PoEDB current ascendancy</a>. Patch source: <a href="https://www.pathofexile.com/forum/view-thread/4013680" target="_blank" rel="noopener noreferrer">official 3.30 notes</a>.</div>
+    </section>
+
+    <section class="tabs" id="checklist" data-title="Checklist">
+      <h2>Milestones & checkpoints</h2><p class="sectionlead">Confirmed milestones are updated from GitHub after I review your PoB in chat. Unverified does not mean unfinished.</p>
+      <div class="grid"><article class="card col8"><h3>Progression checklist</h3><div class="tasklist" id="fullChecklist"></div></article><article class="card col4"><h3>HCSSF defensive targets</h3><p class="hint">Guidelines rather than hard requirements. Adapt to actual incoming damage.</p><div class="tablewrap"><table><thead><tr><th>Stage</th><th>Life</th></tr></thead><tbody><tr><td>Act 3</td><td>~1,000</td></tr><tr><td>Act 5</td><td>~1,600</td></tr><tr><td>Act 7</td><td>~2,200</td></tr><tr><td>Act 10</td><td>~3,000</td></tr><tr><td>White maps</td><td>3,500–4,000</td></tr><tr><td>Yellow maps</td><td>4,000–4,500+</td></tr><tr><td>Red maps</td><td>4,500–5,000+</td></tr></tbody></table></div><div class="note warning">After Act 5 and Act 10 Kitava, re-check elemental resistances. The resistance penalties are permanent.</div></article></div>
+    </section>
+
+    <section class="tabs" id="notes" data-title="My Notes">
+      <h2>My character notes</h2><p class="sectionlead">Keep personal thoughts and reminders here. Only notes are stored in this browser; build stats and checkpoints come from GitHub.</p>
+      <div class="grid"><article class="card col8"><label for="playerNotes"><b>Personal notes</b></label><textarea id="playerNotes" class="notes" placeholder="Example: Level 19, Act 2. Wand: +25% spell damage. Need cold resist before Act 3…"></textarea><p class="hint" id="saveStatus">Autosaves on this browser when available.</p></article>
+      <article class="card col4"><h3>Back up your progress</h3><p>Export your local notes to keep a backup. Importing an old guide save will recover its notes, but will not override the GitHub-reviewed character or passive progress.</p><div style="display:grid;gap:9px"><button class="btn" id="exportBtn">Export Save</button><label class="btn secondary" style="cursor:pointer;text-align:center">Import Save<input style="display:none" id="importFile" type="file" accept="application/json,.json"></label><button class="btn danger" id="resetBtn">Clear local notes</button></div><p class="hint" id="transferStatus" role="status"></p></article></div>
+      <div class="card slim" style="margin-top:16px"><h3>References</h3><p class="hint">Current version is a working build companion based on our conversation. New passive checklist includes individually tracked nodes. The unverified 3.30 travel links are clearly labeled.</p><p><a target="_blank" rel="noopener noreferrer" href="https://www.pathofexile.com/forum/view-thread/4013680">3.30 official patch notes</a> · <a target="_blank" rel="noopener noreferrer" href="https://poedb.tw/us/Reliquarian">Reliquarian ascendancy reference</a> · <a target="_blank" rel="noopener noreferrer" href="https://poedb.tw/us/Version_3.29.0">White socket changes</a></p></div>
+    </section>
+    <div class="footer"><a href="/updates" id="localUpdatesLink" style="display:none">Local server &amp; updates ↗</a> <span id="localUpdatesDivider" style="display:none"> · </span>Built for your Scion → Reliquarian mine character. Local website with GitHub character-state sync. Updated November 2026 with GitHub-backed character snapshots. This is a custom, evolving guide, not a validated Path of Building export.</div>
+  </main>
+</div>
+<script>
+(()=>{
+'use strict';
+const KEY='poe-hcssf-reliquarian-build-v1';
+const tasks=[
+{id:'passive-destr',phase:'Passive tree',title:'Destructive Apparatus acquired',defaultDone:true},
+{id:'passive-mastery',phase:'Passive tree',title:'Mine Mastery acquired',defaultDone:true},
+{id:'gem-storm',phase:'Act 1',title:'Stormblast Mine equipped'},
+{id:'gem-swift',phase:'Act 1',title:'Swift Assembly / early 3-link'},
+{id:'gem-flame',phase:'Act 1',title:'Flame Dash + Quicksilver Flask'},
+{id:'gem-skitter',phase:'Act 2',title:'Summon Skitterbots obtained'},
+{id:'gem-trap',phase:'Act 2',title:'Trap and Mine Damage Support obtained'},
+{id:'passive-constitution',phase:'Passive tree',title:'Constitution life cluster taken'},
+{id:'gem-pyro',phase:'Act 3',title:'Switch to regular Pyroclast Mine'},
+{id:'gem-flamma',phase:'Act 3',title:'Flammability and a defensive aura ready'},
+{id:'lab-normal',phase:'Labyrinth',title:'Normal Lab complete: two Passive Point nodes'},
+{id:'act5-res',phase:'Act 5',title:'Re-cap elemental resistances after Kitava'},
+{id:'lab-cruel',phase:'Labyrinth',title:'Cruel Lab complete: The Brass Dome'},
+{id:'gem-auto',phase:'Acts 3–6',title:'Automation + Detonate Mines available'},
+{id:'act10-res',phase:'Act 10',title:'Resistances repaired after second Kitava penalty'},
+{id:'lab-merc',phase:'Labyrinth',title:'Merciless Lab complete: Foulborn Tremor Rod'},
+{id:'maps-ready',phase:'Maps',title:'Life, resistances, flasks and links ready for maps'},
+{id:'lab-eternal',phase:'Labyrinth',title:'Eternal Lab complete: The Arkhon\'s Tools'}
+];
+const passiveStages=[
+{id:'done',name:'Already allocated',subtitle:'Your first 11 passive points',state:'completed',description:'This reproduces the route you already took. All 11 are checked on first use.',steps:[
+{id:'p01',name:'Spell Damage and Intelligence',detail:'Scion spell-damage starting node, heading toward Harrier.',type:'established'},
+{id:'p02',name:'Spell Damage #1',detail:'First connected small Spell Damage node.',type:'established'},
+{id:'p03',name:'Spell Damage #2',detail:'Second connected small Spell Damage node.',type:'established'},
+{id:'p04',name:'Spell Damage #3',detail:'Third connected small Spell Damage node.',type:'established'},
+{id:'p05',name:'Harrier',detail:'Named notable: useful movement speed; cast speed does not scale mine throwing.',type:'established'},
+{id:'p06',name:'+10 Intelligence #1',detail:'First Intelligence travel node northeast of Harrier.',type:'established'},
+{id:'p07',name:'+10 Intelligence #2',detail:'Second Intelligence travel node.',type:'established'},
+{id:'p08',name:'Mine Damage',detail:'Small node leading to Destructive Apparatus.',type:'established'},
+{id:'p09',name:'Mine Throwing Speed',detail:'Small node immediately before Destructive Apparatus.',type:'established'},
+{id:'p10',name:'Destructive Apparatus',detail:'Mine duration and throwing speed notable.',type:'established'},
+{id:'p11',name:'Mine Mastery · detonate while moving',detail:'Your selected early utility mastery; keep until you have a suitable alternative.',type:'established'}]},
+{id:'next',name:'Take next',subtitle:'Constitution: prioritize maximum life',state:'next',description:'Follow the physical starting branch from the center; the first four clicks are clear. Beyond Path of the Warrior, check the line in the live in-game tree rather than spending points on an invented route.',steps:[
+{id:'p12',name:'Physical Damage · Scion start #1',detail:'Start a NEW branch from Scion center, lower / physical-damage side. This is travel, not damage for our spell mines.',type:'documented'},
+{id:'p13',name:'Physical Damage · Scion start #2',detail:'Second connected small physical-damage starter node.',type:'documented'},
+{id:'p14',name:'Physical Damage · Scion start #3',detail:'Third small physical-damage starter node.',type:'documented'},
+{id:'p15',name:'Path of the Warrior',detail:'The next notable on this branch: +20 Strength, 50 Armour, and otherwise wasted physical damage. We may respec this later.',type:'documented'},
+{id:'p16',name:'Connected travel / life nodes toward Constitution',detail:'Allocate the shortest visibly CONNECTED path from Path of the Warrior toward the lower-left Scion life wheel. Exact small-node names/count remain unverified for 3.30; treat as one route checkpoint, not a single passive point.',type:'verify'},
+{id:'p17',name:'Constitution',detail:'Named notable: 10% increased maximum Life and +20 maximum Life. Take as soon as you can connect to it.',type:'documented'},
+{id:'p18',name:'Nearby increased Maximum Life small nodes',detail:'Finish the efficient life nodes directly surrounding Constitution. Number and ordering depend on the entry side; do not add irrelevant physical-damage branches.',type:'verify'},
+{id:'p19',name:'Life Mastery · +30 maximum Life (optional)',detail:'Take only if this mastery exists in your current 3.30 tree and the point is better than a 5–6% life small node.',type:'verify'}]},
+{id:'mid',name:'After Constitution',subtitle:'Mine damage / mine capacity',state:'planned',description:'Specific notable targets, but NOT a fully validated connector-by-connector 3.30 tree. Small travel paths must be selected on the live tree before allocating.',steps:[
+{id:'p20',name:'Blast Waves',detail:'Take small mine/area nodes on the connected approach, then the named notable. Grants increased mine area damage and area of effect after detonation.',type:'verify'},
+{id:'p21',name:'Explosive Elements',detail:'Mine damage penetrates 10% elemental resistance. Strong once Pyroclast Mine is your main skill.',type:'verify'},
+{id:'p22',name:'Mine Mastery · enemy damage reduction (optional)',detail:'If available from a connected mine cluster, take “Each Mine applies 2% reduced Damage dealt to Enemies near it, up to 10%” for tough bosses.',type:'verify'},
+{id:'p23',name:'Volatile Mines',detail:'Detonation speed and +3 placed mine capacity. Prioritize when boss pre-stacking feels limited.',type:'verify'},
+{id:'p24',name:'Efficient Explosives',detail:'30% increased mine mana reservation efficiency and 15% additional-detonation chance. Helps once mana reservation is restrictive.',type:'verify'}]},
+{id:'late',name:'Later / maps',subtitle:'Survival-first points',state:'planned',description:'These are targeted defensive clusters, not a precise map route. Do not burn points traveling across the tree to reach all of them indiscriminately; choose efficient nearby nodes when you reach each area.',steps:[
+{id:'p25',name:'Revenge of the Hunted',detail:'Life and evasion in Ranger-side tree; take if accessible efficiently from your eventual mine path.',type:'verify'},
+{id:'p26',name:'Blood Drinker',detail:'Maximum life on the Shadow/Ranger side. Choose the life path, not any attack-leech nodes.',type:'verify'},
+{id:'p27',name:'Written in Blood',detail:'Hybrid life/ES notable near Shadow/Witch area; optional if your path reaches it efficiently.',type:'verify'},
+{id:'p28',name:'Spell suppression passives',detail:'Use the nearest efficient spell-suppression cluster and rare evasion gear to reach 100% suppression before difficult maps.',type:'verify'},
+{id:'p29',name:'Additional life / recovery',detail:'Fill nearby life nodes and relevant life/mine masteries rather than gambling the character on damage.',type:'verify'}]}
+];
+const allPassiveSteps=passiveStages.flatMap(stage=>stage.steps.map(step=>({...step,stageId:stage.id})));
+const acts=[
+{n:1,range:'1–12',skill:'Stormblast Mine',desc:'Prioritize getting Stormblast running and a 3-link.',items:['Buy Stormblast Mine after Hillock.','Get Swift Assembly when available (level 4).','Add Added Lightning Damage (level 8).','Buy Flame Dash (level 10); use Quicksilver Flask.','Put early passive points toward Destructive Apparatus.'],check:'300–400 life, useful linked sockets, Quicksilver.'},
+{n:2,range:'13–22',skill:'Stormblast Mine',desc:'Keep your mine setup and add utility if mana allows.',items:['Pick up Summon Skitterbots at level 16 if accessible.','Get Trap and Mine Damage Support at level 18.','Aim for 3–4 linked gems, but do not sacrifice life and resists.','Choose Alira for +15% elemental resistance in our leveling plan.','Begin planning the Constitution life cluster.'],check:'600–750 life; improve elemental resists.'},
+{n:3,range:'23–34',skill:'Pyroclast Mine',desc:'Switch to regular Pyroclast Mine at level 28.',items:['Buy Flammability and Purity of Elements when accessible.','After Sever the Right Hand, get Pyroclast Mine (level 28).','Links: Pyroclast + Swift Assembly + Trap and Mine Damage + Controlled Destruction.','Complete The Library for Siosa access and optional Automation / Detonate Mines.','Do Normal Lab once you have suitable defenses.'],check:'~1,000 life; aim to cap elemental resistances.'},
+{n:4,range:'35–42',skill:'Pyroclast Mine',desc:'Maintain the 4-link; do not chase damage over safety.',items:['Continue Pyroclast 4-link and level your gem.','At level 38, Minefield becomes an option, but Swift Assembly is smoother while leveling.','Upgrade wand/shield if damage or life is lagging.','Practice pre-stacking mine sequences on bosses.'],check:'~1,200–1,400 life; reliable recovery.'},
+{n:5,range:'43–48',skill:'Pyroclast Mine',desc:'Prepare for Kitava resistance penalty.',items:['Aim for ~1,600 life before Kitava.','Keep the best life/resistance equipment, regardless of armour base.','After Kitava, immediately fix the first -30% resistance penalty.'],check:'Recheck all resistances after the fight.'},
+{n:6,range:'49–54',skill:'Pyroclast Mine',desc:'Use Lilly Roth for easy gem access.',items:['Complete Fallen from Grace to unlock Lilly Roth.','Consider Automation + Detonate Mines.','Flammability for bosses; Purity of Elements if defenses need it.','Bear Trap and Steelskin are optional utility choices.'],check:'Capped elemental resistances and comfortable mine mana.'},
+{n:7,range:'55–60',skill:'Pyroclast Mine',desc:'Build defenses for Cruel Lab.',items:['Finish Cruel Lab when ready and plan The Brass Dome.','Raised max elemental resistance caps still require more resists on gear.','Keep investing in life and defensive layers.'],check:'~2,200 life; capped resistances; Cruel Lab.'},
+{n:8,range:'58–63',skill:'Pyroclast Mine',desc:'Continue improving life and physical defenses.',items:['Move toward ~2,500+ life.','Seek better armour/evasion gear and defensive flasks.','Maintain Pyroclast damage while fixing survivability.'],check:'Do not rely on max resistances alone against physical hits.'},
+{n:9,range:'63–67',skill:'Pyroclast Mine',desc:'Prepare for the end of the campaign.',items:['Look for a 5-link, but do not spend all your resources chasing it.','Keep a good life flask and adequate mana recovery.','Consider suppression and chaos resistance as gear allows.'],check:'Approach ~2,800–3,000 life.'},
+{n:10,range:'67–70',skill:'Pyroclast Mine',desc:'Kitava and Merciless Lab are the key goals.',items:['Get comfortable defenses before final Kitava.','After Kitava, recover the second resistance penalty.','Run Merciless Lab safely, then select Foulborn Tremor Rod.','Practice re-arming and double detonations on stationary targets.'],check:'~3,000 life, capped resists, defensively ready for maps.'},
+{n:11,range:'70+',skill:'Pyroclast Mine',desc:'Build your map defenses around Foulborn Tremor Rod.',items:['Aim for ~3,500–4,000 life for early maps.','Work toward 100% spell suppression and meaningful physical defenses.','Get comfortable Skitterbots reservation before Eternal Lab.','Take The Arkhon\'s Tools after safely completing Eternal Lab.'],check:'Prioritize safe mods and survivability over fast map progression.'}
+];
+let progress=null;
+const oldNotesKey='poe-hcssf-reliquarian-build-v1';
+const notesKey='poe-hcssf-reliquarian-notes-v2';
+let notes='';
+try{const stored=JSON.parse(localStorage.getItem(notesKey)||'null');if(stored&&typeof stored.notes==='string'){notes=stored.notes}else{const legacy=JSON.parse(localStorage.getItem(oldNotesKey)||'null');if(legacy&&typeof legacy.notes==='string')notes=legacy.notes;}}catch{}
+const $=id=>document.getElementById(id);
+const safeText=(value)=>String(value==null?'':value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const validTaskIds=new Set(tasks.map(t=>t.id));
+const validPassiveIds=new Set(allPassiveSteps.map(t=>t.id));
+function verifiedTaskSet(){return new Set((progress?.progress?.completedTaskIds||[]).filter(id=>validTaskIds.has(id)))}
+function verifiedPassiveSet(){return new Set((progress?.progress?.completedPassiveIds||[]).filter(id=>validPassiveIds.has(id)))}
+function saveNotes(){try{localStorage.setItem(notesKey,JSON.stringify({notes,version:2}));$('saveStatus').textContent='Notes saved locally in this browser.'}catch{$('saveStatus').textContent='Browser storage unavailable; export notes to keep a copy.'}}
+function taskHTML(id){const t=tasks.find(x=>x.id===id);if(!t)return'';const done=verifiedTaskSet().has(id);return `<div class="task ${done?'done':''}" role="listitem"><span class="status-mark ${done?'confirmed':'pending'}" aria-label="${done?'Confirmed':'Unverified'}">${done?'✓':'?'}</span><span>${safeText(t.title)}</span><span class="tag ${done?'green':''}">${done?'Confirmed':'Unverified'}</span></div>`}
+let selectedPassiveStage='next';
+function nextPassive(){const done=verifiedPassiveSet();return allPassiveSteps.find(n=>!done.has(n.id))}
+function renderPassives(){const done=verifiedPassiveSet();
+  $('passiveStageButtons').innerHTML=passiveStages.map(st=>`<button type="button" data-passive-stage="${st.id}" class="${st.id===selectedPassiveStage?'on':''}">${safeText(st.name)}</button>`).join('');
+  const st=passiveStages.find(x=>x.id===selectedPassiveStage)||passiveStages[1];
+  $('passiveStageContent').innerHTML=`<article class="card passive-group"><div class="passive-stage-header"><div><div class="kicker">${safeText(st.subtitle)}</div><h3>${safeText(st.name)}</h3><p class="hint" style="max-width:740px">${safeText(st.description)}</p></div><span class="tag ${st.id==='next'?'gold':'green'}">${st.steps.filter(x=>done.has(x.id)).length} confirmed / ${st.steps.length}</span></div><div class="tasklist" style="gap:0">${st.steps.map((x,i)=>`<div class="passive-entry ${done.has(x.id)?'done':''}"><span class="status-mark ${done.has(x.id)?'confirmed':'pending'}">${done.has(x.id)?'✓':'?'}</span><div class="number">${allPassiveSteps.findIndex(z=>z.id===x.id)+1}</div><span><strong class="passive-name">${safeText(x.name)}</strong><span class="microtag ${x.type==='verify'?'uncertain':''}">${done.has(x.id)?'Confirmed':x.type==='verify'?'Route unverified':'Not confirmed'}</span><small class="hint">${safeText(x.detail)}</small></span></div>`).join('')}</div></article>`;
+  $('passiveProgressTitle').textContent=`${allPassiveSteps.filter(x=>done.has(x.id)).length} / ${allPassiveSteps.length} confirmed`;
+  $('passiveProgressBar').style.width=`${Math.round(100*done.size/allPassiveSteps.length)}%`;
+  const next=nextPassive();$('homeNextPassive').textContent=next?`Verify: ${next.name}`:'All planned checkpoints confirmed';
+}
+function renderTasks(){
+  $('fullChecklist').innerHTML=tasks.map(t=>`<div><div class="hint" style="font-size:11px;margin:8px 0 5px">${safeText(t.phase)}</div>${taskHTML(t.id)}</div>`).join('');
+  for(const [el,id] of [['labNormal','lab-normal'],['labCruel','lab-cruel'],['labMerciless','lab-merc'],['labEternal','lab-eternal']])$(el).innerHTML=taskHTML(id);
+  const n=verifiedTaskSet().size,max=tasks.length;
+  $('progressNumber').textContent=`${n} / ${max}`;$('progressPercent').textContent=`${Math.round(100*n/max)}% verified`;$('progressFill').style.width=`${100*n/max}%`;
+}
+let selectedAct=2; // Default to suggested campaign guide by level; not an asserted character act.
+function renderAct(n){const a=acts.find(x=>x.n===Number(n))||acts[0];selectedAct=a.n;
+  $('actButtons').innerHTML=acts.map(x=>`<button class="${x.n===a.n?'on':''}" data-act="${x.n}">${x.n===11?'Maps':'Act '+x.n}</button>`).join('');
+  $('actContent').innerHTML=`<div class="grid"><article class="card col8"><div class="kicker">${a.n===11?'Endgame':'Act '+a.n} · Levels ${safeText(a.range)}</div><h2>${safeText(a.skill)}</h2><p>${safeText(a.desc)}</p><div class="steps">${a.items.map((x,i)=>`<div class="step"><div class="number">${i+1}</div><p style="margin:4px 0">${safeText(x)}</p></div>`).join('')}</div></article><article class="card col4"><div class="kicker">Checkpoint</div><h3>Before leaving this act</h3><p>${safeText(a.check)}</p><h3>Related milestones</h3><div class="tasklist">${tasks.filter(t=>t.phase===`Act ${a.n}`||t.phase===`Acts ${a.n}–6`).map(t=>taskHTML(t.id)).join('')||'<p class="hint">See the full checklist for global goals.</p>'}</div></article></div>`}
+function renderActSummary(){const c=progress?.character||{};const act=Number(c.act);const verified=act>=1&&act<=11;
+  $('act').textContent=verified?`${act===11?'Maps':'Act '+act}`:'Not confirmed';
+  const a=acts.find(x=>x.n===(verified?act:selectedAct))||acts[1];
+  $('currentActTitle').textContent=`${verified?(act===11?'Maps':'Act '+act):'Suggested guide · Act '+a.n} · ${a.skill}`;
+  $('currentActDescription').textContent=(verified?'':'Your PoB does not reveal your current Act. This guide tab is only a suggestion. ')+a.desc;
+}
+function navigate(id){if(!$(id)||!$(id).classList.contains('tabs'))return;document.querySelectorAll('.tabs').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('#mainNav button').forEach(b=>{b.classList.toggle('active',b.dataset.tab===id);b.setAttribute('aria-current',b.dataset.tab===id?'page':'false')});history.replaceState(null,'','#'+id);$('searchResults').classList.add('hidden');window.scrollTo({top:0,behavior:'instant'});if(id==='campaign')renderAct(selectedAct)}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-tab],[data-go],[data-act],[data-passive-stage]');if(!b)return;if(b.dataset.tab||b.dataset.go)navigate(b.dataset.tab||b.dataset.go);if(b.dataset.act){renderAct(Number(b.dataset.act));}if(b.dataset.passiveStage){selectedPassiveStage=b.dataset.passiveStage;renderPassives()}});
+$('nextPassiveBtn').addEventListener('click',()=>{const n=nextPassive();$('nextPassiveLabel').textContent=n?`${n.name} · ${n.detail} · NOT YET CONFIRMED`:'All planned checkpoints are confirmed.';if(n){selectedPassiveStage=n.stageId;renderPassives();$('passiveStageContent').scrollIntoView({behavior:'smooth',block:'start'})}});
+$('copyPassiveBtn').addEventListener('click',async()=>{const known=verifiedPassiveSet();const t=allPassiveSteps.filter(x=>!known.has(x.id)).map((x,i)=>`${i+1}. [UNVERIFIED] ${x.name} — ${x.detail}`).join('\n');try{await navigator.clipboard.writeText(t);$('nextPassiveLabel').textContent='Unverified checkpoints copied.'}catch{window.prompt('Copy unverified checkpoints:',t)}});
+function findingsSorted(){const order={urgent:0,warning:1,good:2,unknown:3};return [...(progress?.findings||[])].sort((a,b)=>(order[a.severity]??3)-(order[b.severity]??3))}
+function formatFindings(data){return (data||[]).map(f=>`<div class="pob-alert ${['urgent','warning','good','unknown'].includes(f.severity)?f.severity:'unknown'}"><span class="tag">${safeText(({urgent:'Fix ASAP',warning:'Improve',good:'Looks good',unknown:'Verify'})[f.severity]||'Verify')}</span><strong>${safeText(f.title)}</strong><p>${safeText(f.detail)}</p>${f.action?`<p><b>Next:</b> ${safeText(f.action)}</p>`:''}</div>`).join('')}
+function statValue(k,unit=''){const v=progress?.stats?.[k];return Number.isFinite(v)?`${v}${unit}`:'Unknown'}
+function renderCharacter(){const c=progress?.character||{},source=progress?.source||{},list=findingsSorted();
+  $('level').textContent=c.level??'Unknown';
+  $('characterIdentity').textContent=`${c.label||'Unidentified'} · L${c.level??'?'} ${c.class||'Unknown'}${c.ascendancy&&c.ascendancy!=='None'?' '+c.ascendancy:''}`;
+  $('characterMeta').innerHTML=`Reviewed ${safeText(source.reviewedAt||'date unknown')} · From ${safeText(source.file||'PoB snapshot')} · Tree ${safeText(source.pobTreeVersion||'unknown')} · ${safeText(source.note||'')}`;
+  $('characterStats').innerHTML=`<div class="stat-grid">${[['Life','life',''],['ES','energyShield',''],['Armour','armour',''],['Attack block','attackBlock','%'],['Fire resistance','fireRes','%'],['Cold resistance','coldRes','%'],['Lightning resistance','lightningRes','%'],['Chaos resistance','chaosRes','%'],['Suppression','spellSuppression','%']].map(([label,k,unit])=>`<div><small>${label}</small><b>${safeText(statValue(k,unit))}</b></div>`).join('')}</div>`;
+  $('characterActions').innerHTML=(progress.nextActions||[]).map((a,i)=>`<div class="step" style="margin:12px 0"><div class="number">${i+1}</div><p>${safeText(a)}</p></div>`).join('')||'<p class="hint">No actions provided.</p>';
+  $('characterFindings').innerHTML=formatFindings(list)||'<p class="hint">No findings in the published snapshot.</p>';
+  $('characterSkills').innerHTML=(progress.skills||[]).map(g=>`<div class="callout"><strong>${safeText(g.slot)}</strong><br>${(g.gems||[]).map(safeText).join(' · ')}</div>`).join('')||'<p class="hint">No gem data included.</p>';
+  $('characterGear').innerHTML=(progress.gear||[]).map(g=>`<div class="callout"><strong>${safeText(g.slot)}</strong> · ${safeText(g.name)} <span class="muted">${safeText(g.rarity)}</span><br><small>${(g.mods||[]).map(safeText).join(' · ')||'No useful explicit modifiers recorded'}</small></div>`).join('')||'<p class="hint">No gear data included.</p>';
+  const urgent=list.filter(x=>x.severity==='urgent'),warning=list.filter(x=>x.severity==='warning');
+  const top=(urgent.length?urgent:warning).slice(0,2);
+  $('homePobAudit').innerHTML=`<div class="kicker">HCSSF review · Level ${safeText(c.level||'?')} · ${safeText(source.reviewedAt||'')}</div><h3>${urgent.length?`${urgent.length} issue${urgent.length===1?'':'s'} to fix ASAP`:warning.length?`${warning.length} upgrades to consider`:'No high-priority findings recorded'}</h3>${formatFindings(top)}<button class="btn secondary" data-go="character">Open latest review →</button>`;
+  const a=Number(c.act);if(a>=1&&a<=11)selectedAct=a;else if(Number(c.level)>=16&&Number(c.level)<23)selectedAct=2;
+  renderAct(selectedAct);renderActSummary();
+}
+function validateProgress(p){return p&&p.format==='reliquarian-character-progress-v1'&&p.character&&typeof p.character==='object'&&p.progress&&Array.isArray(p.progress.completedTaskIds)&&Array.isArray(p.progress.completedPassiveIds)&&Array.isArray(p.findings)}
+async function loadCharacter(){try{const response=await fetch('/character-progress.json',{cache:'no-store'});if(!response.ok)throw Error(`HTTP ${response.status}`);const data=await response.json();if(!validateProgress(data))throw Error('Unexpected snapshot format');progress=data;$('syncStatus').textContent='Loaded published character-progress.json; reload to check for updates.';renderCharacter();renderTasks();renderPassives();}
+  catch(err){$('syncStatus').textContent='Character snapshot unavailable: '+err.message+' · Your local notes remain safe.';$('homePobAudit').innerHTML='<div class="kicker">Character sync unavailable</div><p class="hint">The local snapshot could not be read. Start Guide.bat and check /updates.</p>';renderTasks();renderPassives();renderActSummary();}}
+$('playerNotes').value=notes;
+$('playerNotes').addEventListener('input',e=>{notes=e.target.value;saveNotes()});
+$('exportBtn').addEventListener('click',()=>{const obj={type:'reliquarian-notes-v2',notes,savedAt:new Date().toISOString()},a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(obj,null,2)],{type:'application/json'}));a.href=url;a.download='reliquarian-local-notes.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),500);$('transferStatus').textContent='Notes exported.'});
+$('importFile').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const value=JSON.parse(await f.text());if(!['reliquarian-notes-v2','poe-reliquarian-hcssf-companion'].includes(value.type)||typeof value.notes!=='string')throw Error('Unsupported notes file');notes=value.notes;$('playerNotes').value=notes;saveNotes();$('transferStatus').textContent='Local notes recovered. GitHub character progress was not changed.';}catch(err){$('transferStatus').textContent='Import failed: '+err.message;}e.target.value=''});
+$('resetBtn').addEventListener('click',()=>{if(!confirm('Clear only your local notes? Published character progress is unaffected.'))return;notes='';$('playerNotes').value='';saveNotes();$('transferStatus').textContent='Local notes cleared.'});
+const searchable=[...document.querySelectorAll('.tabs')].map(section=>({id:section.id,title:section.dataset.title,text:section.textContent.replace(/\s+/g,' ').trim()}));
+$('searchInput').addEventListener('input',e=>{let q=e.target.value.trim().toLowerCase(),result=$('searchResults');if(!q){result.classList.add('hidden');return}const matches=searchable.map(s=>({...s,i:s.text.toLowerCase().indexOf(q)})).filter(s=>s.i>=0).sort((a,b)=>a.i-b.i).slice(0,8);result.innerHTML=matches.length?matches.map(s=>`<button type="button" class="result" data-go="${safeText(s.id)}"><strong>${safeText(s.title)}</strong><small>…${safeText(s.text.slice(Math.max(0,s.i-45),Math.min(s.text.length,s.i+q.length+105)))}…</small></button>`).join(''):'<p class="hint">No matching sections.</p>';result.classList.remove('hidden')});
+$('clearSearch').addEventListener('click',()=>{$('searchInput').value='';$('searchResults').classList.add('hidden')});
+renderTasks();renderPassives();renderAct(selectedAct);renderActSummary();
+const tab=decodeURIComponent(location.hash.slice(1));if(tab&&$(tab)&&$(tab).classList.contains('tabs'))navigate(tab);
+loadCharacter();
+})();
+</script>
+<script>if(['localhost','127.0.0.1'].includes(location.hostname)){for(const id of ['localUpdatesLink','localUpdatesDivider']){const el=document.getElementById(id);if(el)el.style.display='inline'}}</script>
+</body></html>

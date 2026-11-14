@@ -1,0 +1,335 @@
+{
+  "format": "reliquarian-character-progress-v1",
+  "publishedAt": null,
+  "source": {
+    "kind": "reviewed PoB XML + conversation confirmations",
+    "file": "3.29 ReliMinesHCSSF(1).xml",
+    "previousFile": "3.29 ReliMinesHCSSF.xml",
+    "pobTreeVersion": "3_29",
+    "patchContext": "3.30",
+    "reviewedAt": "2026-11-13",
+    "note": "Live league is HC SSF Covens; the export uses 3_29 passive-tree identifiers. Current act and exact name of new passive IDs are not present in the export."
+  },
+  "character": {
+    "label": "ReliMinesHCSSF",
+    "nameVerified": false,
+    "level": 21,
+    "class": "Scion",
+    "ascendancy": "None",
+    "league": "HC SSF Covens",
+    "act": null,
+    "bandit": "Not confirmed (PoB: None)"
+  },
+  "stats": {
+    "life": 623,
+    "mana": 254,
+    "energyShield": 45,
+    "evasion": 134,
+    "armour": 214,
+    "fireRes": 25,
+    "coldRes": 51,
+    "lightningRes": 39,
+    "chaosRes": 0,
+    "attackBlock": 36,
+    "spellSuppression": 0,
+    "physicalMaximumHitTaken": 708,
+    "totalEHP": 1062
+  },
+  "progress": {
+    "completedTaskIds": [
+      "passive-destr",
+      "passive-mastery",
+      "gem-storm",
+      "gem-swift",
+      "gem-flame"
+    ],
+    "completedPassiveIds": [
+      "p01",
+      "p02",
+      "p03",
+      "p04",
+      "p05",
+      "p06",
+      "p07",
+      "p08",
+      "p09",
+      "p10",
+      "p11"
+    ],
+    "passiveCountFromPob": 24,
+    "passiveValidation": "The earlier 11-point Destructive Apparatus + Mine Mastery route was confirmed through conversation, and the mine mastery effect persists in both exports. New export shows 24 numeric passive IDs (+4), with no removals. No reliable 3_30 name mapping for added nodes is available; do not automatically mark later named passives complete.",
+    "currentGoal": "Improve fire resistance (still 25%), then cold/lightning. Replace empty boots and upgrade body armour without losing Stormblast three-link. Continue toward Constitution after checking current connected nodes.",
+    "numericPassiveNodeIds": [
+      11688,
+      12702,
+      13714,
+      13782,
+      15073,
+      17674,
+      17849,
+      18033,
+      19939,
+      21602,
+      33545,
+      45456,
+      46092,
+      47062,
+      51923,
+      55373,
+      55485,
+      56153,
+      57615,
+      58833,
+      59926,
+      62021,
+      65034,
+      65167
+    ],
+    "newNumericPassiveNodeIdsSincePreviousImport": [
+      13714,
+      19939,
+      51923,
+      65167
+    ],
+    "passiveTreeUrl": "https://www.pathofexile.com/passive-skill-tree/AAAABgAAF0UKOuG0DMrT4Q8xnuoWgwlGcdtZNdb-CjWSt9b-j03j2L1UYthN8kWxkEW5LagAAVNB6hY="
+  },
+  "findings": [
+    {
+      "severity": "urgent",
+      "title": "Fire resistance is still 25% at level 21",
+      "detail": "PoB shows fire 25%, cold 51%, lightning 39%. Fire has not improved since level 18 and is the weakest resistance. This is the most important defensive gap for HC progression.",
+      "action": "Find a fire-resistance ring, life/resistance belt, or other rare with fire resistance. Aim for ~50% fire soon and work toward all 75% elemental resistances by Act 3."
+    },
+    {
+      "severity": "warning",
+      "title": "Cold and lightning resistances are still below cap",
+      "detail": "Cold improved 41% → 51% and lightning 36% → 39%, but both remain below 75%. These are less urgent than the weak fire resistance but important before dangerous bosses.",
+      "action": "Keep upgrading rare rings, gloves, chest and belt, focusing on elemental resistances and life together."
+    },
+    {
+      "severity": "warning",
+      "title": "Normal boots still have no beneficial explicit modifiers",
+      "detail": "Equipped Leatherscale Boots remain normal rarity, no life/resistances and no movement-speed roll. They currently hold the linked three-gem Stormblast setup.",
+      "action": "Find movement-speed boots with good life/resistance rolls, but transfer or preserve the linked main three-link first."
+    },
+    {
+      "severity": "warning",
+      "title": "New body armour has only +7 life",
+      "detail": "Maelstrom Cloak Ringmail Coat gives 102 armour, 23 ES, +10 Strength, +15 Intelligence, +26 mana and +16% cold resistance, but only +7 maximum life. The old chest gave +17 life, +6% cold and +11% lightning.",
+      "action": "Look for a life/resist chest with good links. The new chest is acceptable as a temporary stat/resistance patch, not a good long-term HC life item."
+    },
+    {
+      "severity": "warning",
+      "title": "Belt was upgraded, but still lacks life",
+      "detail": "You replaced the normal Chain Belt with a magic Chain Belt of the Squall: +15 Energy Shield and +14% lightning resistance. This helps one resistance but offers no life.",
+      "action": "Keep it temporarily, but replace it with a life + two-resistance belt as soon as you find one."
+    },
+    {
+      "severity": "warning",
+      "title": "Three-link is good, but missing available support and aura",
+      "detail": "Stormblast Mine (Lv 7), Swift Assembly (Lv 6), Added Lightning Damage (Lv 5), Orb of Storms (Lv 6) and Flame Dash (Lv 4) are present. Trap and Mine Damage Support and Skitterbots are not shown in the export.",
+      "action": "At level 21, purchase Trap and Mine Damage Support for a four-link when available. Get Summon Skitterbots if mana reservation supports it."
+    },
+    {
+      "severity": "warning",
+      "title": "Life recovery and flasks can be improved",
+      "detail": "You still have three unmodified Large Life Flasks, a Quicksilver Flask and a Grand Mana Flask of Warding. Life regeneration is 1/s in PoB. The character is vulnerable if emergency flask recovery falls behind incoming damage.",
+      "action": "Upgrade one life flask to a higher tier and roll reliable fast recovery; keep Quicksilver and mana recovery. Consider a utility flask later."
+    },
+    {
+      "severity": "warning",
+      "title": "Spell wand remains usable but weak",
+      "detail": "The magic Goat’s Horn has 11% increased Spell Damage, added fire spell damage and +18 mana. Its physical DoT multiplier is irrelevant to Stormblast Mine. The amulet’s cast speed does not increase mine throwing speed.",
+      "action": "Keep the wand until a better caster wand or sceptre appears. Prioritize spell damage or +1 lightning spells now; prepare a +1 fire-spell weapon once Pyroclast is available."
+    },
+    {
+      "severity": "good",
+      "title": "Life and passive investment are moving in the right direction",
+      "detail": "Life increased 518 → 623 (+105), increased maximum life on the passive tree went from 25% to 40%, and PoB physical maximum hit increased 584 → 708. At level 21, this is positive HC progress.",
+      "action": "Continue life investment rather than pushing only mine damage. Aim for roughly 750+ life by the end of Act 2 if possible."
+    },
+    {
+      "severity": "good",
+      "title": "Mine skill setup remains correctly linked and leveled",
+      "detail": "Stormblast Mine, Swift Assembly and Added Lightning Damage are still linked in the boots and have each leveled. Flame Dash and Orb of Storms are present, and your shield still provides 36% effective attack block.",
+      "action": "Continue leveling gems and preserving the link. Switch to Pyroclast Mine around level 28 after it becomes available."
+    },
+    {
+      "severity": "good",
+      "title": "Four additional passive IDs without any refunds",
+      "detail": "Passive allocations increased 20 → 24; added numeric IDs are 13714, 19939, 51923, 65167. Previous passive IDs remain allocated, and the same Mine Mastery effect is selected.",
+      "action": "No immediate respec is indicated by the raw export. Verify these IDs against a current passive tree before marking specific later checklist nodes."
+    },
+    {
+      "severity": "unknown",
+      "title": "Names of new passives and actual campaign act cannot be confirmed",
+      "detail": "The export includes numeric nodes for tree version 3_29, while our guide targets patch 3.30. It lists ascendancy None and bandit None, and does not report the current campaign act.",
+      "action": "Use the in-game tree or an updated verified 3.30 mapping before confirming Path of the Warrior, Constitution or the latest route. Confirm bandit and Act separately."
+    }
+  ],
+  "skills": [
+    {
+      "slot": "Body Armour",
+      "gems": [
+        "Flame Dash (Lv 4)"
+      ]
+    },
+    {
+      "slot": "Weapon 2",
+      "gems": [
+        "Orb of Storms (Lv 6)"
+      ]
+    },
+    {
+      "slot": "Boots",
+      "gems": [
+        "Stormblast Mine (Lv 7)",
+        "Swift Assembly (Lv 6)",
+        "Added Lightning Damage (Lv 5)"
+      ]
+    }
+  ],
+  "gear": [
+    {
+      "slot": "Weapon 1",
+      "name": "Caster's Goat's Horn of Spilling",
+      "rarity": "Magic",
+      "mods": [
+        "Adds 2 to 4 Fire Damage to Spells and Attacks",
+        "11% increased Spell Damage",
+        "+23% to Physical Damage over Time Multiplier",
+        "+18 to maximum Mana"
+      ]
+    },
+    {
+      "slot": "Weapon 2",
+      "name": "Grim Fend",
+      "rarity": "Rare",
+      "mods": [
+        "3% increased Movement Speed",
+        "45% increased Chance to Block",
+        "+11 to Evasion Rating",
+        "+5 to maximum Life",
+        "Regenerate 1 Life per second"
+      ]
+    },
+    {
+      "slot": "Body Armour",
+      "name": "Maelstrom Cloak",
+      "rarity": "Rare",
+      "mods": [
+        "+10 to Strength",
+        "+15 to Intelligence",
+        "+7 to maximum Life",
+        "+26 to maximum Mana",
+        "+16% to Cold Resistance"
+      ]
+    },
+    {
+      "slot": "Helmet",
+      "name": "Sanguine Sallet",
+      "rarity": "Magic",
+      "mods": [
+        "+37 to maximum Life"
+      ]
+    },
+    {
+      "slot": "Gloves",
+      "name": "Grim Hold",
+      "rarity": "Rare",
+      "mods": [
+        "Adds 1 to 2 Physical Damage to Attacks",
+        "+13 to maximum Life",
+        "+15 to maximum Mana",
+        "+6% to Fire Resistance"
+      ]
+    },
+    {
+      "slot": "Boots",
+      "name": "Leatherscale Boots",
+      "rarity": "Normal",
+      "mods": []
+    },
+    {
+      "slot": "Amulet",
+      "name": "Hale Jade Amulet of Nimbleness",
+      "rarity": "Magic",
+      "mods": [
+        "+24 to Dexterity",
+        "10% increased Cast Speed",
+        "+9 to maximum Life"
+      ]
+    },
+    {
+      "slot": "Ring 1",
+      "name": "Armageddon Nail",
+      "rarity": "Rare",
+      "mods": [
+        "+30% to Cold Resistance",
+        "+15 to Dexterity",
+        "Adds 3 to 7 Fire Damage to Attacks",
+        "+25 to maximum Life",
+        "+5% to all Elemental Resistances"
+      ]
+    },
+    {
+      "slot": "Ring 2",
+      "name": "Catalysing Topaz Ring of the Salamander",
+      "rarity": "Magic",
+      "mods": [
+        "+20% to Lightning Resistance",
+        "+14% to Fire Resistance",
+        "7% increased Elemental Damage with Attack Skills"
+      ]
+    },
+    {
+      "slot": "Belt",
+      "name": "Chain Belt of the Squall",
+      "rarity": "Magic",
+      "mods": [
+        "+15 to maximum Energy Shield",
+        "+14% to Lightning Resistance"
+      ]
+    },
+    {
+      "slot": "Flask 1",
+      "name": "Large Life Flask",
+      "rarity": "Normal",
+      "mods": []
+    },
+    {
+      "slot": "Flask 2",
+      "name": "Large Life Flask",
+      "rarity": "Normal",
+      "mods": []
+    },
+    {
+      "slot": "Flask 3",
+      "name": "Large Life Flask",
+      "rarity": "Normal",
+      "mods": []
+    },
+    {
+      "slot": "Flask 4",
+      "name": "Quicksilver Flask",
+      "rarity": "Normal",
+      "mods": []
+    },
+    {
+      "slot": "Flask 5",
+      "name": "Grand Mana Flask of Warding",
+      "rarity": "Magic",
+      "mods": [
+        "Removes Curses on use"
+      ]
+    }
+  ],
+  "nextActions": [
+    "Fix 25% fire resistance first, then raise cold/lightning toward the 75% cap.",
+    "Replace normal Leatherscale Boots with movement-speed/life/res boots without losing the Stormblast 3-link.",
+    "Seek a life/resistance body armour: current chest has only +7 life.",
+    "Get Trap and Mine Damage Support (4-link) and Summon Skitterbots if mana reservation allows.",
+    "Upgrade an ordinary life flask and plan for continued life passives toward Constitution.",
+    "Verify named IDs for the four added passive points before marking any additional passive checklist steps complete."
+  ]
+}
