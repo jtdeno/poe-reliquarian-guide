@@ -68,10 +68,10 @@
           <p>Your opening <strong>Destructive Apparatus + Mine Mastery</strong> route was confirmed. Later numeric passive IDs have not been mapped to names yet. Do not spend points on a route you've already taken.</p>
           <div class="steps">
             <div class="step"><div class="number">1</div><div><strong>Return to Scion's start</strong><p>Branch from the central starting region. Keep your existing mine nodes allocated.</p></div></div>
-            <div class="step"><div class="number">2</div><div><strong>Plan a route toward Constitution</strong><p>Click-by-click guidance and a completion checklist are now in the Passive Tree tab.</p></div></div>
-            <div class="step"><div class="number">3</div><div><strong>Work into the Constitution life cluster</strong><p>Follow the connected small life/travel nodes in your actual tree. The final notable is Constitution, followed by optional remaining life nodes.</p></div></div>
+            <div class="step"><div class="number">2</div><div><strong>Check verified passive completion</strong><p>Use the Passive Tree tab to see the reviewed allocations before following a route.</p></div></div>
+            <div class="step"><div class="number">3</div><div><strong>Review your next defensive priority</strong><p>Keep allocated life nodes and use the current character review to plan the next upgrade.</p></div></div>
           </div>
-          <div class="note warning"><b>Passive-tree caution:</b> The Constitution plan is provisional. Your PoB shows additional numeric passive IDs, so the next named passive must be verified before allocating more points.</div>
+          <div class="note warning"><b>Passive-tree caution:</b> Constitution completion is shown in the latest reviewed snapshot. Verify the next connected target before allocating more points.</div>
           <button class="btn" data-go="passives">Open passive plan →</button>
         </article>
         <article class="card col4">
@@ -108,12 +108,11 @@
 
     <section class="tabs" id="passives" data-title="Passive Tree">
       <div class="mini" style="justify-content:space-between;align-items:start;margin-bottom:12px"><div><h2 style="margin-bottom:4px">Passive tree · Ordered allocation</h2><p class="sectionlead" style="margin-bottom:4px">A read-only passive plan. Completed flags come only from the published review. Other nodes are unverified, not automatically incomplete.</p></div><span class="pill">Working HCSSF route</span></div>
-      <div class="note warning"><strong>Important accuracy note:</strong> This is <em>not</em> a verified 3.30 PoB tree export. The 11-point Harrier → Destructive Apparatus route is recorded from your existing character. The proposed next branch through Path of the Warrior is an unconfirmed leveling route, but the exact chain of unnamed connectors from there to Constitution has not been independently confirmed for 3.30. I am deliberately not inventing node counts or adjacency. Anything after those four clicks is a <b>target order</b>, not an exact one-click-at-a-time path.</div>
+      <div class="note warning"><strong>Passive verification:</strong> Current allocations are mapped against the export-matching PoB 3_29 tree. The corrected starting branch is Life and Strength (55373), Physical Damage (17674), Physical Damage (13782), then Path of the Warrior (12702). Future target paths still require verification. Snapshot completion comes from reviewed JSON.</div>
       <div class="grid">
         <article class="card col8 gold">
           <div class="kicker">Provisional next passive plan</div>
-          <h3>Start a new branch from Scion's center</h3>
-          <p>You've finished <strong>Destructive Apparatus + Mine Mastery</strong>. Leave that route intact. From Scion's starting circle, follow its <strong>lower / physical-damage branch</strong> toward <strong>Path of the Warrior</strong>. These planned steps are listed below, but may already have been taken. After that, aim for <strong>Constitution</strong> and allocate the connecting maximum-life nodes shown on your actual tree.</p>
+          <h3>Constitution route reference</h3><p>Read completion from the latest character snapshot before allocating. The corrected starting route is Life and Strength, two Physical Damage nodes, then Path of the Warrior. Both life approaches connect that notable to Constitution.</p>
           <p class="hint">The Path of the Warrior points are temporary travel for a fire mine build. Don't waste additional nodes on physical damage just for damage's sake.</p>
           <div class="mini"><button class="btn secondary" type="button" id="nextPassiveBtn">Show my next unchecked node</button><span id="nextPassiveLabel" class="hint" aria-live="polite"></span></div>
         </article>
@@ -233,7 +232,7 @@ const tasks=[
 {id:'lab-eternal',phase:'Labyrinth',title:'Eternal Lab complete: The Arkhon\'s Tools'}
 ];
 const passiveStages=[
-{id:'done',name:'Already allocated',subtitle:'Your first 11 passive points',state:'completed',description:'This reproduces the route you already took. All 11 are checked on first use.',steps:[
+{id:'done',name:'Already allocated',subtitle:'Your first 11 passive points',state:'completed',description:'Completion is loaded only from the reviewed character snapshot.',steps:[
 {id:'p01',name:'Spell Damage and Intelligence',detail:'Scion spell-damage starting node, heading toward Harrier.',type:'established'},
 {id:'p02',name:'Spell Damage #1',detail:'First connected small Spell Damage node.',type:'established'},
 {id:'p03',name:'Spell Damage #2',detail:'Second connected small Spell Damage node.',type:'established'},
@@ -245,10 +244,10 @@ const passiveStages=[
 {id:'p09',name:'Mine Throwing Speed',detail:'Small node immediately before Destructive Apparatus.',type:'established'},
 {id:'p10',name:'Destructive Apparatus',detail:'Mine duration and throwing speed notable.',type:'established'},
 {id:'p11',name:'Mine Mastery · detonate while moving',detail:'Your selected early utility mastery; keep until you have a suitable alternative.',type:'established'}]},
-{id:'next',name:'Take next',subtitle:'Constitution: prioritize maximum life',state:'next',description:'Follow the physical starting branch from the center; the first four clicks are clear. Beyond Path of the Warrior, check the line in the live in-game tree rather than spending points on an invented route.',steps:[
-{id:'p12',name:'Physical Damage · Scion start #1',detail:'Start a NEW branch from Scion center, lower / physical-damage side. This is travel, not damage for our spell mines.',type:'documented'},
-{id:'p13',name:'Physical Damage · Scion start #2',detail:'Second connected small physical-damage starter node.',type:'documented'},
-{id:'p14',name:'Physical Damage · Scion start #3',detail:'Third small physical-damage starter node.',type:'documented'},
+{id:'next',name:'Take next',subtitle:'Constitution: prioritize maximum life',state:'next',description:'Corrected 3_29 starting route. Check the reviewed snapshot: this route and Constitution may already be allocated. Future routing remains a separate decision.',steps:[
+{id:'p12',name:'Life and Strength · Scion start',detail:'Verified 3_29 node 55373: +12 maximum Life and +5 Strength. Connects to Physical Damage node 17674.',type:'documented'},
+{id:'p13',name:'Physical Damage · Scion start #1',detail:'Verified 3_29 node 17674: connects 55373 to 13782.',type:'documented'},
+{id:'p14',name:'Physical Damage · Scion start #2',detail:'Verified 3_29 node 13782: connects 17674 to Path of the Warrior (12702).',type:'documented'},
 {id:'p15',name:'Path of the Warrior',detail:'The next notable on this branch: +20 Strength, 50 Armour, and otherwise wasted physical damage. We may respec this later.',type:'documented'},
 {id:'p16',name:'Connected travel / life nodes toward Constitution',detail:'Allocate the shortest visibly CONNECTED path from Path of the Warrior toward the lower-left Scion life wheel. Exact small-node names/count remain unverified for 3.30; treat as one route checkpoint, not a single passive point.',type:'verify'},
 {id:'p17',name:'Constitution',detail:'Named notable: 10% increased maximum Life and +20 maximum Life. Take as soon as you can connect to it.',type:'documented'},
@@ -360,3 +359,4 @@ loadCharacter();
 </script>
 <script>if(['localhost','127.0.0.1'].includes(location.hostname)){for(const id of ['localUpdatesLink','localUpdatesDivider']){const el=document.getElementById(id);if(el)el.style.display='inline'}}</script>
 </body></html>
+
