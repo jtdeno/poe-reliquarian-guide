@@ -1,6 +1,6 @@
 {
   "format": "reliquarian-character-progress-v1",
-  "publishedAt": "2026-11-14T17:32:23.726Z",
+  "publishedAt": "2026-11-14T17:46:55.711Z",
   "source": {
     "kind": "reviewed PoB XML",
     "file": "3.29 ReliMinesHCSSF(5).xml",
@@ -8,7 +8,7 @@
     "pobTreeVersion": "3_29",
     "patchContext": "3.30",
     "reviewedAt": "2026-11-14",
-    "note": "Active tree/skill/item/config set 1. Serialized PlayerStat values are PoB outputs. The selected main skill calculation is Flame Dash, so CombinedDPS, ManaCost, and ManaPerSecondCost are not Pyroclast Mine metrics. The current export does not include a resistancePenalty setting; actual Act and effective resistance penalty remain unknown. Passive IDs are mapped against matching PoB 3_29 tree data, including the Reliquarian ascendancy nodes in that file; verify any 3.30 route in game.",
+    "note": "Active tree/skill/item/config set 1. Raw serialized PlayerStat values are PoB outputs. User clarified the export has a -60% resistance penalty while current in-game penalty is 0; resistanceAssumption adds 60 points back and shows effective elemental caps/overcaps. Raw PoB EHP and elemental/chaos maximum-hit values still reflect the penalized calculation and were not recalculated. The selected main skill calculation is Flame Dash, so CombinedDPS, ManaCost, and ManaPerSecondCost are not Pyroclast Mine metrics. Actual Act remains unknown. Passive IDs are mapped against matching PoB 3_29 tree data, including the Reliquarian ascendancy nodes in that file; verify any 3.30 route in game.",
     "sha256": "2920cae12a0687439285daad86ff5b3e4f08458bae5c90296b1b0bcd16159a0a",
     "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_29/tree.lua",
     "treeMappingBlobSha": "3086d40c72d926484c7d52b563ad686a5627a12a"
@@ -87,7 +87,7 @@
     ],
     "passiveCountFromPob": 54,
     "passiveValidation": "Matching PoB 3_29 data maps all 54 active numeric node IDs. Relative to level 35, 13 nodes were added and none removed. Current export verifies Blast Waves 6233, the routes to Explosive Elements 61689, Volatile Mines 9055, and Efficient Explosives 44102. Mine Mastery node 59926 still selects Life regeneration effect 6510; the separate planned mastery node 27872 remains unallocated, so checkpoint p22 is not marked complete. Written in Blood 18769 remains allocated. The Reliquarian ascendancy start (10108) and two Passive Point nodes (35936, 22441) are allocated; no item-display or unique-derived effect node is allocated in this tree. Routes below use matching 3_29 data only and must be verified in game.",
-    "currentGoal": "Urgently repair elemental resistances (PoB values: Fire 52%, Cold 56%, Lightning 17%) and chaos resistance (-60%); the export omits resistancePenalty and the current Act is unknown. Life/armour/physical hit improved to 1412/735/1719, but elemental maximum hits are only 1842 Lightning / 3106 Fire / 3370 Cold and Chaos maximum hit is 883. Mana improved to 48 unreserved and 10/sec regeneration but remains 13.4% of total; confirm mine cost with Pyroclast selected in PoB. Proposed next routes: Sentinel, generic Reservation Efficiency, Blood Siphon, then Tolerance.",
+    "currentGoal": "The user's current in-game resistance penalty is 0, correcting the export's -60 setting. Estimated uncapped resistances are Fire 112%, Cold 116%, Lightning 77%, Chaos 0%; elemental resistances are effectively capped at 75% with +37/+41/+2 overcap. Preserve Lightning's small overcap and improve Chaos when convenient. Mana remains tight at 48 unreserved and 10/sec regeneration; next suggested passive route is generic Reservation Efficiency, followed by Blood Siphon, Tolerance, then Sentinel for Armour/overcap.",
     "numericPassiveNodeIds": [
       17674,
       2260,
@@ -394,22 +394,22 @@
   },
   "findings": [
     {
-      "severity": "urgent",
-      "title": "Elemental and Chaos resistances are far below safe targets",
-      "detail": "This export reports Fire 52%, Cold 56%, Lightning 17%, and Chaos -60%. The resistancePenalty setting is absent from the exported Config and actual Act is unknown, so the exact effective values need confirmation; even as shown, Lightning (1842 maximum hit) and Chaos (883 maximum hit) are especially concerning for HCSSF. Life is 1412.",
-      "action": "Before pushing into harder zones or a major boss, check the in-game resistances and PoB Act penalty, then prioritize resistance gear/crafts—especially Lightning, plus Chaos—without dropping Life. Do not assume the current caps are safe."
+      "severity": "good",
+      "title": "Elemental resistances are capped after correcting the penalty",
+      "detail": "The raw PoB values (Fire 52%, Cold 56%, Lightning 17%, Chaos -60%) include a -60% resistance penalty. You clarified your current character has no penalty. Adding back 60 points gives uncapped Fire 112%, Cold 116%, Lightning 77%, Chaos 0%; at the normal 75% elemental cap this is 75/75/75 with +37/+41/+2 overcap. Chaos is 0%, so further Chaos Resistance is still useful but this is not the elemental-resistance emergency first read suggested.",
+      "action": "Keep these overcaps in mind when replacing gear, especially Lightning's small +2% cushion. Continue adding Chaos Resistance if it comes without sacrificing Life. The exported EHP/maximum-hit fields remain calculated with the -60% penalty and were not recalculated."
     },
     {
       "severity": "warning",
       "title": "Mana is better, but the free pool is still narrow",
       "detail": "Mana rose to 358, unreserved Mana to 48 (13.4%), and regeneration to 10/sec. Purity of Elements, Skitterbots, and Automation are active with the four-link Pyroclast setup. The XML's 4.63 Mana/sec and 15 Mana cost belong to selected Flame Dash, not Pyroclast, so mine sustain still needs an active-skill-specific check.",
-      "action": "The new amulet's mana regeneration is helping. Keep the mana flask and test a full mine sequence plus an escape. Select Pyroclast Mine in PoB before using its cost/DPS readout; if free mana still blocks play, temporarily disable Skitterbots while retaining Purity."
+      "action": "The new amulet's mana regeneration is helping. Keep the mana flask and test a full mine sequence plus an escape. Select Pyroclast Mine in PoB before using its cost/DPS readout. The next passive route is generic Reservation Efficiency; if free mana still blocks play before then, temporarily disable Skitterbots while retaining Purity."
     },
     {
-      "severity": "good",
-      "title": "Life and physical-hit numbers improved",
-      "detail": "Compared with level 35: Life 1059→1412 (+353), Armour 440→735 (+295), Energy Shield 21→172, and physical maximum hit 1161→1719 (+558). Effective attack block remains 26%. Total EHP is 2304, lower than before, with current Fire 52%, Cold 56%, Lightning 17%, and Chaos -60%.",
-      "action": "The gloves, boots, and armour base increased the character's raw pool, but the resistance gap must be corrected before treating this as an overall defensive improvement."
+      "severity": "warning",
+      "title": "Life and physical safety still need steady investment",
+      "detail": "Compared with level 35: Life 1059→1412 (+353), Armour 440→735 (+295), Energy Shield 21→172, and physical maximum hit 1161→1719 (+558). Effective attack block remains 26%. These raw Life/Armour/physical-hit values improved; the exported total EHP and elemental/chaos maximum-hit values still include the -60% resistance penalty and should not be used as current estimates.",
+      "action": "Keep the new life/movement upgrades and continue adding Life. With elemental resistances effectively capped, prioritize mana comfort and life; add Chaos Resistance where it fits."
     },
     {
       "severity": "good",
@@ -653,13 +653,13 @@
     }
   ],
   "nextActions": [
-    "Confirm current in-game elemental resistances and PoB's resistance penalty; prioritize Lightning, then Fire/Cold, and improve Chaos resistance before harder content. Current exported max hits: 1842 Lightning, 3106 Fire, 3370 Cold, 883 Chaos.",
-    "Keep current life/movement upgrades; prioritize life plus resistance gear/crafts, especially on the body armour, rings, and shield if upgrades appear.",
-    "Select Pyroclast Mine in PoB and check actual mine cost. Mana is 48 unreserved with 10/sec regen; if still cramped, test with Skitterbots disabled while keeping Purity of Elements.",
-    "Next passive route: Sentinel (3 points) from allocated Life node 13714; optionally continue one more point to Lightning Resistance 35503. Gear is still needed to reach caps.",
-    "Then consider generic Reservation Efficiency (2 points) from allocated Intelligence 18033, followed by Blood Siphon (+10% maximum Life, 3 points), then Tolerance for Chaos Resistance and ailment avoidance (3 points).",
-    "Current passive tree verifies Blast Waves, Volatile Mines, Efficient Explosives, Explosive Elements, and Written in Blood. Do not mark the separate Mine Mastery node 27872 complete; it is absent.",
-    "Reliquarian is selected, but no unique-display effect is allocated. Choose one only around a unique actually owned and confirmed in HCSSF."
+    "Resistances are effectively capped at 75% Fire/Cold/Lightning after the correction; overcaps are +37/+41/+2, with 0% Chaos Resistance. Preserve the small Lightning overcap and add Chaos Resistance when practical.",
+    "Next passive route for mana: Intelligence 18033 → Aura Effect 57736 → Reservation Efficiency 7594 (2 points). It grants generic reservation efficiency; verify how much unreserved Mana it returns in PoB.",
+    "Keep Life investment moving: Blood Siphon route from Intelligence 20546 via Trickery 35894 and Life 21835 (3 points).",
+    "Consider Tolerance for Chaos Resistance and ailment avoidance (3 points) if gear does not improve Chaos Resistance.",
+    "Sentinel is now a later defensive option: Life 13714 → Strength 46578 → Strength 28330 → Sentinel 19144 (3 points), with optional Lightning Resistance 35503 as a fourth point.",
+    "Select Pyroclast Mine in PoB and check actual mine cost. If still cramped, test with Skitterbots disabled while keeping Purity of Elements.",
+    "The export's EHP and elemental/chaos maximum-hit figures still reflect the -60% penalty. Re-export with resistancePenalty=0 for updated defensive calculations."
   ],
   "comparison": {
     "previousFile": "3.29 ReliMinesHCSSF(4).xml",
@@ -693,23 +693,23 @@
       },
       "fireRes": {
         "before": 74,
-        "after": 52,
-        "delta": -22
+        "after": 75,
+        "delta": 1
       },
       "coldRes": {
         "before": 75,
-        "after": 56,
-        "delta": -19
+        "after": 75,
+        "delta": 0
       },
       "lightningRes": {
         "before": 75,
-        "after": 17,
-        "delta": -58
+        "after": 75,
+        "delta": 0
       },
       "chaosRes": {
         "before": 0,
-        "after": -60,
-        "delta": -60
+        "after": 0,
+        "delta": 0
       },
       "attackBlock": {
         "before": 26,
@@ -725,11 +725,6 @@
         "before": 1161,
         "after": 1719,
         "delta": 558
-      },
-      "totalEHP": {
-        "before": 2428.4437336463,
-        "after": 2303.9915113222,
-        "delta": -124.45222232410015
       },
       "manaUnreserved": {
         "before": 37,
@@ -1641,6 +1636,47 @@
           ]
         }
       ]
+    },
+    "rawPobResistances": {
+      "previous": {
+        "fire": 74,
+        "cold": 75,
+        "lightning": 75,
+        "chaos": 0
+      },
+      "current": {
+        "fire": 52,
+        "cold": 56,
+        "lightning": 17,
+        "chaos": -60
+      },
+      "currentExportPenalty": -60,
+      "interpretation": "The current raw export is 60 points lower from the configured penalty; user's current in-game penalty is 0."
     }
+  },
+  "resistanceAssumption": {
+    "source": "User correction: current character has no resistance penalty",
+    "penaltyInExport": -60,
+    "currentPenalty": 0,
+    "addedBack": 60,
+    "uncapped": {
+      "fire": 112,
+      "cold": 116,
+      "lightning": 77,
+      "chaos": 0
+    },
+    "effective": {
+      "fire": 75,
+      "cold": 75,
+      "lightning": 75,
+      "chaos": 0
+    },
+    "overcap": {
+      "fire": 37,
+      "cold": 41,
+      "lightning": 2,
+      "chaos": 0
+    },
+    "note": "Derived by adding 60 percentage points to the export resistances. Elemental values are capped at 75%; Chaos is 0%. This does not recalculate PoB's exported maximum-hit or total-EHP fields."
   }
 }
