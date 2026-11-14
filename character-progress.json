@@ -1,42 +1,49 @@
 {
   "format": "reliquarian-character-progress-v1",
-  "publishedAt": "2026-11-14T03:38:21.701Z",
+  "publishedAt": "2026-11-14T11:28:58.277Z",
   "source": {
-    "kind": "reviewed PoB XML + conversation confirmations",
-    "file": "3.29 ReliMinesHCSSF(2).xml",
-    "previousFile": "3.29 ReliMinesHCSSF(1).xml",
+    "kind": "reviewed PoB XML",
+    "file": "3.29 ReliMinesHCSSF(3).xml",
+    "previousFile": "3.29 ReliMinesHCSSF(2).xml",
     "pobTreeVersion": "3_29",
     "patchContext": "3.30",
-    "reviewedAt": "2026-11-13",
-    "note": "Active tree/skill/item/config set 1; exported PoB statistics, not independently recalculated. Resistance penalty configured as 0. Actual act unknown. Tree labels verified against PoB 3_29 data; not independently validated as a separate 3.30 tree.",
-    "sha256": "3b492d1fda31c6810c43769631eaf24c916a80087465bfb021e2ce29a189a466",
+    "reviewedAt": "2026-11-14",
+    "note": "Active tree/skill/item/config set 1. PoB PlayerStat values are serialized calculated outputs, not independently recalculated. resistancePenalty is configured as 0; actual Act remains unknown. Passive identities and mastery effect IDs are verified against matching PoB 3_29 tree data; a separate 3.30 tree is not independently validated.",
+    "sha256": "4259d15bf4e65b58c1335fd63a1b6213d881dbab1a1b8e34f9000f39bdde12f0",
     "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_29/tree.lua",
     "treeMappingBlobSha": "3086d40c72d926484c7d52b563ad686a5627a12a"
   },
   "character": {
     "label": "ReliMinesHCSSF",
     "nameVerified": false,
-    "level": 21,
+    "level": 28,
     "class": "Scion",
     "ascendancy": "None",
     "league": "HC SSF Covens",
     "act": null,
-    "bandit": "Not confirmed (PoB: None)"
+    "bandit": "PoB setting: Alira; in-game outcome not confirmed"
   },
   "stats": {
-    "life": 623,
-    "mana": 259,
-    "energyShield": 45,
-    "evasion": 134,
-    "armour": 214,
-    "fireRes": 59,
-    "coldRes": 51,
-    "lightningRes": 39,
+    "life": 820,
+    "mana": 296,
+    "energyShield": 41,
+    "evasion": 120,
+    "armour": 317,
+    "fireRes": 75,
+    "coldRes": 75,
+    "lightningRes": 75,
     "chaosRes": 0,
     "attackBlock": 36,
     "spellSuppression": 0,
-    "physicalMaximumHitTaken": 708,
-    "totalEHP": 1183.1402833358
+    "physicalMaximumHitTaken": 920,
+    "totalEHP": 2051.8505437339,
+    "lifeRegenRecovery": 21.5,
+    "fireResOvercap": 9,
+    "coldResOvercap": 4,
+    "lightningResOvercap": 1,
+    "manaUnreserved": 187,
+    "physicalDamageReduction": 3,
+    "combinedDPS": 661.68064517291
   },
   "progress": {
     "completedTaskIds": [
@@ -65,44 +72,71 @@
       "p15",
       "p16",
       "p17",
-      "p18"
+      "p18",
+      "p19",
+      "p20"
     ],
-    "passiveCountFromPob": 25,
-    "passiveValidation": "All original p01-p11 nodes mapped and verified in matching 3_29 tree data, including mastery effect 21313. Path of the Warrior (12702), Constitution (55485), both connected life approaches and all six adjacent 5% life nodes are allocated. Added ID 48778 is +10 Intelligence, connected to allocated 51923. Old p12-p14 labels incorrectly describe three Physical Damage nodes; actual route is Life and Strength (55373), Physical Damage (17674), Physical Damage (13782). The companion HTML corrects p12-p14 to these verified identities, so p01-p18 are now marked complete. No Life Mastery is selected.",
-    "currentGoal": "Raise lightning resistance first (39%), then cold (51%) and fire (59%); preserve the main three-link and improve boots, life and flask recovery. Constitution is already allocated: do not spend points following the old starting route.",
+    "passiveCountFromPob": 33,
+    "passiveValidation": "Matching PoB 3_29 data verifies all 33 allocated node IDs, including the Scion class start; no prior nodes were refunded. Newly allocated IDs are 6233 (Blast Waves), 12382 (Life Mastery), 10166 (Mine Mastery), 20546/37671 (Intelligence), 21301 (Strength), and 31371/40751 (Mine Area of Effect). Life Mastery node 12382 has effect 47642 (+30 maximum Life), and Mine Mastery node 10166 has effect 6510 (2.5% Life regeneration after a recent mine detonation). The moving-detonation mastery 21313 remains on node 59926. Verified checklist p19 (Life Mastery) and p20 (Blast Waves) are complete. The planned Explosive Elements node 61689, Volatile Mines 9055, Efficient Explosives 44102, and the separate Mine Mastery node 27872 on that route are not allocated. The same regen effect at node 10166 does not verify node 27872.",
+    "currentGoal": "Verify current Act and resistance penalty: PoB shows 75% Fire/Cold/Lightning with resistancePenalty=0, but Act is unknown. Improve life and physical-hit safety (820 Life, 317 Armour, 920 physical maximum hit); keep the shield and improve the normal boots without losing the Stormblast 3-link. Continue the suggested passive route from the verified Life Mastery/Blast Waves allocations toward Explosive Elements.",
     "numericPassiveNodeIds": [
-      11688,
-      12702,
-      13714,
-      13782,
-      15073,
       17674,
-      17849,
-      18033,
-      19939,
-      21602,
-      33545,
-      45456,
+      6233,
       46092,
-      47062,
-      48778,
       51923,
-      55373,
-      55485,
-      56153,
-      57615,
-      58833,
-      59926,
-      62021,
+      48778,
       65034,
-      65167
+      59926,
+      18033,
+      47062,
+      40751,
+      21602,
+      55373,
+      12382,
+      10166,
+      58833,
+      20546,
+      57615,
+      33545,
+      65167,
+      11688,
+      13782,
+      31371,
+      56153,
+      15073,
+      12702,
+      19939,
+      21301,
+      55485,
+      13714,
+      62021,
+      45456,
+      17849,
+      37671
     ],
     "newNumericPassiveNodeIdsSincePreviousImport": [
-      48778
+      6233,
+      40751,
+      12382,
+      10166,
+      20546,
+      31371,
+      21301,
+      37671
     ],
-    "passiveTreeUrl": "https://www.pathofexile.com/passive-skill-tree/AAAABgAAGEUKOuG0DMrTvorbWTGe6haDCUZx_go11rfWNZLhD_6PTePYvVRi2E3yRbGQRbktqAABU0HqFg==",
+    "passiveTreeUrl": null,
     "removedNumericPassiveNodeIdsSincePreviousImport": [],
     "masteryEffects": [
+      {
+        "nodeId": 12382,
+        "effectId": 47642,
+        "description": "+30 to maximum Life"
+      },
+      {
+        "nodeId": 10166,
+        "effectId": 6510,
+        "description": "Regenerate 2.5% of Life per Second if you've Detonated a Mine Recently"
+      },
       {
         "nodeId": 59926,
         "effectId": 21313,
@@ -111,63 +145,15 @@
     ],
     "verifiedPassiveNodes": [
       {
-        "nodeId": 11688,
-        "name": "Spell Damage"
-      },
-      {
-        "nodeId": 12702,
-        "name": "Path of the Warrior"
-      },
-      {
-        "nodeId": 13714,
-        "name": "Life"
-      },
-      {
-        "nodeId": 13782,
-        "name": "Physical Damage"
-      },
-      {
-        "nodeId": 15073,
-        "name": "Life"
-      },
-      {
         "nodeId": 17674,
         "name": "Physical Damage"
       },
       {
-        "nodeId": 17849,
-        "name": "Mine Damage"
-      },
-      {
-        "nodeId": 18033,
-        "name": "Intelligence"
-      },
-      {
-        "nodeId": 19939,
-        "name": "Life"
-      },
-      {
-        "nodeId": 21602,
-        "name": "Destructive Apparatus"
-      },
-      {
-        "nodeId": 33545,
-        "name": "Harrier"
-      },
-      {
-        "nodeId": 45456,
-        "name": "Spell Damage"
+        "nodeId": 6233,
+        "name": "Blast Waves"
       },
       {
         "nodeId": 46092,
-        "name": "Intelligence"
-      },
-      {
-        "nodeId": 47062,
-        "name": "Spell Damage and Intelligence"
-      },
-      {
-        "nodeId": 48778,
         "name": "Intelligence"
       },
       {
@@ -175,183 +161,221 @@
         "name": "Intelligence"
       },
       {
-        "nodeId": 55373,
-        "name": "Life and Strength"
-      },
-      {
-        "nodeId": 55485,
-        "name": "Constitution"
-      },
-      {
-        "nodeId": 56153,
-        "name": "Spell Damage"
-      },
-      {
-        "nodeId": 57615,
-        "name": "Mine Throwing Speed"
-      },
-      {
-        "nodeId": 59926,
-        "name": "Mine Mastery"
-      },
-      {
-        "nodeId": 62021,
-        "name": "Life"
+        "nodeId": 48778,
+        "name": "Intelligence"
       },
       {
         "nodeId": 65034,
         "name": "Life"
       },
       {
+        "nodeId": 59926,
+        "name": "Mine Mastery"
+      },
+      {
+        "nodeId": 18033,
+        "name": "Intelligence"
+      },
+      {
+        "nodeId": 47062,
+        "name": "Spell Damage and Intelligence"
+      },
+      {
+        "nodeId": 40751,
+        "name": "Mine Area of Effect"
+      },
+      {
+        "nodeId": 21602,
+        "name": "Destructive Apparatus"
+      },
+      {
+        "nodeId": 55373,
+        "name": "Life and Strength"
+      },
+      {
+        "nodeId": 12382,
+        "name": "Life Mastery"
+      },
+      {
+        "nodeId": 10166,
+        "name": "Mine Mastery"
+      },
+      {
+        "nodeId": 58833,
+        "name": "Scion class start"
+      },
+      {
+        "nodeId": 20546,
+        "name": "Intelligence"
+      },
+      {
+        "nodeId": 57615,
+        "name": "Mine Throwing Speed"
+      },
+      {
+        "nodeId": 33545,
+        "name": "Harrier"
+      },
+      {
         "nodeId": 65167,
         "name": "Life"
+      },
+      {
+        "nodeId": 11688,
+        "name": "Spell Damage"
+      },
+      {
+        "nodeId": 13782,
+        "name": "Physical Damage"
+      },
+      {
+        "nodeId": 31371,
+        "name": "Mine Area of Effect"
+      },
+      {
+        "nodeId": 56153,
+        "name": "Spell Damage"
+      },
+      {
+        "nodeId": 15073,
+        "name": "Life"
+      },
+      {
+        "nodeId": 12702,
+        "name": "Path of the Warrior"
+      },
+      {
+        "nodeId": 19939,
+        "name": "Life"
+      },
+      {
+        "nodeId": 21301,
+        "name": "Strength"
+      },
+      {
+        "nodeId": 55485,
+        "name": "Constitution"
+      },
+      {
+        "nodeId": 13714,
+        "name": "Life"
+      },
+      {
+        "nodeId": 62021,
+        "name": "Life"
+      },
+      {
+        "nodeId": 45456,
+        "name": "Spell Damage"
+      },
+      {
+        "nodeId": 17849,
+        "name": "Mine Damage"
+      },
+      {
+        "nodeId": 37671,
+        "name": "Intelligence"
       }
     ]
   },
   "findings": [
     {
-      "severity": "urgent",
-      "title": "Lightning resistance is now the weakest elemental defense",
-      "detail": "Lightning 39%, cold 51%, fire 59%; exported with no campaign penalty. Deficits to the usual 75% cap are 36, 24 and 16 percentage points.",
-      "action": "Prioritize lightning resistance on gear or an available craft; improve cold and fire afterward. Confirm the penalty matches your campaign progress."
+      "severity": "warning",
+      "title": "Physical-hit safety remains the main defensive gap",
+      "detail": "The export shows 820 Life, 317 Armour, 3% estimated physical damage reduction, and a 920 physical maximum hit. Attack block is 36%, spell block and suppression are 0%, and chaos resistance is 0%. Total EHP is 2052, but the physical hit limit is more useful for spotting one-shot risk.",
+      "action": "Keep the shield/block setup and prioritize a larger life pool plus more physical mitigation on gear. Replace the normal boots when a linked life/resistance/movement-speed pair is available."
     },
     {
       "severity": "good",
-      "title": "Fire-resistance crafts substantially improved the character",
-      "detail": "Fire resistance rose 25% to 59% (+34): helmet craft +18%, shield craft +16%. Life remains 623; physical maximum hit remains 708.",
-      "action": "Keep these crafts while upgrading other defensive gaps."
-    },
-    {
-      "severity": "good",
-      "title": "Constitution and surrounding life nodes are verified allocated",
-      "detail": "Matching 3_29 data identifies Constitution 55485 and six allocated 5% life nodes: 15073, 62021, 65034, 19939, 65167, 13714. These were already present in the previous numeric list; this is corrected identification, not new life investment.",
-      "action": "Do not restart or repeat the Constitution route. Keep its existing life investment."
-    },
-    {
-      "severity": "good",
-      "title": "Starting-route checklist labels corrected",
-      "detail": "Corrected p12-p14 in the companion HTML to Life and Strength (55373), Physical Damage (17674), Physical Damage (13782). These are allocated, so p01-p18 can be marked complete with the updated HTML.",
-      "action": "Publish the companion HTML together with this JSON to keep labels and completion consistent."
-    },
-    {
-      "severity": "good",
-      "title": "One added Intelligence travel node; no refunds",
-      "detail": "Added 48778 grants +10 Intelligence and is adjacent to allocated 51923. Node entries increased 24 to 25, including the class start; this is not 25 spent passive points. Selected Mine Mastery remains effect 21313.",
-      "action": "The added point is travel, not additional life or mine damage. Do not assume a future destination from this point alone."
+      "title": "Life, armour, and elemental resistance improved",
+      "detail": "Compared with level 21: Life 623→820 (+197), Armour 214→317 (+103), and physical maximum hit 708→920 (+212). Fire, Cold, and Lightning are each shown at 75% in this export; overcap is +9%, +4%, and +1%.",
+      "action": "Preserve the chest, belt, and resistance crafts while checking that the configured resistance penalty matches your actual Act."
     },
     {
       "severity": "warning",
-      "title": "Boots and recovery still need attention",
-      "detail": "Normal boots have no explicit life/resistance/movement modifiers and hold the Stormblast three-link. Three normal Large Life Flasks and 1 life/s regeneration remain.",
-      "action": "Preserve or relocate the three-link while improving boots. Upgrade life-flask recovery before harder encounters."
+      "title": "Elemental caps depend on the configured campaign penalty",
+      "detail": "The PoB config has resistancePenalty=0, while the actual Act is unknown. The 75% elemental values may be overstated if the export is configured for the wrong campaign stage.",
+      "action": "Confirm the current Act and set the correct penalty in PoB before treating these resistances as capped in game."
+    },
+    {
+      "severity": "good",
+      "title": "Two planned passive milestones are now verified",
+      "detail": "Life Mastery node 12382 selects +30 maximum Life (effect 47642), and Blast Waves node 6233 is allocated. A Mine Mastery at node 10166 selects 2.5% Life regeneration after recently detonating a mine (effect 6510).",
+      "action": "Life Mastery and Blast Waves are marked complete. Explosive Elements remains the next suggested title node; the Mine Mastery on node 10166 does not verify the separate planned node 27872."
     },
     {
       "severity": "warning",
-      "title": "Life and physical defense have not improved",
-      "detail": "623 life, 45 ES, 214 armour, 134 evasion and 36% exported attack block are unchanged. Chest has +7 life and belt has no life.",
-      "action": "Seek life/resistance upgrades on chest and belt. Avoid relying on attack block against spells or damage over time."
+      "title": "Normal boots still lack defensive modifiers",
+      "detail": "Leatherscale Boots remain normal with no explicit life, resistance, or movement-speed modifiers and contain the Stormblast three-link. Three Life Flasks, a Quicksilver, and a curse-removing Mana Flask are equipped.",
+      "action": "Keep the three-link intact while looking for boots with movement speed, life, and resistances; improve life-flask recovery when a useful roll appears."
+    },
+    {
+      "severity": "warning",
+      "title": "Current weapon has a spell-level mod that misses the build's skill tags",
+      "detail": "Brimstone Gnarl has +1 to Physical Spell Skill Gems, which does not increase Stormblast Mine or Pyroclast Mine. Its general spell/elemental damage and added cold to spells still apply.",
+      "action": "Keep it while it beats available options, but prefer +1 Fire or all Spell gems, spell/fire damage, and added damage to spells on a future wand or sceptre."
     },
     {
       "severity": "unknown",
-      "title": "Campaign progress and future passive route remain unconfirmed",
-      "detail": "Act is not exported. Config has resistancePenalty=0; bandit None and no ascendancy are exported. Matching 3_29 data verifies allocated identities; a separate 3.30 tree has not been established.",
-      "action": "Confirm current act and bandit outcome. Verify a connected, useful next route before spending additional travel points."
+      "title": "Act and in-game bandit outcome are unconfirmed",
+      "detail": "The export is level 28 and sets Alira in the PoB Build and Config, but neither current Act nor the actual bandit quest outcome is independently confirmed. No ascendancy is selected.",
+      "action": "Confirm the current Act and bandit reward in game; do not infer Act from level."
     },
     {
       "severity": "good",
-      "title": "Skill groups are unchanged",
-      "detail": "Stormblast Mine 7 + Swift Assembly 6 + Added Lightning Damage 5 remain grouped in linked boots. Flame Dash 4 and Orb of Storms 6 remain. Skitterbots and Trap and Mine Damage are absent from the active skill set.",
-      "action": "Preserve the existing main link. Consider additional gems only after checking access, mana and defensive tradeoffs."
+      "title": "Stormblast remains the active three-link and Skitterbots are now in the active set",
+      "detail": "Boots contain Stormblast Mine 9 + Swift Assembly 8 + Added Lightning Damage 6. Skitterbots 3 is in the Gloves group; Flame Dash is level 5 and Orb of Storms is level 8. Pyroclast Mine is not yet in the active skill set. The selected Stormblast setup reports about 662 combined DPS in this PoB configuration.",
+      "action": "Keep Stormblast as the current main skill until the Pyroclast transition is available and tested; check mana comfort with Skitterbots active."
     }
   ],
   "skills": [
     {
       "slot": "Body Armour",
       "gems": [
-        "Flame Dash (Lv 4)"
+        "Flame Dash (Lv 5)"
       ]
     },
     {
       "slot": "Weapon 2",
       "gems": [
-        "Orb of Storms (Lv 6)"
+        "Orb of Storms (Lv 8)"
+      ]
+    },
+    {
+      "slot": "Gloves",
+      "gems": [
+        "Summon Skitterbots (Lv 3)"
       ]
     },
     {
       "slot": "Boots",
       "gems": [
-        "Stormblast Mine (Lv 7)",
-        "Swift Assembly (Lv 6)",
-        "Added Lightning Damage (Lv 5)"
-      ]
+        "Stormblast Mine (Lv 9)",
+        "Swift Assembly (Lv 8)",
+        "Added Lightning Damage (Lv 6)"
+      ],
+      "calculatedCombinedDps": 661.68064517291
     }
   ],
   "gear": [
     {
       "slot": "Weapon 1",
-      "name": "Caster's Goat's Horn of Spilling",
-      "rarity": "Magic",
-      "mods": [
-        "Adds 2 to 4 Fire Damage to Spells and Attacks",
-        "11% increased Spell Damage",
-        "+23% to Physical Damage over Time Multiplier",
-        "+18 to maximum Mana"
-      ]
-    },
-    {
-      "slot": "Weapon 2",
-      "name": "Grim Fend",
+      "name": "Brimstone Gnarl",
+      "base": "Quartz Sceptre",
       "rarity": "Rare",
       "mods": [
-        "3% increased Movement Speed",
-        "45% increased Chance to Block",
-        "+11 to Evasion Rating",
-        "+5 to maximum Life",
-        "Regenerate 1 Life per second",
-        "+16% to Fire Resistance (crafted)"
+        "20% increased Elemental Damage",
+        "12% increased Spell Damage",
+        "Adds 9 to 17 Cold Damage to Spells",
+        "+20 to maximum Mana",
+        "+1 to Level of all Physical Spell Skill Gems",
+        "18% chance to Ignite"
       ]
-    },
-    {
-      "slot": "Body Armour",
-      "name": "Maelstrom Cloak",
-      "rarity": "Rare",
-      "mods": [
-        "+10 to Strength",
-        "+15 to Intelligence",
-        "+7 to maximum Life",
-        "+26 to maximum Mana",
-        "+16% to Cold Resistance"
-      ]
-    },
-    {
-      "slot": "Helmet",
-      "name": "Sanguine Sallet of Craft",
-      "rarity": "Magic",
-      "mods": [
-        "+37 to maximum Life",
-        "+18% to Fire Resistance (crafted)"
-      ]
-    },
-    {
-      "slot": "Gloves",
-      "name": "Grim Hold",
-      "rarity": "Rare",
-      "mods": [
-        "Adds 1 to 2 Physical Damage to Attacks",
-        "+13 to maximum Life",
-        "+15 to maximum Mana",
-        "+6% to Fire Resistance"
-      ]
-    },
-    {
-      "slot": "Boots",
-      "name": "Leatherscale Boots",
-      "rarity": "Normal",
-      "mods": []
     },
     {
       "slot": "Amulet",
       "name": "Hale Jade Amulet of Nimbleness",
+      "base": "Unique ID: 580f22ebfdb1c4b44deb35fc8344492aa7cead07f2c331ded9bcbce6b9ab51d4",
       "rarity": "Magic",
       "mods": [
         "+24 to Dexterity",
@@ -360,20 +384,80 @@
       ]
     },
     {
+      "slot": "Helmet",
+      "name": "Sanguine Sallet of Craft",
+      "base": "Armour: 46",
+      "rarity": "Magic",
+      "mods": [
+        "+37 to maximum Life",
+        "+18% to Fire Resistance"
+      ]
+    },
+    {
+      "slot": "Weapon 2",
+      "name": "Grim Fend",
+      "base": "Goathide Buckler",
+      "rarity": "Rare",
+      "mods": [
+        "3% increased Movement Speed",
+        "45% increased Chance to Block",
+        "+11 to Evasion Rating",
+        "+5 to maximum Life",
+        "Regenerate 1 Life per second",
+        "+16% to Fire Resistance"
+      ]
+    },
+    {
+      "slot": "Body Armour",
+      "name": "Rift Shelter",
+      "base": "Ringmail Coat",
+      "rarity": "Rare",
+      "mods": [
+        "+32 to maximum Mana",
+        "+16% to Fire Resistance",
+        "+10% to Cold Resistance",
+        "+13% to Lightning Resistance",
+        "Reflects 6 Physical Damage to Melee Attackers",
+        "+23 to maximum Life"
+      ]
+    },
+    {
+      "slot": "Gloves",
+      "name": "Skull Fist",
+      "base": "Plated Gauntlets",
+      "rarity": "Rare",
+      "mods": [
+        "+14 to Strength",
+        "+49 to Armour",
+        "17% increased Armour",
+        "+9% to Lightning Resistance"
+      ]
+    },
+    {
+      "slot": "Boots",
+      "name": "Leatherscale Boots",
+      "base": "Armour: 16",
+      "rarity": "Normal",
+      "mods": []
+    },
+    {
       "slot": "Ring 1",
       "name": "Armageddon Nail",
+      "base": "Sapphire Ring",
       "rarity": "Rare",
       "mods": [
         "+30% to Cold Resistance",
         "+15 to Dexterity",
         "Adds 3 to 7 Fire Damage to Attacks",
         "+25 to maximum Life",
-        "+5% to all Elemental Resistances"
+        "+5% to all Elemental Resistances",
+        "+19% to Cold Resistance"
       ]
     },
     {
       "slot": "Ring 2",
       "name": "Catalysing Topaz Ring of the Salamander",
+      "base": "Unique ID: e6bf04d0a8185261e1529ee8ad2160fed734d67eba5c26f61437432cb6764e83",
       "rarity": "Magic",
       "mods": [
         "+20% to Lightning Resistance",
@@ -382,90 +466,295 @@
       ]
     },
     {
-      "slot": "Belt",
-      "name": "Chain Belt of the Squall",
+      "slot": "Flask 5",
+      "name": "Grand Mana Flask of Warding",
+      "base": "Unique ID: 036fce6cd52aed223b84403dcdb37a062de9d2f80641eeed19f2076698395f12",
       "rarity": "Magic",
       "mods": [
-        "+15 to maximum Energy Shield",
-        "+14% to Lightning Resistance"
+        "Removes Curses on use"
       ]
     },
     {
-      "slot": "Flask 1",
-      "name": "Large Life Flask",
-      "rarity": "Normal",
-      "mods": []
-    },
-    {
       "slot": "Flask 2",
-      "name": "Large Life Flask",
-      "rarity": "Normal",
-      "mods": []
-    },
-    {
-      "slot": "Flask 3",
-      "name": "Large Life Flask",
+      "name": "Greater Life Flask",
+      "base": "Unique ID: eb23357b04e847b659f4843a04ab2e7f11105522233f1a7a6c3a7070946e348f",
       "rarity": "Normal",
       "mods": []
     },
     {
       "slot": "Flask 4",
       "name": "Quicksilver Flask",
+      "base": "Unique ID: fa837efe7f9de05afd6af0385fd32e41e8fd4a8c94616d9ea8cfb0e5510617e7",
       "rarity": "Normal",
       "mods": []
     },
     {
-      "slot": "Flask 5",
-      "name": "Grand Mana Flask of Warding",
+      "slot": "Belt",
+      "name": "Upgraded Chain Belt of the Squall",
+      "base": "Unique ID: 5252bab0f89aa2de78b52306acd40a432d0387deeeeb758437b6587acaa5c68a",
       "rarity": "Magic",
       "mods": [
-        "Removes Curses on use"
+        "+15 to maximum Energy Shield",
+        "+14% to Lightning Resistance",
+        "+17 to maximum Life"
+      ]
+    },
+    {
+      "slot": "Flask 3",
+      "name": "Large Life Flask",
+      "base": "Unique ID: b9d83aff94f4f9c58fdee5ba9373421eef3012b8e9d9bd8f8a96bb7c9c3531bc",
+      "rarity": "Normal",
+      "mods": []
+    },
+    {
+      "slot": "Flask 1",
+      "name": "Continuous Grand Life Flask",
+      "base": "Unique ID: e91d6d65040f09a0deae3257b7dd1cf49acf2d212672b137b01acb2f2db2cb05",
+      "rarity": "Magic",
+      "mods": [
+        "21% increased Charge Recovery"
       ]
     }
   ],
   "nextActions": [
-    "Prioritize lightning resistance on gear or an available craft; improve cold and fire afterward. Confirm the penalty matches your campaign progress.",
-    "Preserve or relocate the three-link while improving boots. Upgrade life-flask recovery before harder encounters.",
-    "Seek life/resistance upgrades on chest and belt. Avoid relying on attack block against spells or damage over time.",
-    "Confirm current act and bandit outcome. Verify a connected, useful next route before spending additional travel points."
+    "Confirm current Act and the resistance penalty in PoB; the current export shows 75% elemental resistances only with resistancePenalty=0.",
+    "Improve physical-hit safety and life before taking harder content; current values are 820 Life, 317 Armour, and a 920 physical maximum hit.",
+    "Preserve the Stormblast Mine 3-link while replacing normal boots with life, movement speed, and resistances; keep the shield as the default HC weapon setup.",
+    "Keep the current sceptre unless a better self-found option appears; its +1 Physical Spell Skill Gems does not apply to Stormblast or Pyroclast Mine.",
+    "Continue the suggested passive sequence from current verified allocations toward Explosive Elements; do not count node 27872 or Volatile Mines complete from the similar mastery at node 10166."
   ],
   "comparison": {
-    "previousFile": "3.29 ReliMinesHCSSF(1).xml",
+    "previousFile": "3.29 ReliMinesHCSSF(2).xml",
+    "previousLevel": 21,
+    "currentLevel": 28,
     "stats": {
+      "life": {
+        "before": 623,
+        "after": 820,
+        "delta": 197
+      },
       "mana": {
-        "before": 254,
-        "after": 259,
-        "delta": 5
+        "before": 259,
+        "after": 296,
+        "delta": 37
+      },
+      "energyShield": {
+        "before": 45,
+        "after": 41,
+        "delta": -4
+      },
+      "evasion": {
+        "before": 134,
+        "after": 120,
+        "delta": -14
+      },
+      "armour": {
+        "before": 214,
+        "after": 317,
+        "delta": 103
       },
       "fireRes": {
-        "before": 25,
-        "after": 59,
-        "delta": 34
+        "before": 59,
+        "after": 75,
+        "delta": 16
+      },
+      "coldRes": {
+        "before": 51,
+        "after": 75,
+        "delta": 24
+      },
+      "lightningRes": {
+        "before": 39,
+        "after": 75,
+        "delta": 36
+      },
+      "chaosRes": {
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      "attackBlock": {
+        "before": 36,
+        "after": 36,
+        "delta": 0
+      },
+      "spellSuppression": {
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      "physicalMaximumHitTaken": {
+        "before": 708,
+        "after": 920,
+        "delta": 212
       },
       "totalEHP": {
-        "before": 1062,
-        "after": 1183.1402833358,
-        "delta": 121.14028333579995
+        "before": 1183.1402833358,
+        "after": 2051.8505437339,
+        "delta": 868.7102603981
       }
     },
     "addedPassiveIds": [
-      48778
+      6233,
+      40751,
+      12382,
+      10166,
+      20546,
+      31371,
+      21301,
+      37671
     ],
     "removedPassiveIds": [],
     "gearChanges": [
-      "Helmet: crafted +18% fire resistance",
-      "Shield: crafted +16% fire resistance"
+      "Body Armour: replaced the low-life chest with Rift Shelter (+23 Life craft, +16 Fire, +10 Cold, +13 Lightning Resistance).",
+      "Belt: crafted +17 Life; retained +14 Lightning Resistance.",
+      "Gloves: changed to Skull Fist (+9 Lightning Resistance and armour), losing the previous +13 Life/+6 Fire Resistance glove mods.",
+      "Weapon: changed to Brimstone Gnarl; added general spell/elemental damage and cold damage to spells, but +1 Physical Spell Skill Gems does not benefit the mine skills.",
+      "Ring 1: added a +19% Cold Resistance craft."
     ],
-    "skillsChanged": false,
+    "skillsChanged": true,
+    "skillChanges": [
+      "Stormblast Mine 7→9, Swift Assembly 6→8, Added Lightning Damage 5→6.",
+      "Flame Dash 4→5 and Orb of Storms 6→8.",
+      "Summon Skitterbots 3 is now in the active skill set; Pyroclast Mine remains absent."
+    ],
+    "history": [
+      {
+        "previousFile": "3.29 ReliMinesHCSSF(1).xml",
+        "stats": {
+          "mana": {
+            "before": 254,
+            "after": 259,
+            "delta": 5
+          },
+          "fireRes": {
+            "before": 25,
+            "after": 59,
+            "delta": 34
+          },
+          "totalEHP": {
+            "before": 1062,
+            "after": 1183.1402833358,
+            "delta": 121.14028333579995
+          }
+        },
+        "addedPassiveIds": [
+          48778
+        ],
+        "removedPassiveIds": [],
+        "gearChanges": [
+          "Helmet: crafted +18% fire resistance",
+          "Shield: crafted +16% fire resistance"
+        ],
+        "skillsChanged": false,
+        "previousSnapshot": {
+          "source": {
+            "kind": "reviewed PoB XML + conversation confirmations",
+            "file": "3.29 ReliMinesHCSSF(1).xml",
+            "previousFile": "3.29 ReliMinesHCSSF.xml",
+            "pobTreeVersion": "3_29",
+            "patchContext": "3.30",
+            "reviewedAt": "2026-11-13",
+            "note": "Live league is HC SSF Covens; the export uses 3_29 passive-tree identifiers. Current act and exact name of new passive IDs are not present in the export."
+          },
+          "character": {
+            "label": "ReliMinesHCSSF",
+            "nameVerified": false,
+            "level": 21,
+            "class": "Scion",
+            "ascendancy": "None",
+            "league": "HC SSF Covens",
+            "act": null,
+            "bandit": "Not confirmed (PoB: None)"
+          },
+          "stats": {
+            "life": 623,
+            "mana": 254,
+            "energyShield": 45,
+            "evasion": 134,
+            "armour": 214,
+            "fireRes": 25,
+            "coldRes": 51,
+            "lightningRes": 39,
+            "chaosRes": 0,
+            "attackBlock": 36,
+            "spellSuppression": 0,
+            "physicalMaximumHitTaken": 708,
+            "totalEHP": 1062
+          },
+          "progress": {
+            "completedTaskIds": [
+              "passive-destr",
+              "passive-mastery",
+              "gem-storm",
+              "gem-swift",
+              "gem-flame"
+            ],
+            "completedPassiveIds": [
+              "p01",
+              "p02",
+              "p03",
+              "p04",
+              "p05",
+              "p06",
+              "p07",
+              "p08",
+              "p09",
+              "p10",
+              "p11"
+            ],
+            "passiveCountFromPob": 24,
+            "passiveValidation": "The earlier 11-point Destructive Apparatus + Mine Mastery route was confirmed through conversation, and the mine mastery effect persists in both exports. New export shows 24 numeric passive IDs (+4), with no removals. No reliable 3_30 name mapping for added nodes is available; do not automatically mark later named passives complete.",
+            "currentGoal": "Improve fire resistance (still 25%), then cold/lightning. Replace empty boots and upgrade body armour without losing Stormblast three-link. Continue toward Constitution after checking current connected nodes.",
+            "numericPassiveNodeIds": [
+              11688,
+              12702,
+              13714,
+              13782,
+              15073,
+              17674,
+              17849,
+              18033,
+              19939,
+              21602,
+              33545,
+              45456,
+              46092,
+              47062,
+              51923,
+              55373,
+              55485,
+              56153,
+              57615,
+              58833,
+              59926,
+              62021,
+              65034,
+              65167
+            ],
+            "newNumericPassiveNodeIdsSincePreviousImport": [
+              13714,
+              19939,
+              51923,
+              65167
+            ],
+            "passiveTreeUrl": "https://www.pathofexile.com/passive-skill-tree/AAAABgAAF0UKOuG0DMrT4Q8xnuoWgwlGcdtZNdb-CjWSt9b-j03j2L1UYthN8kWxkEW5LagAAVNB6hY="
+          }
+        }
+      }
+    ],
     "previousSnapshot": {
       "source": {
         "kind": "reviewed PoB XML + conversation confirmations",
-        "file": "3.29 ReliMinesHCSSF(1).xml",
-        "previousFile": "3.29 ReliMinesHCSSF.xml",
+        "file": "3.29 ReliMinesHCSSF(2).xml",
+        "previousFile": "3.29 ReliMinesHCSSF(1).xml",
         "pobTreeVersion": "3_29",
         "patchContext": "3.30",
         "reviewedAt": "2026-11-13",
-        "note": "Live league is HC SSF Covens; the export uses 3_29 passive-tree identifiers. Current act and exact name of new passive IDs are not present in the export."
+        "note": "Active tree/skill/item/config set 1; exported PoB statistics, not independently recalculated. Resistance penalty configured as 0. Actual act unknown. Tree labels verified against PoB 3_29 data; not independently validated as a separate 3.30 tree.",
+        "sha256": "3b492d1fda31c6810c43769631eaf24c916a80087465bfb021e2ce29a189a466",
+        "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_29/tree.lua",
+        "treeMappingBlobSha": "3086d40c72d926484c7d52b563ad686a5627a12a"
       },
       "character": {
         "label": "ReliMinesHCSSF",
@@ -479,18 +768,18 @@
       },
       "stats": {
         "life": 623,
-        "mana": 254,
+        "mana": 259,
         "energyShield": 45,
         "evasion": 134,
         "armour": 214,
-        "fireRes": 25,
+        "fireRes": 59,
         "coldRes": 51,
         "lightningRes": 39,
         "chaosRes": 0,
         "attackBlock": 36,
         "spellSuppression": 0,
         "physicalMaximumHitTaken": 708,
-        "totalEHP": 1062
+        "totalEHP": 1183.1402833358
       },
       "progress": {
         "completedTaskIds": [
@@ -498,7 +787,8 @@
           "passive-mastery",
           "gem-storm",
           "gem-swift",
-          "gem-flame"
+          "gem-flame",
+          "passive-constitution"
         ],
         "completedPassiveIds": [
           "p01",
@@ -511,11 +801,18 @@
           "p08",
           "p09",
           "p10",
-          "p11"
+          "p11",
+          "p12",
+          "p13",
+          "p14",
+          "p15",
+          "p16",
+          "p17",
+          "p18"
         ],
-        "passiveCountFromPob": 24,
-        "passiveValidation": "The earlier 11-point Destructive Apparatus + Mine Mastery route was confirmed through conversation, and the mine mastery effect persists in both exports. New export shows 24 numeric passive IDs (+4), with no removals. No reliable 3_30 name mapping for added nodes is available; do not automatically mark later named passives complete.",
-        "currentGoal": "Improve fire resistance (still 25%), then cold/lightning. Replace empty boots and upgrade body armour without losing Stormblast three-link. Continue toward Constitution after checking current connected nodes.",
+        "passiveCountFromPob": 25,
+        "passiveValidation": "All original p01-p11 nodes mapped and verified in matching 3_29 tree data, including mastery effect 21313. Path of the Warrior (12702), Constitution (55485), both connected life approaches and all six adjacent 5% life nodes are allocated. Added ID 48778 is +10 Intelligence, connected to allocated 51923. Old p12-p14 labels incorrectly describe three Physical Damage nodes; actual route is Life and Strength (55373), Physical Damage (17674), Physical Damage (13782). The companion HTML corrects p12-p14 to these verified identities, so p01-p18 are now marked complete. No Life Mastery is selected.",
+        "currentGoal": "Raise lightning resistance first (39%), then cold (51%) and fire (59%); preserve the main three-link and improve boots, life and flask recovery. Constitution is already allocated: do not spend points following the old starting route.",
         "numericPassiveNodeIds": [
           11688,
           12702,
@@ -531,6 +828,7 @@
           45456,
           46092,
           47062,
+          48778,
           51923,
           55373,
           55485,
@@ -543,13 +841,275 @@
           65167
         ],
         "newNumericPassiveNodeIdsSincePreviousImport": [
-          13714,
-          19939,
-          51923,
-          65167
+          48778
         ],
-        "passiveTreeUrl": "https://www.pathofexile.com/passive-skill-tree/AAAABgAAF0UKOuG0DMrT4Q8xnuoWgwlGcdtZNdb-CjWSt9b-j03j2L1UYthN8kWxkEW5LagAAVNB6hY="
-      }
+        "passiveTreeUrl": "https://www.pathofexile.com/passive-skill-tree/AAAABgAAGEUKOuG0DMrTvorbWTGe6haDCUZx_go11rfWNZLhD_6PTePYvVRi2E3yRbGQRbktqAABU0HqFg==",
+        "removedNumericPassiveNodeIdsSincePreviousImport": [],
+        "masteryEffects": [
+          {
+            "nodeId": 59926,
+            "effectId": 21313,
+            "description": "Detonate Mines is Triggered while you are moving"
+          }
+        ],
+        "verifiedPassiveNodes": [
+          {
+            "nodeId": 11688,
+            "name": "Spell Damage"
+          },
+          {
+            "nodeId": 12702,
+            "name": "Path of the Warrior"
+          },
+          {
+            "nodeId": 13714,
+            "name": "Life"
+          },
+          {
+            "nodeId": 13782,
+            "name": "Physical Damage"
+          },
+          {
+            "nodeId": 15073,
+            "name": "Life"
+          },
+          {
+            "nodeId": 17674,
+            "name": "Physical Damage"
+          },
+          {
+            "nodeId": 17849,
+            "name": "Mine Damage"
+          },
+          {
+            "nodeId": 18033,
+            "name": "Intelligence"
+          },
+          {
+            "nodeId": 19939,
+            "name": "Life"
+          },
+          {
+            "nodeId": 21602,
+            "name": "Destructive Apparatus"
+          },
+          {
+            "nodeId": 33545,
+            "name": "Harrier"
+          },
+          {
+            "nodeId": 45456,
+            "name": "Spell Damage"
+          },
+          {
+            "nodeId": 46092,
+            "name": "Intelligence"
+          },
+          {
+            "nodeId": 47062,
+            "name": "Spell Damage and Intelligence"
+          },
+          {
+            "nodeId": 48778,
+            "name": "Intelligence"
+          },
+          {
+            "nodeId": 51923,
+            "name": "Intelligence"
+          },
+          {
+            "nodeId": 55373,
+            "name": "Life and Strength"
+          },
+          {
+            "nodeId": 55485,
+            "name": "Constitution"
+          },
+          {
+            "nodeId": 56153,
+            "name": "Spell Damage"
+          },
+          {
+            "nodeId": 57615,
+            "name": "Mine Throwing Speed"
+          },
+          {
+            "nodeId": 59926,
+            "name": "Mine Mastery"
+          },
+          {
+            "nodeId": 62021,
+            "name": "Life"
+          },
+          {
+            "nodeId": 65034,
+            "name": "Life"
+          },
+          {
+            "nodeId": 65167,
+            "name": "Life"
+          }
+        ]
+      },
+      "skills": [
+        {
+          "slot": "Body Armour",
+          "gems": [
+            "Flame Dash (Lv 4)"
+          ]
+        },
+        {
+          "slot": "Weapon 2",
+          "gems": [
+            "Orb of Storms (Lv 6)"
+          ]
+        },
+        {
+          "slot": "Boots",
+          "gems": [
+            "Stormblast Mine (Lv 7)",
+            "Swift Assembly (Lv 6)",
+            "Added Lightning Damage (Lv 5)"
+          ]
+        }
+      ],
+      "gear": [
+        {
+          "slot": "Weapon 1",
+          "name": "Caster's Goat's Horn of Spilling",
+          "rarity": "Magic",
+          "mods": [
+            "Adds 2 to 4 Fire Damage to Spells and Attacks",
+            "11% increased Spell Damage",
+            "+23% to Physical Damage over Time Multiplier",
+            "+18 to maximum Mana"
+          ]
+        },
+        {
+          "slot": "Weapon 2",
+          "name": "Grim Fend",
+          "rarity": "Rare",
+          "mods": [
+            "3% increased Movement Speed",
+            "45% increased Chance to Block",
+            "+11 to Evasion Rating",
+            "+5 to maximum Life",
+            "Regenerate 1 Life per second",
+            "+16% to Fire Resistance (crafted)"
+          ]
+        },
+        {
+          "slot": "Body Armour",
+          "name": "Maelstrom Cloak",
+          "rarity": "Rare",
+          "mods": [
+            "+10 to Strength",
+            "+15 to Intelligence",
+            "+7 to maximum Life",
+            "+26 to maximum Mana",
+            "+16% to Cold Resistance"
+          ]
+        },
+        {
+          "slot": "Helmet",
+          "name": "Sanguine Sallet of Craft",
+          "rarity": "Magic",
+          "mods": [
+            "+37 to maximum Life",
+            "+18% to Fire Resistance (crafted)"
+          ]
+        },
+        {
+          "slot": "Gloves",
+          "name": "Grim Hold",
+          "rarity": "Rare",
+          "mods": [
+            "Adds 1 to 2 Physical Damage to Attacks",
+            "+13 to maximum Life",
+            "+15 to maximum Mana",
+            "+6% to Fire Resistance"
+          ]
+        },
+        {
+          "slot": "Boots",
+          "name": "Leatherscale Boots",
+          "rarity": "Normal",
+          "mods": []
+        },
+        {
+          "slot": "Amulet",
+          "name": "Hale Jade Amulet of Nimbleness",
+          "rarity": "Magic",
+          "mods": [
+            "+24 to Dexterity",
+            "10% increased Cast Speed",
+            "+9 to maximum Life"
+          ]
+        },
+        {
+          "slot": "Ring 1",
+          "name": "Armageddon Nail",
+          "rarity": "Rare",
+          "mods": [
+            "+30% to Cold Resistance",
+            "+15 to Dexterity",
+            "Adds 3 to 7 Fire Damage to Attacks",
+            "+25 to maximum Life",
+            "+5% to all Elemental Resistances"
+          ]
+        },
+        {
+          "slot": "Ring 2",
+          "name": "Catalysing Topaz Ring of the Salamander",
+          "rarity": "Magic",
+          "mods": [
+            "+20% to Lightning Resistance",
+            "+14% to Fire Resistance",
+            "7% increased Elemental Damage with Attack Skills"
+          ]
+        },
+        {
+          "slot": "Belt",
+          "name": "Chain Belt of the Squall",
+          "rarity": "Magic",
+          "mods": [
+            "+15 to maximum Energy Shield",
+            "+14% to Lightning Resistance"
+          ]
+        },
+        {
+          "slot": "Flask 1",
+          "name": "Large Life Flask",
+          "rarity": "Normal",
+          "mods": []
+        },
+        {
+          "slot": "Flask 2",
+          "name": "Large Life Flask",
+          "rarity": "Normal",
+          "mods": []
+        },
+        {
+          "slot": "Flask 3",
+          "name": "Large Life Flask",
+          "rarity": "Normal",
+          "mods": []
+        },
+        {
+          "slot": "Flask 4",
+          "name": "Quicksilver Flask",
+          "rarity": "Normal",
+          "mods": []
+        },
+        {
+          "slot": "Flask 5",
+          "name": "Grand Mana Flask of Warding",
+          "rarity": "Magic",
+          "mods": [
+            "Removes Curses on use"
+          ]
+        }
+      ]
     }
   }
 }
