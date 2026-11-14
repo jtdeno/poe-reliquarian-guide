@@ -1,55 +1,52 @@
 {
   "format": "reliquarian-character-progress-v1",
-  "publishedAt": "2026-11-14T16:30:03.479Z",
+  "publishedAt": "2026-11-14T17:32:23.726Z",
   "source": {
     "kind": "reviewed PoB XML",
-    "file": "3.29 ReliMinesHCSSF(4).xml",
-    "previousFile": "3.29 ReliMinesHCSSF(3).xml",
+    "file": "3.29 ReliMinesHCSSF(5).xml",
+    "previousFile": "3.29 ReliMinesHCSSF(4).xml",
     "pobTreeVersion": "3_29",
     "patchContext": "3.30",
     "reviewedAt": "2026-11-14",
-    "note": "Active tree/skill/item/config set 1. PoB PlayerStat values are serialized calculated outputs, not independently recalculated. The XML's selected main skill calculation is Flame Dash, so ManaPerSecondCost and CombinedDPS are not Pyroclast Mine metrics. resistancePenalty is configured as 0; actual Act remains unknown. Passive identities/mastery effects are verified against matching PoB 3_29 tree data; a separate 3.30 tree is not independently validated.",
-    "sha256": "76a6dcc2f097e7e5f849a5d1ec3961c3062f84ccf98c2c13fee8f2ebdb616a51",
+    "note": "Active tree/skill/item/config set 1. Serialized PlayerStat values are PoB outputs. The selected main skill calculation is Flame Dash, so CombinedDPS, ManaCost, and ManaPerSecondCost are not Pyroclast Mine metrics. The current export does not include a resistancePenalty setting; actual Act and effective resistance penalty remain unknown. Passive IDs are mapped against matching PoB 3_29 tree data, including the Reliquarian ascendancy nodes in that file; verify any 3.30 route in game.",
+    "sha256": "2920cae12a0687439285daad86ff5b3e4f08458bae5c90296b1b0bcd16159a0a",
     "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_29/tree.lua",
     "treeMappingBlobSha": "3086d40c72d926484c7d52b563ad686a5627a12a"
   },
   "character": {
     "label": "ReliMinesHCSSF",
     "nameVerified": false,
-    "level": 35,
+    "level": 42,
     "class": "Scion",
-    "ascendancy": "None",
+    "ascendancy": "Reliquarian",
     "league": "HC SSF Covens",
     "act": null,
     "bandit": "PoB setting: Alira; in-game outcome not confirmed"
   },
   "stats": {
-    "life": 1059,
-    "mana": 306,
-    "energyShield": 21,
-    "evasion": 334,
-    "armour": 440,
-    "fireRes": 74,
-    "coldRes": 75,
-    "lightningRes": 75,
-    "chaosRes": 0,
+    "life": 1412,
+    "mana": 358,
+    "energyShield": 172,
+    "evasion": 198,
+    "armour": 735,
+    "fireRes": 52,
+    "coldRes": 56,
+    "lightningRes": 17,
+    "chaosRes": -60,
     "attackBlock": 26,
     "spellSuppression": 0,
-    "physicalMaximumHitTaken": 1161,
-    "totalEHP": 2428.4437336463,
-    "lifeRegenRecovery": 23.6,
-    "fireResOvercap": 0,
-    "coldResOvercap": 16,
-    "lightningResOvercap": 10,
-    "manaUnreserved": 37,
-    "manaUnreservedPercent": 12.091503267974,
-    "manaRegenRecovery": 5.4,
-    "physicalDamageReduction": 4,
-    "combinedDPS": 296.17412142857,
-    "lightningMaximumHitTaken": 3857,
-    "fireMaximumHitTaken": 3724,
-    "coldMaximumHitTaken": 3857,
-    "chaosMaximumHitTaken": 1059
+    "physicalMaximumHitTaken": 1719,
+    "totalEHP": 2303.9915113222,
+    "lifeRegenRecovery": 11.3,
+    "manaRegenRecovery": 10,
+    "manaUnreserved": 48,
+    "manaUnreservedPercent": 13.40782122905,
+    "physicalDamageReduction": 6,
+    "fireMaximumHitTaken": 3106,
+    "coldMaximumHitTaken": 3370,
+    "lightningMaximumHitTaken": 1842,
+    "chaosMaximumHitTaken": 883,
+    "combinedDPS": 458.64276205714
   },
   "progress": {
     "completedTaskIds": [
@@ -58,7 +55,9 @@
       "gem-storm",
       "gem-swift",
       "gem-flame",
-      "passive-constitution"
+      "passive-constitution",
+      "gem-pyro",
+      "gem-skitter"
     ],
     "completedPassiveIds": [
       "p01",
@@ -80,80 +79,88 @@
       "p17",
       "p18",
       "p19",
+      "p20",
       "p21",
+      "p23",
+      "p24",
       "p27"
     ],
-    "passiveCountFromPob": 41,
-    "passiveValidation": "Matching PoB 3_29 tree data verifies all 41 active node IDs. New since the previous snapshot: 1655, 1822, 2260, 4502, 4546, 18769 (Written in Blood), 27415, 29549, 32710, 36858, 38190, 53456, 61653, and 61689 (Explosive Elements). Removed: 6233 (Blast Waves), 10166 (Mine Mastery), 20546, 21301, 31371, and 40751. Life Mastery node 12382 still selects effect 47642 (+30 Life). Mine Mastery node 59926 now selects effect 6510 (2.5% Life regeneration after a recent mine detonation), replacing its previous moving-detonation effect 21313. Explosive Elements (61689) and Written in Blood (18769) are allocated and verified; Blast Waves (6233) is refunded and must not remain marked complete. The separate planned Mine Mastery node 27872 and Efficient Explosives (44102) are not allocated. The 3_29 data is not independent proof of 3.30 in-game node behavior.",
-    "currentGoal": "Resolve the tight mana buffer while preserving HCSSF defenses: the export shows 306 total Mana, only 37 unreserved, and 5.4 Mana regeneration/sec. Test with Skitterbots disabled first while retaining Purity of Elements. Also recheck Act/resistance penalty (PoB has resistancePenalty=0) and keep improving physical-hit safety (1059 Life, 440 Armour, 1161 physical maximum hit, 26% effective block).",
+    "passiveCountFromPob": 54,
+    "passiveValidation": "Matching PoB 3_29 data maps all 54 active numeric node IDs. Relative to level 35, 13 nodes were added and none removed. Current export verifies Blast Waves 6233, the routes to Explosive Elements 61689, Volatile Mines 9055, and Efficient Explosives 44102. Mine Mastery node 59926 still selects Life regeneration effect 6510; the separate planned mastery node 27872 remains unallocated, so checkpoint p22 is not marked complete. Written in Blood 18769 remains allocated. The Reliquarian ascendancy start (10108) and two Passive Point nodes (35936, 22441) are allocated; no item-display or unique-derived effect node is allocated in this tree. Routes below use matching 3_29 data only and must be verified in game.",
+    "currentGoal": "Urgently repair elemental resistances (PoB values: Fire 52%, Cold 56%, Lightning 17%) and chaos resistance (-60%); the export omits resistancePenalty and the current Act is unknown. Life/armour/physical hit improved to 1412/735/1719, but elemental maximum hits are only 1842 Lightning / 3106 Fire / 3370 Cold and Chaos maximum hit is 883. Mana improved to 48 unreserved and 10/sec regeneration but remains 13.4% of total; confirm mine cost with Pyroclast selected in PoB. Proposed next routes: Sentinel, generic Reservation Efficiency, Blood Siphon, then Tolerance.",
     "numericPassiveNodeIds": [
       17674,
       2260,
-      1655,
+      6233,
       46092,
       51923,
       38190,
-      48778,
-      12702,
+      36858,
+      1822,
       32710,
-      53456,
+      35936,
       18033,
-      47062,
-      61653,
+      18661,
+      13714,
+      40751,
+      65167,
+      65034,
       21602,
       55373,
       29549,
+      9055,
       61689,
-      15073,
-      4502,
-      4546,
-      57615,
-      65167,
-      65034,
-      58833,
+      49605,
+      61653,
       59926,
-      33545,
-      36858,
-      27415,
-      13782,
-      11688,
-      56153,
+      15073,
+      48778,
       12382,
+      4502,
       18769,
-      19939,
-      1822,
-      55485,
-      13714,
-      62021,
+      53456,
+      58833,
+      44102,
+      20546,
+      57615,
+      47062,
       45456,
+      42006,
+      37671,
+      33545,
+      27415,
+      12702,
+      13782,
+      1655,
+      56153,
+      4546,
+      22441,
+      19939,
+      21301,
+      55485,
+      10108,
+      62021,
+      31371,
       17849,
-      37671
+      11688
     ],
     "newNumericPassiveNodeIdsSincePreviousImport": [
-      1655,
-      1822,
-      2260,
-      4502,
-      4546,
-      18769,
-      27415,
-      29549,
-      32710,
-      36858,
-      38190,
-      53456,
-      61653,
-      61689
-    ],
-    "passiveTreeUrl": "https://www.pathofexile.com/passive-skill-tree/AAAABgAAKEUKCNQGd7QMytOVLr6KMZ5_xtDQRnG31vDVYTXNt8Pk64RGWEcLhD_6P_grqFoMJj_prFzXWLajbWTBeSVFN4wce2L01kvJFsZBFuZMnAAIZbuoWuhowXg==",
-    "removedNumericPassiveNodeIdsSincePreviousImport": [
       6233,
-      10166,
+      9055,
+      10108,
+      18661,
       20546,
       21301,
+      22441,
       31371,
-      40751
+      35936,
+      40751,
+      42006,
+      44102,
+      49605
     ],
+    "passiveTreeUrl": "https://www.pathofexile.com/passive-skill-tree/AAAABgACNEUKCNQYWbQMytOVLo_6Bx5_xoxgRnFI5TWSny_-j_4KVGLYTXNtI1_w-cHF8NXqFjrhvoowXhGWSVHQ0KxGUELhD7fWsZCkFpMngwlrFzGeNdYGd9tZEcJXqU3jUzXYvfJFeotFuS2oAAIZbuoWuhowXg==",
+    "removedNumericPassiveNodeIdsSincePreviousImport": [],
     "masteryEffects": [
       {
         "nodeId": 12382,
@@ -176,8 +183,8 @@
         "name": "Mine Damage"
       },
       {
-        "nodeId": 1655,
-        "name": "Mine Damage"
+        "nodeId": 6233,
+        "name": "Blast Waves"
       },
       {
         "nodeId": 46092,
@@ -192,32 +199,44 @@
         "name": "Life and Energy Shield"
       },
       {
-        "nodeId": 48778,
+        "nodeId": 36858,
         "name": "Intelligence"
       },
       {
-        "nodeId": 12702,
-        "name": "Path of the Warrior"
+        "nodeId": 1822,
+        "name": "Life and Energy Shield"
       },
       {
         "nodeId": 32710,
         "name": "Intelligence"
       },
       {
-        "nodeId": 53456,
-        "name": "Intelligence"
+        "nodeId": 35936,
+        "name": "Passive Point"
       },
       {
         "nodeId": 18033,
         "name": "Intelligence"
       },
       {
-        "nodeId": 47062,
-        "name": "Spell Damage and Intelligence"
+        "nodeId": 18661,
+        "name": "Mine Damage and Reservation Efficiency"
       },
       {
-        "nodeId": 61653,
-        "name": "Life and Energy Shield"
+        "nodeId": 13714,
+        "name": "Life"
+      },
+      {
+        "nodeId": 40751,
+        "name": "Mine Area of Effect"
+      },
+      {
+        "nodeId": 65167,
+        "name": "Life"
+      },
+      {
+        "nodeId": 65034,
+        "name": "Life"
       },
       {
         "nodeId": 21602,
@@ -232,203 +251,237 @@
         "name": "Mine Damage"
       },
       {
+        "nodeId": 9055,
+        "name": "Volatile Mines"
+      },
+      {
         "nodeId": 61689,
         "name": "Explosive Elements"
       },
       {
-        "nodeId": 15073,
-        "name": "Life"
-      },
-      {
-        "nodeId": 4502,
+        "nodeId": 49605,
         "name": "Intelligence"
       },
       {
-        "nodeId": 4546,
-        "name": "Mine Detonation Speed"
-      },
-      {
-        "nodeId": 57615,
-        "name": "Mine Throwing Speed"
-      },
-      {
-        "nodeId": 65167,
-        "name": "Life"
-      },
-      {
-        "nodeId": 65034,
-        "name": "Life"
-      },
-      {
-        "nodeId": 58833,
-        "name": "Scion class start"
+        "nodeId": 61653,
+        "name": "Life and Energy Shield"
       },
       {
         "nodeId": 59926,
         "name": "Mine Mastery"
       },
       {
-        "nodeId": 33545,
-        "name": "Harrier"
+        "nodeId": 15073,
+        "name": "Life"
       },
       {
-        "nodeId": 36858,
+        "nodeId": 48778,
         "name": "Intelligence"
-      },
-      {
-        "nodeId": 27415,
-        "name": "Intelligence"
-      },
-      {
-        "nodeId": 13782,
-        "name": "Physical Damage"
-      },
-      {
-        "nodeId": 11688,
-        "name": "Spell Damage"
-      },
-      {
-        "nodeId": 56153,
-        "name": "Spell Damage"
       },
       {
         "nodeId": 12382,
         "name": "Life Mastery"
       },
       {
+        "nodeId": 4502,
+        "name": "Intelligence"
+      },
+      {
         "nodeId": 18769,
         "name": "Written in Blood"
       },
       {
-        "nodeId": 19939,
-        "name": "Life"
+        "nodeId": 53456,
+        "name": "Intelligence"
       },
       {
-        "nodeId": 1822,
-        "name": "Life and Energy Shield"
+        "nodeId": 58833,
+        "name": "Scion class start"
       },
       {
-        "nodeId": 55485,
-        "name": "Constitution"
+        "nodeId": 44102,
+        "name": "Efficient Explosives"
       },
       {
-        "nodeId": 13714,
-        "name": "Life"
+        "nodeId": 20546,
+        "name": "Intelligence"
       },
       {
-        "nodeId": 62021,
-        "name": "Life"
+        "nodeId": 57615,
+        "name": "Mine Throwing Speed"
+      },
+      {
+        "nodeId": 47062,
+        "name": "Spell Damage and Intelligence"
       },
       {
         "nodeId": 45456,
         "name": "Spell Damage"
       },
       {
-        "nodeId": 17849,
-        "name": "Mine Damage"
+        "nodeId": 42006,
+        "name": "Mine Damage and Reservation Efficiency"
       },
       {
         "nodeId": 37671,
         "name": "Intelligence"
+      },
+      {
+        "nodeId": 33545,
+        "name": "Harrier"
+      },
+      {
+        "nodeId": 27415,
+        "name": "Intelligence"
+      },
+      {
+        "nodeId": 12702,
+        "name": "Path of the Warrior"
+      },
+      {
+        "nodeId": 13782,
+        "name": "Physical Damage"
+      },
+      {
+        "nodeId": 1655,
+        "name": "Mine Damage"
+      },
+      {
+        "nodeId": 56153,
+        "name": "Spell Damage"
+      },
+      {
+        "nodeId": 4546,
+        "name": "Mine Detonation Speed"
+      },
+      {
+        "nodeId": 22441,
+        "name": "Passive Point"
+      },
+      {
+        "nodeId": 19939,
+        "name": "Life"
+      },
+      {
+        "nodeId": 21301,
+        "name": "Strength"
+      },
+      {
+        "nodeId": 55485,
+        "name": "Constitution"
+      },
+      {
+        "nodeId": 10108,
+        "name": "Reliquarian"
+      },
+      {
+        "nodeId": 62021,
+        "name": "Life"
+      },
+      {
+        "nodeId": 31371,
+        "name": "Mine Area of Effect"
+      },
+      {
+        "nodeId": 17849,
+        "name": "Mine Damage"
+      },
+      {
+        "nodeId": 11688,
+        "name": "Spell Damage"
       }
     ]
   },
   "findings": [
     {
-      "severity": "warning",
-      "title": "Mana buffer is too small for comfortable mine sequences",
-      "detail": "This export has 306 total Mana, 37 unreserved (12.1%), and 5.4 Mana regeneration per second. Purity of Elements, Skitterbots, and Automation/Detonate Mines are enabled; the main Pyroclast setup is a four-link. PoB's serialized 4.24 Mana/sec and 14 Mana cost belong to its selected Flame Dash calculation, not Pyroclast Mine, so the exact mine sustain cost is not confirmed by this export.",
-      "action": "First test: turn off Skitterbots while keeping Purity of Elements active, then check a full mine sequence and Flame Dash use. Skitterbots reserves 35% mana; removing it should return about 107 Mana before rounding/modifiers. If still tight, test Automation off and detonate manually; keep the mana flask available."
+      "severity": "urgent",
+      "title": "Elemental and Chaos resistances are far below safe targets",
+      "detail": "This export reports Fire 52%, Cold 56%, Lightning 17%, and Chaos -60%. The resistancePenalty setting is absent from the exported Config and actual Act is unknown, so the exact effective values need confirmation; even as shown, Lightning (1842 maximum hit) and Chaos (883 maximum hit) are especially concerning for HCSSF. Life is 1412.",
+      "action": "Before pushing into harder zones or a major boss, check the in-game resistances and PoB Act penalty, then prioritize resistance gear/crafts—especially Lightning, plus Chaos—without dropping Life. Do not assume the current caps are safe."
     },
     {
       "severity": "warning",
-      "title": "Physical-hit safety still needs work for HCSSF",
-      "detail": "Current snapshot shows 1059 Life, 440 Armour, 4% estimated physical damage reduction, 1161 physical maximum hit, 26% effective attack block, 0% spell block/suppression, and 0% Chaos Resistance. Total EHP is 2428, but the physical hit limit is the more relevant warning for one-shots.",
-      "action": "Keep improving life and physical mitigation on gear. Replace normal boots with movement speed, life, and resistances while retaining the Pyroclast four-link."
+      "title": "Mana is better, but the free pool is still narrow",
+      "detail": "Mana rose to 358, unreserved Mana to 48 (13.4%), and regeneration to 10/sec. Purity of Elements, Skitterbots, and Automation are active with the four-link Pyroclast setup. The XML's 4.63 Mana/sec and 15 Mana cost belong to selected Flame Dash, not Pyroclast, so mine sustain still needs an active-skill-specific check.",
+      "action": "The new amulet's mana regeneration is helping. Keep the mana flask and test a full mine sequence plus an escape. Select Pyroclast Mine in PoB before using its cost/DPS readout; if free mana still blocks play, temporarily disable Skitterbots while retaining Purity."
     },
     {
       "severity": "good",
-      "title": "The defensive mastery and fire mine transition are verified",
-      "detail": "Life Mastery node 12382 still selects +30 maximum Life (effect 47642). Explosive Elements node 61689 is allocated. The four-link is now Pyroclast Mine 3 + Swift Assembly 9 + Trap and Mine Damage 5 + Controlled Destruction 5.",
-      "action": "The Explosive Elements checkpoint is complete. Test mana before adding more reservation or optional supports; the separate Volatile Mines path remains unallocated."
-    },
-    {
-      "severity": "warning",
-      "title": "Blast Waves was refunded in this respec",
-      "detail": "The previous tree had Blast Waves (6233), two Mine Area of Effect nodes, and its travel nodes. They are absent now; the current tree instead allocates the Life/ES bridge and Explosive Elements. Mine Mastery node 59926 now selects 2.5% Life regeneration after a recent mine detonation (effect 6510), replacing the prior Detonate Mines while moving effect.",
-      "action": "Blast Waves is no longer marked complete. Revisit it later only if its area damage/clear benefit is worth the points after survivability and mana are comfortable."
-    },
-    {
-      "severity": "warning",
-      "title": "The shield lost block and the chest traded defenses for regeneration",
-      "detail": "Effective attack block fell from 36% to 26%. The current chest regenerates 23.6 Life/sec but has no explicit Life or resistance modifiers in the export; current elemental values are Fire 74%, Cold 75%, Lightning 75% with resistancePenalty=0.",
-      "action": "Preserve the strong life regeneration if it feels useful, but seek a chest with life and resistances and a shield with useful life/resists/block when available. Confirm the real Act penalty in game."
+      "title": "Life and physical-hit numbers improved",
+      "detail": "Compared with level 35: Life 1059→1412 (+353), Armour 440→735 (+295), Energy Shield 21→172, and physical maximum hit 1161→1719 (+558). Effective attack block remains 26%. Total EHP is 2304, lower than before, with current Fire 52%, Cold 56%, Lightning 17%, and Chaos -60%.",
+      "action": "The gloves, boots, and armour base increased the character's raw pool, but the resistance gap must be corrected before treating this as an overall defensive improvement."
     },
     {
       "severity": "good",
-      "title": "The new sceptre's added Fire damage applies to Pyroclast",
-      "detail": "Flaming Faun's Horn adds 24–44 Fire Damage to Spells, plus 6–12 Fire Damage to Spells and Attacks as its implicit. This is a relevant self-found upgrade for Pyroclast Mine.",
-      "action": "Keep it while it outperforms alternatives; future upgrades can add spell/fire damage or +1 Fire/Spell gems while preserving the shield slot."
+      "title": "Pyroclast four-link and passive milestones are in place",
+      "detail": "The current four-link is Pyroclast Mine 5 (2% quality) + Swift Assembly 11 + Trap and Mine Damage 8 + Controlled Destruction 8. The passive tree now allocates Blast Waves, Volatile Mines, and Efficient Explosives, alongside Explosive Elements and the Life/ES bridge.",
+      "action": "The current mine path milestones are verified. Keep the 4-link while you stabilize resistances and mana."
     },
     {
       "severity": "warning",
-      "title": "Normal boots remain a weak defensive slot",
-      "detail": "Leatherscale Boots are normal with no explicit life, resistance, or movement-speed mods. They hold Automation 2 + Detonate Mines 1 in three linked sockets. Flask set includes three Life Flasks, a Quicksilver, and a curse-removing Grand Mana Flask.",
-      "action": "Look for movement speed, life, and resistance boots. Keep the mana flask and confirm you can still reserve mana for a safe Flame Dash escape."
+      "title": "The selected Reliquarian ascendancy has no unique-derived effect allocated yet",
+      "detail": "The export identifies Reliquarian and allocates its start plus two Passive Point nodes. No Armour, Caster Weapon, Jewellery, or other item-display node is in the active tree, so no Reliquarian unique-derived bonus is currently reflected in this snapshot.",
+      "action": "This is consistent with an early ascendancy allocation. Plan the next display around a relevant unique you actually own; do not build the HCSSF plan around an unowned unique."
+    },
+    {
+      "severity": "good",
+      "title": "New rare gear adds life and recovery",
+      "detail": "Phoenix Palm adds 72 Life, Eagle Track adds 58 Life, 10% movement speed and 13% Cold Resistance, and Rage Clasp provides 59% increased Mana Regeneration Rate plus a crafted 16% Fire Resistance. The body armour has +21% Fire and +11% Cold Resistance but no explicit Life modifier.",
+      "action": "Keep the life/movement upgrades. Next gear upgrades should cover Lightning and Chaos Resistance and, if possible, add Life to the body armour."
     },
     {
       "severity": "unknown",
-      "title": "Act and in-game bandit outcome remain unconfirmed",
-      "detail": "The export is level 35, sets Alira in Build/Config, and has resistancePenalty=0. The actual Act, bandit quest outcome, and correctness of the configured resistance penalty are not independently confirmed. Ascendancy remains None.",
-      "action": "Confirm the current Act and bandit reward in game; do not infer Act from level."
+      "title": "The summary DPS and Mana cost are for Flame Dash",
+      "detail": "The XML marks Flame Dash as the main active-skill calculation. The exported 458.64 CombinedDPS, 15 Mana cost, and 4.63 Mana/sec therefore do not evaluate the Pyroclast Mine setup.",
+      "action": "Select Pyroclast Mine as the main skill in PoB and export again if you want a reliable comparison of mine damage and cost."
     },
     {
       "severity": "unknown",
-      "title": "PoB selected Flame Dash rather than the mine for its summary calculation",
-      "detail": "The active calculation group in the XML selects Flame Dash. Its 296.17 combined-DPS value and 14 Mana skill cost should not be read as the Pyroclast Mine's damage or sustain cost.",
-      "action": "Select Pyroclast Mine as the active skill in PoB and export again if you want a reliable mine DPS/cost calculation."
+      "title": "Act and bandit outcome remain unconfirmed",
+      "detail": "The export is level 42 and sets Alira in Build/Config, but current Act, effective resistance penalty, and the in-game bandit reward are not independently confirmed.",
+      "action": "Confirm Act and bandit reward in game; do not infer Act from level."
     }
   ],
   "skills": [
     {
       "slot": "Weapon 2",
       "gems": [
-        "Flammability (Lv 4)"
+        "Flammability (Lv 6)"
       ]
     },
     {
       "slot": "Helmet",
       "gems": [
-        "Purity of Elements (Lv 4)"
-      ]
-    },
-    {
-      "slot": "Body Armour",
-      "gems": [
-        "Pyroclast Mine (Lv 3)",
-        "Swift Assembly (Lv 9)",
-        "Trap and Mine Damage (Lv 5)",
-        "Controlled Destruction (Lv 5)"
-      ],
-      "calculatedCombinedDps": null,
-      "calculationNote": "The XML's main selected calculation is Flame Dash, so its combined DPS is not Pyroclast Mine DPS."
-    },
-    {
-      "slot": "Weapon 1",
-      "gems": [
-        "Flame Dash (Lv 7)"
+        "Purity of Elements (Lv 6)"
       ]
     },
     {
       "slot": "Gloves",
       "gems": [
-        "Summon Skitterbots (Lv 6)"
+        "Summon Skitterbots (Lv 8)"
       ]
+    },
+    {
+      "slot": "Weapon 1",
+      "gems": [
+        "Flame Dash (Lv 9)"
+      ]
+    },
+    {
+      "slot": "Body Armour",
+      "gems": [
+        "Pyroclast Mine (Lv 5, 2% quality)",
+        "Swift Assembly (Lv 11)",
+        "Trap and Mine Damage (Lv 8)",
+        "Controlled Destruction (Lv 8)"
+      ],
+      "calculatedCombinedDps": null,
+      "calculationNote": "The XML's selected main skill is Flame Dash. Its 458.64 CombinedDPS and 15 Mana cost do not describe Pyroclast Mine."
     },
     {
       "slot": "Boots",
       "gems": [
-        "Automation (Lv 2)",
+        "Automation (Lv 5)",
         "Detonate Mines (Lv 1)"
       ]
     }
@@ -469,42 +522,58 @@
     },
     {
       "slot": "Body Armour",
-      "name": "Thorny Scale Doublet of the Starfish",
-      "base": "Armour: 111 / Evasion: 111",
-      "rarity": "Magic",
+      "name": "Corruption Carapace",
+      "base": "Full Chainmail",
+      "rarity": "Rare",
       "mods": [
-        "Regenerate 23.6 Life per second",
-        "Reflects 4 Physical Damage to Melee Attackers"
+        "7% increased Armour and Energy Shield",
+        "+21% to Fire Resistance",
+        "+11% to Cold Resistance",
+        "6% increased Stun and Block Recovery",
+        "Reflects 49 Physical Damage to Melee Attackers",
+        "30% increased Armour and Energy Shield (crafted)"
       ]
     },
     {
       "slot": "Gloves",
-      "name": "Skull Fist",
-      "base": "Plated Gauntlets",
+      "name": "Phoenix Palm",
+      "base": "Riveted Gloves",
       "rarity": "Rare",
       "mods": [
-        "+14 to Strength",
-        "+49 to Armour",
-        "17% increased Armour",
-        "+9% to Lightning Resistance"
+        "+12 to Strength",
+        "+9 to maximum Energy Shield",
+        "+72 to maximum Life",
+        "+19% to Item Rarity",
+        "+20 to Dexterity (crafted)"
       ]
     },
     {
       "slot": "Boots",
-      "name": "Leatherscale Boots",
-      "base": "Armour: 16 / Evasion: 16",
-      "rarity": "Normal",
-      "mods": []
+      "name": "Eagle Track",
+      "base": "Mesh Boots",
+      "rarity": "Rare",
+      "mods": [
+        "+9 to Strength",
+        "+30 to Armour",
+        "+18 to maximum Energy Shield",
+        "+58 to maximum Life",
+        "Regenerate 11.3 Life per second",
+        "+13% to Cold Resistance",
+        "10% increased Movement Speed"
+      ]
     },
     {
       "slot": "Amulet",
-      "name": "Hale Jade Amulet of Nimbleness",
-      "base": "Jade Amulet",
-      "rarity": "Magic",
+      "name": "Rage Clasp",
+      "base": "Paua Amulet",
+      "rarity": "Rare",
       "mods": [
-        "+24 to Dexterity",
-        "10% increased Cast Speed",
-        "+9 to maximum Life"
+        "26% increased Mana Regeneration Rate (implicit)",
+        "+15 to Dexterity",
+        "Adds 4 to 7 Physical Damage to Attacks",
+        "18% increased Armour",
+        "33% increased Mana Regeneration Rate",
+        "+16% to Fire Resistance (crafted)"
       ]
     },
     {
@@ -584,67 +653,68 @@
     }
   ],
   "nextActions": [
-    "Test the mana setup safely in town: turn off Skitterbots first and retain Purity of Elements; check a full mine sequence plus Flame Dash use.",
-    "If mana is still restrictive, test Automation disabled and manual mine detonations; use the Mana Flask before the pool is empty.",
-    "Do not treat the PoB 4.24 Mana/sec cost as Pyroclast's: the selected main calculation is Flame Dash.",
-    "Keep improving physical-hit safety: 1059 Life, 440 Armour, 1161 physical maximum hit, and 26% effective attack block; replace normal boots with defensive movement-speed boots.",
-    "Verify the current Act and resistance penalty; the export sets resistancePenalty=0 while actual Act remains unknown.",
-    "Explosive Elements (61689) is now allocated; Blast Waves (6233) was refunded. The separate Volatile Mines mastery route and Efficient Explosives remain unallocated."
+    "Confirm current in-game elemental resistances and PoB's resistance penalty; prioritize Lightning, then Fire/Cold, and improve Chaos resistance before harder content. Current exported max hits: 1842 Lightning, 3106 Fire, 3370 Cold, 883 Chaos.",
+    "Keep current life/movement upgrades; prioritize life plus resistance gear/crafts, especially on the body armour, rings, and shield if upgrades appear.",
+    "Select Pyroclast Mine in PoB and check actual mine cost. Mana is 48 unreserved with 10/sec regen; if still cramped, test with Skitterbots disabled while keeping Purity of Elements.",
+    "Next passive route: Sentinel (3 points) from allocated Life node 13714; optionally continue one more point to Lightning Resistance 35503. Gear is still needed to reach caps.",
+    "Then consider generic Reservation Efficiency (2 points) from allocated Intelligence 18033, followed by Blood Siphon (+10% maximum Life, 3 points), then Tolerance for Chaos Resistance and ailment avoidance (3 points).",
+    "Current passive tree verifies Blast Waves, Volatile Mines, Efficient Explosives, Explosive Elements, and Written in Blood. Do not mark the separate Mine Mastery node 27872 complete; it is absent.",
+    "Reliquarian is selected, but no unique-display effect is allocated. Choose one only around a unique actually owned and confirmed in HCSSF."
   ],
   "comparison": {
-    "previousFile": "3.29 ReliMinesHCSSF(3).xml",
-    "previousLevel": 28,
-    "currentLevel": 35,
+    "previousFile": "3.29 ReliMinesHCSSF(4).xml",
+    "previousLevel": 35,
+    "currentLevel": 42,
     "stats": {
       "life": {
-        "before": 820,
-        "after": 1059,
-        "delta": 239
+        "before": 1059,
+        "after": 1412,
+        "delta": 353
       },
       "mana": {
-        "before": 296,
-        "after": 306,
-        "delta": 10
+        "before": 306,
+        "after": 358,
+        "delta": 52
       },
       "energyShield": {
-        "before": 41,
-        "after": 21,
-        "delta": -20
+        "before": 21,
+        "after": 172,
+        "delta": 151
       },
       "evasion": {
-        "before": 120,
-        "after": 334,
-        "delta": 214
+        "before": 334,
+        "after": 198,
+        "delta": -136
       },
       "armour": {
-        "before": 317,
-        "after": 440,
-        "delta": 123
+        "before": 440,
+        "after": 735,
+        "delta": 295
       },
       "fireRes": {
-        "before": 75,
-        "after": 74,
-        "delta": -1
+        "before": 74,
+        "after": 52,
+        "delta": -22
       },
       "coldRes": {
         "before": 75,
-        "after": 75,
-        "delta": 0
+        "after": 56,
+        "delta": -19
       },
       "lightningRes": {
         "before": 75,
-        "after": 75,
-        "delta": 0
+        "after": 17,
+        "delta": -58
       },
       "chaosRes": {
         "before": 0,
-        "after": 0,
-        "delta": 0
+        "after": -60,
+        "delta": -60
       },
       "attackBlock": {
-        "before": 36,
+        "before": 26,
         "after": 26,
-        "delta": -10
+        "delta": 0
       },
       "spellSuppression": {
         "before": 0,
@@ -652,61 +722,58 @@
         "delta": 0
       },
       "physicalMaximumHitTaken": {
-        "before": 920,
-        "after": 1161,
-        "delta": 241
+        "before": 1161,
+        "after": 1719,
+        "delta": 558
       },
       "totalEHP": {
-        "before": 2051.8505437339,
-        "after": 2428.4437336463,
-        "delta": 376.59318991240025
+        "before": 2428.4437336463,
+        "after": 2303.9915113222,
+        "delta": -124.45222232410015
       },
       "manaUnreserved": {
-        "before": 187,
-        "after": 37,
-        "delta": -150
+        "before": 37,
+        "after": 48,
+        "delta": 11
+      },
+      "manaRegenRecovery": {
+        "before": 5.4,
+        "after": 10,
+        "delta": 4.6
       },
       "lifeRegenRecovery": {
-        "before": 21.5,
-        "after": 23.6,
-        "delta": 2.1000000000000014
+        "before": 23.6,
+        "after": 11.3,
+        "delta": -12.3
       }
     },
     "addedPassiveIds": [
-      1655,
-      1822,
-      2260,
-      4502,
-      4546,
-      18769,
-      27415,
-      29549,
-      32710,
-      36858,
-      38190,
-      53456,
-      61653,
-      61689
-    ],
-    "removedPassiveIds": [
       6233,
-      10166,
+      9055,
+      10108,
+      18661,
       20546,
       21301,
+      22441,
       31371,
-      40751
+      35936,
+      40751,
+      42006,
+      44102,
+      49605
     ],
+    "removedPassiveIds": [],
     "gearChanges": [
-      "Weapon 1: replaced Brimstone Gnarl with Flaming Faun's Horn; adds 24–44 Fire Damage to Spells plus 6–12 Fire Damage implicit.",
-      "Weapon 2: replaced the buckler with Gale Tower; effective attack block fell 36%→26%.",
-      "Body Armour: replaced the rare life/resistance/mana chest with Thorny Scale Doublet, gaining 23.6 Life regeneration/sec but losing its explicit life, resistance, and mana modifiers.",
-      "Other equipped gear is unchanged from the prior snapshot."
+      "Gloves: replaced Skull Fist with Phoenix Palm (+72 Life, +9 ES, +20 Dexterity craft), losing the prior +9% Lightning Resistance.",
+      "Boots: replaced normal Leatherscale Boots with Eagle Track (+58 Life, +18 ES, 10% movement speed, +13% Cold Resistance, and 11.3 Life regeneration/sec).",
+      "Amulet: replaced Hale Jade Amulet with Rage Clasp, adding 59% increased Mana Regeneration Rate and a crafted +16% Fire Resistance.",
+      "Body Armour: replaced Thorny Scale Doublet with Corruption Carapace (+21% Fire, +11% Cold Resistance, and increased Armour/ES), but it has no explicit Life modifier.",
+      "Weapon, shield, helmet, belt, rings, and flasks otherwise match the prior snapshot."
     ],
     "skillsChanged": true,
     "skillChanges": [
-      "Replaced Stormblast Mine 9 + Swift Assembly 8 + Added Lightning Damage 6 with Pyroclast Mine 3 + Swift Assembly 9 + Trap and Mine Damage 5 + Controlled Destruction 5 in the four-link.",
-      "Added Purity of Elements 4 and Flammability 4; Flame Dash advanced to level 7; Skitterbots advanced to level 6.",
-      "Added Automation 2 linked with Detonate Mines 1 in the boots. The selected PoB calculation is Flame Dash, not the mine."
+      "Pyroclast Mine advanced 3→5 and gained 2% quality; Swift Assembly 9→11, Trap and Mine Damage 5→8, Controlled Destruction 5→8.",
+      "Purity of Elements 4→6, Skitterbots 6→8, Flammability 4→6, Flame Dash 7→9, and Automation 2→5."
     ],
     "history": [
       {
@@ -927,25 +994,143 @@
           "Flame Dash 4→5 and Orb of Storms 6→8.",
           "Summon Skitterbots 3 is now in the active skill set; Pyroclast Mine remains absent."
         ]
+      },
+      {
+        "previousFile": "3.29 ReliMinesHCSSF(3).xml",
+        "previousLevel": 28,
+        "currentLevel": 35,
+        "stats": {
+          "life": {
+            "before": 820,
+            "after": 1059,
+            "delta": 239
+          },
+          "mana": {
+            "before": 296,
+            "after": 306,
+            "delta": 10
+          },
+          "energyShield": {
+            "before": 41,
+            "after": 21,
+            "delta": -20
+          },
+          "evasion": {
+            "before": 120,
+            "after": 334,
+            "delta": 214
+          },
+          "armour": {
+            "before": 317,
+            "after": 440,
+            "delta": 123
+          },
+          "fireRes": {
+            "before": 75,
+            "after": 74,
+            "delta": -1
+          },
+          "coldRes": {
+            "before": 75,
+            "after": 75,
+            "delta": 0
+          },
+          "lightningRes": {
+            "before": 75,
+            "after": 75,
+            "delta": 0
+          },
+          "chaosRes": {
+            "before": 0,
+            "after": 0,
+            "delta": 0
+          },
+          "attackBlock": {
+            "before": 36,
+            "after": 26,
+            "delta": -10
+          },
+          "spellSuppression": {
+            "before": 0,
+            "after": 0,
+            "delta": 0
+          },
+          "physicalMaximumHitTaken": {
+            "before": 920,
+            "after": 1161,
+            "delta": 241
+          },
+          "totalEHP": {
+            "before": 2051.8505437339,
+            "after": 2428.4437336463,
+            "delta": 376.59318991240025
+          },
+          "manaUnreserved": {
+            "before": 187,
+            "after": 37,
+            "delta": -150
+          },
+          "lifeRegenRecovery": {
+            "before": 21.5,
+            "after": 23.6,
+            "delta": 2.1000000000000014
+          }
+        },
+        "addedPassiveIds": [
+          1655,
+          1822,
+          2260,
+          4502,
+          4546,
+          18769,
+          27415,
+          29549,
+          32710,
+          36858,
+          38190,
+          53456,
+          61653,
+          61689
+        ],
+        "removedPassiveIds": [
+          6233,
+          10166,
+          20546,
+          21301,
+          31371,
+          40751
+        ],
+        "gearChanges": [
+          "Weapon 1: replaced Brimstone Gnarl with Flaming Faun's Horn; adds 24–44 Fire Damage to Spells plus 6–12 Fire Damage implicit.",
+          "Weapon 2: replaced the buckler with Gale Tower; effective attack block fell 36%→26%.",
+          "Body Armour: replaced the rare life/resistance/mana chest with Thorny Scale Doublet, gaining 23.6 Life regeneration/sec but losing its explicit life, resistance, and mana modifiers.",
+          "Other equipped gear is unchanged from the prior snapshot."
+        ],
+        "skillsChanged": true,
+        "skillChanges": [
+          "Replaced Stormblast Mine 9 + Swift Assembly 8 + Added Lightning Damage 6 with Pyroclast Mine 3 + Swift Assembly 9 + Trap and Mine Damage 5 + Controlled Destruction 5 in the four-link.",
+          "Added Purity of Elements 4 and Flammability 4; Flame Dash advanced to level 7; Skitterbots advanced to level 6.",
+          "Added Automation 2 linked with Detonate Mines 1 in the boots. The selected PoB calculation is Flame Dash, not the mine."
+        ]
       }
     ],
     "previousSnapshot": {
       "source": {
         "kind": "reviewed PoB XML",
-        "file": "3.29 ReliMinesHCSSF(3).xml",
-        "previousFile": "3.29 ReliMinesHCSSF(2).xml",
+        "file": "3.29 ReliMinesHCSSF(4).xml",
+        "previousFile": "3.29 ReliMinesHCSSF(3).xml",
         "pobTreeVersion": "3_29",
         "patchContext": "3.30",
         "reviewedAt": "2026-11-14",
-        "note": "Active tree/skill/item/config set 1. PoB PlayerStat values are serialized calculated outputs, not independently recalculated. resistancePenalty is configured as 0; actual Act remains unknown. Passive identities and mastery effect IDs are verified against matching PoB 3_29 tree data; a separate 3.30 tree is not independently validated.",
-        "sha256": "4259d15bf4e65b58c1335fd63a1b6213d881dbab1a1b8e34f9000f39bdde12f0",
+        "note": "Active tree/skill/item/config set 1. PoB PlayerStat values are serialized calculated outputs, not independently recalculated. The XML's selected main skill calculation is Flame Dash, so ManaPerSecondCost and CombinedDPS are not Pyroclast Mine metrics. resistancePenalty is configured as 0; actual Act remains unknown. Passive identities/mastery effects are verified against matching PoB 3_29 tree data; a separate 3.30 tree is not independently validated.",
+        "sha256": "76a6dcc2f097e7e5f849a5d1ec3961c3062f84ccf98c2c13fee8f2ebdb616a51",
         "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_29/tree.lua",
         "treeMappingBlobSha": "3086d40c72d926484c7d52b563ad686a5627a12a"
       },
       "character": {
         "label": "ReliMinesHCSSF",
         "nameVerified": false,
-        "level": 28,
+        "level": 35,
         "class": "Scion",
         "ascendancy": "None",
         "league": "HC SSF Covens",
@@ -953,26 +1138,32 @@
         "bandit": "PoB setting: Alira; in-game outcome not confirmed"
       },
       "stats": {
-        "life": 820,
-        "mana": 296,
-        "energyShield": 41,
-        "evasion": 120,
-        "armour": 317,
-        "fireRes": 75,
+        "life": 1059,
+        "mana": 306,
+        "energyShield": 21,
+        "evasion": 334,
+        "armour": 440,
+        "fireRes": 74,
         "coldRes": 75,
         "lightningRes": 75,
         "chaosRes": 0,
-        "attackBlock": 36,
+        "attackBlock": 26,
         "spellSuppression": 0,
-        "physicalMaximumHitTaken": 920,
-        "totalEHP": 2051.8505437339,
-        "lifeRegenRecovery": 21.5,
-        "fireResOvercap": 9,
-        "coldResOvercap": 4,
-        "lightningResOvercap": 1,
-        "manaUnreserved": 187,
-        "physicalDamageReduction": 3,
-        "combinedDPS": 661.68064517291
+        "physicalMaximumHitTaken": 1161,
+        "totalEHP": 2428.4437336463,
+        "lifeRegenRecovery": 23.6,
+        "fireResOvercap": 0,
+        "coldResOvercap": 16,
+        "lightningResOvercap": 10,
+        "manaUnreserved": 37,
+        "manaUnreservedPercent": 12.091503267974,
+        "manaRegenRecovery": 5.4,
+        "physicalDamageReduction": 4,
+        "combinedDPS": 296.17412142857,
+        "lightningMaximumHitTaken": 3857,
+        "fireMaximumHitTaken": 3724,
+        "coldMaximumHitTaken": 3857,
+        "chaosMaximumHitTaken": 1059
       },
       "progress": {
         "completedTaskIds": [
@@ -1003,39 +1194,48 @@
           "p17",
           "p18",
           "p19",
-          "p20"
+          "p21",
+          "p27"
         ],
-        "passiveCountFromPob": 33,
-        "passiveValidation": "Matching PoB 3_29 data verifies all 33 allocated node IDs, including the Scion class start; no prior nodes were refunded. Newly allocated IDs are 6233 (Blast Waves), 12382 (Life Mastery), 10166 (Mine Mastery), 20546/37671 (Intelligence), 21301 (Strength), and 31371/40751 (Mine Area of Effect). Life Mastery node 12382 has effect 47642 (+30 maximum Life), and Mine Mastery node 10166 has effect 6510 (2.5% Life regeneration after a recent mine detonation). The moving-detonation mastery 21313 remains on node 59926. Verified checklist p19 (Life Mastery) and p20 (Blast Waves) are complete. The planned Explosive Elements node 61689, Volatile Mines 9055, Efficient Explosives 44102, and the separate Mine Mastery node 27872 on that route are not allocated. The same regen effect at node 10166 does not verify node 27872.",
-        "currentGoal": "Verify current Act and resistance penalty: PoB shows 75% Fire/Cold/Lightning with resistancePenalty=0, but Act is unknown. Improve life and physical-hit safety (820 Life, 317 Armour, 920 physical maximum hit); keep the shield and improve the normal boots without losing the Stormblast 3-link. Continue the suggested passive route from the verified Life Mastery/Blast Waves allocations toward Explosive Elements.",
+        "passiveCountFromPob": 41,
+        "passiveValidation": "Matching PoB 3_29 tree data verifies all 41 active node IDs. New since the previous snapshot: 1655, 1822, 2260, 4502, 4546, 18769 (Written in Blood), 27415, 29549, 32710, 36858, 38190, 53456, 61653, and 61689 (Explosive Elements). Removed: 6233 (Blast Waves), 10166 (Mine Mastery), 20546, 21301, 31371, and 40751. Life Mastery node 12382 still selects effect 47642 (+30 Life). Mine Mastery node 59926 now selects effect 6510 (2.5% Life regeneration after a recent mine detonation), replacing its previous moving-detonation effect 21313. Explosive Elements (61689) and Written in Blood (18769) are allocated and verified; Blast Waves (6233) is refunded and must not remain marked complete. The separate planned Mine Mastery node 27872 and Efficient Explosives (44102) are not allocated. The 3_29 data is not independent proof of 3.30 in-game node behavior.",
+        "currentGoal": "Resolve the tight mana buffer while preserving HCSSF defenses: the export shows 306 total Mana, only 37 unreserved, and 5.4 Mana regeneration/sec. Test with Skitterbots disabled first while retaining Purity of Elements. Also recheck Act/resistance penalty (PoB has resistancePenalty=0) and keep improving physical-hit safety (1059 Life, 440 Armour, 1161 physical maximum hit, 26% effective block).",
         "numericPassiveNodeIds": [
           17674,
-          6233,
+          2260,
+          1655,
           46092,
           51923,
+          38190,
           48778,
-          65034,
-          59926,
+          12702,
+          32710,
+          53456,
           18033,
           47062,
-          40751,
+          61653,
           21602,
           55373,
-          12382,
-          10166,
-          58833,
-          20546,
-          57615,
-          33545,
-          65167,
-          11688,
-          13782,
-          31371,
-          56153,
+          29549,
+          61689,
           15073,
-          12702,
+          4502,
+          4546,
+          57615,
+          65167,
+          65034,
+          58833,
+          59926,
+          33545,
+          36858,
+          27415,
+          13782,
+          11688,
+          56153,
+          12382,
+          18769,
           19939,
-          21301,
+          1822,
           55485,
           13714,
           62021,
@@ -1044,17 +1244,30 @@
           37671
         ],
         "newNumericPassiveNodeIdsSincePreviousImport": [
+          1655,
+          1822,
+          2260,
+          4502,
+          4546,
+          18769,
+          27415,
+          29549,
+          32710,
+          36858,
+          38190,
+          53456,
+          61653,
+          61689
+        ],
+        "passiveTreeUrl": "https://www.pathofexile.com/passive-skill-tree/AAAABgAAKEUKCNQGd7QMytOVLr6KMZ5_xtDQRnG31vDVYTXNt8Pk64RGWEcLhD_6P_grqFoMJj_prFzXWLajbWTBeSVFN4wce2L01kvJFsZBFuZMnAAIZbuoWuhowXg==",
+        "removedNumericPassiveNodeIdsSincePreviousImport": [
           6233,
-          40751,
-          12382,
           10166,
           20546,
-          31371,
           21301,
-          37671
+          31371,
+          40751
         ],
-        "passiveTreeUrl": null,
-        "removedNumericPassiveNodeIdsSincePreviousImport": [],
         "masteryEffects": [
           {
             "nodeId": 12382,
@@ -1062,14 +1275,9 @@
             "description": "+30 to maximum Life"
           },
           {
-            "nodeId": 10166,
+            "nodeId": 59926,
             "effectId": 6510,
             "description": "Regenerate 2.5% of Life per Second if you've Detonated a Mine Recently"
-          },
-          {
-            "nodeId": 59926,
-            "effectId": 21313,
-            "description": "Detonate Mines is Triggered while you are moving"
           }
         ],
         "verifiedPassiveNodes": [
@@ -1078,8 +1286,12 @@
             "name": "Physical Damage"
           },
           {
-            "nodeId": 6233,
-            "name": "Blast Waves"
+            "nodeId": 2260,
+            "name": "Mine Damage"
+          },
+          {
+            "nodeId": 1655,
+            "name": "Mine Damage"
           },
           {
             "nodeId": 46092,
@@ -1090,16 +1302,24 @@
             "name": "Intelligence"
           },
           {
+            "nodeId": 38190,
+            "name": "Life and Energy Shield"
+          },
+          {
             "nodeId": 48778,
             "name": "Intelligence"
           },
           {
-            "nodeId": 65034,
-            "name": "Life"
+            "nodeId": 12702,
+            "name": "Path of the Warrior"
           },
           {
-            "nodeId": 59926,
-            "name": "Mine Mastery"
+            "nodeId": 32710,
+            "name": "Intelligence"
+          },
+          {
+            "nodeId": 53456,
+            "name": "Intelligence"
           },
           {
             "nodeId": 18033,
@@ -1110,8 +1330,8 @@
             "name": "Spell Damage and Intelligence"
           },
           {
-            "nodeId": 40751,
-            "name": "Mine Area of Effect"
+            "nodeId": 61653,
+            "name": "Life and Energy Shield"
           },
           {
             "nodeId": 21602,
@@ -1122,64 +1342,84 @@
             "name": "Life and Strength"
           },
           {
-            "nodeId": 12382,
-            "name": "Life Mastery"
+            "nodeId": 29549,
+            "name": "Mine Damage"
           },
           {
-            "nodeId": 10166,
-            "name": "Mine Mastery"
-          },
-          {
-            "nodeId": 58833,
-            "name": "Scion class start"
-          },
-          {
-            "nodeId": 20546,
-            "name": "Intelligence"
-          },
-          {
-            "nodeId": 57615,
-            "name": "Mine Throwing Speed"
-          },
-          {
-            "nodeId": 33545,
-            "name": "Harrier"
-          },
-          {
-            "nodeId": 65167,
-            "name": "Life"
-          },
-          {
-            "nodeId": 11688,
-            "name": "Spell Damage"
-          },
-          {
-            "nodeId": 13782,
-            "name": "Physical Damage"
-          },
-          {
-            "nodeId": 31371,
-            "name": "Mine Area of Effect"
-          },
-          {
-            "nodeId": 56153,
-            "name": "Spell Damage"
+            "nodeId": 61689,
+            "name": "Explosive Elements"
           },
           {
             "nodeId": 15073,
             "name": "Life"
           },
           {
-            "nodeId": 12702,
-            "name": "Path of the Warrior"
+            "nodeId": 4502,
+            "name": "Intelligence"
+          },
+          {
+            "nodeId": 4546,
+            "name": "Mine Detonation Speed"
+          },
+          {
+            "nodeId": 57615,
+            "name": "Mine Throwing Speed"
+          },
+          {
+            "nodeId": 65167,
+            "name": "Life"
+          },
+          {
+            "nodeId": 65034,
+            "name": "Life"
+          },
+          {
+            "nodeId": 58833,
+            "name": "Scion class start"
+          },
+          {
+            "nodeId": 59926,
+            "name": "Mine Mastery"
+          },
+          {
+            "nodeId": 33545,
+            "name": "Harrier"
+          },
+          {
+            "nodeId": 36858,
+            "name": "Intelligence"
+          },
+          {
+            "nodeId": 27415,
+            "name": "Intelligence"
+          },
+          {
+            "nodeId": 13782,
+            "name": "Physical Damage"
+          },
+          {
+            "nodeId": 11688,
+            "name": "Spell Damage"
+          },
+          {
+            "nodeId": 56153,
+            "name": "Spell Damage"
+          },
+          {
+            "nodeId": 12382,
+            "name": "Life Mastery"
+          },
+          {
+            "nodeId": 18769,
+            "name": "Written in Blood"
           },
           {
             "nodeId": 19939,
             "name": "Life"
           },
           {
-            "nodeId": 21301,
-            "name": "Strength"
+            "nodeId": 1822,
+            "name": "Life and Energy Shield"
           },
           {
             "nodeId": 55485,
@@ -1209,63 +1449,76 @@
       },
       "skills": [
         {
-          "slot": "Body Armour",
+          "slot": "Weapon 2",
           "gems": [
-            "Flame Dash (Lv 5)"
+            "Flammability (Lv 4)"
           ]
         },
         {
-          "slot": "Weapon 2",
+          "slot": "Helmet",
           "gems": [
-            "Orb of Storms (Lv 8)"
+            "Purity of Elements (Lv 4)"
+          ]
+        },
+        {
+          "slot": "Body Armour",
+          "gems": [
+            "Pyroclast Mine (Lv 3)",
+            "Swift Assembly (Lv 9)",
+            "Trap and Mine Damage (Lv 5)",
+            "Controlled Destruction (Lv 5)"
+          ],
+          "calculatedCombinedDps": null,
+          "calculationNote": "The XML's main selected calculation is Flame Dash, so its combined DPS is not Pyroclast Mine DPS."
+        },
+        {
+          "slot": "Weapon 1",
+          "gems": [
+            "Flame Dash (Lv 7)"
           ]
         },
         {
           "slot": "Gloves",
           "gems": [
-            "Summon Skitterbots (Lv 3)"
+            "Summon Skitterbots (Lv 6)"
           ]
         },
         {
           "slot": "Boots",
           "gems": [
-            "Stormblast Mine (Lv 9)",
-            "Swift Assembly (Lv 8)",
-            "Added Lightning Damage (Lv 6)"
-          ],
-          "calculatedCombinedDps": 661.68064517291
+            "Automation (Lv 2)",
+            "Detonate Mines (Lv 1)"
+          ]
         }
       ],
       "gear": [
         {
           "slot": "Weapon 1",
-          "name": "Brimstone Gnarl",
-          "base": "Quartz Sceptre",
-          "rarity": "Rare",
+          "name": "Flaming Faun's Horn of the Worthy",
+          "base": "Faun's Horn",
+          "rarity": "Magic",
           "mods": [
-            "20% increased Elemental Damage",
-            "12% increased Spell Damage",
-            "Adds 9 to 17 Cold Damage to Spells",
-            "+20 to maximum Mana",
-            "+1 to Level of all Physical Spell Skill Gems",
-            "18% chance to Ignite"
+            "Adds 6 to 12 Fire Damage to Spells and Attacks",
+            "18% reduced Attribute Requirements",
+            "Adds 24 to 44 Fire Damage to Spells"
           ]
         },
         {
-          "slot": "Amulet",
-          "name": "Hale Jade Amulet of Nimbleness",
-          "base": "Unique ID: 580f22ebfdb1c4b44deb35fc8344492aa7cead07f2c331ded9bcbce6b9ab51d4",
-          "rarity": "Magic",
+          "slot": "Weapon 2",
+          "name": "Gale Tower",
+          "base": "Scarlet Round Shield",
+          "rarity": "Rare",
           "mods": [
-            "+24 to Dexterity",
-            "10% increased Cast Speed",
-            "+9 to maximum Life"
+            "+103 to Accuracy Rating",
+            "17% increased Armour and Evasion",
+            "25% increased Stun and Block Recovery",
+            "Reflects 1 Physical Damage to Melee Attackers"
           ]
         },
         {
           "slot": "Helmet",
           "name": "Sanguine Sallet of Craft",
-          "base": "Armour: 46",
+          "base": "Armour: 46 / Evasion: 46",
           "rarity": "Magic",
           "mods": [
             "+37 to maximum Life",
@@ -1273,31 +1526,13 @@
           ]
         },
         {
-          "slot": "Weapon 2",
-          "name": "Grim Fend",
-          "base": "Goathide Buckler",
-          "rarity": "Rare",
-          "mods": [
-            "3% increased Movement Speed",
-            "45% increased Chance to Block",
-            "+11 to Evasion Rating",
-            "+5 to maximum Life",
-            "Regenerate 1 Life per second",
-            "+16% to Fire Resistance"
-          ]
-        },
-        {
           "slot": "Body Armour",
-          "name": "Rift Shelter",
-          "base": "Ringmail Coat",
-          "rarity": "Rare",
+          "name": "Thorny Scale Doublet of the Starfish",
+          "base": "Armour: 111 / Evasion: 111",
+          "rarity": "Magic",
           "mods": [
-            "+32 to maximum Mana",
-            "+16% to Fire Resistance",
-            "+10% to Cold Resistance",
-            "+13% to Lightning Resistance",
-            "Reflects 6 Physical Damage to Melee Attackers",
-            "+23 to maximum Life"
+            "Regenerate 23.6 Life per second",
+            "Reflects 4 Physical Damage to Melee Attackers"
           ]
         },
         {
@@ -1315,9 +1550,20 @@
         {
           "slot": "Boots",
           "name": "Leatherscale Boots",
-          "base": "Armour: 16",
+          "base": "Armour: 16 / Evasion: 16",
           "rarity": "Normal",
           "mods": []
+        },
+        {
+          "slot": "Amulet",
+          "name": "Hale Jade Amulet of Nimbleness",
+          "base": "Jade Amulet",
+          "rarity": "Magic",
+          "mods": [
+            "+24 to Dexterity",
+            "10% increased Cast Speed",
+            "+9 to maximum Life"
+          ]
         },
         {
           "slot": "Ring 1",
@@ -1330,13 +1576,13 @@
             "Adds 3 to 7 Fire Damage to Attacks",
             "+25 to maximum Life",
             "+5% to all Elemental Resistances",
-            "+19% to Cold Resistance"
+            "+19% to Cold Resistance (crafted)"
           ]
         },
         {
           "slot": "Ring 2",
           "name": "Catalysing Topaz Ring of the Salamander",
-          "base": "Unique ID: e6bf04d0a8185261e1529ee8ad2160fed734d67eba5c26f61437432cb6764e83",
+          "base": "Topaz Ring",
           "rarity": "Magic",
           "mods": [
             "+20% to Lightning Resistance",
@@ -1345,53 +1591,53 @@
           ]
         },
         {
-          "slot": "Flask 5",
-          "name": "Grand Mana Flask of Warding",
-          "base": "Unique ID: 036fce6cd52aed223b84403dcdb37a062de9d2f80641eeed19f2076698395f12",
+          "slot": "Belt",
+          "name": "Upgraded Chain Belt of the Squall",
+          "base": "Chain Belt",
           "rarity": "Magic",
           "mods": [
-            "Removes Curses on use"
+            "+15 to maximum Energy Shield",
+            "+14% to Lightning Resistance",
+            "+17 to maximum Life (crafted)"
+          ]
+        },
+        {
+          "slot": "Flask 1",
+          "name": "Continuous Grand Life Flask",
+          "base": "Grand Life Flask",
+          "rarity": "Magic",
+          "mods": [
+            "21% increased Charge Recovery"
           ]
         },
         {
           "slot": "Flask 2",
           "name": "Greater Life Flask",
-          "base": "Unique ID: eb23357b04e847b659f4843a04ab2e7f11105522233f1a7a6c3a7070946e348f",
+          "base": "Greater Life Flask",
+          "rarity": "Normal",
+          "mods": []
+        },
+        {
+          "slot": "Flask 3",
+          "name": "Large Life Flask",
+          "base": "Large Life Flask",
           "rarity": "Normal",
           "mods": []
         },
         {
           "slot": "Flask 4",
           "name": "Quicksilver Flask",
-          "base": "Unique ID: fa837efe7f9de05afd6af0385fd32e41e8fd4a8c94616d9ea8cfb0e5510617e7",
+          "base": "Quicksilver Flask",
           "rarity": "Normal",
           "mods": []
         },
         {
-          "slot": "Belt",
-          "name": "Upgraded Chain Belt of the Squall",
-          "base": "Unique ID: 5252bab0f89aa2de78b52306acd40a432d0387deeeeb758437b6587acaa5c68a",
+          "slot": "Flask 5",
+          "name": "Grand Mana Flask of Warding",
+          "base": "Grand Mana Flask",
           "rarity": "Magic",
           "mods": [
-            "+15 to maximum Energy Shield",
-            "+14% to Lightning Resistance",
-            "+17 to maximum Life"
-          ]
-        },
-        {
-          "slot": "Flask 3",
-          "name": "Large Life Flask",
-          "base": "Unique ID: b9d83aff94f4f9c58fdee5ba9373421eef3012b8e9d9bd8f8a96bb7c9c3531bc",
-          "rarity": "Normal",
-          "mods": []
-        },
-        {
-          "slot": "Flask 1",
-          "name": "Continuous Grand Life Flask",
-          "base": "Unique ID: e91d6d65040f09a0deae3257b7dd1cf49acf2d212672b137b01acb2f2db2cb05",
-          "rarity": "Magic",
-          "mods": [
-            "21% increased Charge Recovery"
+            "Removes Curses on use"
           ]
         }
       ]
