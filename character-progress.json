@@ -813,7 +813,7 @@
     "Next (1 point): Blood Siphon 25058 → Life 9877 for +5% maximum Life.",
     "Then (4 points): Intelligence 20546 → Intelligence 3656 → Coldhearted Calculation 24050 → Life and Energy Shield on Kill 1767 → Resourcefulness 41989. Gains +8% Spell Suppression, +5% maximum Life, and +10% maximum ES; the route also adds mana regeneration and damage.",
     "Then, if you want another life-focused block (4 points): Harrier 33545 → Dexterity 28574 → Life/Life on Kill 61875 → Life/Life on Kill 19287 → Hired Killer 49379. Adds +15% increased maximum Life; on-kill recovery is less useful against bosses.",
-    "Optional single point: Instinct 24067 → Spell Suppression Mastery 54413; choose 'Prevent +3% of Suppressed Spell Damage.'",
+    "Strong single point available now: Instinct 24067 → Spell Suppression Mastery 54413; choose 'Chance to Suppress Spell Damage is Lucky.' At 27% suppression this gives 46.71% effective chance, or 57.75% at 35% after Resourcefulness. Take this before longer routes if desired. At reliable 100% suppression, switch to 'Prevent +3% of Suppressed Spell Damage.' The mastery remains unconfirmed until verified in a later XML.",
     "After those defenses, consider the one-point Elemental Focus 42686 from Elemental Damage 21575, then Mine Damage 60949 from Saboteur 46965. These are offensive fillers.",
     "Keep Life Mastery 25281 unplanned until the tree meets its six-Life-Mastery requirement; it is not currently available."
   ],
