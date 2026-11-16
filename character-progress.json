@@ -1,6 +1,6 @@
 {
   "format": "reliquarian-character-progress-v1",
-  "publishedAt": "2026-11-15T22:00:00Z",
+  "publishedAt": "2026-11-16",
   "source": {
     "kind": "reviewed PoB XML",
     "file": "3.29 ReliMinesHCSSF(8).xml",
@@ -4444,67 +4444,356 @@
   },
   "warden": {
     "format": "warden-character-progress-v1",
-    "publishedAt": "2026-11-15",
+    "publishedAt": "2026-11-16",
     "character": {
-      "label": "StormRainWarden",
+      "label": "StormRainWarden (character name unverified)",
       "nameVerified": false,
-      "level": null,
+      "level": 17,
       "class": "Ranger",
-      "ascendancy": "Warden",
+      "ascendancy": "None",
       "league": "HC SSF Covens",
-      "act": null,
-      "status": "planned",
+      "act": 2,
+      "status": "alive",
       "deathLevel": null,
-      "bandit": null,
+      "bandit": "Undecided; PoB says None at level 17. Do not infer future Act 2 choice.",
       "pantheon": {
         "major": null,
         "minor": null
-      }
+      },
+      "plannedAscendancy": "Warden",
+      "actEvidence": "Player confirmed just entered Act 2"
     },
     "source": {
-      "kind": "Original 3.30 theorycraft guide; no character PoB yet",
-      "file": null,
-      "reviewedAt": null,
-      "pobTreeVersion": "3_30",
-      "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua",
-      "note": "Planned build, not a verified character snapshot. Named passive notables match PoB 3_30 IDs; intervening travel nodes and full paths are unverified."
+      "kind": "reviewed active PoB XML",
+      "file": "3.29 Shock Warden.xml",
+      "reviewedAt": "2026-11-16",
+      "pobTreeVersion": "3_29",
+      "patchContext": "3.30 Covens",
+      "mainSocketGroup": 5,
+      "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_29/tree.lua",
+      "crossChecked30": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua",
+      "note": "First verified Warden/Ranger PoB: level 17, still unascended. All 18 allocated non-start node IDs have consistent names and effects between PoB 3_29 and 3_30. Player confirmed Act 2. PoB character name is not established. Exported HitChance 54% is configuration-specific; cross-check in-game accuracy before inferring actual leveling misses. The 3_30 campaign plan is an alternative path, not a record of how the current character traveled. No raw XML or character hashes published."
     },
-    "stats": {},
+    "stats": {
+      "life": 430,
+      "mana": 143,
+      "manaUnreserved": 111,
+      "energyShield": 0,
+      "armour": 40,
+      "evasion": 294,
+      "fireRes": 22,
+      "coldRes": 61,
+      "lightningRes": 15,
+      "chaosRes": 0,
+      "spellSuppression": 24,
+      "physicalMaximumHitTaken": 437,
+      "fireMaximumHitTaken": 531,
+      "coldMaximumHitTaken": 1024,
+      "lightningMaximumHitTaken": 489,
+      "chaosMaximumHitTaken": 430,
+      "attackBlock": 0,
+      "mainHandAccuracy": 710,
+      "hitChance": 54,
+      "combinedDPS": 64.953276457926,
+      "attackSpeed": 1.534,
+      "manaCost": 7,
+      "lifeRegenRecovery": 0,
+      "manaRegenRecovery": 2.5
+    },
     "progress": {
-      "completedTaskIds": [],
-      "completedPassiveIds": [],
-      "currentGoal": "Start Ranger, use Lightning Arrow for clearing and obtain Storm Rain at level 28. Test Oath of Spring shock maintenance without assuming full stacks.",
-      "passiveValidation": "No Warden PoB uploaded. No passives or milestones verified.",
-      "completedMasteryEffects": {}
+      "completedTaskIds": [
+        "starter",
+        "lightning",
+        "move"
+      ],
+      "completedPassiveIds": [
+        "29870",
+        "41866",
+        "48099",
+        "65224",
+        "2094",
+        "54142",
+        "42964",
+        "37504",
+        "2715",
+        "903",
+        "3187",
+        "65210",
+        "39821",
+        "56149",
+        "50338",
+        "720",
+        "32117",
+        "9206"
+      ],
+      "currentGoal": "Act 2: fix low fire/lightning resistance and missing life/sockets; add 3rd Lightning Arrow support; take adjacent Herbalism; then travel toward Thick Skin with optional Precise Technique once accuracy stays above life.",
+      "passiveValidation": "Verified 18 allocated non-start node IDs from the active PoB 3_29 tree. All 18 IDs also map to the same names and effects in the available 3_30 tree. 13 intersect the original 93-point plan; five useful active points (29870, 2094, 903, 56149, 720) are alternative connected travel/attack nodes and are not wasted by definition. Current branch is connected. No masteries or ascendancy allocated.",
+      "completedMasteryEffects": {},
+      "passiveCountFromPob": 18,
+      "actualTreeVersion": "3_29",
+      "nextRoute": [
+        {
+          "id": "19858",
+          "name": "Herbalism",
+          "reason": "Directly adjacent to currently allocated Life node 9206; 10% increased maximum Life and improved flask recovery.",
+          "priority": 1
+        },
+        {
+          "id": "60942",
+          "name": "Dexterity",
+          "reason": "Connected to currently allocated Dexterity 41866; begins defensive route.",
+          "priority": 2
+        },
+        {
+          "id": "64709",
+          "name": "Dexterity",
+          "reason": "Continue from Dexterity 60942 toward Thick Skin/Precise Technique.",
+          "priority": 3
+        },
+        {
+          "id": "3469",
+          "name": "Dexterity",
+          "reason": "Connected travel into Thick Skin and optional Precise Technique.",
+          "priority": 4
+        },
+        {
+          "id": "63620",
+          "name": "Precise Technique",
+          "reason": "Conditional one-point keystone at this junction. 710 accuracy > 430 Life in this PoB, so the condition presently holds; recheck in game after gear upgrades. May postpone if more life is urgently needed.",
+          "priority": 5,
+          "optional": true
+        },
+        {
+          "id": "34678",
+          "name": "Life and Elemental Ailment Avoidance",
+          "reason": "Small defensive node toward Thick Skin.",
+          "priority": 6
+        },
+        {
+          "id": "19069",
+          "name": "Thick Skin",
+          "reason": "10% increased maximum Life and elemental ailment avoidance.",
+          "priority": 7
+        },
+        {
+          "id": "3042",
+          "name": "Life Mastery",
+          "reason": "Select +30 maximum Life (mastery effect ID 47642). Only allocate once adjacent Thick Skin is allocated.",
+          "priority": 8,
+          "masteryEffect": "47642"
+        }
+      ],
+      "currentAlternativeNodes": [
+        "29870",
+        "2094",
+        "903",
+        "56149",
+        "720"
+      ],
+      "verifiedQuestStage": "Act 2 by explicit player report; passive book completion not otherwise verified",
+      "currentGearNeeds": [
+        "Equip a second ring and an amulet when available",
+        "Look for life and movement speed boots, life on helmet/gloves/chest",
+        "Fix fire and lightning resistances from PoB 22% / 15%",
+        "Get a third Lightning Arrow damage support on existing linked white socket",
+        "Upgrade physical-biased bow using flat elemental damage"
+      ]
     },
     "findings": [
       {
+        "severity": "urgent",
+        "title": "Lightning Arrow is only a two-link despite a linked three-socket chest",
+        "detail": "Body Armour has Lightning Arrow level 2 + Mirage Archer level 5, with a third linked white socket unused. The exported selected skill CombinedDPS is ~65, so damage being painful is unsurprising.",
+        "action": "Add Added Cold Damage or Added Lightning Damage now (whichever is available). Use the third white linked socket in the existing chest. Level Lightning Arrow as you go."
+      },
+      {
+        "severity": "urgent",
+        "title": "Fire/lightning resistance and life gear need attention",
+        "detail": "PoB reports Life 430, Fire Resistance 22%, Cold 61%, Lightning 15%, with 40 Armour and 294 Evasion. Ring 2 and amulet are empty; gloves, helmet, chest and belt have limited useful defenses, and boots have no movement speed.",
+        "action": "Fill empty ring and amulet first; prioritize fire/lightning resistances and life, boots with movement speed, and cheap bench crafts when available. Keep a strong life flask."
+      },
+      {
+        "severity": "warning",
+        "title": "Bow is mostly physical with no substantial flat lightning damage",
+        "detail": "20-quality rare Long Bow carries +64% physical damage and +2–4 physical, +128 Accuracy, but no flat elemental bow damage. Lightning Arrow converts half of physical to lightning but needs reliable attack damage, especially on rares.",
+        "action": "Compare each newly dropped/crafted bow by actual attack hit damage and speed, not rarity; seek added elemental attack damage and more attack speed. Keep +accuracy if relying on Precise Technique."
+      },
+      {
+        "severity": "warning",
+        "title": "PoB reports only 54% hit chance; interpretation uncertain",
+        "detail": "Export's selected-skill HitChance is 54% despite 710 main-hand Accuracy at level 17. Its calculation may be against an unsuitable configured enemy level/evasion, so this is not proof of a 54% in-game campaign hit rate.",
+        "action": "Check the Lightning Arrow chance to hit in-game against an appropriate-level target and PoB enemy configuration. If accuracy truly poor, address it immediately."
+      },
+      {
+        "severity": "good",
+        "title": "Defensive start is better than the guide's exact route",
+        "detail": "18 current non-start nodes include Finesse, Heart of Oak, Ballistics, Aspect of the Eagle, Quickstep and Intuition. PoB reports 24% Spell Suppression already. Five alternative starting attack/avoidance smalls are connected and usable.",
+        "action": "Do not blindly refund alternative start nodes. Take adjacent Herbalism next, then the verified Thick Skin path; revisit path efficiency later."
+      },
+      {
+        "severity": "good",
+        "title": "Precise Technique condition currently satisfied, but keystone unallocated",
+        "detail": "MainHandAccuracy is 710 and Maximum Life 430, so 710 > 430 in this snapshot. Precise Technique (63620) is four new points away through nodes 60942, 64709 and 3469. It is not currently allocated.",
+        "action": "Consider the keystone after improving life/resistances and getting to node 3469; recheck accuracy after each major equipment change. It disables critical strikes."
+      },
+      {
         "severity": "unknown",
-        "title": "No verified Warden character snapshot yet",
-        "detail": "No current character PoB has been supplied. Level, resistances, gear and passive allocations are unknown.",
-        "action": "Send a Warden PoB XML in chat for a verified audit and checklist update."
-      },
-      {
-        "severity": "warning",
-        "title": "Shock-stacking engine needs testing",
-        "detail": "Storm Rain beam overlaps, enemy positioning, chance to shock and shock duration affect achievable Oath of Spring stacks. Do not assume 50 stacks or full-stack boss DPS.",
-        "action": "Use tanky enemies to test the actual ramp and maintain a reliable fallback clearing skill."
-      },
-      {
-        "severity": "warning",
-        "title": "Hit mitigation comes before damage",
-        "detail": "Barkskin mitigates attack hits but not all damage sources. Life, suppression, chaos resistance and recovery remain essential.",
-        "action": "Complete defensive checkpoints before dangerous maps or league-boss enhancements."
+        "title": "Shock-engine testing has not started",
+        "detail": "Level 17 Ranger has no ascendancy yet and cannot use the level-28 Storm Rain skill. The guide's 50-shock maximum is a theoretical upper bound, not measured actual ramp.",
+        "action": "Continue Lightning Arrow into Act 3. Test Storm Rain and Oath of Spring separately once available, without assuming maximum stacks."
       }
     ],
-    "skills": [],
-    "gear": [],
+    "skills": [
+      {
+        "slot": "Gloves",
+        "gems": [
+          "Dash (level 5)"
+        ]
+      },
+      {
+        "slot": "Boots",
+        "gems": [
+          "Sniper's Mark (level 5)"
+        ]
+      },
+      {
+        "slot": "Helmet",
+        "gems": [
+          "Precision (level 2)"
+        ]
+      },
+      {
+        "slot": "Weapon 1",
+        "gems": [
+          "Burning Arrow (level 6)",
+          "Momentum (level 6)"
+        ]
+      },
+      {
+        "slot": "Body Armour",
+        "gems": [
+          "Mirage Archer (level 5)",
+          "Lightning Arrow (level 2)"
+        ],
+        "calculationNote": "Only 2/3 linked white sockets used; main selected skill. PoB exports 64.95 CombinedDPS with Mirage Archer contribution."
+      }
+    ],
+    "gear": [
+      {
+        "slot": "Weapon 1",
+        "name": "Maelstrom Thunder",
+        "base": "Long Bow",
+        "rarity": "Rare",
+        "mods": [
+          "+11 Dexterity",
+          "64% increased Physical Damage",
+          "Adds 2 to 4 Physical Damage",
+          "13% increased Stun Duration",
+          "128 Accuracy",
+          "20% quality",
+          "3 linked white sockets"
+        ]
+      },
+      {
+        "slot": "Weapon 2",
+        "name": "Death Brand",
+        "base": "Sharktooth Arrow Quiver",
+        "rarity": "Rare",
+        "mods": [
+          "Gain 8 Life per enemy hit with attacks",
+          "Adds 2 to 3 Physical Damage to Attacks",
+          "+17% Fire Resistance",
+          "+10% Lightning Resistance",
+          "13% Stun Duration"
+        ]
+      },
+      {
+        "slot": "Ring 1",
+        "name": "Armageddon Nail",
+        "base": "Sapphire Ring",
+        "rarity": "Rare",
+        "mods": [
+          "30% Cold Resistance (implicit)",
+          "+15 Dexterity",
+          "Adds 3 to 7 Fire Damage to Attacks",
+          "+25 maximum Life",
+          "+5% all Elemental Resistances",
+          "Crafted +19% Cold Resistance"
+        ]
+      },
+      {
+        "slot": "Ring 2",
+        "name": "Empty",
+        "base": null,
+        "rarity": "None",
+        "mods": []
+      },
+      {
+        "slot": "Amulet",
+        "name": "Empty",
+        "base": null,
+        "rarity": "None",
+        "mods": []
+      },
+      {
+        "slot": "Helmet",
+        "name": "Tricorne",
+        "base": "Tricorne",
+        "rarity": "Normal",
+        "mods": [
+          "66 Evasion"
+        ]
+      },
+      {
+        "slot": "Body Armour",
+        "name": "Superior Scale Vest",
+        "base": "Scale Vest",
+        "rarity": "Normal",
+        "mods": [
+          "40 Armour",
+          "40 Evasion",
+          "7% quality",
+          "3 linked white sockets"
+        ]
+      },
+      {
+        "slot": "Gloves",
+        "name": "Rawhide Gloves",
+        "base": "Rawhide Gloves",
+        "rarity": "Normal",
+        "mods": [
+          "16 Evasion"
+        ]
+      },
+      {
+        "slot": "Boots",
+        "name": "Agile Rawhide Boots of the Inuit",
+        "base": "Rawhide Boots",
+        "rarity": "Magic",
+        "mods": [
+          "+11 Evasion",
+          "+7% Cold Resistance",
+          "29 displayed Evasion"
+        ]
+      },
+      {
+        "slot": "Belt",
+        "name": "Leather Belt",
+        "base": "Leather Belt",
+        "rarity": "Normal",
+        "mods": [
+          "+38 maximum Life (implicit)"
+        ]
+      }
+    ],
     "nextActions": [
-      "Create Ranger. Level with Galvanic Arrow, then Lightning Arrow when available; upgrade an elemental bow routinely.",
-      "At level 28 add Storm Rain, keep Lightning Arrow as clear skill, and test beams/shock chance.",
-      "Normal Lab: Oath of Spring for planned offense, or Mother's Teachings first if leveling survival is weak.",
-      "Build life and capped resists before Kitava. Add spell suppression as gear and tree permit.",
-      "Send first Warden PoB XML to verify actual checkpoint completion; no automatic completion is assumed."
+      "NOW: Use the third linked white socket in your 3-link chest for Added Cold Damage or Added Lightning Damage with Lightning Arrow + Mirage Archer.",
+      "NOW: Equip a second ring and an amulet; look for Fire/Lightning Resistance and maximum Life. Current Fire 22%, Lightning 15%, Life 430 are the biggest survival gaps.",
+      "NEXT PASSIVE (1 point): Herbalism 19858, directly next to currently allocated Life 9206. +10% maximum Life and improved Flask Recovery.",
+      "THEN: Travel via Dexterity 60942 → Dexterity 64709 → Dexterity 3469 toward Thick Skin; take Precise Technique 63620 as an optional one-point damage spike if in-game Accuracy > maximum Life.",
+      "NEXT DEFENSE: Life and Elemental Ailment Avoidance 34678 → Thick Skin 19069 → Life Mastery 3042 with +30 maximum Life (effect 47642).",
+      "RECHECK: PoB reports 54% HitChance against its selected enemy; verify the actual in-game chance to hit before spending passives solving a potentially artificial configuration problem.",
+      "BY LEVEL 28: maintain Lightning Arrow as clearing skill and obtain Storm Rain for shock-engine experimentation. Keep SSF gear and flasks ahead of damage gimmicks."
     ],
     "plan": {
       "version": "3.30-exact-campaign-v2",
@@ -5150,6 +5439,19 @@
         }
       },
       "note": "Only warden.progress.completedPassiveIds and warden.progress.completedMasteryEffects represent confirmed character allocations. The plan object and HTML checklist represent expected future allocations only. Never mark them complete from level or proximity."
+    },
+    "comparison": {
+      "kind": "first verified Warden snapshot",
+      "previous": {
+        "reviewedAt": null,
+        "level": null,
+        "kind": "planned guide; no preceding verified Warden PoB"
+      },
+      "currentLevel": 17,
+      "actConfirmedByPlayer": 2,
+      "verifiedAllocatedNonStartNodes": 18,
+      "plannedRouteIntersection": 13,
+      "alternativeConnectedNodes": 5
     }
   }
 }
