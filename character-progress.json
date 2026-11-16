@@ -1,6 +1,6 @@
 {
   "format": "reliquarian-character-progress-v1",
-  "publishedAt": "2026-11-15T00:29:00Z",
+  "publishedAt": "2026-11-15T22:00:00Z",
   "source": {
     "kind": "reviewed PoB XML",
     "file": "3.29 ReliMinesHCSSF(8).xml",
@@ -25,7 +25,11 @@
     "pantheon": {
       "major": "The Brine King",
       "minor": "Gruthkul"
-    }
+    },
+    "status": "deceased",
+    "deathLevel": 71,
+    "deathReportedOn": "2026-11-15",
+    "deathEvidence": "Player-reported HC death at level 71; last reviewed PoB remains level 59."
   },
   "stats": {
     "life": 3350,
@@ -4428,5 +4432,78 @@
       "chaos": 0
     },
     "note": "The latest export includes a -30% penalty. Fire, Cold, and Lightning are capped at 75%, with PoB-reported overcaps of +21%, +41%, and +38%; Chaos Resistance is 25%."
+  },
+  "archive": {
+    "archived": true,
+    "reason": "Hardcore death",
+    "deathLevel": 71,
+    "reportedOn": "2026-11-15",
+    "lastVerifiedPobLevel": 59,
+    "successorBuild": "Storm Rain Shock-Stacking Warden",
+    "notes": "Death level is user-reported. This archive retains the last verified PoB snapshot at level 59; no invented level-71 stats or passives."
+  },
+  "warden": {
+    "format": "warden-character-progress-v1",
+    "publishedAt": "2026-11-15",
+    "character": {
+      "label": "StormRainWarden",
+      "nameVerified": false,
+      "level": null,
+      "class": "Ranger",
+      "ascendancy": "Warden",
+      "league": "HC SSF Covens",
+      "act": null,
+      "status": "planned",
+      "deathLevel": null,
+      "bandit": null,
+      "pantheon": {
+        "major": null,
+        "minor": null
+      }
+    },
+    "source": {
+      "kind": "Original 3.30 theorycraft guide; no character PoB yet",
+      "file": null,
+      "reviewedAt": null,
+      "pobTreeVersion": "3_30",
+      "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua",
+      "note": "Planned build, not a verified character snapshot. Named passive notables match PoB 3_30 IDs; intervening travel nodes and full paths are unverified."
+    },
+    "stats": {},
+    "progress": {
+      "completedTaskIds": [],
+      "completedPassiveIds": [],
+      "currentGoal": "Start Ranger, use Lightning Arrow for clearing and obtain Storm Rain at level 28. Test Oath of Spring shock maintenance without assuming full stacks.",
+      "passiveValidation": "No Warden PoB uploaded. No passives or milestones verified."
+    },
+    "findings": [
+      {
+        "severity": "unknown",
+        "title": "No verified Warden character snapshot yet",
+        "detail": "No current character PoB has been supplied. Level, resistances, gear and passive allocations are unknown.",
+        "action": "Send a Warden PoB XML in chat for a verified audit and checklist update."
+      },
+      {
+        "severity": "warning",
+        "title": "Shock-stacking engine needs testing",
+        "detail": "Storm Rain beam overlaps, enemy positioning, chance to shock and shock duration affect achievable Oath of Spring stacks. Do not assume 50 stacks or full-stack boss DPS.",
+        "action": "Use tanky enemies to test the actual ramp and maintain a reliable fallback clearing skill."
+      },
+      {
+        "severity": "warning",
+        "title": "Hit mitigation comes before damage",
+        "detail": "Barkskin mitigates attack hits but not all damage sources. Life, suppression, chaos resistance and recovery remain essential.",
+        "action": "Complete defensive checkpoints before dangerous maps or league-boss enhancements."
+      }
+    ],
+    "skills": [],
+    "gear": [],
+    "nextActions": [
+      "Create Ranger. Level with Galvanic Arrow, then Lightning Arrow when available; upgrade an elemental bow routinely.",
+      "At level 28 add Storm Rain, keep Lightning Arrow as clear skill, and test beams/shock chance.",
+      "Normal Lab: Oath of Spring for planned offense, or Mother's Teachings first if leveling survival is weak.",
+      "Build life and capped resists before Kitava. Add spell suppression as gear and tree permit.",
+      "Send first Warden PoB XML to verify actual checkpoint completion; no automatic completion is assumed."
+    ]
   }
 }
