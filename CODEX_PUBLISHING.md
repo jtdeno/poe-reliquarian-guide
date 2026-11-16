@@ -40,3 +40,10 @@ The root JSON is intentionally backward-compatible with the original Reliquarian
 3. Use numeric passive **node IDs as strings** in `warden.progress.completedPassiveIds`; verify each against active `3_30` PoB data and ensure removed/refunded nodes are removed. Verify mastery effect IDs separately. Use IDs in the new guide's task table for `completedTaskIds`; never assume an unchecked item is incomplete.
 4. Validate JSON, commit authorized changes to `main`, and verify public raw delivery. Keep raw PoB XML, personal details, hashes, and browser-only notes out of this public repository.
 5. GitHub publishing does not guarantee synchronization by the existing Windows local server; report those as separate states.
+
+
+## Exact Warden campaign passive planning (2026-11-15)
+
+The same shared dashboard now shows act-by-act expected node allocations through Act 10. `warden.plan` contains the **93 planned regular passive points** and `warden.progress` contains independently verified character state. Do not treat planned passives as completed. Confirm allocated numeric IDs AND selected mastery effect IDs against the active 3_30 PoB tree. The optional one-point Precise Technique keystone is valid only when Accuracy Rating exceeds Maximum Life; do not assume this threshold is met. The +15% suppression Evasion Mastery only applies if all four armour slots have Evasion Rating. Follow the published act plan, but adjust route ordering for HC survivability and actual in-game `/passives` quest-book totals.
+
+When publishing changes to the campaign route, update both the Warden HTML data and `warden.plan.actMilestones` in `character-progress.json` together, and verify public raw delivery. Avoid altering the archived Reliquarian final report. 
