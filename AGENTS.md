@@ -23,3 +23,14 @@ The original local dashboard filename is retained: `poe_reliquarian_hcssf_guide.
 - Warden is original and **experimental**: 50 Oath of Spring shocks is a maximum, not established sustained boss DPS. Validate beam hits, real shock uptime and defensive maximum hits before endorsing difficult content. Prioritize HC defenses over damage.
 - The old and new personal notes use separate browser localStorage keys, not GitHub. Never copy or expose personal notes into public repository files.
 - Keep the original filename and root JSON endpoint so the local Windows server can sync both without changing its configuration. GitHub commits do not guarantee the user's local sync succeeded; verify local update state separately if possible.
+
+
+## Warden full campaign passive plan (3.30)
+
+The Warden's original guide now includes **93 planned regular passives** through Act 10, with exact node IDs, a numbered route and separate per-act targets. The same ordered expectations are stored in `character-progress.json` under `warden.plan.actMilestones`, and displayed in the existing HTML on the Overview, Campaign and Passive Tree tabs. Preserve consistency across both files when editing this route; these are PLAN values only.
+
+- Act-end cumulative targets: **13 / 25 / 40 / 48 / 56 / 66 / 74 / 80 / 85 / 93** (Acts 1–10). This assumes approximately level 70, 24 quest passives and killing all bandits; actual reward timing and levels vary.
+- Early conditional keystone **Precise Technique 63620**: use only if Accuracy Rating exceeds Maximum Life. If false, defer or refund; no claim of always-on 40% more attack damage.
+- Mastery node/effect expectations: **3042/47642** (+30 Life); **6427/56951** (projectile-speed scaling for bows); **20730/45317** (Lucky suppression, later **58447** at 100%); **50757/57074** (+15% suppression conditional on evasion across four armour slots). Do not mark any mastery selection verified without exact effect ID evidence.
+- Current Warden confirmations are kept in `warden.progress.completedPassiveIds`, `completedMasteryEffects`, and `completedTaskIds`. The planned node IDs under `warden.plan` must never be copied into those completion fields unless verified against a current-character 3_30 PoB export.
+- Preserve archive data and current local server filenames. The existing app has not become a new separate app.
