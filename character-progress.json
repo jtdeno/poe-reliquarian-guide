@@ -4474,7 +4474,8 @@
       "completedTaskIds": [],
       "completedPassiveIds": [],
       "currentGoal": "Start Ranger, use Lightning Arrow for clearing and obtain Storm Rain at level 28. Test Oath of Spring shock maintenance without assuming full stacks.",
-      "passiveValidation": "No Warden PoB uploaded. No passives or milestones verified."
+      "passiveValidation": "No Warden PoB uploaded. No passives or milestones verified.",
+      "completedMasteryEffects": {}
     },
     "findings": [
       {
@@ -4504,6 +4505,651 @@
       "Normal Lab: Oath of Spring for planned offense, or Mother's Teachings first if leveling survival is weak.",
       "Build life and capped resists before Kitava. Add spell suppression as gear and tree permit.",
       "Send first Warden PoB XML to verify actual checkpoint completion; no automatic completion is assumed."
-    ]
+    ],
+    "plan": {
+      "version": "3.30-exact-campaign-v2",
+      "treeVersion": "3_30",
+      "source": "PoB Community TreeData/3_30 verified connected node IDs; planned only, not current-character data",
+      "assumption": "Level approximately 70, kill all bandits, 24 passive quest rewards, and all expected skill books. If help bandit or skip quests, less than 93 points are available at level 70.",
+      "expectedCampaignPassiveCount": 93,
+      "completedPassiveNodeIdsDoNotInfer": true,
+      "actMilestones": [
+        {
+          "act": 1,
+          "estimatedLevel": "~12",
+          "cumulativeNormalPassives": 13,
+          "firstPoint": 1,
+          "lastPoint": 13,
+          "goal": "Finesse · Heart of Oak · Ballistics · Aspect of the Eagle · Quickstep",
+          "respecNote": "No refund required. Exact reward timing varies; The Way Forward may be claimed in Act 2.",
+          "plannedNodes": [
+            {
+              "id": "39821",
+              "name": "Evasion and Life",
+              "routeTarget": "Finesse"
+            },
+            {
+              "id": "52904",
+              "name": "Dexterity",
+              "routeTarget": "Finesse"
+            },
+            {
+              "id": "444",
+              "name": "Dexterity",
+              "routeTarget": "Finesse"
+            },
+            {
+              "id": "61306",
+              "name": "Dexterity",
+              "routeTarget": "Finesse"
+            },
+            {
+              "id": "54142",
+              "name": "Finesse",
+              "routeTarget": "Finesse"
+            },
+            {
+              "id": "32117",
+              "name": "Life and Stun Avoidance",
+              "routeTarget": "Heart of Oak"
+            },
+            {
+              "id": "65210",
+              "name": "Heart of Oak",
+              "routeTarget": "Heart of Oak"
+            },
+            {
+              "id": "48099",
+              "name": "Life and Stun Avoidance",
+              "routeTarget": "Ballistics"
+            },
+            {
+              "id": "50338",
+              "name": "Ballistics",
+              "routeTarget": "Ballistics"
+            },
+            {
+              "id": "42964",
+              "name": "Bow Damage",
+              "routeTarget": "Aspect of the Eagle"
+            },
+            {
+              "id": "65224",
+              "name": "Aspect of the Eagle",
+              "routeTarget": "Aspect of the Eagle"
+            },
+            {
+              "id": "3187",
+              "name": "Movement Speed and Spell Suppression",
+              "routeTarget": "Quickstep"
+            },
+            {
+              "id": "2715",
+              "name": "Quickstep",
+              "routeTarget": "Quickstep"
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "estimatedLevel": "~22",
+          "cumulativeNormalPassives": 25,
+          "firstPoint": 14,
+          "lastPoint": 25,
+          "goal": "Herbalism · Thick Skin · +30 Life Mastery · Intuition · Precise Technique · begin Master Fletcher",
+          "respecNote": "Precise Technique #63620 grants 40% more attack damage only while Accuracy Rating > Maximum Life. Skip the point when this condition is false; come back after improving accuracy.",
+          "plannedNodes": [
+            {
+              "id": "60942",
+              "name": "Dexterity",
+              "routeTarget": "Herbalism"
+            },
+            {
+              "id": "41866",
+              "name": "Dexterity",
+              "routeTarget": "Herbalism"
+            },
+            {
+              "id": "9206",
+              "name": "Life",
+              "routeTarget": "Herbalism"
+            },
+            {
+              "id": "19858",
+              "name": "Herbalism",
+              "routeTarget": "Herbalism"
+            },
+            {
+              "id": "64709",
+              "name": "Dexterity",
+              "routeTarget": "Thick Skin"
+            },
+            {
+              "id": "3469",
+              "name": "Dexterity",
+              "routeTarget": "Thick Skin"
+            },
+            {
+              "id": "34678",
+              "name": "Life and Elemental Ailment Avoidance",
+              "routeTarget": "Thick Skin"
+            },
+            {
+              "id": "19069",
+              "name": "Thick Skin",
+              "routeTarget": "Thick Skin"
+            },
+            {
+              "id": "3042",
+              "name": "Life Mastery",
+              "routeTarget": "3042"
+            },
+            {
+              "id": "37504",
+              "name": "Intuition",
+              "routeTarget": "Intuition"
+            },
+            {
+              "id": "63620",
+              "name": "Precise Technique",
+              "routeTarget": "Precise Technique"
+            },
+            {
+              "id": "32555",
+              "name": "Dexterity",
+              "routeTarget": "Master Fletcher"
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "estimatedLevel": "~34",
+          "cumulativeNormalPassives": 40,
+          "firstPoint": 26,
+          "lastPoint": 40,
+          "goal": "Master Fletcher · Bow Mastery · Revenge of the Hunted · begin Essence Sap",
+          "respecNote": "Bow Mastery #6427: select effect 56951 (projectile-speed increases also improve bow damage). Compare with quiver-bonus effect 36967 if your quiver is exceptional.",
+          "plannedNodes": [
+            {
+              "id": "12412",
+              "name": "Dexterity",
+              "routeTarget": "Master Fletcher"
+            },
+            {
+              "id": "20807",
+              "name": "Dexterity",
+              "routeTarget": "Master Fletcher"
+            },
+            {
+              "id": "38149",
+              "name": "Bow Damage",
+              "routeTarget": "Master Fletcher"
+            },
+            {
+              "id": "2185",
+              "name": "Bow Attack Speed",
+              "routeTarget": "Master Fletcher"
+            },
+            {
+              "id": "39665",
+              "name": "Bow Attack Speed",
+              "routeTarget": "Master Fletcher"
+            },
+            {
+              "id": "23912",
+              "name": "Bow Attack Speed",
+              "routeTarget": "Master Fletcher"
+            },
+            {
+              "id": "51881",
+              "name": "Master Fletcher",
+              "routeTarget": "Master Fletcher"
+            },
+            {
+              "id": "6427",
+              "name": "Bow Mastery",
+              "routeTarget": "6427"
+            },
+            {
+              "id": "38662",
+              "name": "Dexterity",
+              "routeTarget": "Revenge of the Hunted"
+            },
+            {
+              "id": "5616",
+              "name": "Dexterity",
+              "routeTarget": "Revenge of the Hunted"
+            },
+            {
+              "id": "39718",
+              "name": "Dexterity",
+              "routeTarget": "Revenge of the Hunted"
+            },
+            {
+              "id": "31315",
+              "name": "Evasion and Life",
+              "routeTarget": "Revenge of the Hunted"
+            },
+            {
+              "id": "25067",
+              "name": "Evasion and Life",
+              "routeTarget": "Revenge of the Hunted"
+            },
+            {
+              "id": "53114",
+              "name": "Revenge of the Hunted",
+              "routeTarget": "Revenge of the Hunted"
+            },
+            {
+              "id": "51420",
+              "name": "Mana Leech",
+              "routeTarget": "Essence Sap"
+            }
+          ]
+        },
+        {
+          "act": 4,
+          "estimatedLevel": "~42",
+          "cumulativeNormalPassives": 48,
+          "firstPoint": 41,
+          "lastPoint": 48,
+          "goal": "Essence Sap · Forces of Nature · One With Nature · begin Survivalist",
+          "respecNote": "Keep a mana flask until attack mana leech is actually sustainable; avoid unnecessary refunds.",
+          "plannedNodes": [
+            {
+              "id": "65053",
+              "name": "Essence Sap",
+              "routeTarget": "Essence Sap"
+            },
+            {
+              "id": "56646",
+              "name": "Weapon Elemental Damage",
+              "routeTarget": "Forces of Nature"
+            },
+            {
+              "id": "25511",
+              "name": "Weapon Elemental Damage",
+              "routeTarget": "Forces of Nature"
+            },
+            {
+              "id": "4481",
+              "name": "Forces of Nature",
+              "routeTarget": "Forces of Nature"
+            },
+            {
+              "id": "30894",
+              "name": "Weapon Elemental Damage",
+              "routeTarget": "One With Nature"
+            },
+            {
+              "id": "15842",
+              "name": "One With Nature",
+              "routeTarget": "One With Nature"
+            },
+            {
+              "id": "36287",
+              "name": "Dexterity",
+              "routeTarget": "Survivalist"
+            },
+            {
+              "id": "64235",
+              "name": "Evasion and Elemental Resistances",
+              "routeTarget": "Survivalist"
+            }
+          ]
+        },
+        {
+          "act": 5,
+          "estimatedLevel": "~48",
+          "cumulativeNormalPassives": 56,
+          "firstPoint": 49,
+          "lastPoint": 56,
+          "goal": "Survivalist · Entrench · Spell Suppression Mastery · begin Inveterate",
+          "respecNote": "Spell Suppression Mastery #20730: effect 45317 (Lucky suppression) while below 100%; when capped, change to effect 58447 (+3% damage prevented).",
+          "plannedNodes": [
+            {
+              "id": "24133",
+              "name": "Survivalist",
+              "routeTarget": "Survivalist"
+            },
+            {
+              "id": "6383",
+              "name": "Spell Suppression and Life Flask Recovery",
+              "routeTarget": "Entrench"
+            },
+            {
+              "id": "22217",
+              "name": "Spell Suppression and Life Flask Recovery",
+              "routeTarget": "Entrench"
+            },
+            {
+              "id": "4656",
+              "name": "Spell Suppression and Life Flask Recovery",
+              "routeTarget": "Entrench"
+            },
+            {
+              "id": "59866",
+              "name": "Entrench",
+              "routeTarget": "Entrench"
+            },
+            {
+              "id": "20730",
+              "name": "Spell Suppression Mastery",
+              "routeTarget": "20730"
+            },
+            {
+              "id": "62744",
+              "name": "Spell Suppression",
+              "routeTarget": "Inveterate"
+            },
+            {
+              "id": "29454",
+              "name": "Spell Suppression",
+              "routeTarget": "Inveterate"
+            }
+          ]
+        },
+        {
+          "act": 6,
+          "estimatedLevel": "~54",
+          "cumulativeNormalPassives": 66,
+          "firstPoint": 57,
+          "lastPoint": 66,
+          "goal": "Finish Inveterate · Primeval Force · toward Reflexes",
+          "respecNote": "If struggling with incoming spells, take the Reflexes route before Primeval Force. This is a reordered plan, not a required respec.",
+          "plannedNodes": [
+            {
+              "id": "18770",
+              "name": "Spell Suppression",
+              "routeTarget": "Inveterate"
+            },
+            {
+              "id": "63251",
+              "name": "Inveterate",
+              "routeTarget": "Inveterate"
+            },
+            {
+              "id": "64878",
+              "name": "Weapon Elemental Damage",
+              "routeTarget": "Primeval Force"
+            },
+            {
+              "id": "30969",
+              "name": "Weapon Elemental Damage and Ailment Effect",
+              "routeTarget": "Primeval Force"
+            },
+            {
+              "id": "32477",
+              "name": "Weapon Elemental Damage and Ailment Effect",
+              "routeTarget": "Primeval Force"
+            },
+            {
+              "id": "36281",
+              "name": "Primeval Force",
+              "routeTarget": "Primeval Force"
+            },
+            {
+              "id": "63139",
+              "name": "Strength",
+              "routeTarget": "Reflexes"
+            },
+            {
+              "id": "5408",
+              "name": "Dexterity",
+              "routeTarget": "Reflexes"
+            },
+            {
+              "id": "11497",
+              "name": "Dexterity",
+              "routeTarget": "Reflexes"
+            },
+            {
+              "id": "238",
+              "name": "Dexterity",
+              "routeTarget": "Reflexes"
+            }
+          ]
+        },
+        {
+          "act": 7,
+          "estimatedLevel": "~60",
+          "cumulativeNormalPassives": 74,
+          "firstPoint": 67,
+          "lastPoint": 74,
+          "goal": "Reflexes · Evasion Mastery · Crystal Skin · Field Medicine · start Farsight",
+          "respecNote": "Evasion Mastery #50757: effect 57074 gives +15% suppression only if helmet, body armour, gloves and boots ALL have evasion. If not, use effect 28676 for body armour evasion or defer.",
+          "plannedNodes": [
+            {
+              "id": "10829",
+              "name": "Dexterity",
+              "routeTarget": "Reflexes"
+            },
+            {
+              "id": "32091",
+              "name": "Evasion and Spell Suppression",
+              "routeTarget": "Reflexes"
+            },
+            {
+              "id": "44103",
+              "name": "Reflexes",
+              "routeTarget": "Reflexes"
+            },
+            {
+              "id": "50757",
+              "name": "Evasion Mastery",
+              "routeTarget": "50757"
+            },
+            {
+              "id": "15837",
+              "name": "Avoid Status Ailments",
+              "routeTarget": "Crystal Skin"
+            },
+            {
+              "id": "55307",
+              "name": "Ignite Avoidance",
+              "routeTarget": "Crystal Skin"
+            },
+            {
+              "id": "40743",
+              "name": "Crystal Skin",
+              "routeTarget": "Crystal Skin"
+            },
+            {
+              "id": "16602",
+              "name": "Life Flasks and Flask Duration",
+              "routeTarget": "Field Medicine"
+            }
+          ]
+        },
+        {
+          "act": 8,
+          "estimatedLevel": "~63",
+          "cumulativeNormalPassives": 80,
+          "firstPoint": 75,
+          "lastPoint": 80,
+          "goal": "Farsight · Wild Hunger · start Acuity",
+          "respecNote": "Improve the bow only if defenses stay intact. Optional later refunds depend on real gear and passive connectivity.",
+          "plannedNodes": [
+            {
+              "id": "41137",
+              "name": "Field Medicine",
+              "routeTarget": "Field Medicine"
+            },
+            {
+              "id": "16851",
+              "name": "Bow Damage and Accuracy",
+              "routeTarget": "Farsight"
+            },
+            {
+              "id": "12068",
+              "name": "Bow Damage and Attack Speed",
+              "routeTarget": "Farsight"
+            },
+            {
+              "id": "47743",
+              "name": "Farsight",
+              "routeTarget": "Farsight"
+            },
+            {
+              "id": "22266",
+              "name": "Dexterity",
+              "routeTarget": "Wild Hunger"
+            },
+            {
+              "id": "50038",
+              "name": "Life Leech",
+              "routeTarget": "Wild Hunger"
+            }
+          ]
+        },
+        {
+          "act": 9,
+          "estimatedLevel": "~67",
+          "cumulativeNormalPassives": 85,
+          "firstPoint": 81,
+          "lastPoint": 85,
+          "goal": "Acuity · progress toward Blood Drinker",
+          "respecNote": "Recheck Precise Technique after gear changes: if accuracy does not exceed life, refund #63620 (1 point) or improve accuracy before relying on its damage.",
+          "plannedNodes": [
+            {
+              "id": "61039",
+              "name": "Wild Hunger",
+              "routeTarget": "Wild Hunger"
+            },
+            {
+              "id": "57080",
+              "name": "Accuracy and Attack Speed",
+              "routeTarget": "Acuity"
+            },
+            {
+              "id": "42104",
+              "name": "Accuracy and Attack Speed",
+              "routeTarget": "Acuity"
+            },
+            {
+              "id": "49621",
+              "name": "Acuity",
+              "routeTarget": "Acuity"
+            },
+            {
+              "id": "1461",
+              "name": "Dexterity",
+              "routeTarget": "Blood Drinker"
+            }
+          ]
+        },
+        {
+          "act": 10,
+          "estimatedLevel": "~70",
+          "cumulativeNormalPassives": 93,
+          "firstPoint": 86,
+          "lastPoint": 93,
+          "goal": "Blood Drinker · Weathered Hunter",
+          "respecNote": "The 93-point target assumes level ~70, all 24 passive quests, and killing all Act 2 bandits. If helping a bandit or missing quests, fewer points are available. Check /passives. No mandatory full-tree respec.",
+          "plannedNodes": [
+            {
+              "id": "49900",
+              "name": "Dexterity",
+              "routeTarget": "Blood Drinker"
+            },
+            {
+              "id": "46277",
+              "name": "Dexterity",
+              "routeTarget": "Blood Drinker"
+            },
+            {
+              "id": "25260",
+              "name": "Life",
+              "routeTarget": "Blood Drinker"
+            },
+            {
+              "id": "27788",
+              "name": "Blood Drinker",
+              "routeTarget": "Blood Drinker"
+            },
+            {
+              "id": "56589",
+              "name": "Dexterity",
+              "routeTarget": "Weathered Hunter"
+            },
+            {
+              "id": "43787",
+              "name": "Accuracy and Elemental Resistances",
+              "routeTarget": "Weathered Hunter"
+            },
+            {
+              "id": "29379",
+              "name": "Accuracy and Elemental Resistances",
+              "routeTarget": "Weathered Hunter"
+            },
+            {
+              "id": "52230",
+              "name": "Weathered Hunter",
+              "routeTarget": "Weathered Hunter"
+            }
+          ]
+        }
+      ],
+      "nextAfterCampaign": [
+        {
+          "id": "23471",
+          "name": "Dexterity",
+          "routeTarget": "Graceful Assault"
+        },
+        {
+          "id": "53002",
+          "name": "Armour, Evasion and Onslaught Effect",
+          "routeTarget": "Graceful Assault"
+        },
+        {
+          "id": "4944",
+          "name": "Armour, Evasion and Onslaught Effect",
+          "routeTarget": "Graceful Assault"
+        },
+        {
+          "id": "18703",
+          "name": "Graceful Assault",
+          "routeTarget": "Graceful Assault"
+        },
+        {
+          "id": "9373",
+          "name": "Mana and Flask Effect",
+          "routeTarget": "Primal Spirit"
+        },
+        {
+          "id": "25178",
+          "name": "Primal Spirit",
+          "routeTarget": "Primal Spirit"
+        }
+      ],
+      "masterySelections": {
+        "3042": {
+          "effectId": "47642",
+          "text": "+30 to Maximum Life",
+          "alt": "34242: +15% Life if body armour has no Life modifiers"
+        },
+        "6427": {
+          "effectId": "56951",
+          "text": "Projectile speed modifiers also apply to bow damage",
+          "alt": "36967: 20% increased bonuses from equipped quiver"
+        },
+        "20730": {
+          "effectId": "45317",
+          "text": "Chance to Suppress Spell Damage is Lucky",
+          "alt": "58447: +3% damage prevented when fully capped"
+        },
+        "50757": {
+          "effectId": "57074",
+          "text": "+15% Suppression if all four armour slots have Evasion",
+          "alt": "28676: 100% increased evasion from equipped body armour"
+        },
+        "63620": {
+          "effectId": null,
+          "text": "40% more Attack Damage if Accuracy Rating > Maximum Life; cannot crit",
+          "alt": "Skip/refund if accuracy condition not met"
+        }
+      },
+      "note": "Only warden.progress.completedPassiveIds and warden.progress.completedMasteryEffects represent confirmed character allocations. The plan object and HTML checklist represent expected future allocations only. Never mark them complete from level or proximity."
+    }
   }
 }
