@@ -482,13 +482,13 @@ function renderPassives(){
  }).join("");
  $w("wStageDetail").innerHTML='<div class="kicker">'+(meta.act===11?"Maps":"Act "+meta.act)+' · level '+safe(meta.level)+'</div><h2>'+safe(meta.goal)+'</h2><p>Points #'+meta.startPoint+'–'+meta.endPoint+' · cumulative '+meta.endPoint+' planned normal passives. Each row is a specific 3.30 tree node.</p>'+steps+'<div class="w-warning"><b>Respec guidance:</b> '+safe(meta.respec)+'</div><p class="hint">Routes can branch from a previously allocated node. Mastery effect IDs are independently verified; unknown does not mean unallocated.</p>';
 
- const current=snap?.progress,route=current?.nextRoute||[],alt=current?.currentAlternativeNodes||[];
+ const current=snap?.progress,route=current?.nextRoute||[];
  const remaining=route.filter(n=>!verified.has(String(n.id)));
  const nodeList=remaining.map(n=>'<div class="w-check"><span class="status-mark pending">?</span><div><b>'+safe(n.name)+'</b> · <span class="hint">node '+safe(n.id)+'</span>'+(n.optional?' <span class="tag">Optional</span>':'')+'<p class="hint" style="margin:3px 0 0">'+safe(n.reason)+'</p></div></div>').join("");
  const tree=$w("wCurrentTree");
  if(current?.passiveCountFromPob!=null){
   tree.style.display="";
-  tree.innerHTML='<div class="kicker">Current-character route · Latest reviewed PoB</div><h3>'+safe(current.passiveCountFromPob)+' allocated regular passives verified</h3><p class="hint">You chose a connected alternative Ranger starting route. '+alt.length+' useful nodes differ from the generic campaign plan; they are not wasted by definition. No automatic refund required.</p><div class="w-warning"><b>Next safe priorities:</b> improve damage links and Fire/Lightning resistance immediately; take directly adjacent Herbalism first, then work toward Thick Skin. Precise Technique is conditional, not mandatory.</div><div class="tasklist">'+nodeList+'</div><p class="hint">Original 93-point route below is a planning reference. Blank checkmarks for alternate travel nodes do not mean you need to allocate them again. Reconcile the long-term tree after the next PoB.</p>';
+  tree.innerHTML='<div class="kicker">Current tree · Latest reviewed PoB</div><h3>'+safe(current.passiveCountFromPob)+' allocated node IDs recorded</h3><p class="hint">'+safe(current.passiveValidation||"The current tree was copied from the latest PoB export.")+'</p>'+(nodeList?'<div class="tasklist">'+nodeList+'</div>':'<div class="w-warning"><b>Next passive route:</b> No exact point-by-point route is verified for this active 3_29 tree. Use the campaign plan below as target milestones and recheck the path against your next export.</div>');
  }else{tree.style.display="none";tree.innerHTML="";}
  const next=remaining[0]||campaign.find(n=>!isConfirmed(n));
  $w("wNext").textContent=next?"Next: "+(next.name||next[1]):"All current checkpoints verified";
