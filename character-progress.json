@@ -4453,15 +4453,17 @@
       "ascendancy": "Warden",
       "league": "HC SSF Covens",
       "act": null,
-      "status": "alive",
-      "deathLevel": null,
+      "status": "deceased",
+      "deathLevel": 60,
       "bandit": "Alira (selected in PoB; in-game reward not separately confirmed)",
       "pantheon": {
         "major": "The Brine King",
         "minor": "Abberath"
       },
       "plannedAscendancy": "Warden",
-      "actEvidence": "No current act confirmed for this level 60 snapshot. The prior Act 2 report predates this export."
+      "actEvidence": "No current act confirmed for this level 60 snapshot. The prior Act 2 report predates this export.",
+      "deathReportedOn": "2026-11-17",
+      "deathEvidence": "Player-reported Hardcore death at level 60. The preserved PoB snapshot is level 60; no later stats or passive allocations are inferred."
     },
     "source": {
       "kind": "reviewed active PoB XML",
@@ -5589,6 +5591,232 @@
         "alternativeConnectedNodes": 5
       },
       "note": "Numeric node IDs are version-specific. Current completion comes from the active 3_29 PoB export; do not treat the 3_30 campaign plan as the exact current route."
+    },
+    "archive": {
+      "archived": true,
+      "reason": "Hardcore death",
+      "deathLevel": 60,
+      "reportedOn": "2026-11-17",
+      "lastVerifiedPobLevel": 60,
+      "successorBuild": "Cyclone Shockwave Slayer",
+      "notes": "Death was player-reported. Retains the last verified level-60 PoB snapshot; no invented post-snapshot stats or passives."
     }
+  },
+  "activeBuild": "slayer",
+  "slayer": {
+    "format": "slayer-character-progress-v1",
+    "publishedAt": "2026-11-17",
+    "character": {
+      "label": "Cyclone Shockwave Slayer (name TBD)",
+      "nameVerified": false,
+      "level": null,
+      "class": "Duelist",
+      "ascendancy": "Slayer",
+      "league": "HC SSF Covens",
+      "act": null,
+      "status": "planned",
+      "deathLevel": null
+    },
+    "source": {
+      "kind": "New HCSSF build plan",
+      "patch": "3.30",
+      "references": [
+        "https://mobalytics.gg/poe/builds/sanavixx-cyclone-shockwave-slayer",
+        "https://www.pathofexile.com/forum/view-thread/4013680/page/1"
+      ],
+      "note": "Original dashboard plan based on the 3.30 Cyclone Shockwave Slayer concept and its published HCSSF campaign testing. Build plan only; no character state or PoB stats yet."
+    },
+    "stats": {},
+    "progress": {
+      "completedTaskIds": [],
+      "completedPassiveIds": [],
+      "completedMasteryEffects": {},
+      "passiveCountFromPob": null,
+      "actualTreeVersion": null,
+      "verifiedQuestStage": null
+    },
+    "plan": {
+      "status": "planning-only",
+      "core": "Physical two-handed staff Cyclone with Shockwave for broad clear; add Void Shockwave if it drops. Keep a separate General's Cry plus Sunder or Ground Slam of Earthshaking setup for bosses and tough rares. Start with regular Cyclone; Cyclone of Tumult and The Stampede are optional upgrades, not requirements.",
+      "patch330": [
+        "Slayer Impact: 5% increased Area of Effect per enemy killed recently, up to 50%. This should widen Cyclone coverage as packs die.",
+        "Slayer Endless Hunger: 20% increased Attack Speed while Leeching. Cyclone hits frequently and should maintain leech against live packs and bosses."
+      ],
+      "leveling": [
+        {
+          "stage": "Act 1 · levels 1–11",
+          "skill": "Spectral Throw",
+          "focus": "Use a fast physical weapon; link the best available physical attack supports. Take early life, accuracy and melee/weapon damage needed for progression."
+        },
+        {
+          "stage": "Acts 2–3 · levels 12–27",
+          "skill": "Static Strike",
+          "focus": "Keep upgrading the weapon with a vendor physical recipe or a better rare. Build life first, then two-handed physical damage; take Resolute Technique if misses are costing too much damage."
+        },
+        {
+          "stage": "Act 3 onward · level 28+",
+          "skill": "Cyclone",
+          "focus": "Swap when it feels better, commonly around level 32 after Normal Lab. Use a staff or mace for Shockwave Support. Keep Sunder or the available General's Cry setup for single target."
+        },
+        {
+          "stage": "Acts 4–10",
+          "skill": "Cyclone + Shockwave",
+          "focus": "Keep a current physical staff and 4-link. Add Brutality and other strong physical supports as available. Use a separate General's Cry + Sunder / Ground Slam of Earthshaking link for bosses; do not spend corpses/setup time in dangerous fights."
+        }
+      ],
+      "passivePrinciples": [
+        "Prioritize life and the life mastery before optional damage; keep a defensive point reserve if the next boss is a known danger.",
+        "Move from Duelist starting life and physical attack clusters toward two-handed/staff damage and staff block. Keep early damage efficient; refine exact route against the matching 3.30 tree when the character is created.",
+        "Pick up staff block investment (including Whirling Barrier / Steelwood Stance where the verified route supports it) and impale scaling after the life foundation.",
+        "Avoid early crit commitment. Keep accuracy reliable through weapon and gear upgrades, then follow the crit or non-crit route supported by your drops.",
+        "End campaign with capped elemental resistances after Kitava penalties, a strong life pool, bleed removal, and a usable life flask before adding optional damage."
+      ],
+      "ascendancy": [
+        "Normal Lab: Brutal Fervour for persistent leech recovery.",
+        "Cruel Lab: Endless Hunger for the 3.30 attack-speed-while-leeching bonus and leeching defenses.",
+        "Merciless Lab: Impact for the 3.30 kill-based AoE that improves pack clear.",
+        "Uber Lab: Bane of Legends for the final damage / mapping payoff; complete only when safe."
+      ],
+      "gemLinks": {
+        "clear": [
+          "Cyclone (use the regular gem first)",
+          "Melee Physical Damage",
+          "Shockwave Support (staff/mace required)",
+          "Brutality when available",
+          "Infused Channelling or Pulverise as the remaining sockets allow"
+        ],
+        "boss": [
+          "General's Cry",
+          "Sunder or Ground Slam of Earthshaking",
+          "Autoexertion if reservation allows",
+          "Melee Physical Damage",
+          "Pulverise / Brutality as available"
+        ],
+        "utility": [
+          "Purity of Elements while gearing or for ailment protection; replace only when ailment coverage and resistances are secure.",
+          "Pride when it fits reservation and does not compromise defenses.",
+          "Flesh and Stone / Blood and Sand according to reservation and defense preference.",
+          "Steelskin on Automation or self-cast; keep a bleed-removal flask."
+        ],
+        "notes": "Cyclone of Tumult and Void Shockwave are upgrade targets, not campaign assumptions. Verify gem availability through quest rewards/vendors in the current league; use the regular gems if the transfigured/support version has not appeared."
+      },
+      "ssfGear": [
+        "Weapon is the main damage lever: keep a high physical-DPS staff current with character level. Use vendor physical-damage crafting and bench crafts; do not wait for a unique.",
+        "Life on every rare armour slot and jewellery; cap fire, cold, and lightning resistance before entering maps.",
+        "Armour bases and endurance-charge access support physical mitigation; staff block is an extra layer, not a substitute for life and max-hit defenses.",
+        "Aim for a 4-link through campaign, then 5-link/6-link only as drops and crafting permit."
+      ],
+      "chaseItems": [
+        {
+          "name": "The Stampede or Replica Stampede",
+          "goal": "Premium movement solution for Cyclone of Tumult's movement penalty; regular Cyclone remains playable without it.",
+          "source": "Unique drop / Heist replica; highly RNG in SSF."
+        },
+        {
+          "name": "Rumi's Concoction",
+          "goal": "Strong block-flask upgrade when paired with the staff-block tree.",
+          "source": "Random unique flask drop; nice-to-have, not a campaign dependency."
+        },
+        {
+          "name": "Replica Witchfire Brew",
+          "goal": "Extra curse setup for later bossing.",
+          "source": "Heist replica; optional and replaceable."
+        },
+        {
+          "name": "Forbidden Flame + Forbidden Flesh: More Than Skill",
+          "goal": "Aspirational pair for the Gladiator lucky-block ascendancy bonus.",
+          "source": "Very rare endgame boss jewels; do not plan early progression around both matching."
+        },
+        {
+          "name": "Lethal Pride",
+          "goal": "Potential damage, strength and defensive jewel bonuses; evaluate each seed in Path of Building.",
+          "source": "Legion jewel; SSF target, but exact useful seed is not controllable."
+        }
+      ],
+      "safetyTargets": [
+        "Keep life the top passive and gear priority through campaign.",
+        "After each Kitava resistance penalty, re-cap all three elemental resistances; carry a bleed-removal life flask.",
+        "Use only safe map mods; avoid physical reflect because this is a physical attack build.",
+        "Do not channel Cyclone in place on dangerous ground effects; keep moving and use the boss link when it improves kill time safely.",
+        "Treat block, leech, armour, and Endurance Charges as layers; none makes the build death-proof."
+      ],
+      "passiveMilestones": [
+        {
+          "act": 1,
+          "points": 13,
+          "goal": "Take starting life, accuracy and efficient physical attack damage; keep moving toward Duelist life clusters.",
+          "hc": "Early life and reliable hits before spending heavily on damage."
+        },
+        {
+          "act": 2,
+          "points": 25,
+          "goal": "Add the next efficient life cluster and life mastery; begin pathing toward two-handed/staff damage.",
+          "hc": "Don't let leech replace a real life pool."
+        },
+        {
+          "act": 3,
+          "points": 40,
+          "goal": "Continue life, then weapon damage and attack speed as Cyclone comes online; take Normal Lab only when comfortable.",
+          "hc": "A current weapon makes both clear and recovery more reliable."
+        },
+        {
+          "act": 4,
+          "points": 48,
+          "goal": "Finish a nearby life wheel and start the staff-block route if already using a staff.",
+          "hc": "Add defense before the harder act bosses."
+        },
+        {
+          "act": 5,
+          "points": 56,
+          "goal": "Keep filling life and physical attack nodes; use remaining path points toward staff block.",
+          "hc": "Re-cap resistances after Kitava's penalty."
+        },
+        {
+          "act": 6,
+          "points": 66,
+          "goal": "Pick up another efficient life cluster; take damage only if gear and resistances remain solid.",
+          "hc": "Do not enter maps with uncapped elemental resistances."
+        },
+        {
+          "act": 7,
+          "points": 74,
+          "goal": "Continue the staff-block path (Whirling Barrier / Steelwood Stance only if the live route validates it) and add life.",
+          "hc": "Block complements life and armour."
+        },
+        {
+          "act": 8,
+          "points": 80,
+          "goal": "Finish the nearby life investment; begin impale scaling after life and block basics.",
+          "hc": "Keep physical mitigation and life ahead of optional damage."
+        },
+        {
+          "act": 9,
+          "points": 85,
+          "goal": "Complete efficient life and physical weapon clusters; hold optional crit and jewel nodes.",
+          "hc": "Check weapon, flasks and resists before major boss."
+        },
+        {
+          "act": 10,
+          "points": 93,
+          "goal": "Finish the campaign life foundation and staff/physical route; enter maps with a current 4-link and capped resists.",
+          "hc": "Estimate assumes ~level 70, all passive quests, and killing all bandits."
+        }
+      ]
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "title": "New build is a plan, not a live character",
+        "detail": "No current Slayer PoB, stats, item rolls, or passive allocations exist yet.",
+        "action": "Send the first PoB export after character creation to replace planning assumptions with verified progress."
+      }
+    ],
+    "skills": [],
+    "gear": [],
+    "nextActions": [
+      "Create a Duelist in HC SSF and level with Spectral Throw, then Static Strike, then regular Cyclone when ready.",
+      "Keep a current physical two-handed weapon and prioritize life, resistances and safe flask coverage.",
+      "Use the 3.30 Cyclone Shockwave plan as a target; do not count transfigured gems or uniques as required drops."
+    ]
   }
 }

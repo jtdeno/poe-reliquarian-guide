@@ -56,9 +56,27 @@
 @media(max-width:760px){#reliquarianApp.show,#wardenApp:not(.hide){display:block}.w-bench{grid-template-columns:1fr 1fr}.build-switch{gap:6px;padding:9px}.build-switch button{padding:7px 8px;font-size:12px}}
 
 </style>
-</head>
+<style>
+#slayerApp{display:none;--sa:#e5b565;--sg:#7fc79e}#slayerApp.show{display:grid}
+#slayerApp .crest{background:#382f1c;color:#f1cf8e;border-color:#9b7944}
+#slayerApp .eyebrow,#slayerApp .skicker{color:#edc477}
+#slayerApp .nav button.active{box-shadow:inset 3px 0 #d6aa5c;border-color:#78623b}
+#slayerApp .s-page{display:none}#slayerApp .s-page.active{display:block;animation:fade .18s ease}
+.s-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:15px}
+.s-card{grid-column:span 6;background:#151e26;border:1px solid #2c3d49;border-radius:13px;padding:17px}
+.s-card.full{grid-column:span 12}.s-card h2{margin:0 0 10px;font-size:18px}.s-card p{color:#b8c8ce;line-height:1.6;margin:7px 0}
+.s-hero{padding:24px;border-radius:15px;border:1px solid #77623c;background:linear-gradient(130deg,#352d1c,#19232a);margin-bottom:18px}
+.s-hero h2{font-size:26px;margin:5px 0 9px}.s-hero p{max-width:840px;color:#d0d9d9;line-height:1.65}
+.s-pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.s-pill{border:1px solid #56646a;color:#d6e1e3;border-radius:99px;padding:6px 10px;font-size:12px}
+.s-table{width:100%;border-collapse:collapse}.s-table th,.s-table td{border-bottom:1px solid #2d3d48;padding:10px;text-align:left;vertical-align:top}.s-table th{color:#ebc476;font-size:12px}.s-table td{color:#c6d2d6;font-size:13px;line-height:1.5}
+.s-callout{padding:12px 14px;border-left:3px solid #d6aa5c;background:#202a30;border-radius:8px;margin:10px 0;color:#d3dddf;line-height:1.6}
+.s-warning{border-left-color:#d88174;background:#302525}.s-good{border-left-color:#78bc94;background:#203128}
+.s-tag{display:inline-block;color:#e7c77e;border:1px solid #6a5836;border-radius:6px;padding:3px 7px;font-size:11px;margin-right:5px}
+.s-links{display:flex;gap:10px;flex-wrap:wrap}.s-links a{color:#9bc7eb}
+@media(max-width:760px){.s-card{grid-column:span 12}.s-table{font-size:12px}.s-table th,.s-table td{padding:7px}}
+</style></head>
 <body>
-<div class="build-switch" role="group" aria-label="Select HCSSF build"><strong>HCSSF characters</strong><button type="button" class="selected" data-build="warden">⚡ Storm Rain Warden · Active</button><button type="button" class="archive" data-build="reliquarian">† Reliquarian · Archive</button><span class="death">Reliquarian died at level 71</span></div>
+<div class="build-switch" role="group" aria-label="Select HCSSF character"><strong>HCSSF characters</strong><button type="button" class="selected" aria-pressed="true" data-build="slayer">⚔ Cyclone Shockwave Slayer · Planned</button><button type="button" class="archive" aria-pressed="false" data-build="warden">⚡ Storm Rain Warden · Archive</button><button type="button" class="archive" aria-pressed="false" data-build="reliquarian">† Reliquarian · Archive</button><span class="death">Warden died at 60 · Reliquarian died at 71</span></div>
 <div class="app" id="reliquarianApp">
   <aside class="sidebar" aria-label="Build guide navigation">
     <div class="brand"><div class="crest">R</div><div><b>RELIQUARIAN</b><small>HCSSF Build Companion</small></div></div>
@@ -80,7 +98,7 @@
       <div><div class="eyebrow">Your build reference · No more scrolling</div><h1>Pyroclast Reliquarian</h1><p class="subtitle">Your HCSSF build guide and latest reviewed character snapshot. Upload PoB files in ChatGPT; published updates arrive from GitHub.</p></div>
       <div class="top-actions"><span class="pill">HCSSF</span><span class="pill muted-pill">3.30</span></div>
     </header>
-    <div class="w-archive"><strong>† Archived: Reliquarian died at level 71.</strong> Level 71 is the reported HC death; the last verified PoB snapshot remains level 59. All original guide sections and notes are preserved. <button type="button" class="btn secondary" data-build="warden">Active Warden →</button></div>
+    <div class="w-archive"><strong>† Archived: Reliquarian died at level 71.</strong> Level 71 is the reported HC death; the last verified PoB snapshot remains level 59. All original guide sections and notes are preserved. <button type="button" class="btn secondary" data-build="slayer">Planned Slayer →</button></div>
 <div class="searchrow"><input class="search" id="searchInput" type="search" placeholder="Search build guide: Constitution, Skitterbots, flask…" aria-label="Search build guide"><button class="btn secondary" id="clearSearch">Clear</button></div>
     <div id="searchResults" class="hidden" aria-live="polite"></div>
 
@@ -265,6 +283,7 @@
 </aside>
 <main>
 <header class="top"><div><div class="eyebrow">Active HCSSF character · Original theorycraft</div><h1>Storm Rain Shock-Stacking Warden</h1><p class="subtitle">Use repeated Storm Rain beams to build Oath of Spring shocks; Lightning Arrow clears. Layer Barkskin, life, evasion, spell suppression and recovery for Hardcore.</p></div><div class="top-actions"><span class="pill">HCSSF</span><span class="pill muted-pill">3.30</span></div></header>
+<div class="w-archive"><strong>† Archived: Storm Rain Warden died at level 60.</strong> Death is player-reported. The preserved PoB snapshot is level 60; no post-death stats or passives are inferred.</div>
 <div class="searchrow"><input id="wSearch" class="search" placeholder="Search Warden guide: Storm Rain, Finesse, Kitava…" type="search"/><button type="button" class="btn secondary" id="wClearSearch">Clear</button></div><div id="wResults" class="hidden"></div>
 <section class="wpage active" id="w-overview" data-title="Overview">
 <div class="w-hero"><div class="kicker">Original build hypothesis</div><h2>50 shocks × 2% damage taken</h2><p>Oath of Spring allows up to 50 shocks at 2% each, potentially 100% increased damage taken. Storm Rain repeatedly beams between stuck arrows. This is the theoretical ceiling, not guaranteed boss DPS: individual hits must still be large enough to shock.</p><div class="w-bench"><div><b>50</b><small>Max simultaneous shocks</small></div><div><b>2%</b><small>Damage taken per shock</small></div><div><b>100%</b><small>Maximum combined effect</small></div></div><div class="w-warning">Experimental HCSSF build. We have not yet tested the shock rate against map bosses or validated full damage and defenses in PoB.</div></div>
@@ -453,6 +472,69 @@ loadCharacter();
 })();
 </script>
 <script>if(['localhost','127.0.0.1'].includes(location.hostname)){for(const id of ['localUpdatesLink','localUpdatesDivider']){const el=document.getElementById(id);if(el)el.style.display='inline'}}</script>
+<div class="app" id="slayerApp">
+<aside class="sidebar" aria-label="Slayer build navigation">
+<div class="brand"><div class="crest">S</div><div><b>CYCLONE SLAYER</b><small>HCSSF · Patch 3.30</small></div></div>
+<nav class="nav" id="sNav">
+<button class="active" type="button" data-snav="overview"><span>⌂</span> Overview</button>
+<button type="button" data-snav="campaign"><span>▤</span> Campaign Plan</button>
+<button type="button" data-snav="passives"><span>◇</span> Passives</button>
+<button type="button" data-snav="gems"><span>✧</span> Gems &amp; Links</button>
+<button type="button" data-snav="gear"><span>⬡</span> Gear &amp; SSF</button>
+<button type="button" data-snav="ascendancy"><span>♜</span> Ascendancy</button>
+<button type="button" data-snav="chase"><span>✦</span> Chase Items</button>
+<button type="button" data-snav="safety"><span>☑</span> HCSSF Checklist</button>
+</nav>
+<div class="aside-foot">PoE 1 · 3.30<br>Duelist → Slayer<br>Physical staff Cyclone<br><br>Build plan only. No character snapshot yet.</div>
+</aside>
+<main>
+<header class="top"><div><div class="eyebrow">New HCSSF build · planning only</div><h1>Cyclone Shockwave Slayer</h1><p class="subtitle">A physical staff Cyclone starter with broad melee clear, leech recovery, staff block, and an optional boss link. Chase uniques are upgrades, not entry requirements.</p></div><div class="top-actions"><span class="pill">HCSSF</span><span class="pill muted-pill">3.30</span></div></header>
+<div class="s-page active" id="s-overview" data-title="Overview">
+<div class="s-hero"><div class="skicker">Why this build</div><h2>Spin through the pack; let Shockwave widen the hit zone.</h2><p>This shifts you away from the bow playstyle. Regular Cyclone and a crafted physical staff are the dependable baseline. Shockwave adds area hits; the Slayer's 3.30 Impact bonus grows AoE as you kill packs. Endless Hunger adds attack speed while leeching, helping Cyclone feel more responsive.</p><div class="s-pillrow"><span class="s-pill">Starter works on rares</span><span class="s-pill">4-link campaign setup</span><span class="s-pill">No required unique</span><span class="s-pill">SSF chase upgrades</span></div></div>
+<div class="s-grid">
+<article class="s-card"><h2>Character status</h2><p id="sCurrentCharacter">Duelist → Slayer · HC SSF Covens · plan only, no character created.</p><p id="sCurrentSnapshot">No PoB stats, gear, passives, or campaign progress are claimed.</p></article>
+<article class="s-card"><h2>What the damage plan is</h2><p><b>Clear:</b> Cyclone + Shockwave Support on a staff or mace. Work toward Void Shockwave if it drops.</p><p><b>Single target:</b> keep General's Cry with Sunder or Ground Slam of Earthshaking as a second setup through campaign and early maps.</p></article>
+<article class="s-card full"><h2>3.30 changes used</h2><div class="s-callout"><b>Impact:</b> 5% increased Area of Effect per enemy killed recently, up to 50%. This rewards continuous pack clearing and should make Cyclone coverage grow during a map.</div><div class="s-callout"><b>Endless Hunger:</b> 20% increased Attack Speed while Leeching. Frequent Cyclone hits make this a natural mapping and bossing condition.</div><p class="hint">These are direct 3.30 ascendancy changes. They improve the build as you reach Slayer ascendancy; they are not a level-1 damage spike.</p></article>
+</div></div>
+<div class="s-page" id="s-campaign" data-title="Campaign Plan">
+<div class="s-grid"><article class="s-card full"><h2>Skill progression</h2><table class="s-table"><thead><tr><th>Stage</th><th>Main skill</th><th>Plan</th></tr></thead><tbody>
+<tr><td>Act 1 · levels 1–11</td><td>Spectral Throw</td><td>Use a fast physical weapon and the strongest available physical attack supports. Replace the weapon regularly.</td></tr>
+<tr><td>Acts 2–3 · levels 12–27</td><td>Static Strike</td><td>Build life and reliable hit chance, then two-handed physical damage. Use a vendor physical-damage craft when a weapon upgrade is overdue.</td></tr>
+<tr><td>Act 3 onward · level 28+</td><td>Cyclone</td><td>Swap when it feels better, around level 32 in the reference route. Start with regular Cyclone. Add Shockwave once you have a staff or mace and the gem.</td></tr>
+<tr><td>Acts 4–10</td><td>Cyclone + Shockwave</td><td>Keep a boss skill beside Cyclone: Sunder or General's Cry with Sunder / Ground Slam of Earthshaking. Upgrade the weapon and links before spending points on small damage bonuses.</td></tr>
+</tbody></table><p class="hint">The skill swap windows follow a 3.30 HCSSF Cyclone Shockwave leveling reference. The precise swap depends on your drops and how the skill feels; staying on a working skill is fine.</p></article>
+<article class="s-card"><h2>Weapon rule</h2><p>Physical weapon damage is the main leveling lever. Keep a current two-handed staff for the final Cyclone/ Shockwave setup. Use vendor physical recipes and bench crafts; do not wait for a unique.</p></article>
+<article class="s-card"><h2>Before Kitava</h2><p>Finish the campaign with elemental resistances capped after the penalty, a meaningful life pool, bleed removal, and a reliable life flask. Delay damage if a gear replacement breaks those defenses.</p></article></div></div>
+<div class="s-page" id="s-passives" data-title="Passive Tree">
+<div class="s-grid"><article class="s-card full"><h2>Campaign passive priorities</h2><p>This is a planning route by goal. Numeric node IDs are intentionally omitted until a matching 3.30 tree route is verified; the dashboard will not mark planned points as allocated.</p><table class="s-table"><thead><tr><th>Campaign stage</th><th>Spend points toward</th><th>HC reason</th></tr></thead><tbody>
+<tr><td>Act 1 · ~13 pts</td><td>Starting life, accuracy and efficient physical damage; move toward Duelist life clusters.</td><td>Early life and reliable hits before heavy damage investment.</td></tr>
+<tr><td>Act 2 · ~25 pts</td><td>Add nearby life and the life mastery; begin pathing toward two-handed/staff damage.</td><td>Don't let leech replace a real life pool.</td></tr>
+<tr><td>Act 3 · ~40 pts</td><td>Continue life, then weapon damage/attack speed as Cyclone comes online; Normal Lab only when comfortable.</td><td>A current weapon supports clear and recovery.</td></tr>
+<tr><td>Act 4 · ~48 pts</td><td>Finish a nearby life wheel and start staff block if already using a staff.</td><td>Defense before harder act bosses.</td></tr>
+<tr><td>Act 5 · ~56 pts</td><td>Keep filling life and physical attack nodes; point toward staff block.</td><td>Re-cap resistances after Kitava's penalty.</td></tr>
+<tr><td>Act 6 · ~66 pts</td><td>Take another efficient life cluster; damage only if gear and resistances hold.</td><td>Don't enter maps with uncapped elemental resistances.</td></tr>
+<tr><td>Act 7 · ~74 pts</td><td>Continue staff block (Whirling Barrier / Steelwood Stance only if the 3.30 route validates it) and life.</td><td>Block complements life and armour.</td></tr>
+<tr><td>Act 8 · ~80 pts</td><td>Finish nearby life; begin impale scaling after life and block basics.</td><td>Keep life ahead of optional damage.</td></tr>
+<tr><td>Act 9 · ~85 pts</td><td>Complete efficient life and physical weapon clusters; hold crit and jewel nodes.</td><td>Check weapon, flasks and resists before the major boss.</td></tr>
+<tr><td>Act 10 · ~93 pts</td><td>Finish the life foundation and staff/physical route; enter maps with current 4-link and capped resists.</td><td>Estimate assumes ~level 70, all passive quests and killing all bandits.</td></tr>
+</tbody></table></article><article class="s-card full"><h2>Map-entry checkpoint</h2><p>Start maps with capped elemental resistances, a strong life pool for your level, an updated staff, a 4-link Cyclone setup, reliable leech, and bleed removal. If damage feels weak, check weapon DPS and hit chance before adding more damage passives.</p></article></div></div>
+<div class="s-page" id="s-gems" data-title="Gems & Links">
+<div class="s-grid"><article class="s-card"><h2>Clear · Cyclone</h2><p><span class="s-tag">Staff or mace</span><span class="s-tag">4-link goal</span></p><p>Cyclone · Melee Physical Damage · Shockwave Support · Brutality when available.</p><p>Add Infused Channelling or Pulverise when you have another link and the character can sustain the mana cost. Replace Shockwave with Void Shockwave only if it drops.</p></article><article class="s-card"><h2>Bosses · second setup</h2><p>General's Cry · Sunder or Ground Slam of Earthshaking · Autoexertion if reservation allows · physical supports.</p><p>Against bosses, use level-1 Desecrate only if the build needs more corpses and it is safe to set up. Otherwise keep the simpler Sunder option.</p></article><article class="s-card full"><h2>Auras and utility</h2><p><b>Early:</b> Purity of Elements can cover elemental resistance and ailment protection while gear is poor. Keep it if replacing it would expose a weakness.</p><p><b>Later:</b> Pride for physical damage; Flesh and Stone or Blood and Sand if reservation allows. Do not copy an endgame aura package before reservation supports and mana are ready.</p><p><b>Guard:</b> Steelskin, automated only if the setup is reliable; a life flask with bleed removal remains important. Mark-on-hit Assassin's Mark is a later bossing option.</p></article></div></div>
+<div class="s-page" id="s-gear" data-title="Gear & SSF">
+<div class="s-grid"><article class="s-card full"><h2>SSF gearing order</h2><table class="s-table"><tbody><tr><th>1 · Weapon</th><td>Keep a high physical-DPS staff current. Vendor craft or bench craft physical damage when needed; weapon upgrades produce the clearest damage spikes.</td></tr><tr><th>2 · Life</th><td>Life on every rare armour piece and jewellery slot where possible. Keep a defensive armour base where the sockets allow.</td></tr><tr><th>3 · Resistances</th><td>Fire, cold and lightning capped after each Kitava penalty. Use bench crafts to finish gaps.</td></tr><tr><th>4 · Links/flasks</th><td>Campaign 4-link; 5/6-link only when drops and crafting make it reasonable. Keep bleed removal and a defensive utility flask.</td></tr></tbody></table></article><article class="s-card full"><h2>Damage diagnosis</h2><p>First check staff physical DPS and attack hit chance. Next check whether Cyclone/ Shockwave has the best physical supports available. Then add a boss skill for single target. Don't trade away life or resistance to chase tooltip DPS.</p></article></div></div>
+<div class="s-page" id="s-ascendancy" data-title="Ascendancy">
+<div class="s-grid"><article class="s-card full"><h2>Lab order · survival first</h2><table class="s-table"><tbody><tr><th>Normal</th><td><b>Brutal Fervour</b> · persistent life-leech recovery.</td></tr><tr><th>Cruel</th><td><b>Endless Hunger</b> · leeching defenses and the 3.30 20% attack speed bonus while leeching.</td></tr><tr><th>Merciless</th><td><b>Impact</b> · 3.30 pack-clear AoE bonus (5% per recent kill, up to 50%).</td></tr><tr><th>Uber</th><td><b>Bane of Legends</b> as an endgame damage/mapping payoff. Complete only when safe.</td></tr></tbody></table><p class="hint">If the current in-game 3.30 ascendancy tree differs, follow the live tree and keep the first two labs defensive.</p></article></div></div>
+<div class="s-page" id="s-chase" data-title="Chase Items">
+<div class="s-grid"><article class="s-card full"><h2>SSF chase ladder</h2><p>These are exciting bonuses to pursue, never prerequisites for the campaign or first maps.</p><table class="s-table"><thead><tr><th>Item</th><th>What it adds</th><th>How to treat it in SSF</th></tr></thead><tbody>
+<tr><td><b>The Stampede / Replica Stampede</b></td><td>Solves the severe movement penalty from optional Cyclone of Tumult.</td><td>Use regular Cyclone until one appears; replica comes from Heist and is fully RNG.</td></tr>
+<tr><td><b>Rumi's Concoction</b></td><td>Large block-flask payoff for a staff-block setup.</td><td>Nice unique drop; not needed to make the build function.</td></tr>
+<tr><td><b>Replica Witchfire Brew</b></td><td>Extra curse option for later bossing.</td><td>Heist target, optional. A single curse or rare utility flask works earlier.</td></tr>
+<tr><td><b>Forbidden Flame + Forbidden Flesh: More Than Skill</b></td><td>Late-game Gladiator lucky-block ascendancy bonus.</td><td>True long-shot pair: both need the matching notable. Treat as aspirational endgame only.</td></tr>
+<tr><td><b>Lethal Pride</b></td><td>Potential damage, strength or defensive bonuses from its seed.</td><td>Legion jewel target; evaluate the actual seed in PoB and don't assume a specific modifier.</td></tr>
+</tbody></table></article></div></div>
+<div class="s-page" id="s-safety" data-title="HCSSF Checklist">
+<div class="s-grid"><article class="s-card full"><h2>Keep the run alive</h2><div class="s-callout s-good">Life first through campaign. Keep the weapon current so leech can recover meaningful life.</div><div class="s-callout">Re-cap elemental resistances after both Kitava penalties. Keep bleed removal on a life flask.</div><div class="s-callout">Avoid physical-reflect maps; this is a physical attack build. Reroll map mods that threaten your defenses.</div><div class="s-callout">Cyclone needs you close to enemies. Keep moving around dangerous ground effects and don't channel in place against telegraphed hits.</div><div class="s-callout s-warning">Staff block, armour and leech are layers, not immunity. If the next boss feels unsafe, upgrade gear or farm rather than forcing the attempt.</div></article><article class="s-card full"><h2>References</h2><p>3.30 official patch notes and the 3.30 HCSSF Cyclone Shockwave Slayer campaign guide.</p><div class="s-links"><a href="https://www.pathofexile.com/forum/view-thread/4013680/page/1" target="_blank" rel="noreferrer">Official 3.30 patch notes</a><a href="https://mobalytics.gg/poe/builds/sanavixx-cyclone-shockwave-slayer" target="_blank" rel="noreferrer">Cyclone Shockwave Slayer guide</a></div></article></div></div>
+</main></div>
 <script>
 
 (function() {
@@ -464,7 +546,7 @@ let snap=null, stage=0, act=0, notes="", noteKey="poe-hcssf-warden-notes-v1";
 try {notes=JSON.parse(localStorage.getItem(noteKey)||"null")?.notes||"";}catch(e){}
 function doneTasks(){return new Set(snap?.progress?.completedTaskIds||[])}
 function doneNodes(){return new Set((snap?.progress?.completedPassiveIds||[]).map(String))}
-function toggleBuild(name){let w=name!=="reliquarian";$w("wardenApp").classList.toggle("hide",!w);$w("reliquarianApp").classList.toggle("show",!w);document.querySelectorAll("[data-build]").forEach(b=>{b.classList.toggle("selected",b.dataset.build===name);b.setAttribute("aria-pressed",String(b.dataset.build===name))});document.title=w?"Storm Rain Warden | HCSSF Build Companion":"Reliquarian Archive | HCSSF Build Companion";try{localStorage.setItem("poe-hcssf-selected-build-v1",name)}catch(e){}}
+function toggleBuild(name){let w=name==="warden",s=name==="slayer",r=name==="reliquarian";$w("wardenApp").classList.toggle("hide",!w);$w("slayerApp").classList.toggle("show",s);$w("reliquarianApp").classList.toggle("show",r);document.querySelectorAll("[data-build]").forEach(b=>{b.classList.toggle("selected",b.dataset.build===name);b.setAttribute("aria-pressed",String(b.dataset.build===name))});document.title=s?"Cyclone Shockwave Slayer | HCSSF Build Companion":w?"Storm Rain Warden Archive | HCSSF Build Companion":"Reliquarian Archive | HCSSF Build Companion";try{localStorage.setItem("poe-hcssf-selected-build-v2",name)}catch(e){}}
 function nav(name){document.querySelectorAll("#wardenApp .wpage").forEach(el=>el.classList.toggle("active",el.id==="w-"+name));document.querySelectorAll("#wNav button").forEach(el=>{const active=el.dataset.wpage===name;el.classList.toggle("active",active);el.setAttribute("aria-current",active?"page":"false")});location.hash="w-"+name;window.scrollTo(0,0);}
 
 function renderPassives(){
@@ -517,15 +599,16 @@ $w("wNotes").value=notes;$w("wNotes").addEventListener("input",e=>{notes=e.targe
 $w("wClearNotes").addEventListener("click",()=>{if(!confirm("Clear only Warden notes?"))return;notes="";$w("wNotes").value="";saveNotes()});
 $w("wExport").addEventListener("click",()=>{let url=URL.createObjectURL(new Blob([JSON.stringify({type:"warden-notes-v1",notes:notes},null,2)],{type:"application/json"})),a=document.createElement("a");a.href=url;a.download="warden-local-notes.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)});
 $w("wImport").addEventListener("change",async e=>{let f=e.target.files?.[0];if(!f)return;try{let x=JSON.parse(await f.text());if(x.type!=="warden-notes-v1"||typeof x.notes!=="string")throw Error("Not a Warden export");notes=x.notes;$w("wNotes").value=notes;saveNotes();$w("wNoteTransfer").textContent="Imported."}catch(err){$w("wNoteTransfer").textContent="Import failed: "+err.message}});
-document.addEventListener("click",e=>{let b=e.target.closest("[data-build],[data-wpage],[data-wnav],[data-wstage],[data-wact],[data-wactpass]");if(!b)return;if(b.dataset.wactpass!=null){stage=Number(b.dataset.wactpass);toggleBuild("warden");nav("passives");renderPassives();return}if(b.dataset.build){toggleBuild(b.dataset.build);return}if(b.dataset.wpage||b.dataset.wnav){toggleBuild("warden");nav(b.dataset.wpage||b.dataset.wnav);return}if(b.dataset.wstage!=null){stage=Number(b.dataset.wstage);renderPassives()}if(b.dataset.wact!=null){act=Number(b.dataset.wact);renderAct()}});
+document.addEventListener("click",e=>{let b=e.target.closest("[data-build],[data-wpage],[data-wnav],[data-wstage],[data-wact],[data-wactpass],[data-snav]");if(!b)return;if(b.dataset.wactpass!=null){stage=Number(b.dataset.wactpass);toggleBuild("warden");nav("passives");renderPassives();return}if(b.dataset.build){toggleBuild(b.dataset.build);return}if(b.dataset.snav){toggleBuild("slayer");document.querySelectorAll("#slayerApp .s-page").forEach(x=>x.classList.toggle("active",x.id==="s-"+b.dataset.snav));document.querySelectorAll("#sNav button").forEach(x=>x.classList.toggle("active",x===b));location.hash="s-"+b.dataset.snav;window.scrollTo(0,0);return}if(b.dataset.wpage||b.dataset.wnav){toggleBuild("warden");nav(b.dataset.wpage||b.dataset.wnav);return}if(b.dataset.wstage!=null){stage=Number(b.dataset.wstage);renderPassives()}if(b.dataset.wact!=null){act=Number(b.dataset.wact);renderAct()}});
 $w("wShowNext").addEventListener("click",()=>{let done=doneNodes(),hasLive=!!snap?.progress?.nextRoute?.length,i=hasLive?Math.max(0,Math.min(9,(Number(snap.character?.act)||2)-1)):d.stages.findIndex(g=>g[2].some(n=>!done.has(String(n[0]))));if(i>=0){stage=i;renderPassives();(hasLive?$w("wCurrentTree"):$w("wStageDetail")).scrollIntoView({behavior:"smooth"})}});
 const searchable=[...document.querySelectorAll("#wardenApp .wpage")].map(x=>({id:x.id,title:x.dataset.title,text:x.textContent.replace(/\s+/g," ").trim()}));
 $w("wSearch").addEventListener("input",e=>{let q=e.target.value.trim().toLowerCase(),res=$w("wResults");if(!q){res.classList.add("hidden");return}let matches=searchable.filter(x=>x.text.toLowerCase().includes(q)).slice(0,9);res.classList.remove("hidden");res.innerHTML=matches.length?matches.map(x=>'<button class="result" type="button" data-wnav="'+x.id.slice(2)+'"><b>'+safe(x.title)+'</b></button>').join(""):'<p class="hint">No Warden sections found.</p>'});
 $w("wClearSearch").addEventListener("click",()=>{$w("wSearch").value="";$w("wResults").classList.add("hidden")});
 renderPassives();renderAct();renderGems();renderGear();renderTasks();renderLabs();
+(async()=>{try{const r=await fetch("/character-progress.json",{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);const j=await r.json(),s=j.slayer;if(s?.format!=="slayer-character-progress-v1")throw Error("Slayer plan absent");const c=s.character||{},label=c.label||"Cyclone Shockwave Slayer";const status=c.status||"planned";$w("sCurrentCharacter").textContent=label+" · Level "+(c.level??"—")+" · "+(c.act?"Act "+c.act:"Act unconfirmed")+" · "+status;$w("sCurrentSnapshot").textContent=status==="planned"?"Build plan only; no current PoB stats or allocated passives yet.":"Dashboard snapshot date: "+(s.publishedAt||"unknown")+" · current character data is loaded from the published JSON.";document.querySelectorAll('[data-build="slayer"]').forEach(b=>{b.textContent="⚔ Cyclone Shockwave Slayer · "+(status==="planned"?"Planned":"Active")})}catch(e){$w("sCurrentCharacter").textContent="Slayer plan unavailable: "+e.message}})();
 (async()=>{try{let response=await fetch("/character-progress.json",{cache:"no-store"});if(!response.ok)throw Error("HTTP "+response.status);let json=await response.json();if(json.warden?.format!=="warden-character-progress-v1")throw Error("Warden state absent");snap=json.warden;$w("wSync").textContent="Warden snapshot loaded separately · "+(snap.publishedAt||"Unknown date");renderCharacter()}catch(e){$w("wSync").textContent="Warden state unavailable: "+e.message;snap={character:{},source:{kind:"Planned guide only"},stats:{},progress:{completedTaskIds:[],completedPassiveIds:[]},findings:[{severity:"unknown",title:"No verified character snapshot",detail:"Guide is still usable; no progress claims.",action:"Check local sync then submit a PoB."}],skills:[],gear:[],nextActions:["Begin Ranger; level with Lightning Arrow, then add Storm Rain at 28."]};renderCharacter()}})();
-let initial="warden";try{initial=localStorage.getItem("poe-hcssf-selected-build-v1")||"warden"}catch(e){}toggleBuild(initial==="reliquarian"?"reliquarian":"warden");
-let hash=location.hash.slice(1);if(hash.startsWith("w-")&&$w(hash)) {toggleBuild("warden");nav(hash.slice(2))}else if(hash&&$w(hash)&&$w(hash).classList.contains("tabs"))toggleBuild("reliquarian");
+let initial="slayer";try{initial=localStorage.getItem("poe-hcssf-selected-build-v2")||"slayer"}catch(e){}toggleBuild(["warden","reliquarian","slayer"].includes(initial)?initial:"slayer");
+let hash=location.hash.slice(1);if(hash.startsWith("s-")){toggleBuild("slayer");let sn=hash.slice(2);document.querySelectorAll("#slayerApp .s-page").forEach(x=>x.classList.toggle("active",x.id==="s-"+sn));document.querySelectorAll("#sNav button").forEach(x=>x.classList.toggle("active",x.dataset.snav===sn))}else if(hash.startsWith("w-")&&$w(hash)){toggleBuild("warden");nav(hash.slice(2))}else if(hash&&$w(hash)&&$w(hash).classList.contains("tabs"))toggleBuild("reliquarian");
 })();
 
 </script>

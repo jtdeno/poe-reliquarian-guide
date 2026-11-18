@@ -27,11 +27,11 @@ Do not commit original PoB exports, account hashes, local notes, local backups, 
 
 > In `jtdeno/poe-reliquarian-guide`, publish our reviewed Reliquarian HCSSF dashboard and `character-progress.json` from the files I provide, on `main`. Validate JSON syntax and confirm the required `format`. Keep notes and raw PoB exports out of the repository. In future, update only the character-progress.json to reflect the HCSSF analysis I supply. Do not mark unknown passive nodes as completed or incomplete.
 
-## Multi-character dashboard: active Warden and archived Reliquarian
+## Multi-character dashboard: active Slayer plan and archived Warden / Reliquarian
 
-As of November 15, 2026 the existing `poe_reliquarian_hcssf_guide.html` is a **single multi-character dashboard**. It defaults to Storm Rain Shock-Stacking Warden, with a top switch to the complete Reliquarian archive. The original filename and `/character-progress.json` endpoint remain unchanged for the configured local Windows server.
+As of November 17, 2026 the existing `poe_reliquarian_hcssf_guide.html` is a **single multi-character dashboard**. It defaults to the Cyclone Shockwave Slayer plan, with a top switch to the archived level-60 Storm Rain Warden and level-71 Reliquarian. The original filename and `/character-progress.json` endpoint remain unchanged for the configured local Windows server.
 
-The root JSON is intentionally backward-compatible with the original Reliquarian renderer: `format: reliquarian-character-progress-v1`, all historic root fields preserved, plus `archive` metadata and an independent `warden` object (`warden-character-progress-v1`). The Reliquarian HC character died **at level 71 by player report**. Its last reviewed PoB was level 59, so its old stats are intentionally left at level 59. Do not overwrite the archive with the new character's state.
+The root JSON is intentionally backward-compatible with the original Reliquarian renderer: `format: reliquarian-character-progress-v1`, all historic root fields preserved, plus the Reliquarian `archive`, archived `warden` object (`warden-character-progress-v1`), and planning-only `slayer` object (`slayer-character-progress-v1`). The Reliquarian HC character died **at level 71 by player report**. Its last reviewed PoB was level 59, so its old stats are intentionally left at level 59. Do not overwrite the archive with the new character's state.
 
 ### Publishing a new Warden PoB review
 
@@ -44,6 +44,6 @@ The root JSON is intentionally backward-compatible with the original Reliquarian
 
 ## Exact Warden campaign passive planning (2026-11-15)
 
-The same shared dashboard now shows act-by-act expected node allocations through Act 10. `warden.plan` contains the **93 planned regular passive points** and `warden.progress` contains independently verified character state. Do not treat planned passives as completed. Confirm allocated numeric IDs AND selected mastery effect IDs against the active 3_30 PoB tree. The optional one-point Precise Technique keystone is valid only when Accuracy Rating exceeds Maximum Life; do not assume this threshold is met. The +15% suppression Evasion Mastery only applies if all four armour slots have Evasion Rating. Follow the published act plan, but adjust route ordering for HC survivability and actual in-game `/passives` quest-book totals.
+The archived Warden guide retains act-by-act expected node allocations through Act 10. `warden.plan` contains **93 planned regular passive points** and `warden.progress` contains only independently verified final character state. The active Slayer plan intentionally uses named priorities without numeric node IDs until a 3.30 route is verified. Do not treat planned passives as completed. Confirm allocated numeric IDs AND selected mastery effect IDs against the active 3_30 PoB tree. The optional one-point Precise Technique keystone is valid only when Accuracy Rating exceeds Maximum Life; do not assume this threshold is met. The +15% suppression Evasion Mastery only applies if all four armour slots have Evasion Rating. Follow the published act plan, but adjust route ordering for HC survivability and actual in-game `/passives` quest-book totals.
 
 When publishing changes to the campaign route, update both the Warden HTML data and `warden.plan.actMilestones` in `character-progress.json` together, and verify public raw delivery. Avoid altering the archived Reliquarian final report. 

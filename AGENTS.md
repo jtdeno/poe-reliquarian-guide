@@ -15,19 +15,20 @@ On each uploaded Path of Building XML:
 
 ## Multiple characters (3.30 onward)
 
-The original local dashboard filename is retained: `poe_reliquarian_hcssf_guide.html`. It is now the shared HCSSF companion with a default-active **Storm Rain Warden** and read-only **Reliquarian archive**, selected using the top-level build switch. Do not create a second app or delete old sections. Both builds read the existing `character-progress.json`.
+The original local dashboard filename is retained: `poe_reliquarian_hcssf_guide.html`. It is now the shared HCSSF companion with a default-active **Cyclone Shockwave Slayer** plan and archived **Storm Rain Warden** and **Reliquarian** characters, selected using the top-level build switch. Do not create a second app or delete old sections. All three character sections read the existing `character-progress.json`.
 
 - The JSON root remains `format: reliquarian-character-progress-v1` and preserves the historical Reliquarian records, comparison history, and the `archive` object. The archived Reliquarian **died at level 71** by player report, but the last reviewed PoB XML snapshot was **level 59**; never reinterpret its level-59 stats as level-71 data. Root `character.status` is `deceased` and `character.deathLevel` is `71`.
-- The independent active character lives at `root.warden`, with `format: warden-character-progress-v1`. Warden has independent `character`, `source`, `stats`, `progress`, `findings`, `skills`, `gear`, and `nextActions`. Do not mix character data or completion flags between builds.
+- Archived Warden data lives at `root.warden`, with `format: warden-character-progress-v1`; the player reported a death at level 60. Retain its last verified level-60 snapshot and never fabricate post-death state.
+- The active build plan lives at `root.slayer`, with `format: slayer-character-progress-v1`. It is planning-only until a character PoB is supplied. Keep build plans separate from completed character facts and do not mix completion flags.
 - The Warden plan references the Community PoB `3_30` tree. `warden.progress.completedPassiveIds` contains only confirmed **numeric node IDs as strings** from an active current Warden PoB; verify mastery IDs and effects separately. `completedTaskIds` contains only evidence-backed Warden checklist IDs from the HTML guide. Treat unknowns as unverified, not incomplete.
 - Warden is original and **experimental**: 50 Oath of Spring shocks is a maximum, not established sustained boss DPS. Validate beam hits, real shock uptime and defensive maximum hits before endorsing difficult content. Prioritize HC defenses over damage.
 - The old and new personal notes use separate browser localStorage keys, not GitHub. Never copy or expose personal notes into public repository files.
 - Keep the original filename and root JSON endpoint so the local Windows server can sync both without changing its configuration. GitHub commits do not guarantee the user's local sync succeeded; verify local update state separately if possible.
 
 
-## Warden full campaign passive plan (3.30)
+## Archived Warden campaign passive plan (3.30)
 
-The Warden's original guide now includes **93 planned regular passives** through Act 10, with exact node IDs, a numbered route and separate per-act targets. The same ordered expectations are stored in `character-progress.json` under `warden.plan.actMilestones`, and displayed in the existing HTML on the Overview, Campaign and Passive Tree tabs. Preserve consistency across both files when editing this route; these are PLAN values only.
+The archived Warden's original guide retains its **93 planned regular passives** through Act 10, with exact node IDs, a numbered route and separate per-act targets. The same ordered expectations are stored in `character-progress.json` under `warden.plan.actMilestones`, and displayed in the existing HTML on the Overview, Campaign and Passive Tree tabs. Preserve consistency across both files when editing this route; these are PLAN values only.
 
 - Act-end cumulative targets: **13 / 25 / 40 / 48 / 56 / 66 / 74 / 80 / 85 / 93** (Acts 1–10). This assumes approximately level 70, 24 quest passives and killing all bandits; actual reward timing and levels vary.
 - Early conditional keystone **Precise Technique 63620**: use only if Accuracy Rating exceeds Maximum Life. If false, defer or refund; no claim of always-on 40% more attack damage.
