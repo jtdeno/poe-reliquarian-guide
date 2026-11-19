@@ -5622,9 +5622,11 @@
       "patch": "3.30",
       "references": [
         "https://mobalytics.gg/poe/builds/sanavixx-cyclone-shockwave-slayer",
-        "https://www.pathofexile.com/forum/view-thread/4013680/page/1"
+        "https://www.pathofexile.com/forum/view-thread/4013680/page/1",
+        "https://pobb.in/3O317e8QoBv2",
+        "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/master/src/TreeData/3_30/tree.lua"
       ],
-      "note": "Original dashboard plan based on the 3.30 Cyclone Shockwave Slayer concept and its published HCSSF campaign testing. Build plan only; no character state or PoB stats yet."
+      "note": "Original dashboard plan based on the 3.30 Cyclone Shockwave Slayer concept and its published HCSSF campaign testing. The campaign PoB checkpoints were exported against treeVersion 3_29; every named node ID in this plan was checked against the current Community PoB 3_30 tree data. These are planned checkpoints only, not current character allocations."
     },
     "stats": {},
     "progress": {
@@ -5646,22 +5648,22 @@
         {
           "stage": "Act 1 · levels 1–11",
           "skill": "Spectral Throw",
-          "focus": "Use a fast physical weapon; link the best available physical attack supports. Take early life, accuracy and melee/weapon damage needed for progression."
+          "focus": "Fast physical one-handed weapon; use a vendor physical-damage craft when upgrades stall. Move into the Duelist life and physical-attack route."
         },
         {
           "stage": "Acts 2–3 · levels 12–27",
           "skill": "Static Strike",
-          "focus": "Keep upgrading the weapon with a vendor physical recipe or a better rare. Build life first, then two-handed physical damage; take Resolute Technique if misses are costing too much damage."
+          "focus": "Static Strike with Ancestral Call and Ruthless. Continue life and two-handed physical damage; use a staff or mace if Shockwave is the direction, but do not force a weak weapon."
         },
         {
-          "stage": "Act 3 onward · level 28+",
+          "stage": "Act 3 · level 28+ (reference swap around 32)",
           "skill": "Cyclone",
-          "focus": "Swap when it feels better, commonly around level 32 after Normal Lab. Use a staff or mace for Shockwave Support. Keep Sunder or the available General's Cry setup for single target."
+          "focus": "Swap to regular Cyclone only when it feels better and a suitable staff/mace is equipped. Add Shockwave after its level requirement and link are available; keep Static Strike or Sunder as fallback."
         },
         {
           "stage": "Acts 4–10",
           "skill": "Cyclone + Shockwave",
-          "focus": "Keep a current physical staff and 4-link. Add Brutality and other strong physical supports as available. Use a separate General's Cry + Sunder / Ground Slam of Earthshaking link for bosses; do not spend corpses/setup time in dangerous fights."
+          "focus": "Build the life and staff-block foundation. Keep a separate Sunder or General’s Cry setup for single target; weapon upgrades matter more than small damage nodes."
         }
       ],
       "passivePrinciples": [
@@ -5698,13 +5700,81 @@
           "Flesh and Stone / Blood and Sand according to reservation and defense preference.",
           "Steelskin on Automation or self-cast; keep a bleed-removal flask."
         ],
-        "notes": "Cyclone of Tumult and Void Shockwave are upgrade targets, not campaign assumptions. Verify gem availability through quest rewards/vendors in the current league; use the regular gems if the transfigured/support version has not appeared."
+        "notes": "Cyclone of Tumult and Void Shockwave are upgrade targets, not campaign assumptions. Use Spectral Throw in Act 1, Static Strike from level 12, then regular Cyclone only when the weapon and links feel ready (reference swap around level 32). Shockwave requires a staff or mace. Keep Static Strike/Sunder as the fallback. Verify gem rewards/vendors for the current league; pre-Cyclone setups are documented in gemLinks.preCyclone.",
+        "preCyclone": [
+          {
+            "stage": "Act 1 · levels 1–11",
+            "main": "Spectral Throw",
+            "links": [
+              "Spectral Throw",
+              "Volley",
+              "Chance to Bleed"
+            ],
+            "utility": [
+              "Blood and Sand",
+              "Precision (level only as needed)",
+              "Clarity only if mana is a problem"
+            ],
+            "note": "Use the best physical weapon available and replace it often. Keep a spare support socket open as links allow."
+          },
+          {
+            "stage": "Act 2 · levels 12–27",
+            "main": "Static Strike",
+            "links": [
+              "Static Strike",
+              "Ancestral Call",
+              "Ruthless"
+            ],
+            "utility": [
+              "Blood and Sand",
+              "Purity of Elements while resistances or ailments are troublesome",
+              "Precision",
+              "Steelskin",
+              "Leap Slam + Faster Attacks"
+            ],
+            "note": "Poacher’s Mark and Blood Rage are optional utility, not required; drop Blood Rage if its degen is uncomfortable in Hardcore."
+          },
+          {
+            "stage": "Act 3 · level 28+ before the swap",
+            "main": "Stay on Static Strike until Cyclone feels ready",
+            "links": [
+              "Static Strike",
+              "Ancestral Call",
+              "Ruthless"
+            ],
+            "utility": [
+              "General’s Cry + Sunder as a boss option when available",
+              "Steelskin",
+              "Leap Slam + Faster Attacks",
+              "Purity of Elements"
+            ],
+            "note": "Do not swap because of the level alone. The reference route commonly changes around level 32 after the Normal Lab, with a current staff/mace and workable links."
+          },
+          {
+            "stage": "Cyclone transition · around level 32",
+            "main": "Regular Cyclone",
+            "links": [
+              "Cyclone",
+              "Fortify",
+              "Infused Channelling",
+              "Shockwave once available"
+            ],
+            "utility": [
+              "Keep Sunder or General’s Cry + Sunder for bosses",
+              "Blood and Sand",
+              "Purity of Elements if still needed"
+            ],
+            "note": "Shockwave requires a staff or mace. Start Cyclone without it if the support has not dropped or been offered; transfigured gems are not assumed."
+          }
+        ]
       },
       "ssfGear": [
+        "Default armour base: Armour/Evasion hybrid. Pure Armour is a good alternative when life/resists/sockets are better. Armour/ES and ES bases are not targets because the build does not scale Energy Shield.",
         "Weapon is the main damage lever: keep a high physical-DPS staff current with character level. Use vendor physical-damage crafting and bench crafts; do not wait for a unique.",
         "Life on every rare armour slot and jewellery; cap fire, cold, and lightning resistance before entering maps.",
         "Armour bases and endurance-charge access support physical mitigation; staff block is an extra layer, not a substitute for life and max-hit defenses.",
-        "Aim for a 4-link through campaign, then 5-link/6-link only as drops and crafting permit."
+        "Aim for a 4-link through campaign, then 5-link/6-link only as drops and crafting permit.",
+        "Armour bases: make Armour/Evasion hybrid rares the default target. They fit the Duelist’s Strength/Dexterity spread and give both physical mitigation and evasion; pure Armour is also good when the item has better life/resists or the sockets fit. Do not deliberately target Armour/ES or ES bases—this build has no Energy Shield scaling. Prioritize life, resistances, links, and usable colours over the base label."
       ],
       "chaseItems": [
         {
@@ -5744,62 +5814,228 @@
         {
           "act": 1,
           "points": 13,
-          "goal": "Take starting life, accuracy and efficient physical attack damage; keep moving toward Duelist life clusters.",
-          "hc": "Early life and reliable hits before spending heavily on damage."
+          "goal": "Duelist start into efficient life and physical attack nodes. Reach the early life/weapon route, then Art of the Gladiator (48807), Master of the Arena (34009), Bravery (48438), and Destroyer (34666) as the route allows.",
+          "hc": "Life and hit reliability first. The reference’s first checkpoint is the level 1–12 Spectral Throw tree."
         },
         {
           "act": 2,
           "points": 25,
-          "goal": "Add the next efficient life cluster and life mastery; begin pathing toward two-handed/staff damage.",
-          "hc": "Don't let leech replace a real life pool."
+          "goal": "Extend into two-handed physical damage and attack speed. Add Spirit of War (27422) for attack mana leech; work toward Martial Experience (27301) and Wrecking Ball (49318). Use Eagle Eye (2225) only if accuracy is actually limiting.",
+          "hc": "Keep filling life. Unwavering Stance (40907) is a conditional stun-avoidance choice that removes evasion; skip it if evasion is contributing meaningful defense."
         },
         {
           "act": 3,
           "points": 40,
-          "goal": "Continue life, then weapon damage and attack speed as Cyclone comes online; take Normal Lab only when comfortable.",
-          "hc": "A current weapon makes both clear and recovery more reliable."
+          "goal": "Continue life and two-handed damage. Add the area/strike-range route for Cyclone, including Impact (38180) and the nearby attack/AoE node (20954). The reference transitions around level 32, not automatically at gem level 28.",
+          "hc": "Only respec into Cyclone when the staff/mace and links are ready. Complete Normal Lab when the area and character are safe."
         },
         {
           "act": 4,
           "points": 48,
-          "goal": "Finish a nearby life wheel and start the staff-block route if already using a staff.",
-          "hc": "Add defense before the harder act bosses."
+          "goal": "Continue the life route, then begin the staff-block path if a staff is now your main weapon. Keep nearby two-handed damage efficient; avoid early crit detours.",
+          "hc": "The weapon and life pool matter more than squeezing out a few damage nodes."
         },
         {
           "act": 5,
           "points": 56,
-          "goal": "Keep filling life and physical attack nodes; use remaining path points toward staff block.",
-          "hc": "Re-cap resistances after Kitava's penalty."
+          "goal": "Build the life and staff-block foundation. Reference checkpoints include Bloodless (6289), Cannibalistic Rite (56359), and the start of Whirling Barrier (42917).",
+          "hc": "Check life before the Act 5 boss and re-cap resistances after Kitava."
         },
         {
           "act": 6,
           "points": 66,
-          "goal": "Pick up another efficient life cluster; take damage only if gear and resistances remain solid.",
-          "hc": "Do not enter maps with uncapped elemental resistances."
+          "goal": "Fill the remaining efficient life and staff-block nodes; consider Golem’s Blood (1325), Juggernaut (33287), and Barbarism (53118) along the validated route.",
+          "hc": "Do not treat leech or block as a substitute for life, armour, and resistances."
         },
         {
           "act": 7,
           "points": 74,
-          "goal": "Continue the staff-block path (Whirling Barrier / Steelwood Stance only if the live route validates it) and add life.",
-          "hc": "Block complements life and armour."
+          "goal": "Continue staff block and life. Keep the route toward Steelwood Stance (36859); take its staff damage/block investment only when the staff route remains efficient.",
+          "hc": "Cruel Lab: Endless Hunger after the character is ready; skip the lab if it is unsafe."
         },
         {
           "act": 8,
           "points": 80,
-          "goal": "Finish the nearby life investment; begin impale scaling after life and block basics.",
-          "hc": "Keep physical mitigation and life ahead of optional damage."
+          "goal": "Complete the Steelwood Stance and staff-block branch where practical; take efficient life and endurance-charge support before optional crit.",
+          "hc": "Block works as a layer with life and armour; do not count on a lucky streak."
         },
         {
           "act": 9,
           "points": 85,
-          "goal": "Complete efficient life and physical weapon clusters; hold optional crit and jewel nodes.",
-          "hc": "Check weapon, flasks and resists before major boss."
+          "goal": "Finish nearby life and defensive staff nodes. Cloth and Chain (21435) is an Armour/Evasion option on the reference route; defer staff crit nodes unless the weapon and accuracy support them.",
+          "hc": "Check weapon, flasks, resistances, and boss readiness before pushing the final acts."
         },
         {
           "act": 10,
           "points": 93,
-          "goal": "Finish the campaign life foundation and staff/physical route; enter maps with a current 4-link and capped resists.",
-          "hc": "Estimate assumes ~level 70, all passive quests, and killing all bandits."
+          "goal": "Finish the campaign life, staff-block, and physical-damage foundation. The later reference tree adds Brutal Fervour (10143), Bastion Breaker (65107), and staff/armour masteries after the core route.",
+          "hc": "Assumes about level 70, all passive quests, and killing all bandits. Enter maps capped, with a current 4-link and safe life total."
+        }
+      ],
+      "passiveReferenceStages": [
+        {
+          "stage": "Level 1–12 · Spectral Throw",
+          "treeVersion": "3_29 source, node IDs checked in 3_30",
+          "allocatedNodeCount": 15,
+          "keyNodes": [
+            [
+              "47389",
+              "Physical Attack Damage and Life"
+            ],
+            [
+              "18302",
+              "Life"
+            ],
+            [
+              "25933",
+              "Life"
+            ],
+            [
+              "34009",
+              "Master of the Arena"
+            ],
+            [
+              "48807",
+              "Art of the Gladiator"
+            ],
+            [
+              "48438",
+              "Bravery"
+            ],
+            [
+              "34666",
+              "Destroyer"
+            ]
+          ],
+          "focus": "Starter life, physical damage, movement and attack speed."
+        },
+        {
+          "stage": "Level 12–32 · Static Strike",
+          "treeVersion": "3_29 source, node IDs checked in 3_30",
+          "allocatedNodeCount": 37,
+          "keyNodes": [
+            [
+              "27422",
+              "Spirit of War"
+            ],
+            [
+              "27301",
+              "Martial Experience"
+            ],
+            [
+              "49318",
+              "Wrecking Ball"
+            ],
+            [
+              "2225",
+              "Eagle Eye"
+            ],
+            [
+              "40907",
+              "Unwavering Stance (conditional)"
+            ]
+          ],
+          "focus": "Two-handed damage, mana sustain, accuracy and life. Skip the keystone if evasion is valuable and stuns are manageable."
+        },
+        {
+          "stage": "Level 32 · Cyclone swap + Normal Lab",
+          "treeVersion": "3_29 source, node IDs checked in 3_30",
+          "allocatedNodeCount": 39,
+          "keyNodes": [
+            [
+              "38180",
+              "Impact"
+            ],
+            [
+              "20954",
+              "Attack Damage and Area of Effect"
+            ]
+          ],
+          "focus": "The reference changes two points around the Cyclone swap; most of the tree remains the Static Strike foundation."
+        },
+        {
+          "stage": "Level 58 · Cruel Lab checkpoint",
+          "treeVersion": "3_29 source, node IDs checked in 3_30",
+          "allocatedNodeCount": 78,
+          "keyNodes": [
+            [
+              "56359",
+              "Cannibalistic Rite"
+            ],
+            [
+              "6289",
+              "Bloodless"
+            ],
+            [
+              "42917",
+              "Whirling Barrier"
+            ],
+            [
+              "33287",
+              "Juggernaut"
+            ],
+            [
+              "53118",
+              "Barbarism"
+            ],
+            [
+              "1325",
+              "Golem’s Blood"
+            ]
+          ],
+          "focus": "Life, staff block, and reliable mana/skill costs before optional damage."
+        },
+        {
+          "stage": "Level 68 · Merciless Lab checkpoint",
+          "treeVersion": "3_29 source, node IDs checked in 3_30",
+          "allocatedNodeCount": 98,
+          "keyNodes": [
+            [
+              "36859",
+              "Steelwood Stance"
+            ],
+            [
+              "49698",
+              "Staff Block"
+            ],
+            [
+              "21435",
+              "Cloth and Chain"
+            ],
+            [
+              "51559",
+              "Smashing Strikes"
+            ],
+            [
+              "39761",
+              "Counterweight"
+            ]
+          ],
+          "focus": "Staff block plus armour/evasion. Crit staff passives are present in the reference; defer them if a strong crit staff is not available."
+        },
+        {
+          "stage": "Level 77 · Uber Lab checkpoint",
+          "treeVersion": "3_29 source, node IDs checked in 3_30",
+          "allocatedNodeCount": 109,
+          "keyNodes": [
+            [
+              "10143",
+              "Brutal Fervour"
+            ],
+            [
+              "65107",
+              "Bastion Breaker"
+            ],
+            [
+              "62416",
+              "Staff Mastery"
+            ],
+            [
+              "19750",
+              "Armour and Evasion Mastery"
+            ]
+          ],
+          "focus": "Late defensive and damage polish. Uber Lab and optional mastery effects are not campaign requirements."
         }
       ]
     },
@@ -5814,8 +6050,9 @@
     "skills": [],
     "gear": [],
     "nextActions": [
-      "Create a Duelist in HC SSF and level with Spectral Throw, then Static Strike, then regular Cyclone when ready.",
-      "Keep a current physical two-handed weapon and prioritize life, resistances and safe flask coverage.",
+      "Create a Duelist in HC SSF and level with Spectral Throw, then Static Strike; swap to regular Cyclone around level 32 only when the staff/mace and links feel ready.",
+      "Target Armour/Evasion hybrid rares by default; choose pure Armour when its life, resists, or socket colours are better. Do not chase Armour/ES.",
+      "Keep a current physical two-handed staff and prioritize life, resistances, staff block, and safe flask coverage.",
       "Use the 3.30 Cyclone Shockwave plan as a target; do not count transfigured gems or uniques as required drops."
     ]
   }

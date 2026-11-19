@@ -35,3 +35,10 @@ The archived Warden's original guide retains its **93 planned regular passives**
 - Mastery node/effect expectations: **3042/47642** (+30 Life); **6427/56951** (projectile-speed scaling for bows); **20730/45317** (Lucky suppression, later **58447** at 100%); **50757/57074** (+15% suppression conditional on evasion across four armour slots). Do not mark any mastery selection verified without exact effect ID evidence.
 - Current Warden confirmations are kept in `warden.progress.completedPassiveIds`, `completedMasteryEffects`, and `completedTaskIds`. The planned node IDs under `warden.plan` must never be copied into those completion fields unless verified against a current-character 3_30 PoB export.
 - Preserve archive data and current local server filenames. The existing app has not become a new separate app.
+
+
+## Slayer campaign passive route and gearing (3.30)
+
+The active Slayer dashboard now shows a detailed planned campaign route with act point targets, key passive names/IDs, and level 1–12 / 12–32 / 32 / 58 / 68 / 77 reference checkpoints. The checkpoint export itself used PoB treeVersion 3_29; key node IDs and names were cross-checked against the Community PoB `3_30` tree. These are build-plan values only. Never put planned Slayer nodes in `slayer.progress.completedPassiveIds`; current completion requires the actual active character PoB and its matching tree version.
+
+The Slayer gem route includes Act 1 Spectral Throw, Act 2 Static Strike, and a conditional regular-Cyclone swap around level 32. Shockwave requires a staff or mace and is not assumed before the gem and weapon are available. The default armour base target is Armour/Evasion hybrid; pure Armour is a valid item-quality/socket alternative. Do not recommend Armour/ES or ES bases as targets because this plan does not scale ES. Life, resistances, links, and socket colours take precedence over the base label.
