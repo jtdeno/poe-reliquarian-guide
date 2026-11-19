@@ -5605,7 +5605,7 @@
   "activeBuild": "slayer",
   "slayer": {
     "format": "slayer-character-progress-v1",
-    "publishedAt": "2026-11-17",
+    "publishedAt": "2026-11-19",
     "character": {
       "label": "Cyclone Shockwave Slayer (name TBD)",
       "nameVerified": false,
@@ -5814,62 +5814,660 @@
         {
           "act": 1,
           "points": 13,
-          "goal": "Duelist start into efficient life and physical attack nodes. Reach the early life/weapon route, then Art of the Gladiator (48807), Master of the Arena (34009), Bravery (48438), and Destroyer (34666) as the route allows.",
-          "hc": "Life and hit reliability first. The reference’s first checkpoint is the level 1–12 Spectral Throw tree."
+          "goal": "Allocate points 1–13 in the exact numbered route below.",
+          "hc": "Life and hit reliability first. The reference’s first checkpoint is the level 1–12 Spectral Throw tree.",
+          "plannedNodes": [
+            {
+              "sequence": 1,
+              "id": "47389",
+              "name": "Physical Attack Damage and Life",
+              "kind": "small"
+            },
+            {
+              "sequence": 2,
+              "id": "5612",
+              "name": "Physical Attack Damage",
+              "kind": "small"
+            },
+            {
+              "sequence": 3,
+              "id": "35568",
+              "name": "Armour, Evasion and Life",
+              "kind": "small"
+            },
+            {
+              "sequence": 4,
+              "id": "39211",
+              "name": "Physical Attack Damage",
+              "kind": "small"
+            },
+            {
+              "sequence": 5,
+              "id": "48513",
+              "name": "Physical Attack Damage",
+              "kind": "small"
+            },
+            {
+              "sequence": 6,
+              "id": "51856",
+              "name": "Physical Attack Damage",
+              "kind": "small"
+            },
+            {
+              "sequence": 7,
+              "id": "34009",
+              "name": "Master of the Arena",
+              "kind": "notable"
+            },
+            {
+              "sequence": 8,
+              "id": "476",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 9,
+              "id": "18302",
+              "name": "Life",
+              "kind": "small"
+            },
+            {
+              "sequence": 10,
+              "id": "43412",
+              "name": "Two Handed Melee Damage",
+              "kind": "small"
+            },
+            {
+              "sequence": 11,
+              "id": "30691",
+              "name": "Intelligence",
+              "kind": "small"
+            },
+            {
+              "sequence": 12,
+              "id": "34666",
+              "name": "Destroyer",
+              "kind": "notable"
+            },
+            {
+              "sequence": 13,
+              "id": "48438",
+              "name": "Bravery",
+              "kind": "notable"
+            }
+          ],
+          "firstPoint": 1,
+          "lastPoint": 13
         },
         {
           "act": 2,
           "points": 25,
-          "goal": "Extend into two-handed physical damage and attack speed. Add Spirit of War (27422) for attack mana leech; work toward Martial Experience (27301) and Wrecking Ball (49318). Use Eagle Eye (2225) only if accuracy is actually limiting.",
-          "hc": "Keep filling life. Unwavering Stance (40907) is a conditional stun-avoidance choice that removes evasion; skip it if evasion is contributing meaningful defense."
+          "goal": "Continue the two-handed physical route and mana leech. Default route keeps Armour/Evasion and Life node 35568; optional one-point swap to Unwavering Stance 40907 if stun immunity is worth losing evasion.",
+          "hc": "Default route skips Unwavering Stance to preserve evasion. If stuns become a real HC threat, refund Armour/Evasion and Life node 35568 and allocate Unwavering Stance 40907 instead.",
+          "plannedNodes": [
+            {
+              "sequence": 14,
+              "id": "25933",
+              "name": "Life",
+              "kind": "small"
+            },
+            {
+              "sequence": 15,
+              "id": "42086",
+              "name": "Attack Cost Efficiency",
+              "kind": "small"
+            },
+            {
+              "sequence": 16,
+              "id": "43374",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 17,
+              "id": "22703",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 18,
+              "id": "27422",
+              "name": "Spirit of War",
+              "kind": "notable"
+            },
+            {
+              "sequence": 19,
+              "id": "48807",
+              "name": "Art of the Gladiator",
+              "kind": "notable"
+            },
+            {
+              "sequence": 20,
+              "id": "64816",
+              "name": "Two Handed Melee Damage and Leech",
+              "kind": "small"
+            },
+            {
+              "sequence": 21,
+              "id": "14056",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 22,
+              "id": "16380",
+              "name": "Accuracy and Critical Strike Chance",
+              "kind": "small"
+            },
+            {
+              "sequence": 23,
+              "id": "27140",
+              "name": "Two Handed Melee Damage and Leech",
+              "kind": "small"
+            },
+            {
+              "sequence": 24,
+              "id": "65395",
+              "name": "Mana Mastery",
+              "kind": "mastery"
+            },
+            {
+              "sequence": 25,
+              "id": "18025",
+              "name": "Hard Knocks",
+              "kind": "notable"
+            }
+          ],
+          "firstPoint": 14,
+          "lastPoint": 25
         },
         {
           "act": 3,
           "points": 40,
-          "goal": "Continue life and two-handed damage. Add the area/strike-range route for Cyclone, including Impact (38180) and the nearby attack/AoE node (20954). The reference transitions around level 32, not automatically at gem level 28.",
-          "hc": "Only respec into Cyclone when the staff/mace and links are ready. Complete Normal Lab when the area and character are safe."
+          "goal": "Allocate points 26–40 in the exact numbered route below.",
+          "hc": "Only respec into Cyclone when the staff/mace and links are ready. Complete Normal Lab when the area and character are safe.",
+          "plannedNodes": [
+            {
+              "sequence": 26,
+              "id": "27301",
+              "name": "Martial Experience",
+              "kind": "notable"
+            },
+            {
+              "sequence": 27,
+              "id": "34400",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 28,
+              "id": "34601",
+              "name": "Proficiency",
+              "kind": "notable"
+            },
+            {
+              "sequence": 29,
+              "id": "59494",
+              "name": "Accuracy and Critical Strike Chance",
+              "kind": "small"
+            },
+            {
+              "sequence": 30,
+              "id": "2225",
+              "name": "Eagle Eye",
+              "kind": "notable"
+            },
+            {
+              "sequence": 31,
+              "id": "6912",
+              "name": "Two Hand Mastery",
+              "kind": "mastery"
+            },
+            {
+              "sequence": 32,
+              "id": "14930",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 33,
+              "id": "24914",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 34,
+              "id": "3644",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 35,
+              "id": "8533",
+              "name": "Two Handed Melee Damage",
+              "kind": "small"
+            },
+            {
+              "sequence": 36,
+              "id": "16860",
+              "name": "Physical Attack Damage",
+              "kind": "small"
+            },
+            {
+              "sequence": 37,
+              "id": "35221",
+              "name": "Accuracy Mastery",
+              "kind": "mastery"
+            },
+            {
+              "sequence": 38,
+              "id": "48287",
+              "name": "Life",
+              "kind": "small"
+            },
+            {
+              "sequence": 39,
+              "id": "61262",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 40,
+              "id": "5233",
+              "name": "Strength",
+              "kind": "small"
+            }
+          ],
+          "firstPoint": 26,
+          "lastPoint": 40
         },
         {
           "act": 4,
           "points": 48,
-          "goal": "Continue the life route, then begin the staff-block path if a staff is now your main weapon. Keep nearby two-handed damage efficient; avoid early crit detours.",
-          "hc": "The weapon and life pool matter more than squeezing out a few damage nodes."
+          "goal": "Allocate points 41–48 in the exact numbered route below.",
+          "hc": "The weapon and life pool matter more than squeezing out a few damage nodes.",
+          "plannedNodes": [
+            {
+              "sequence": 41,
+              "id": "6289",
+              "name": "Bloodless",
+              "kind": "notable"
+            },
+            {
+              "sequence": 42,
+              "id": "24083",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 43,
+              "id": "56381",
+              "name": "Two Handed Melee Damage and Attack Speed",
+              "kind": "small"
+            },
+            {
+              "sequence": 44,
+              "id": "60153",
+              "name": "Physical Attack Damage",
+              "kind": "small"
+            },
+            {
+              "sequence": 45,
+              "id": "1909",
+              "name": "Two Handed Melee Damage and Attack Speed",
+              "kind": "small"
+            },
+            {
+              "sequence": 46,
+              "id": "7285",
+              "name": "Attack Cost Efficiency",
+              "kind": "small"
+            },
+            {
+              "sequence": 47,
+              "id": "16544",
+              "name": "Dexterity",
+              "kind": "small"
+            },
+            {
+              "sequence": 48,
+              "id": "17566",
+              "name": "Armour and Evasion",
+              "kind": "small"
+            }
+          ],
+          "firstPoint": 41,
+          "lastPoint": 48
         },
         {
           "act": 5,
           "points": 56,
-          "goal": "Build the life and staff-block foundation. Reference checkpoints include Bloodless (6289), Cannibalistic Rite (56359), and the start of Whirling Barrier (42917).",
-          "hc": "Check life before the Act 5 boss and re-cap resistances after Kitava."
+          "goal": "Allocate points 49–56 in the exact numbered route below.",
+          "hc": "Check life before the Act 5 boss and re-cap resistances after Kitava.",
+          "plannedNodes": [
+            {
+              "sequence": 49,
+              "id": "31471",
+              "name": "Life",
+              "kind": "small"
+            },
+            {
+              "sequence": 50,
+              "id": "55676",
+              "name": "Life and Armour",
+              "kind": "small"
+            },
+            {
+              "sequence": 51,
+              "id": "63723",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 52,
+              "id": "65107",
+              "name": "Bastion Breaker",
+              "kind": "notable"
+            },
+            {
+              "sequence": 53,
+              "id": "1325",
+              "name": "Golem's Blood",
+              "kind": "notable"
+            },
+            {
+              "sequence": 54,
+              "id": "8544",
+              "name": "Dexterity",
+              "kind": "small"
+            },
+            {
+              "sequence": 55,
+              "id": "21435",
+              "name": "Cloth and Chain",
+              "kind": "notable"
+            },
+            {
+              "sequence": 56,
+              "id": "33287",
+              "name": "Juggernaut",
+              "kind": "notable"
+            }
+          ],
+          "firstPoint": 49,
+          "lastPoint": 56
         },
         {
           "act": 6,
           "points": 66,
-          "goal": "Fill the remaining efficient life and staff-block nodes; consider Golem’s Blood (1325), Juggernaut (33287), and Barbarism (53118) along the validated route.",
-          "hc": "Do not treat leech or block as a substitute for life, armour, and resistances."
+          "goal": "Allocate points 57–66 in the exact numbered route below.",
+          "hc": "Do not treat leech or block as a substitute for life, armour, and resistances.",
+          "plannedNodes": [
+            {
+              "sequence": 57,
+              "id": "48109",
+              "name": "Life Regeneration per Endurance Charge",
+              "kind": "small"
+            },
+            {
+              "sequence": 58,
+              "id": "49318",
+              "name": "Wrecking Ball",
+              "kind": "notable"
+            },
+            {
+              "sequence": 59,
+              "id": "56359",
+              "name": "Cannibalistic Rite",
+              "kind": "notable"
+            },
+            {
+              "sequence": 60,
+              "id": "59928",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 61,
+              "id": "30380",
+              "name": "Life and Elemental Resistances",
+              "kind": "small"
+            },
+            {
+              "sequence": 62,
+              "id": "37326",
+              "name": "Stamina",
+              "kind": "notable"
+            },
+            {
+              "sequence": 63,
+              "id": "38772",
+              "name": "Melee Damage and Strike Range",
+              "kind": "small"
+            },
+            {
+              "sequence": 64,
+              "id": "63282",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 65,
+              "id": "29353",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 66,
+              "id": "32053",
+              "name": "Melee Damage and Strike Range",
+              "kind": "small"
+            }
+          ],
+          "firstPoint": 57,
+          "lastPoint": 66
         },
         {
           "act": 7,
           "points": 74,
-          "goal": "Continue staff block and life. Keep the route toward Steelwood Stance (36859); take its staff damage/block investment only when the staff route remains efficient.",
-          "hc": "Cruel Lab: Endless Hunger after the character is ready; skip the lab if it is unsafe."
+          "goal": "Allocate points 67–74 in the exact numbered route below.",
+          "hc": "Cruel Lab: Endless Hunger after the character is ready; skip the lab if it is unsafe.",
+          "plannedNodes": [
+            {
+              "sequence": 67,
+              "id": "34590",
+              "name": "Rage on Hit",
+              "kind": "small"
+            },
+            {
+              "sequence": 68,
+              "id": "53118",
+              "name": "Barbarism",
+              "kind": "notable"
+            },
+            {
+              "sequence": 69,
+              "id": "19730",
+              "name": "Assured Strike",
+              "kind": "notable"
+            },
+            {
+              "sequence": 70,
+              "id": "44202",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 71,
+              "id": "48199",
+              "name": "Rage on Hit",
+              "kind": "small"
+            },
+            {
+              "sequence": 72,
+              "id": "23027",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 73,
+              "id": "24716",
+              "name": "Battle Trance",
+              "kind": "notable"
+            },
+            {
+              "sequence": 74,
+              "id": "28863",
+              "name": "Attack Mastery",
+              "kind": "mastery"
+            }
+          ],
+          "firstPoint": 67,
+          "lastPoint": 74
         },
         {
           "act": 8,
           "points": 80,
-          "goal": "Complete the Steelwood Stance and staff-block branch where practical; take efficient life and endurance-charge support before optional crit.",
-          "hc": "Block works as a layer with life and armour; do not count on a lucky streak."
+          "goal": "Allocate points 75–80 in the exact numbered route below.",
+          "hc": "Block works as a layer with life and armour; do not count on a lucky streak.",
+          "plannedNodes": [
+            {
+              "sequence": 75,
+              "id": "6712",
+              "name": "Life",
+              "kind": "small"
+            },
+            {
+              "sequence": 76,
+              "id": "9471",
+              "name": "Rage Mastery",
+              "kind": "mastery"
+            },
+            {
+              "sequence": 77,
+              "id": "54667",
+              "name": "Staff Block",
+              "kind": "small"
+            },
+            {
+              "sequence": 78,
+              "id": "16113",
+              "name": "Staff Block",
+              "kind": "small"
+            },
+            {
+              "sequence": 79,
+              "id": "36949",
+              "name": "Devotion",
+              "kind": "notable"
+            },
+            {
+              "sequence": 80,
+              "id": "10031",
+              "name": "Life",
+              "kind": "small"
+            }
+          ],
+          "firstPoint": 75,
+          "lastPoint": 80
         },
         {
           "act": 9,
           "points": 85,
-          "goal": "Finish nearby life and defensive staff nodes. Cloth and Chain (21435) is an Armour/Evasion option on the reference route; defer staff crit nodes unless the weapon and accuracy support them.",
-          "hc": "Check weapon, flasks, resistances, and boss readiness before pushing the final acts."
+          "goal": "Allocate points 81–85 in the exact numbered route below.",
+          "hc": "Check weapon, flasks, resistances, and boss readiness before pushing the final acts.",
+          "plannedNodes": [
+            {
+              "sequence": 81,
+              "id": "18990",
+              "name": "Staff Block",
+              "kind": "small"
+            },
+            {
+              "sequence": 82,
+              "id": "15064",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 83,
+              "id": "42917",
+              "name": "Whirling Barrier",
+              "kind": "notable"
+            },
+            {
+              "sequence": 84,
+              "id": "16754",
+              "name": "Staff Critical Strike Chance",
+              "kind": "small"
+            },
+            {
+              "sequence": 85,
+              "id": "31931",
+              "name": "Strength",
+              "kind": "small"
+            }
+          ],
+          "firstPoint": 81,
+          "lastPoint": 85
         },
         {
           "act": 10,
           "points": 93,
-          "goal": "Finish the campaign life, staff-block, and physical-damage foundation. The later reference tree adds Brutal Fervour (10143), Bastion Breaker (65107), and staff/armour masteries after the core route.",
-          "hc": "Assumes about level 70, all passive quests, and killing all bandits. Enter maps capped, with a current 4-link and safe life total."
+          "goal": "Allocate points 86–93 in the exact numbered route below.",
+          "hc": "Assumes about level 70, all passive quests, and killing all bandits. Enter maps capped, with a current 4-link and safe life total.",
+          "plannedNodes": [
+            {
+              "sequence": 86,
+              "id": "15631",
+              "name": "Strength",
+              "kind": "small"
+            },
+            {
+              "sequence": 87,
+              "id": "39761",
+              "name": "Counterweight",
+              "kind": "notable"
+            },
+            {
+              "sequence": 88,
+              "id": "41599",
+              "name": "Staff Damage and Block",
+              "kind": "small"
+            },
+            {
+              "sequence": 89,
+              "id": "48282",
+              "name": "Staff Critical Strike Chance",
+              "kind": "small"
+            },
+            {
+              "sequence": 90,
+              "id": "51559",
+              "name": "Smashing Strikes",
+              "kind": "notable"
+            },
+            {
+              "sequence": 91,
+              "id": "55926",
+              "name": "Staff Block",
+              "kind": "small"
+            },
+            {
+              "sequence": 92,
+              "id": "49698",
+              "name": "Staff Block",
+              "kind": "small"
+            },
+            {
+              "sequence": 93,
+              "id": "36859",
+              "name": "Steelwood Stance",
+              "kind": "notable"
+            }
+          ],
+          "firstPoint": 86,
+          "lastPoint": 93
         }
       ],
       "passiveReferenceStages": [
@@ -5931,11 +6529,15 @@
               "Eagle Eye"
             ],
             [
+              "35568",
+              "Armour, Evasion and Life"
+            ],
+            [
               "40907",
-              "Unwavering Stance (conditional)"
+              "Unwavering Stance (optional swap)"
             ]
           ],
-          "focus": "Two-handed damage, mana sustain, accuracy and life. Skip the keystone if evasion is valuable and stuns are manageable."
+          "focus": "Two-handed damage, mana sustain, accuracy and life. The HC route substitutes Armour/Evasion and Life for the reference’s Unwavering Stance; swap to Unwavering Stance only if stun prevention outweighs evasion."
         },
         {
           "stage": "Level 32 · Cyclone swap + Normal Lab",
@@ -6037,7 +6639,16 @@
           ],
           "focus": "Late defensive and damage polish. Uber Lab and optional mastery effects are not campaign requirements."
         }
-      ]
+      ],
+      "passiveRouteSource": {
+        "source": "3.30 HCSSF Cyclone Shockwave Slayer campaign PoB reference, using its level 68 tree as the campaign core",
+        "sourceTreeVersion": "3_29",
+        "validatedTreeVersion": "3_30",
+        "plannedRegularPoints": 93,
+        "method": "Named node IDs and names were checked against the Community PoB 3_30 tree, and the route was verified as connected from Duelist start. It uses the published level 68 tree as its 90-point regular-passive core, substitutes Armour/Evasion and Life (35568) for Unwavering Stance (40907), then adds three connected physical-damage nodes to reach the approximate level-70/all-quest 93-point target.",
+        "respecPolicy": "No planned respec is required in the default Armour/Evasion route. Optional one-point swap: refund node 35568 and allocate Unwavering Stance 40907 if stun immunity is more valuable than evasion. This is a clear defensive trade, not a mandatory upgrade.",
+        "sourcePob": "https://pobb.in/3O317e8QoBv2"
+      }
     },
     "findings": [
       {

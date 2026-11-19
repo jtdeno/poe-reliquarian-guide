@@ -56,3 +56,10 @@ The active Cyclone Shockwave Slayer page has an act-by-act passive plan plus ref
 The campaign gem progression is Spectral Throw + Volley + Chance to Bleed in Act 1; Static Strike + Ancestral Call + Ruthless in Act 2; then regular Cyclone only once the staff/mace, links, and feel are ready (the reference changes around level 32). Shockwave requires a staff or mace. Keep Static Strike or Sunder as a fallback; don't assume transfigured gems.
 
 Default gear target is Armour/Evasion hybrid. Pure Armour is a good alternative when life, resistances, or sockets are better. Armour/ES and ES bases are not targets because this build has no Energy Shield scaling. Never trade away life/resistances/usable links just to match the base type.
+
+
+## Exact Slayer point-by-point route (2026-11-19)
+
+The Slayer Passive Tree tab and `slayer.plan.passiveMilestones[].plannedNodes` now contain one connected, numbered 93-regular-passive plan. It follows a BFS topological ordering over the mapped current 3_30 tree connections, so every listed node is connected to the previously allocated tree. The underlying public campaign reference is treeVersion 3_29; its level-68 allocation contributes a 90-point regular-tree core, with three connected regular nodes added for the approximate level-70 / all-passive-quests 93-point target. The in-app route is explicitly planned, never actual character progress.
+
+Act-end totals are 13 / 25 / 40 / 48 / 56 / 66 / 74 / 80 / 85 / 93. The default route substitutes Armour/Evasion and Life (35568) for the reference’s Unwavering Stance (40907). The point may be respec'd to Unwavering Stance for stun immunity, accepting that evasion no longer protects the character. Mastery passive nodes are listed in the route; mastery-effect choices remain separate and must be verified against live 3_30 options.
