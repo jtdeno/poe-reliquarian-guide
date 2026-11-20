@@ -5685,14 +5685,16 @@
           "Melee Physical Damage",
           "Shockwave Support (staff/mace required)",
           "Brutality when available",
-          "Infused Channelling or Pulverise as the remaining sockets allow"
+          "Infused Channelling or Pulverise as the remaining sockets allow",
+          "Blood and Sand — use Sand stance while mapping for more area; toggle to Blood stance for bosses for more melee damage."
         ],
         "boss": [
           "General's Cry",
           "Sunder or Ground Slam of Earthshaking",
           "Autoexertion if reservation allows",
           "Melee Physical Damage",
-          "Pulverise / Brutality as available"
+          "Pulverise / Brutality as available",
+          "Blood and Sand — switch to Blood stance for more melee damage when focusing a boss."
         ],
         "utility": [
           "Purity of Elements while gearing or for ailment protection; replace only when ailment coverage and resistances are secure.",
@@ -5700,7 +5702,7 @@
           "Flesh and Stone / Blood and Sand according to reservation and defense preference.",
           "Steelskin on Automation or self-cast; keep a bleed-removal flask."
         ],
-        "notes": "Cyclone of Tumult and Void Shockwave are upgrade targets, not campaign assumptions. Use Spectral Throw in Act 1, Static Strike from level 12, then regular Cyclone only when the weapon and links feel ready (reference swap around level 32). Shockwave requires a staff or mace. Keep Static Strike/Sunder as the fallback. Verify gem rewards/vendors for the current league; pre-Cyclone setups are documented in gemLinks.preCyclone.",
+        "notes": "Cyclone of Tumult and Void Shockwave are upgrade targets, not campaign assumptions. Use Spectral Throw in Act 1, Static Strike from level 12, then regular Cyclone only when the weapon and links feel ready (reference swap around level 32). Shockwave requires a staff or mace. Keep Static Strike/Sunder as the fallback. Verify gem rewards/vendors for the current league; pre-Cyclone setups are documented in gemLinks.preCyclone. Sand stance is the clear default; Blood stance is the single-target switch. Blood and Sand is not useful to Spectral Throw, so begin stance decisions with Static Strike.",
         "preCyclone": [
           {
             "stage": "Act 1 · levels 1–11",
@@ -5711,11 +5713,10 @@
               "Chance to Bleed"
             ],
             "utility": [
-              "Blood and Sand",
-              "Precision (level only as needed)",
-              "Clarity only if mana is a problem"
+              "Precision at a sustainable level",
+              "Clarity only if mana feels tight"
             ],
-            "note": "Use the best physical weapon available and replace it often. Keep a spare support socket open as links allow."
+            "note": "Blood and Sand does not help Spectral Throw; start using it with Static Strike in Act 2."
           },
           {
             "stage": "Act 2 · levels 12–27",
@@ -5732,7 +5733,8 @@
               "Steelskin",
               "Leap Slam + Faster Attacks"
             ],
-            "note": "Poacher’s Mark and Blood Rage are optional utility, not required; drop Blood Rage if its degen is uncomfortable in Hardcore."
+            "note": "Poacher’s Mark and Blood Rage are optional utility, not required; drop Blood Rage if its degen is uncomfortable in Hardcore.",
+            "stance": "Sand stance for clearing packs; Blood stance for tougher single targets. It affects Static Strike’s melee damage and area."
           },
           {
             "stage": "Act 3 · level 28+ before the swap",
@@ -5748,7 +5750,8 @@
               "Leap Slam + Faster Attacks",
               "Purity of Elements"
             ],
-            "note": "Do not swap because of the level alone. The reference route commonly changes around level 32 after the Normal Lab, with a current staff/mace and workable links."
+            "note": "Do not swap because of the level alone. The reference route commonly changes around level 32 after the Normal Lab, with a current staff/mace and workable links.",
+            "stance": "Keep Sand stance for area while still clearing with Static Strike; switch to Blood for bosses if extra melee damage matters more than coverage."
           },
           {
             "stage": "Cyclone transition · around level 32",
@@ -5764,7 +5767,8 @@
               "Blood and Sand",
               "Purity of Elements if still needed"
             ],
-            "note": "Shockwave requires a staff or mace. Start Cyclone without it if the support has not dropped or been offered; transfigured gems are not assumed."
+            "note": "Shockwave requires a staff or mace. Start Cyclone without it if the support has not dropped or been offered; transfigured gems are not assumed.",
+            "stance": "Sand stance is the default for Cyclone clear and the build’s coverage. Toggle to Blood stance for bosses when you want more melee damage and can give up some area."
           }
         ]
       },
