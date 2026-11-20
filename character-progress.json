@@ -5667,7 +5667,7 @@
         }
       ],
       "passivePrinciples": [
-        "Prioritize life and the life mastery before optional damage; keep a defensive point reserve if the next boss is a known danger.",
+        "Prioritize the listed Life nodes before optional damage. If your HC defenses need an extra Life Mastery point, choose +50 to Maximum Life; it is not part of this baseline 93-point numbered route. Keep a defensive point reserve if the next boss is a known danger.",
         "Move from Duelist starting life and physical attack clusters toward two-handed/staff damage and staff block. Keep early damage efficient; refine exact route against the matching 3.30 tree when the character is created.",
         "Pick up staff block investment (including Whirling Barrier / Steelwood Stance where the verified route supports it) and impale scaling after the life foundation.",
         "Avoid early crit commitment. Keep accuracy reliable through weapon and gear upgrades, then follow the crit or non-crit route supported by your drops.",
@@ -5973,7 +5973,8 @@
               "sequence": 24,
               "id": "65395",
               "name": "Mana Mastery",
-              "kind": "mastery"
+              "kind": "mastery",
+              "recommendedEffect": "15% increased Mana Cost Efficiency"
             },
             {
               "sequence": 25,
@@ -6025,7 +6026,8 @@
               "sequence": 31,
               "id": "6912",
               "name": "Two Hand Mastery",
-              "kind": "mastery"
+              "kind": "mastery",
+              "recommendedEffect": "40% increased Damage with Hits against Rare and Unique Enemies"
             },
             {
               "sequence": 32,
@@ -6061,7 +6063,8 @@
               "sequence": 37,
               "id": "35221",
               "name": "Accuracy Mastery",
-              "kind": "mastery"
+              "kind": "mastery",
+              "recommendedEffect": "+500 to Accuracy Rating; −2 to Accuracy Rating per Level"
             },
             {
               "sequence": 38,
@@ -6323,7 +6326,8 @@
               "sequence": 74,
               "id": "28863",
               "name": "Attack Mastery",
-              "kind": "mastery"
+              "kind": "mastery",
+              "recommendedEffect": "5% increased Attack Speed per Enemy in Close Range"
             }
           ],
           "firstPoint": 67,
@@ -6345,7 +6349,8 @@
               "sequence": 76,
               "id": "9471",
               "name": "Rage Mastery",
-              "kind": "mastery"
+              "kind": "mastery",
+              "recommendedEffect": "Enemies within 6 metres are Intimidated while you have Rage"
             },
             {
               "sequence": 77,
