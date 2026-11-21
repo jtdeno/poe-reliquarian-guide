@@ -76,7 +76,7 @@
 @media(max-width:760px){.s-card{grid-column:span 12}.s-table{font-size:12px}.s-table th,.s-table td{padding:7px}}
 </style></head>
 <body>
-<div class="build-switch" role="group" aria-label="Select HCSSF character"><strong>HCSSF characters</strong><button type="button" class="selected" aria-pressed="true" data-build="slayer">⚔ Cyclone Shockwave Slayer · Planned</button><button type="button" class="archive" aria-pressed="false" data-build="warden">⚡ Storm Rain Warden · Archive</button><button type="button" class="archive" aria-pressed="false" data-build="reliquarian">† Reliquarian · Archive</button><span class="death">Warden died at 60 · Reliquarian died at 71</span></div>
+<div class="build-switch" role="group" aria-label="Select HCSSF character"><strong>HCSSF characters</strong><button type="button" class="selected" aria-pressed="true" data-build="hierophant">⚡ Storm Burst Hierophant · Current</button><button type="button" aria-pressed="false" data-build="slayer">⚔ Cyclone Shockwave Slayer · Plan</button><button type="button" class="archive" aria-pressed="false" data-build="warden">⚡ Storm Rain Warden · Archive</button><button type="button" class="archive" aria-pressed="false" data-build="reliquarian">† Reliquarian · Archive</button><span class="death">Warden died at 60 · Reliquarian died at 71</span></div>
 <div class="app" id="reliquarianApp">
   <aside class="sidebar" aria-label="Build guide navigation">
     <div class="brand"><div class="crest">R</div><div><b>RELIQUARIAN</b><small>HCSSF Build Companion</small></div></div>
@@ -542,6 +542,166 @@ loadCharacter();
 <div class="s-page" id="s-safety" data-title="HCSSF Checklist">
 <div class="s-grid"><article class="s-card full"><h2>Keep the run alive</h2><div class="s-callout s-good">Life first through campaign. Keep the weapon current so leech can recover meaningful life.</div><div class="s-callout">Re-cap elemental resistances after both Kitava penalties. Keep bleed removal on a life flask.</div><div class="s-callout">Avoid physical-reflect maps; this is a physical attack build. Reroll map mods that threaten your defenses.</div><div class="s-callout">Cyclone needs you close to enemies. Keep moving around dangerous ground effects and don't channel in place against telegraphed hits.</div><div class="s-callout s-warning">Staff block, armour and leech are layers, not immunity. If the next boss feels unsafe, upgrade gear or farm rather than forcing the attempt.</div></article><article class="s-card full"><h2>References</h2><p>3.30 official patch notes and the 3.30 HCSSF Cyclone Shockwave Slayer campaign guide.</p><div class="s-links"><a href="https://www.pathofexile.com/forum/view-thread/4013680/page/1" target="_blank" rel="noreferrer">Official 3.30 patch notes</a><a href="https://mobalytics.gg/poe/builds/sanavixx-cyclone-shockwave-slayer" target="_blank" rel="noreferrer">Cyclone Shockwave Slayer guide</a></div></article></div></div>
 </main></div>
+
+
+<style>
+#hierophantApp{display:none;--h-accent:#a8cffa}
+#hierophantApp.show{display:grid}
+#hierophantApp .crest{background:#1b3044;color:#afd8fb;border-color:#4c83a9}
+#hierophantApp .eyebrow,#hierophantApp .kicker{color:#b8dbf8}
+#hierophantApp .nav button.active{box-shadow:inset 3px 0 #83b9df;border-color:#446d89}
+#hierophantApp .h-page{display:none}
+#hierophantApp .h-page.active{display:block;animation:fade .18s ease}
+.h-hero{padding:22px;border:1px solid #416985;background:linear-gradient(135deg,#1b3449,#17212b);border-radius:15px;margin-bottom:18px}
+.h-hero h2{font-size:25px;font-family:Georgia,serif;color:#e1f2ff}
+.h-hero p{max-width:920px}
+.h-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
+.h-card{grid-column:span 6;border:1px solid #304651;background:linear-gradient(145deg,#192631,#141d25);border-radius:12px;padding:18px;min-width:0}
+.h-card.full{grid-column:span 12}
+.h-card h2{font-size:18px;margin:0 0 11px}
+.h-card h3{font-size:16px;margin:10px 0}
+.h-callout{border-left:3px solid #76b6dc;background:#1d2f3b;padding:12px 14px;border-radius:5px 10px 10px 5px;margin:11px 0;color:#d9e7ee}
+.h-warn{border-left-color:#e2a18c;background:#342723}
+.h-good{border-left-color:#8acaa7;background:#21372f}
+.h-table{width:100%;border-collapse:collapse;font-size:13px}
+.h-table th,.h-table td{text-align:left;vertical-align:top;border-bottom:1px solid #354752;padding:10px}
+.h-table th{color:#c5e5ff}
+.h-table td{color:#ccdae2}
+.h-flex{display:flex;gap:7px;flex-wrap:wrap}
+.h-chip{display:inline-block;border:1px solid #4e738d;border-radius:99px;color:#bfddf1;font-size:12px;padding:5px 10px}
+.h-btn{border:1px solid #416d85;border-radius:9px;padding:8px 10px;background:#1b3341;color:#d3ecfa}
+.h-btn[aria-pressed="true"],.h-btn.active{background:#315b70;border-color:#8fc6e7;color:#fff}
+.h-step{border-left:2px solid #486779;margin:12px 0;padding:5px 14px}
+.h-step strong{color:#d3eafa}
+.h-step .sub{color:#9fb7c7;font-size:12px}
+.h-check{display:flex;align-items:flex-start;gap:11px;padding:10px 3px;border-bottom:1px solid #2c3d49}
+.h-check input{width:18px;height:18px;flex:none;accent-color:#8dc7ef;margin-top:3px}
+.h-check span{flex:1}
+.h-check:has(input:checked) span{color:#92b8ad}
+.h-score{font-weight:750;color:#a9dbfa}
+#hNotes{width:100%;min-height:145px;padding:13px;background:#111d27;color:#e2f1f7;border:1px solid #486075;border-radius:9px}
+@media(max-width:750px){.h-card{grid-column:span 12}.h-table{font-size:12px}.h-table th,.h-table td{padding:7px}}
+</style>
+<div class="app" id="hierophantApp">
+<aside class="sidebar" aria-label="Hierophant guide navigation">
+<div class="brand"><div class="crest">H</div><div><b>STORM BURST TOTEMS</b><small>Hierophant · HCSSF · 3.30</small></div></div>
+<nav class="nav" id="hNav">
+<button class="active" type="button" data-hnav="overview"><span>⌂</span> Overview</button>
+<button type="button" data-hnav="campaign"><span>▤</span> Campaign</button>
+<button type="button" data-hnav="passives"><span>◇</span> Passive Order</button>
+<button type="button" data-hnav="gems"><span>✧</span> Gems &amp; Links</button>
+<button type="button" data-hnav="gear"><span>⬡</span> Gear &amp; Crafting</button>
+<button type="button" data-hnav="ascendancy"><span>♜</span> Ascendancy</button>
+<button type="button" data-hnav="chase"><span>✦</span> Chase Upgrades</button>
+<button type="button" data-hnav="checklist"><span>☑</span> HC Checklist</button>
+<button type="button" data-hnav="notes"><span>✎</span> My Notes</button>
+</nav>
+<div class="aside-foot">Based on the Maxroll 3.30 Storm Burst of Repulsion league starter, adapted for self-found Hardcore. The named passive sequence is a proposed defensive adaptation, not an imported or node-ID-verified PoB route. Your local checklist and notes are private to this browser.</div>
+</aside>
+<main>
+<header class="top"><div><div class="eyebrow">Current build · HCSSF defensive adaptation</div><h1>Storm Burst Totem Hierophant</h1><p class="subtitle">Keep Maxroll's strong totem progression, but add life, a sustainable Mind over Matter pool, endurance charges, recovery, and craftable rares before expensive endgame scaling.</p></div><div class="top-actions"><span class="pill">HCSSF</span><span class="pill muted-pill">3.30</span></div></header>
+<div class="h-page active" id="h-overview">
+<div class="h-hero"><div class="kicker">Playstyle</div><h2>Totems do the channeling. You do the surviving.</h2><p>Place totems ahead, move between casts, use Decoy Totem to redirect enemies, and prioritize mana recovery before using Mind over Matter. Regular Storm Burst remains your dependable boss gem; Storm Burst of Repulsion is a mapping option once obtained from Labyrinth.</p><div class="h-flex"><span class="h-chip">No mandatory unique</span><span class="h-chip">Physical → Lightning</span><span class="h-chip">Mana + Life + Block</span><span class="h-chip">Respec-friendly progression</span></div></div>
+<div class="h-grid">
+<article class="h-card"><h2>Character record</h2><p id="hCurrentStatus">New Hierophant plan · no PoB supplied yet.</p><p class="hint" id="hSnapshotInfo">No current level, gear, passives or defenses have been verified.</p></article>
+<article class="h-card"><h2>Starting decisions</h2><p><b>Bandit:</b> Alira for early SSF elemental resistance, as the Maxroll plan does. Revisit the choice if that resistance stops helping.</p><p><b>Pantheon:</b> Brine King for protection from stun chains; adjust minor god to the threat. Abberath for burning ground, Garukhan for movement/other defensive needs.</p></article>
+<article class="h-card full"><h2>Changes from the Maxroll league starter</h2>
+<table class="h-table"><thead><tr><th>Maxroll/trade progression</th><th>Your HCSSF rule</th><th>Why</th></tr></thead><tbody>
+<tr><td>Push Storm Burst/totem damage as soon as possible</td><td>Take Discipline and Training, life/mana wheels and recovery early; delay nonessential crit</td><td>Strong damage means nothing if a single rare ends the run</td></tr>
+<tr><td>Mind over Matter on a level-based schedule</td><td>Only activate with ample <b>unreserved</b> mana, flask recovery and sustainable casting after a large hit</td><td>MoM is dangerous if damage drains mana and traps your movement/casts</td></tr>
+<tr><td>Automated Arcane Cloak</td><td>Keep Arcane Cloak <b>manual</b> until gear proves automation safe</td><td>A guard skill spending mana at the wrong moment can disable your escape</td></tr>
+<tr><td>Soul Mantle, special rings, high-end jewels</td><td>Rare chest, shield, wand/sceptre, jewelry and self-found crafting first</td><td>Do not build your HC defenses around a unique that may never drop</td></tr>
+<tr><td>Block-focused late-game PoB with limited suppression</td><td>Layer shield block, 4 minimum endurance charges, life, mana, chaos resistance, physical mitigation; pursue suppression only when realistically available</td><td>Block is chance-based. A failed block must still be survivable</td></tr>
+<tr><td>Repulsion for fast farming</td><td>Regular Storm Burst for dangerous bosses until tested; Repulsion can be repeatedly replaced for mapping and explosion play</td><td>Repulsion and regular Storm Burst have different single-target placement tactics</td></tr>
+<tr><td>Optimized six-/seven-link conversions</td><td>Stay on Physical to Lightning Support until <b>50% base + 40% Lightning Mastery + at least 10% gloves</b> actually gives 100%</td><td>Dropping the support early loses conversion and DPS</td></tr>
+</tbody></table></article>
+<article class="h-card full"><h2>Soft targets, not fake guarantees</h2><p>Through campaign: capped elemental resistance and appropriately leveled life/mana flasks. Near white maps, aim for roughly <b>3,500–4,000 life</b>, meaningful unreserved mana and mana regeneration, with chaos resistance moving toward non-negative. Before dangerous red maps, push <b>4,500+ life where feasible</b>, stronger chaos resistance, endurance charges, mitigation and a defensive block or suppression plan. These are safety benchmarks, not stats copied from Maxroll.</p><div class="h-callout h-warn"><b>MoM math:</b> with 40% of damage taken from mana before life, a mana pool around two-thirds of your life is the rough capacity-matching benchmark. It is not enough by itself: totem, movement and guard costs plus mana regeneration matter.</div></article>
+</div></div>
+
+<div class="h-page" id="h-campaign">
+<div class="h-grid"><article class="h-card full"><h2>Campaign progression, adjusted for HCSSF</h2>
+<table class="h-table"><thead><tr><th>When</th><th>Skills / exact timing</th><th>Defense &amp; passive decision</th></tr></thead><tbody>
+<tr><td>Act 1 · levels 1–11</td><td><b>Rolling Magma</b> as your main spell; Flame Wall for extra damage, Flame Dash or Frostblink for escape. Add Holy Flame Totem when available if you like safer ranged damage.</td><td>Templar spell start → Light of Divinity → Discipline and Training. Equip life and fire/cold/lightning resistance; keep an upgraded flask.</td></tr>
+<tr><td>Act 2 · levels 12–27</td><td>Continue Rolling Magma. Use support gems you actually have, e.g. Combustion / Elemental Proliferation and Faster Casting. Buy and level <b>Storm Burst</b> in a spare socket when available.</td><td>Holy Dominion, Sanctity and life. Alira is convenient for SSF resists. Never allocate Ancestral Bond until you actually switch from self-casting.</td></tr>
+<tr><td>Act 3 · levels 28–31</td><td><b>Firestorm</b> can replace Rolling Magma. Level Spell Totem Support and Storm Burst. Complete Normal Lab before the transition.</td><td>Get a 4-link and mana flask; check resists. Pursuit of Faith is the first ascendancy.</td></tr>
+<tr><td>Act 3/4 · ~31–40</td><td>Switch only when ready: <b>Storm Burst – Spell Totem – Physical to Lightning – More Duration</b>. Use Conductivity on rares/bosses and keep movement ready.</td><td>Now allocate <b>Ancestral Bond</b> and Totem Mastery taunt. You can refund short-lived fire damage nodes if needed. Ancestral Bond stops your own damaging self-casts.</td></tr>
+<tr><td>Acts 4–6 · ~41–55</td><td>Keep the normal Storm Burst 4-link. Add Lightning Penetration on a 5-link; Decoy Totem, Wrath with Eternal Blessing when affordable, and self-cast Arcane Cloak.</td><td>Path through life, duration and mana. Fix elemental resistance after Act 5 Kitava. Avoid automatic Arcane Cloak.</td></tr>
+<tr><td>Acts 7–9 · ~56–68</td><td>After Cruel Lab, continue normal Storm Burst. Consider Mind over Matter only <b>after</b> testing the mana pool under damage and consistent recovery.</td><td>Conviction of Power adds minimum endurance charges. Take Mana Mastery recoup before relying heavily on MoM. Prioritize chest/shield upgrades.</td></tr>
+<tr><td>Act 10 / early maps</td><td>Farm Merciless Lab safely for <b>Storm Burst of Repulsion</b> if wanted. Do not force repeated Lab runs if defenses are poor. Regular gem remains viable.</td><td>Restore resistances after Kitava again. Get freeze, bleed and corrupted-blood solutions; map cautiously on non-damage mods.</td></tr>
+</tbody></table></article>
+<article class="h-card full"><h2>Practical progression gates</h2><div class="h-callout h-good"><b>Storm Burst swap:</b> Normal Lab done; Spell Totem and Storm Burst leveled; real 4-link; Ancestral Bond allocated on the same transition.</div><div class="h-callout"><b>MoM swap:</b> enough unreserved mana to survive a large hit AND still use movement/skills; mana regeneration and flask sustain tested; preferably Cruel Lab completed.</div><div class="h-callout"><b>Repulsion swap:</b> transfigured gem obtained; clear feels better without leaving you stationary; keep the normal gem available for bosses.</div><div class="h-callout h-warn"><b>Never use a build guide as an excuse to rush Kitava, Lab, or high-damage maps.</b> Overleveling is free in SSFHC. The death screen is not.</div></article></div></div>
+
+<div class="h-page" id="h-passives">
+<div class="h-grid"><article class="h-card full"><h2>Ordered named passive route</h2><p class="hint">HC-modified notable/mastery order with checkable steps. The Maxroll passive tree provides staged snapshots (18, 34, 38, 69, 86, 111, 122, 123, 129 points); these steps are <b>not</b> an extracted node-ID-accurate path. Allocate necessary adjacent small travel nodes between these destinations in PoB; do not assume a one-point connection between listed names. Refunds are explicitly allowed.</p><div class="h-flex" id="hPassiveStageButtons"></div><p id="hPassiveStageText" class="hint" style="margin-top:10px"></p><div id="hPassiveRoute"></div></article>
+<article class="h-card full"><h2>Specific mastery choices</h2>
+<table class="h-table"><thead><tr><th>Mastery</th><th>Choose this exact effect</th><th>When</th></tr></thead><tbody>
+<tr><td>Totem</td><td><b>Totems Taunt Enemies around them for 1 second when Summoned</b></td><td>As soon as you convert to Storm Burst totems</td></tr>
+<tr><td>Duration</td><td><b>10% more Skill Effect Duration</b></td><td>Potency of Will/connected duration wheel; meaningful Storm Burst damage</td></tr>
+<tr><td>Mana</td><td><b>10% of Damage taken Recouped as Mana</b></td><td>Before relying on MoM, if a reachable Mana wheel allows the choice</td></tr>
+<tr><td>Lightning</td><td><b>40% of Physical Damage Converted to Lightning Damage</b></td><td>Late conversion respec only when gloves finish the remaining 10%</td></tr>
+<tr><td>Charge (optional)</td><td><b>Cannot be Shocked while at maximum Power Charges</b></td><td>Only after a reachable Charge wheel and stable Conviction of Power charge uptime</td></tr>
+</tbody></table></article>
+<article class="h-card full"><h2>Respec / alternative paths</h2><p><b>Early fire totems or fire-casting nodes:</b> refund incidental fire-only damage after Storm Burst is linked and Ancestral Bond is ready. <b>Mind over Matter:</b> can be picked later than Maxroll's level-57 target, even if that means spending on another life or mana notable temporarily. <b>Lightning conversion:</b> keep Physical to Lightning Support until both the Lightning Mastery and craftable glove conversion are equipped. <b>Suppression:</b> do not take distant Magebane travel for partial suppression at the expense of critical life/mana/armour; commit only once a credible 100% plan exists.</p><div class="h-callout h-warn">If your imported 3.30 PoB shows an incompatible route or a renamed/removed mastery, follow the current game tree and update the named route from the actual PoB. This is a reviewed priority sequence, not a claim that its individual connecting points have been verified.</div></article></div></div>
+
+<div class="h-page" id="h-gems">
+<div class="h-grid"><article class="h-card full"><h2>Main links, exactly by stage</h2>
+<table class="h-table"><thead><tr><th>Stage</th><th>Links</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Early campaign</td><td>Rolling Magma – Combustion – Elemental Proliferation (as available)</td><td>Flame Wall for extra damage; skill gems can be moved as socket colors improve.</td></tr>
+<tr><td>~28–31</td><td>Firestorm – Faster Casting – Controlled Destruction (available supports)</td><td>Optional short bridge, not mandatory if Rolling Magma is still strong.</td></tr>
+<tr><td>4-link totem baseline</td><td><b>Storm Burst – Spell Totem – Physical to Lightning – More Duration</b></td><td>Supports full phys → lightning and duration scaling without rare gear.</td></tr>
+<tr><td>5-link</td><td>Above + <b>Lightning Penetration</b></td><td>Consistent damage; conversion support remains until replacement conditions are met.</td></tr>
+<tr><td>6-link</td><td>Above + <b>Increased Critical Strikes</b> (or Infused Channelling if it calculates better)</td><td>Damage slot is flexible; evaluate crit chance and quality in PoB rather than assuming a best support.</td></tr>
+<tr><td>Late fully converted</td><td>Storm Burst / Repulsion – Spell Totem – More Duration – Lightning Penetration – Increased Critical Strikes – Increased Critical Damage / Infused Channelling</td><td><b>Only</b> after 100% conversion from gem + Lightning Mastery + gloves. Soul Mantle can grant a pseudo-link, but is not your SSF baseline.</td></tr>
+</tbody></table></article>
+<article class="h-card"><h2>Defensive &amp; movement</h2><p><b>Manual Arcane Cloak</b> with More Duration (optional). Keep it available for anticipated hits rather than automatic draining of the MoM pool.</p><p><b>Frostblink / Flame Dash:</b> instant reposition; <b>Shield Charge + Faster Attacks</b> if shielded and geometry permits. Never sacrifice a movement button to socket greed.</p><p><b>Decoy Totem</b> (Multiple Totems optional) for taunts and space; mind your total totem placement capacity.</p></article>
+<article class="h-card"><h2>Auras, curses, utility</h2><p><b>Wrath – Eternal Blessing</b> is the eventual no-mana-reservation damage aura. If running MoM, avoid reserving mana through an ordinary aura setup.</p><p><b>Conductivity</b> as baseline boss curse. <b>Assassin's Mark</b> becomes appealing once crit investment justifies it. Extra curses need actual curse limit, not just spare sockets.</p><p><b>Wave of Conviction mines</b> are an optional exposure route until gloves obtain lightning exposure. After Ancestral Bond, self-cast damaging skills cannot deal damage themselves.</p></article>
+<article class="h-card full"><h2>How to play each Storm Burst gem</h2><div class="h-callout"><b>Regular Storm Burst:</b> place totems, let them channel and accumulate orbs. Do <b>not</b> constantly replace them during sustained bossing, because that can reduce damage uptime.</div><div class="h-callout"><b>Storm Burst of Repulsion:</b> placement/replacement drives burst when channels stop, so repeatedly summoning can improve clear. Test a safe map first; do not assume the same bossing rotation.</div></article></div></div>
+
+<div class="h-page" id="h-gear">
+<div class="h-grid"><article class="h-card full"><h2>Gear slots, preferred armour types &amp; SSF crafts</h2>
+<table class="h-table"><thead><tr><th>Slot</th><th>Base to seek</th><th>Craft priority</th></tr></thead><tbody>
+<tr><td>Weapon</td><td><b>Rare wand or sceptre</b>, spell/lightning implicit</td><td>+1 lightning/spell gems, spell damage, cast speed, mana. Do not require a named unique.</td></tr>
+<tr><td>Shield</td><td><b>Armour/ES shield</b> (block/defenses) or high-ES spirit shield if necessary</td><td>Life, mana, resistance, block/spell block. Later, <b>Shaper ilvl 70+ +1 maximum totems</b> is a premium SSF target.</td></tr>
+<tr><td>Helmet</td><td><b>Armour/ES</b> hybrid</td><td>High life, mana, resist, armour. Physical damage taken as elemental implicit when available. Avoid sacrificing all defenses for damage.</td></tr>
+<tr><td>Chest</td><td><b>Armour/ES</b> rare with appropriate blue sockets</td><td>High life, resistance, defensive eldritch implicits; 5-link/6-link. Soul Mantle is optional and requires solving self-curses.</td></tr>
+<tr><td>Gloves</td><td><b>Evasion/ES</b> if chasing suppression, otherwise Armour/ES</td><td>Life, mana/resistance, then crafted <b>physical → lightning conversion</b>; keep the conversion support until total reaches 100%.</td></tr>
+<tr><td>Boots</td><td><b>Evasion/ES</b> if chasing suppression, otherwise Armour/ES</td><td>Movement speed, life, resistances, ailment mitigation, suppression where available.</td></tr>
+<tr><td>Rings &amp; amulet</td><td><b>Rare</b> two-stone/amethyst rings, rare mana/life amulet</td><td>Resistances, life, mana, attributes; chaos resistance early in maps. Do not require Anathema or special Kikazaru rolls.</td></tr>
+<tr><td>Belt</td><td><b>Leather Belt / Stygian Vise</b></td><td>Life, resistances, armour or flask bonuses. A decent rare is often safer than a low-roll unique.</td></tr>
+</tbody></table></article>
+<article class="h-card"><h2>Five flasks</h2><p><b>1.</b> Instant/part-instant Life flask with bleed removal.<br><b>2.</b> Mana flask during leveling and MoM transition; never drop it without proven sustain.<br><b>3.</b> Granite flask for physical hits.<br><b>4.</b> Quicksilver flask for positioning.<br><b>5.</b> Flexible Jade / Quartz / Amethyst / Rumi's if it drops and fits.</p><p class="hint">Cover freeze/chill, curses and corrupted blood through flasks, gear, jewels or pantheons. No single flask setup solves every threat permanently.</p></article>
+<article class="h-card"><h2>Efficient SSF crafting order</h2><p>1. Benchcraft resistances and life on campaign rares; replace bases regularly.<br>2. Essence/Harvest craft life+mana+resistance on shield/body/helmet.<br>3. Farm currency and a 5-link rather than gambling all resources on a fancy 6-link.<br>4. Craft glove conversion once unlocked; combine with Lightning Mastery later.<br>5. Target Shaper shield only after white/yellow maps are stable.</p></article>
+<article class="h-card full"><h2>Defensive gear checkpoint</h2><p>Always recheck <b>effective elemental resistance after Kitava</b>, chaos resistance, life, mana pool, mana regeneration, physical max hit, block/spell block and available ailment immunity. An armour/ES chest is the comfortable default for socket colors; switch to armour/evasion or evasion/ES only when the actual spell suppression upgrade is worth the colour/stat tradeoff.</p></article></div></div>
+
+<div class="h-page" id="h-ascendancy">
+<div class="h-grid"><article class="h-card full"><h2>Ascendancy, Hardcore order</h2>
+<table class="h-table"><thead><tr><th>Lab</th><th>Take</th><th>Why</th></tr></thead><tbody>
+<tr><td>Normal · ~33</td><td><b>Pursuit of Faith</b></td><td>+1 maximum totems and placement speed/duration. Core functional milestone before swapping.</td></tr>
+<tr><td>Cruel · ~55</td><td><b>Conviction of Power</b></td><td>Minimum Endurance and Power charges (four after 3.30 changes). Excellent baseline physical mitigation and crit stability in HC.</td></tr>
+<tr><td>Merciless · ~68</td><td><b>Ritual of Awakening</b></td><td>Regeneration per totem and stronger sustained totem play. Taken before the pure damage branch for HCSSF.</td></tr>
+<tr><td>Eternal · when safe</td><td><b>Arcane Blessing</b></td><td>Reliable Arcane Surge from totems/spell hits and more spell damage. Maxroll's softcore order places this before Ritual; we flip them for HC recovery.</td></tr>
+</tbody></table><div class="h-callout">Each major node requires its connecting small ascendancy passive; this table lists the four notable rewards, not every individual point.</div></article>
+<article class="h-card full"><h2>Play safely through Labyrinth</h2><p>Do Normal Lab before switching totems, Cruel when your resists and flask setup are reliable, and Merciless when you can handle traps and Izaro without banking on an Arcane Cloak cooldown. Farming a transfigured gem is optional. A strong character with normal Storm Burst is more useful than an aspirational corpse with Repulsion.</p></article></div></div>
+
+<div class="h-page" id="h-chase">
+<div class="h-grid"><article class="h-card full"><h2>Chase gear: explicitly not required</h2>
+<table class="h-table"><thead><tr><th>Upgrade</th><th>Benefit</th><th>HC warning / trigger</th></tr></thead><tbody>
+<tr><td><b>+1 maximum totems Shaper shield</b></td><td>Major extra damage and placement QoL</td><td>Target ilvl 70+ Shaper shield; keep existing shield if life/block/resists would collapse.</td></tr>
+<tr><td><b>Soul Mantle</b></td><td>Built-in Spell Totem and pseudo-link scaling</td><td>Self-curse drawback is a serious HC liability without complete mitigation.</td></tr>
+<tr><td><b>Kikazaru / Foulborn Kikazaru</b></td><td>Helps interact with Soul Mantle curses</td><td>Do not assume a single ring or imperfect roll fully solves the curse setup; verify 100% mitigation.</td></tr>
+<tr><td><b>Storm Burst of Repulsion</b></td><td>Faster pack clearing via explosion/replacement gameplay</td><td>Farm in Lab safely. Keep a regular gem for boss consistency.</td></tr>
+<tr><td><b>Watcher’s Eye / Ashes of the Stars / 21-20 gems</b></td><td>Conversion, quality and stronger duration scaling</td><td>True luxury; build must function without them.</td></tr>
+<tr><td><b>Stormshroud / Mageblood</b></td><td>Potential ailment/flask endgame solution</td><td>Long-shot drops. Not part of campaign or atlas entry planning.</td></tr>
+</tbody></table></article></div></div>
+
+<div class="h-page" id="h-checklist">
+<div class="h-grid"><article class="h-card full"><h2>HCSSF checklist</h2><p class="h-score" id="hChecklistScore">0 completed</p><div id="hChecklistBody"></div></article></div></div>
+<div class="h-page" id="h-notes">
+<div class="h-grid"><article class="h-card full"><h2>My Hierophant notes</h2><p class="hint">Stored only in this browser; notes/checklist are separate from the GitHub-reviewed PoB snapshots.</p><textarea id="hNotes" placeholder="Current act, gear crafts, mana recovery, dangerous mods, upgrades..."></textarea><p id="hNotesStatus" class="hint"></p><div class="h-flex"><button class="h-btn" type="button" id="hExportNotes">Export Hierophant Save</button><label class="h-btn" style="cursor:pointer">Import Save<input type="file" id="hImportNotes" accept=".json,application/json" hidden></label><button class="h-btn" type="button" id="hClearNotes">Clear Hierophant Notes</button></div></article>
+<article class="h-card full"><h2>Guide &amp; PoB sources</h2><p><a href="https://maxroll.gg/poe/build-guides/storm-burst-of-repulsion-totem-hierophant-league-starter" target="_blank" rel="noopener noreferrer">Maxroll · Storm Burst of Repulsion Totem Hierophant</a> · <a href="https://pobb.in/UtDAEHasntHU" target="_blank" rel="noopener noreferrer">3.30 leveling PoB linked by Palsteron</a> · <a href="https://www.youtube.com/watch?v=IQlMZ5ddGp0" target="_blank" rel="noopener noreferrer">Tatiantel2 SSF/HC-focused Storm Burst tutorial</a></p><p class="hint">The live Maxroll article was not directly retrievable through the research browser. Its indexed 3.30 stage data and publicly linked PoBs were cross-checked with current-game mastery and SSF-focused references. Do not treat unverified exact intermediate passive nodes as a copied Maxroll PoB tree.</p></article></div></div>
+<div class="footer">Storm Burst Totem Hierophant · 3.30 HC SSF guide adaptation · planned character, awaiting first verified PoB checkpoint.</div>
+</main></div>
+
 <script>
 
 (function() {
@@ -553,7 +713,7 @@ let snap=null, stage=0, act=0, notes="", noteKey="poe-hcssf-warden-notes-v1";
 try {notes=JSON.parse(localStorage.getItem(noteKey)||"null")?.notes||"";}catch(e){}
 function doneTasks(){return new Set(snap?.progress?.completedTaskIds||[])}
 function doneNodes(){return new Set((snap?.progress?.completedPassiveIds||[]).map(String))}
-function toggleBuild(name){let w=name==="warden",s=name==="slayer",r=name==="reliquarian";$w("wardenApp").classList.toggle("hide",!w);$w("slayerApp").classList.toggle("show",s);$w("reliquarianApp").classList.toggle("show",r);document.querySelectorAll("[data-build]").forEach(b=>{b.classList.toggle("selected",b.dataset.build===name);b.setAttribute("aria-pressed",String(b.dataset.build===name))});document.title=s?"Cyclone Shockwave Slayer | HCSSF Build Companion":w?"Storm Rain Warden Archive | HCSSF Build Companion":"Reliquarian Archive | HCSSF Build Companion";try{localStorage.setItem("poe-hcssf-selected-build-v2",name)}catch(e){}}
+function toggleBuild(name){let h=name==="hierophant",w=name==="warden",s=name==="slayer",r=name==="reliquarian";$w("hierophantApp").classList.toggle("show",h);$w("wardenApp").classList.toggle("hide",!w);$w("slayerApp").classList.toggle("show",s);$w("reliquarianApp").classList.toggle("show",r);document.querySelectorAll("[data-build]").forEach(b=>{b.classList.toggle("selected",b.dataset.build===name);b.setAttribute("aria-pressed",String(b.dataset.build===name))});document.title=h?"Storm Burst Totem Hierophant | HCSSF Build Companion":s?"Cyclone Shockwave Slayer | HCSSF Build Companion":w?"Storm Rain Warden Archive | HCSSF Build Companion":"Reliquarian Archive | HCSSF Build Companion";try{localStorage.setItem("poe-hcssf-selected-build-v3",name)}catch(e){}}
 function nav(name){document.querySelectorAll("#wardenApp .wpage").forEach(el=>el.classList.toggle("active",el.id==="w-"+name));document.querySelectorAll("#wNav button").forEach(el=>{const active=el.dataset.wpage===name;el.classList.toggle("active",active);el.setAttribute("aria-current",active?"page":"false")});location.hash="w-"+name;window.scrollTo(0,0);}
 
 function renderPassives(){
@@ -614,11 +774,119 @@ $w("wClearSearch").addEventListener("click",()=>{$w("wSearch").value="";$w("wRes
 renderPassives();renderAct();renderGems();renderGear();renderTasks();renderLabs();
 (async()=>{try{const r=await fetch("/character-progress.json",{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);const j=await r.json(),s=j.slayer;if(s?.format!=="slayer-character-progress-v1")throw Error("Slayer plan absent");const c=s.character||{},label=c.label||"Cyclone Shockwave Slayer";const status=c.status||"planned";$w("sCurrentCharacter").textContent=label+" · Level "+(c.level??"—")+" · "+(c.act?"Act "+c.act:"Act unconfirmed")+" · "+status;$w("sCurrentSnapshot").textContent=status==="planned"?"Build plan only; no current PoB stats or allocated passives yet.":"Dashboard snapshot date: "+(s.publishedAt||"unknown")+" · current character data is loaded from the published JSON.";document.querySelectorAll('[data-build="slayer"]').forEach(b=>{b.textContent="⚔ Cyclone Shockwave Slayer · "+(status==="planned"?"Planned":"Active")})}catch(e){$w("sCurrentCharacter").textContent="Slayer plan unavailable: "+e.message}})();
 (async()=>{try{let response=await fetch("/character-progress.json",{cache:"no-store"});if(!response.ok)throw Error("HTTP "+response.status);let json=await response.json();if(json.warden?.format!=="warden-character-progress-v1")throw Error("Warden state absent");snap=json.warden;$w("wSync").textContent="Warden snapshot loaded separately · "+(snap.publishedAt||"Unknown date");renderCharacter()}catch(e){$w("wSync").textContent="Warden state unavailable: "+e.message;snap={character:{},source:{kind:"Planned guide only"},stats:{},progress:{completedTaskIds:[],completedPassiveIds:[]},findings:[{severity:"unknown",title:"No verified character snapshot",detail:"Guide is still usable; no progress claims.",action:"Check local sync then submit a PoB."}],skills:[],gear:[],nextActions:["Begin Ranger; level with Lightning Arrow, then add Storm Rain at 28."]};renderCharacter()}})();
-let initial="slayer";try{initial=localStorage.getItem("poe-hcssf-selected-build-v2")||"slayer"}catch(e){}toggleBuild(["warden","reliquarian","slayer"].includes(initial)?initial:"slayer");
-let hash=location.hash.slice(1);if(hash.startsWith("s-")){toggleBuild("slayer");let sn=hash.slice(2);document.querySelectorAll("#slayerApp .s-page").forEach(x=>x.classList.toggle("active",x.id==="s-"+sn));document.querySelectorAll("#sNav button").forEach(x=>x.classList.toggle("active",x.dataset.snav===sn))}else if(hash.startsWith("w-")&&$w(hash)){toggleBuild("warden");nav(hash.slice(2))}else if(hash&&$w(hash)&&$w(hash).classList.contains("tabs"))toggleBuild("reliquarian");
+let initial="hierophant";try{initial=localStorage.getItem("poe-hcssf-selected-build-v3")||"hierophant"}catch(e){}toggleBuild(["warden","reliquarian","slayer","hierophant"].includes(initial)?initial:"hierophant");
+let hash=location.hash.slice(1);if(hash.startsWith("h-")){toggleBuild("hierophant")}else if(hash.startsWith("s-")){toggleBuild("slayer");let sn=hash.slice(2);document.querySelectorAll("#slayerApp .s-page").forEach(x=>x.classList.toggle("active",x.id==="s-"+sn));document.querySelectorAll("#sNav button").forEach(x=>x.classList.toggle("active",x.dataset.snav===sn))}else if(hash.startsWith("w-")&&$w(hash)){toggleBuild("warden");nav(hash.slice(2))}else if(hash&&$w(hash)&&$w(hash).classList.contains("tabs"))toggleBuild("reliquarian");
 })();
 
 </script>
+
+<script>
+(function(){
+"use strict";
+const stages=[
+{title:"1 · Early Act 1",level:"~1–12",route:[
+["Templar starting Spell Damage small passives","Follow the short caster route from the start; temporary speed is acceptable."],
+["Light of Divinity","Early spell damage / critical chance; may refund inefficient offense later."],
+["Holy Dominion","Elemental damage and useful elemental resistance."],
+["Discipline and Training","First substantial life notable; HC priority."]]},
+{title:"2 · Act 2 safety",level:"~13–27",route:[
+["Sanctity","Defenses and regeneration from the nearby Templar side."],
+["Devotion","Path toward additional life rather than only elemental damage."],
+["Retribution","Take only if needed as travel / efficient early damage; easy refund candidate."],
+["Ancestral Bond travel (do NOT allocate keystone yet)","Leave your own Rolling Magma / Firestorm functional until the totem swap."]]},
+{title:"3 · Totem swap",level:"~28–38",route:[
+["Ancestral Bond","Allocate only when Storm Burst + Spell Totem actually becomes the main damaging skill."],
+["Totemic Zeal","Totem placement/damage path when connected in the imported tree."],
+["Totem Mastery: Totems Taunt Enemies around them for 1 second when Summoned","Take this exact mastery as soon as a Totem mastery socket is connected."],
+["Heart and Soul","Early life + mana as MoM preparation."]]},
+{title:"4 · Build a life base",level:"~39–50",route:[
+["Cruel Preparation","More maximum life and resistance near Witch-side routing."],
+["Purity of Flesh","Life and chaos resistance if the travel is efficient."],
+["Potency of Will","Duration notable; increasing orb duration is one of the best genuine damage multipliers."],
+["Duration Mastery: 10% more Skill Effect Duration","Exact effect. Choose it only at a reachable duration mastery."]]},
+{title:"5 · Prepare for MoM",level:"~51–62",route:[
+["Quick Recovery","Life and mana regeneration/sustain."],
+["Deep Thoughts","Maximum mana and mana regeneration path."],
+["Mana Mastery: 10% of Damage taken Recouped as Mana","Exact effect; useful buffer against MoM depletion."],
+["Mind Over Matter — CONDITIONAL","Only now, if usable unreserved mana and recovery are actually sufficient. Otherwise postpone."]]},
+{title:"6 · End campaign",level:"~63–73",route:[
+["Shaman's Dominion","Totem critical strike scaling after core survival nodes."],
+["Enduring Bond","Skill duration through a compatible duration cluster, when reachable."],
+["Righteous Decree","More mana and lower skill costs to support MoM and repeated placement."],
+["Additional nearby maximum Life small nodes","Do not leave major life clusters half-finished just to reach crit earlier."]]},
+{title:"7 · Early maps",level:"~74–85",route:[
+["Arcane Capacitor","Arcane Surge and mana efficiency if connected on the route."],
+["Prodigal Perfection","Mana and spell scaling after MoM sustain is solved."],
+["Lightning Walker","Elemental resistance plus lightning damage as gear dictates."],
+["Additional jewel socket / life small nodes","Take only when a real jewel or life value justifies the point."]]},
+{title:"8 · Conversion respec",level:"~86–93",route:[
+["Lightning Mastery: 40% of Physical Damage Converted to Lightning Damage","Exact mastery; do not swap support until gloves contribute the missing 10%."],
+["Refund Physical to Lightning Support for Inspiration / crit / Infused Channelling","Gear-and-socket respec, not a passive refund. Confirm 100% conversion first."],
+["Storm Weaver","More elemental scaling once defenses are set."],
+["Life and mana recovery remaining in nearby clusters","Prefer this to glass-cannon crit if max hits are weak."]]},
+{title:"9 · Late HC scaling",level:"94+",route:[
+["Iron Will (optional efficient path)","Spell damage from Strength when the travel fits the real tree."],
+["Charge Mastery: Cannot be Shocked while at maximum Power Charges (optional)","Requires a real connected Charge wheel and stable Conviction of Power maximum charges."],
+["Magebane / suppression route (optional full respec)","Commit only if gear plus tree can plausibly reach high or capped suppression."],
+["Shaman's Dominion / remaining crit clusters / jewels","Final damage only after survivability checks."]]}
+];
+const tasks=[
+["Campaign","Obtain level-appropriate Rolling Magma + supports and a reliable movement skill."],
+["Campaign","First life notable Discipline and Training; fire/cold/lightning resists stay capped."],
+["Campaign","Complete Normal Lab and take Pursuit of Faith."],
+["Transition","Get Storm Burst + Spell Totem + Physical to Lightning + More Duration; then allocate Ancestral Bond."],
+["Transition","Take Totem Mastery: Totems Taunt Enemies around them for 1 second when Summoned."],
+["Transition","Add a Decoy Totem for high-risk rare packs and bosses."],
+["Acts 5–10","Re-cap resistances after Act 5 Kitava."],
+["Acts 5–10","Complete Cruel Lab; take Conviction of Power for endurance charges."],
+["Acts 5–10","Take Mana Mastery: 10% of Damage taken Recouped as Mana when reachable."],
+["Acts 5–10","Test unreserved mana / mana flask / regen before taking Mind Over Matter."],
+["Acts 5–10","Use Arcane Cloak manually; verify it never disables your movement after a hit."],
+["Acts 5–10","Get reliable bleed removal and freeze/stun mitigation."],
+["Acts 5–10","Complete Merciless Lab safely; take Ritual of Awakening."],
+["Maps","Re-cap resistances after Act 10 Kitava."],
+["Maps","Raise chaos resistance and physical mitigation; do not trust block alone."],
+["Maps","Keep a mana flask until MoM sustain is conclusively solved."],
+["Maps","Use a rare Armour/ES chest and shield until any unique swap maintains defenses."],
+["Maps","Check deadly map mods: elemental reflect, reduced recovery, -max resistance, extra projectiles/crit/physical as extra."],
+["Maps","Farm Repulsion only when Lab is safe; keep normal Storm Burst for bosses."],
+["Upgrade","Craft/find a Shaper ilvl70+ +1 maximum totems shield without losing critical defenses."],
+["Upgrade","Only drop Physical to Lightning after 50% gem + 40% mastery + at least 10% gloves."],
+["Upgrade","Complete Eternal Lab and take Arcane Blessing when safe."],
+["Upgrade","Plan full ailment protection and either robust block or actual high suppression for harder red maps."]
+];
+const root=document.getElementById("hierophantApp");if(!root)return;
+const clean=(s)=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const storeKey="poe-hcssf-hierophant-local-v1";
+let state={checks:{},notes:""};try{const x=JSON.parse(localStorage.getItem(storeKey)||"null");if(x&&typeof x==="object")state={checks:x.checks||{},notes:typeof x.notes==="string"?x.notes:""};}catch(e){}
+let stageIndex=0;
+const el=id=>document.getElementById(id);
+const persist=()=>{try{localStorage.setItem(storeKey,JSON.stringify(state));if(el("hNotesStatus"))el("hNotesStatus").textContent="Saved in this browser."}catch(e){if(el("hNotesStatus"))el("hNotesStatus").textContent="Browser storage unavailable; use Export Save."}};
+function nav(name){root.querySelectorAll(".h-page").forEach(x=>x.classList.toggle("active",x.id==="h-"+name));el("hNav").querySelectorAll("button").forEach(x=>{const yes=x.dataset.hnav===name;x.classList.toggle("active",yes);x.setAttribute("aria-current",yes?"page":"false")});location.hash="h-"+name;window.scrollTo(0,0)}
+function renderStages(){
+el("hPassiveStageButtons").innerHTML=stages.map((st,i)=>'<button class="h-btn '+(i===stageIndex?'active':'')+'" type="button" data-hstage="'+i+'" aria-pressed="'+(i===stageIndex)+'">'+clean(st.title)+'</button>').join("");
+const st=stages[stageIndex];el("hPassiveStageText").textContent="Suggested stage: "+st.level+". Entries are named notable/mastery milestones in order; take required connected small travel nodes in a validated 3.30 tree.";
+el("hPassiveRoute").innerHTML=st.route.map((a,i)=>'<div class="h-step"><strong>'+(i+1)+'. '+clean(a[0])+'</strong><div class="sub">'+clean(a[1])+'</div></div>').join("");
+}
+function renderTasks(){
+const n=tasks.filter((_,i)=>state.checks["t"+i]).length;
+el("hChecklistScore").textContent=n+" / "+tasks.length+" completed · saved on this browser";
+const groups=[...new Set(tasks.map(x=>x[0]))];
+el("hChecklistBody").innerHTML=groups.map(g=>'<h3>'+clean(g)+'</h3>'+tasks.map((t,i)=>t[0]!==g?"":'<label class="h-check"><input type="checkbox" data-htask="'+i+'" '+(state.checks["t"+i]?'checked':'')+'><span>'+clean(t[1])+'</span></label>').join("")).join("");
+}
+el("hNav").addEventListener("click",e=>{const b=e.target.closest("[data-hnav]");if(b)nav(b.dataset.hnav)});
+el("hPassiveStageButtons").addEventListener("click",e=>{const b=e.target.closest("[data-hstage]");if(b){stageIndex=Number(b.dataset.hstage);renderStages()}});
+el("hChecklistBody").addEventListener("change",e=>{const c=e.target.closest("[data-htask]");if(c){state.checks["t"+c.dataset.htask]=c.checked;persist();renderTasks()}});
+el("hNotes").value=state.notes;el("hNotes").addEventListener("input",e=>{state.notes=e.target.value;persist()});
+el("hExportNotes").addEventListener("click",()=>{const a=document.createElement("a"),url=URL.createObjectURL(new Blob([JSON.stringify({format:"hierophant-local-v1",...state},null,2)],{type:"application/json"}));a.href=url;a.download="hierophant-hcssf-progress.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1500)});
+el("hImportNotes").addEventListener("change",async e=>{const f=e.target.files?.[0];if(!f)return;try{const x=JSON.parse(await f.text());if(x.format!=="hierophant-local-v1"||typeof x.notes!=="string"||!x.checks)throw Error("Not a Hierophant save");state={checks:x.checks,notes:x.notes};el("hNotes").value=state.notes;persist();renderTasks()}catch(err){el("hNotesStatus").textContent="Import failed: "+err.message}e.target.value=""});
+el("hClearNotes").addEventListener("click",()=>{if(!confirm("Clear only Hierophant notes? Checklist stays."))return;state.notes="";el("hNotes").value="";persist()});
+renderStages();renderTasks();
+(async()=>{try{const r=await fetch("/character-progress.json",{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);const j=await r.json(),h=j.hierophant;if(h?.format!=="hierophant-character-progress-v1")throw Error("No Hierophant record");const c=h.character||{};el("hCurrentStatus").textContent=(c.label||"Hierophant")+" · "+(c.level?"Level "+c.level:"Level not verified")+" · "+(c.act?"Act "+c.act:"Act unknown")+" · "+(c.status||"planned");el("hSnapshotInfo").textContent="GitHub guide state: "+(h.publishedAt||"undated")+". "+(c.status==="planned"?"No character PoB yet; all routes remain planned.":"Verified checkpoint available in GitHub data.")}catch(e){el("hSnapshotInfo").textContent="Standalone guide usable. Character data could not load: "+e.message}})();
+const hash=location.hash.slice(1);if(hash.startsWith("h-")&&el(hash))nav(hash.slice(2));
+})();
+</script>
+
 </body></html>
 
 
