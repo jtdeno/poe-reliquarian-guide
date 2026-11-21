@@ -1,6 +1,6 @@
 {
   "format": "reliquarian-character-progress-v1",
-  "publishedAt": "2026-11-17",
+  "publishedAt": "2026-11-21",
   "source": {
     "kind": "reviewed PoB XML",
     "file": "3.29 ReliMinesHCSSF(8).xml",
@@ -5602,7 +5602,7 @@
       "notes": "Death was player-reported. Retains the last verified level-60 PoB snapshot; no invented post-snapshot stats or passives."
     }
   },
-  "activeBuild": "slayer",
+  "activeBuild": "hierophant",
   "slayer": {
     "format": "slayer-character-progress-v1",
     "publishedAt": "2026-11-19",
@@ -6674,6 +6674,74 @@
       "Target Armour/Evasion hybrid rares by default; choose pure Armour when its life, resists, or socket colours are better. Do not chase Armour/ES.",
       "Keep a current physical two-handed staff and prioritize life, resistances, staff block, and safe flask coverage.",
       "Use the 3.30 Cyclone Shockwave plan as a target; do not count transfigured gems or uniques as required drops."
+    ]
+  },
+  "hierophant": {
+    "format": "hierophant-character-progress-v1",
+    "publishedAt": "2026-11-21",
+    "character": {
+      "label": "Storm Burst (of Repulsion) Totem Hierophant",
+      "nameVerified": false,
+      "level": null,
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "league": "HC SSF Covens",
+      "act": null,
+      "status": "planned",
+      "deathLevel": null
+    },
+    "source": {
+      "kind": "Maxroll 3.30 league-starter with SSFHC defensive adaptation; no PoB checkpoint supplied",
+      "guideUrl": "https://maxroll.gg/poe/build-guides/storm-burst-of-repulsion-totem-hierophant-league-starter",
+      "levelingPob": "https://pobb.in/UtDAEHasntHU",
+      "verifiedCharacter": false
+    },
+    "stats": {},
+    "progress": {
+      "completedTaskIds": [],
+      "completedPassiveIds": [],
+      "completedMasteryEffects": {}
+    },
+    "plan": {
+      "priority": "Life, unreserved mana/recovery, block and minimum Endurance charges before crit/damage stacking",
+      "leveling": "Rolling Magma to 28; Firestorm 28-31 as needed; Storm Burst Spell Totem ~31-32 after first Lab",
+      "hcSwitch": "Do not allocate Mind Over Matter purely by level; confirm mana pool, recovery and defensive flasks first.",
+      "mainSkill": "Storm Burst + Spell Totem + Physical to Lightning + More Duration until full conversion from passive and gloves is confirmed",
+      "transfigured": "Storm Burst of Repulsion is an optional Lab farm upgrade for mapping, standard gem can be safer/more consistent for bosses",
+      "ascendancy": [
+        "Pursuit of Faith",
+        "Conviction of Power",
+        "Ritual of Awakening",
+        "Arcane Blessing"
+      ],
+      "keyMasteries": [
+        "Totems Taunt Enemies around them for 1 second when Summoned",
+        "10% more Skill Effect Duration",
+        "10% of Damage taken Recouped as Mana",
+        "40% of Physical Damage Converted to Lightning Damage (only with enough glove conversion to complete 100%)"
+      ],
+      "mandatoryUniques": []
+    },
+    "findings": [
+      {
+        "severity": "warning",
+        "title": "HC guard and MoM",
+        "detail": "Automated Arcane Cloak and early Mind Over Matter can leave too little unreserved mana after hits and guard costs.",
+        "action": "Use Arcane Cloak manually, hold MoM until life/mana and recovery can support it."
+      },
+      {
+        "severity": "warning",
+        "title": "No required uniques",
+        "detail": "Soul Mantle and chase gear in the trade build are not reliable SSF baseline.",
+        "action": "Use crafted rare Armour/ES body armour with links; maintain curse/ailment defenses."
+      }
+    ],
+    "skills": [],
+    "gear": [],
+    "nextActions": [
+      "Begin Templar and level Rolling Magma; take early life/resist nodes.",
+      "After first Lab, switch to Storm Burst totems only with correctly leveled gems and a working 4-link.",
+      "At each checkpoint submit a PoB XML so confirmed stats, passives and checklists can replace this planned entry."
     ]
   }
 }
