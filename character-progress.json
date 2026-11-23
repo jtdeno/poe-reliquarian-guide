@@ -8113,7 +8113,7 @@
             "nodeId": "59335",
             "nodeName": "Fortify Mastery",
             "effectId": "28469",
-            "effect": "Melee Hits Fortify"
+            "effect": "Melee Hits Fortify; -3 to maximum Fortification"
           }
         ],
         "guideRouteTotal": 93,
