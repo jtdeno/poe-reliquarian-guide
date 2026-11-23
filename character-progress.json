@@ -6764,16 +6764,16 @@
     "character": {
       "label": "Reliquarian Static Strike Scion",
       "nameVerified": false,
-      "level": 50,
+      "level": 61,
       "class": "Scion",
       "ascendancy": "Reliquarian (tree confirms selected class and both passive-point nodes)",
       "league": "HC SSF Covens",
       "act": null,
-      "actSource": "Not reported with this level-50 export; level does not identify the current Act.",
+      "actSource": "Not reported with this level-61 export; level does not identify the current Act.",
       "status": "active",
       "bandit": "PoB setting: Alira; in-game reward not confirmed",
       "pantheon": {
-        "major": "PoB setting: None",
+        "major": "PoB setting: The Brine King; in-game activation unconfirmed",
         "minor": "PoB setting: Tukohama; in-game activation unconfirmed"
       }
     },
@@ -7699,7 +7699,8 @@
       "reviewedAt": "2026-11-23",
       "source": {
         "kind": "Reviewed Path of Building XML",
-        "file": "3.30 Static Strike Reliquarian(1).xml",
+        "file": "3.30 Static Strike Reliquarian(2).xml",
+        "sha256": "3173dac350fc266f9af45200faa48ba2d9d7e9f813c71708f91abc1ee053073c",
         "treeVersion": "3_30",
         "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua",
         "treeMappingBlobSha": "a87a349236f1c690f74e07d337ccb60d145209cc",
@@ -7708,73 +7709,82 @@
       "character": {
         "label": "Reliquarian Static Strike Scion",
         "nameVerified": false,
-        "level": 50,
+        "level": 61,
         "class": "Scion",
         "ascendancy": "Reliquarian (tree confirms selected class and both passive-point nodes)",
         "league": "HC SSF Covens",
         "act": null,
-        "actSource": "Not reported with this level-50 export; level does not identify the current Act.",
+        "actSource": "Not reported with this level-61 export; level does not identify the current Act.",
         "status": "active",
         "bandit": "PoB setting: Alira; in-game reward not confirmed",
         "pantheon": {
-          "major": "PoB setting: None",
+          "major": "PoB setting: The Brine King; in-game activation unconfirmed",
           "minor": "PoB setting: Tukohama; in-game activation unconfirmed"
         }
       },
       "stats": {
-        "life": 1879,
-        "mana": 440,
-        "manaUnreserved": 132,
-        "manaRegenPerSecond": 7.7,
-        "lifeRegenPerSecond": 42.9,
-        "armour": 2425,
+        "life": 2950,
+        "mana": 478,
+        "manaUnreserved": 143,
+        "manaRegenPerSecond": 8.4,
+        "lifeRegenPerSecond": 62.2,
+        "armour": 3083,
         "evasion": 21,
         "energyShield": 28,
         "fireResistance": 76,
-        "fireOvercap": 20,
-        "coldResistance": 45,
-        "coldOvercap": 0,
+        "fireOvercap": 62,
+        "coldResistance": 75,
+        "coldOvercap": 14,
         "lightningResistance": 75,
-        "lightningOvercap": 28,
+        "lightningOvercap": 8,
         "chaosResistance": -30,
         "chaosOvercap": 0,
-        "accuracy": 286,
+        "accuracy": 308,
         "hitChance": 100,
-        "combinedDps": 2772.5910325234,
-        "averageDamage": 2153.468763125,
-        "attackRate": 1.2875,
+        "combinedDps": 5759.2436530125,
+        "averageDamage": 3588.3138025,
+        "attackRate": 1.605,
         "manaCost": 19,
-        "manaPerSecondCost": 24.4625,
-        "configuredTotalEhp": 4381.9236789548,
-        "configuredPhysicalMaxHit": 2666,
+        "manaPerSecondCost": 30.495,
+        "configuredTotalEhp": 8347.1971243994,
+        "configuredPhysicalMaxHit": 3979,
         "configuredElementalMaxHit": {
-          "fire": 8293,
-          "cold": 3860,
-          "lightning": 7997
+          "fire": 12679,
+          "cold": 12226,
+          "lightning": 12226
         },
-        "configuredChaosMaxHit": 1632,
-        "physicalDamageReduction": 22,
+        "configuredChaosMaxHit": 2506,
+        "physicalDamageReduction": 25,
         "attackBlock": 22,
+        "spellBlock": 13,
         "spellSuppression": 0,
-        "lifeLeechGainRate": 72.496666337695,
+        "lifeLeechGainRate": 125.24147265094,
         "manaLeechGainRate": 0,
-        "maximumEnduranceCharges": 4
+        "currentEnduranceCharges": 1,
+        "maximumEnduranceCharges": 6,
+        "maximumRage": 30
       },
       "configuration": {
         "enemyLevel": 77,
         "resistancePenalty": -30,
-        "warning": "PoB output uses enemy level 77 and a -30 resistance penalty. The current Act is unconfirmed, so these are import values, not a confirmed current-zone/boss simulation."
+        "warning": "Saved PoB output uses enemy level 77 and resistancePenalty=-30. Enemy configuration is not confirmed to match the current zone or boss; the Act was not reported."
       },
       "progress": {
         "allocatedNodeIds": [
+          "1203",
           "1325",
           "3644",
           "4707",
           "5233",
           "6289",
+          "6712",
           "6912",
           "8629",
+          "9471",
+          "10031",
           "10108",
+          "11730",
+          "12536",
           "12702",
           "12809",
           "13714",
@@ -7783,37 +7793,52 @@
           "14056",
           "14767",
           "14930",
+          "15064",
           "16544",
+          "16994",
           "19144",
           "19939",
           "22441",
           "22703",
+          "23027",
           "24083",
+          "24716",
           "24914",
           "25781",
           "27140",
           "27301",
           "27718",
           "29292",
+          "29353",
           "30380",
           "30733",
           "31471",
           "31961",
           "32690",
           "33287",
+          "33435",
           "33508",
+          "34171",
           "34400",
           "34590",
           "35503",
           "35936",
+          "36489",
           "36881",
+          "36949",
           "37326",
+          "40907",
+          "41472",
           "43374",
+          "44202",
+          "44799",
           "46578",
           "48109",
+          "48199",
           "48287",
           "48828",
           "49178",
+          "49254",
           "53118",
           "55485",
           "55676",
@@ -7821,6 +7846,7 @@
           "58833",
           "59335",
           "59928",
+          "60472",
           "61262",
           "62530",
           "62662",
@@ -7831,12 +7857,16 @@
           "65167",
           "65485"
         ],
-        "allocatedNodeCountIncludingClassStart": 63,
-        "allocatedPassivePoints": 59,
-        "passiveCountFromPob": 59,
+        "allocatedNodeCountIncludingClassStart": 85,
+        "allocatedPassivePoints": 81,
+        "passiveCountFromPob": 81,
         "actualTreeVersion": "3_30",
-        "passiveValidation": "All 63 allocated IDs map to matching PoB Community 3_30 tree data. They include Scion start (58833), Reliquarian start (10108), and both Reliquarian passive-point nodes (35936 and 22441); 59 regular passive/mastery nodes are allocated. Quest-point completion is unknown.",
+        "passiveValidation": "All 85 allocated numeric IDs map to matching PoB Community 3_30 tree data. They include Scion start (58833), Reliquarian start (10108), and both Reliquarian passive-point nodes (35936 and 22441); 81 regular passive/mastery nodes are allocated. Relative to the level-50 import, 22 nodes were added and 0 removed. Passive quest completion is unknown.",
         "allocatedNodes": [
+          {
+            "id": "1203",
+            "name": "Life"
+          },
           {
             "id": "1325",
             "name": "Golem's Blood"
@@ -7858,6 +7888,10 @@
             "name": "Bloodless"
           },
           {
+            "id": "6712",
+            "name": "Life"
+          },
+          {
             "id": "6912",
             "name": "Two Hand Mastery"
           },
@@ -7866,8 +7900,24 @@
             "name": "Attack Mastery"
           },
           {
+            "id": "9471",
+            "name": "Rage Mastery"
+          },
+          {
+            "id": "10031",
+            "name": "Life"
+          },
+          {
             "id": "10108",
             "name": "Reliquarian"
+          },
+          {
+            "id": "11730",
+            "name": "Endurance"
+          },
+          {
+            "id": "12536",
+            "name": "Elemental Damage"
           },
           {
             "id": "12702",
@@ -7902,8 +7952,16 @@
             "name": "Strength"
           },
           {
+            "id": "15064",
+            "name": "Strength"
+          },
+          {
             "id": "16544",
             "name": "Dexterity"
+          },
+          {
+            "id": "16994",
+            "name": "Death's Door"
           },
           {
             "id": "19144",
@@ -7922,8 +7980,16 @@
             "name": "Strength"
           },
           {
+            "id": "23027",
+            "name": "Strength"
+          },
+          {
             "id": "24083",
             "name": "Strength"
+          },
+          {
+            "id": "24716",
+            "name": "Battle Trance"
           },
           {
             "id": "24914",
@@ -7950,6 +8016,10 @@
             "name": "Attack Speed"
           },
           {
+            "id": "29353",
+            "name": "Strength"
+          },
+          {
             "id": "30380",
             "name": "Life and Elemental Resistances"
           },
@@ -7974,8 +8044,16 @@
             "name": "Juggernaut"
           },
           {
+            "id": "33435",
+            "name": "Holy Dominion"
+          },
+          {
             "id": "33508",
             "name": "Fire Resistance"
+          },
+          {
+            "id": "34171",
+            "name": "Strength"
           },
           {
             "id": "34400",
@@ -7994,16 +8072,40 @@
             "name": "Passive Point"
           },
           {
+            "id": "36489",
+            "name": "Armour Display"
+          },
+          {
             "id": "36881",
             "name": "Cold Resistance"
+          },
+          {
+            "id": "36949",
+            "name": "Devotion"
           },
           {
             "id": "37326",
             "name": "Stamina"
           },
           {
+            "id": "40907",
+            "name": "Unwavering Stance"
+          },
+          {
+            "id": "41472",
+            "name": "Discipline and Training"
+          },
+          {
             "id": "43374",
             "name": "Strength"
+          },
+          {
+            "id": "44202",
+            "name": "Strength"
+          },
+          {
+            "id": "44799",
+            "name": "Elemental Damage"
           },
           {
             "id": "46578",
@@ -8012,6 +8114,10 @@
           {
             "id": "48109",
             "name": "Life Regeneration per Endurance Charge"
+          },
+          {
+            "id": "48199",
+            "name": "Rage on Hit"
           },
           {
             "id": "48287",
@@ -8024,6 +8130,10 @@
           {
             "id": "49178",
             "name": "Strength"
+          },
+          {
+            "id": "49254",
+            "name": "Retribution"
           },
           {
             "id": "53118",
@@ -8051,6 +8161,10 @@
           },
           {
             "id": "59928",
+            "name": "Strength"
+          },
+          {
+            "id": "60472",
             "name": "Strength"
           },
           {
@@ -8092,32 +8206,33 @@
         ],
         "masteryEffects": [
           {
-            "nodeId": "4707",
-            "nodeName": "Charge Mastery",
-            "effectId": "29652",
-            "effect": "100% increased Charge Duration"
+            "nodeId": 4707,
+            "effectId": 29652,
+            "description": "100% increased Charge Duration"
           },
           {
-            "nodeId": "6912",
-            "nodeName": "Two Hand Mastery",
-            "effectId": "27095",
-            "effect": "40% increased Damage with Hits against Rare and Unique Enemies"
+            "nodeId": 6912,
+            "effectId": 27095,
+            "description": "40% increased Damage with Hits against Rare and Unique Enemies"
           },
           {
-            "nodeId": "8629",
-            "nodeName": "Attack Mastery",
-            "effectId": "39154",
-            "effect": "Non-Vaal Strike Skills target 1 additional nearby Enemy"
+            "nodeId": 8629,
+            "effectId": 39154,
+            "description": "Non-Vaal Strike Skills target 1 additional nearby Enemy"
           },
           {
-            "nodeId": "59335",
-            "nodeName": "Fortify Mastery",
-            "effectId": "28469",
-            "effect": "Melee Hits Fortify; -3 to maximum Fortification"
+            "nodeId": 9471,
+            "effectId": 19628,
+            "description": "Enemies within 6 metres are Intimidated while you have Rage"
+          },
+          {
+            "nodeId": 59335,
+            "effectId": 28469,
+            "description": "Melee Hits Fortify; -3 to maximum Fortification"
           }
         ],
         "guideRouteTotal": 93,
-        "guideRouteNodesCurrentlyAllocated": 29,
+        "guideRouteNodesCurrentlyAllocated": 38,
         "guideRouteOverlap": [
           {
             "sequence": 3,
@@ -8170,6 +8285,18 @@
           {
             "sequence": 13,
             "id": "43374",
+            "name": "Strength",
+            "kind": "passive"
+          },
+          {
+            "sequence": 14,
+            "id": "40907",
+            "name": "Unwavering Stance",
+            "kind": "passive"
+          },
+          {
+            "sequence": 22,
+            "id": "29353",
             "name": "Strength",
             "kind": "passive"
           },
@@ -8246,6 +8373,30 @@
             "kind": "passive"
           },
           {
+            "sequence": 46,
+            "id": "44202",
+            "name": "Strength",
+            "kind": "passive"
+          },
+          {
+            "sequence": 47,
+            "id": "23027",
+            "name": "Strength",
+            "kind": "passive"
+          },
+          {
+            "sequence": 48,
+            "id": "6712",
+            "name": "Life",
+            "kind": "passive"
+          },
+          {
+            "sequence": 49,
+            "id": "36949",
+            "name": "Devotion",
+            "kind": "passive"
+          },
+          {
             "sequence": 63,
             "id": "31471",
             "name": "Life",
@@ -8288,6 +8439,24 @@
             "kind": "passive"
           },
           {
+            "sequence": 70,
+            "id": "60472",
+            "name": "Strength",
+            "kind": "passive"
+          },
+          {
+            "sequence": 71,
+            "id": "34171",
+            "name": "Strength",
+            "kind": "passive"
+          },
+          {
+            "sequence": 72,
+            "id": "11730",
+            "name": "Endurance",
+            "kind": "passive"
+          },
+          {
             "sequence": 73,
             "id": "3644",
             "name": "Strength",
@@ -8295,6 +8464,10 @@
           }
         ],
         "outsideGuideNodes": [
+          {
+            "id": "1203",
+            "name": "Life"
+          },
           {
             "id": "4707",
             "name": "Charge Mastery"
@@ -8310,6 +8483,18 @@
           {
             "id": "8629",
             "name": "Attack Mastery"
+          },
+          {
+            "id": "9471",
+            "name": "Rage Mastery"
+          },
+          {
+            "id": "10031",
+            "name": "Life"
+          },
+          {
+            "id": "12536",
+            "name": "Elemental Damage"
           },
           {
             "id": "12809",
@@ -8332,12 +8517,24 @@
             "name": "Strength"
           },
           {
+            "id": "15064",
+            "name": "Strength"
+          },
+          {
+            "id": "16994",
+            "name": "Death's Door"
+          },
+          {
             "id": "19939",
             "name": "Life"
           },
           {
             "id": "22703",
             "name": "Strength"
+          },
+          {
+            "id": "24716",
+            "name": "Battle Trance"
           },
           {
             "id": "24914",
@@ -8364,6 +8561,10 @@
             "name": "Attack Speed"
           },
           {
+            "id": "33435",
+            "name": "Holy Dominion"
+          },
+          {
             "id": "33508",
             "name": "Fire Resistance"
           },
@@ -8380,8 +8581,24 @@
             "name": "Lightning Resistance"
           },
           {
+            "id": "36489",
+            "name": "Armour Display"
+          },
+          {
             "id": "36881",
             "name": "Cold Resistance"
+          },
+          {
+            "id": "41472",
+            "name": "Discipline and Training"
+          },
+          {
+            "id": "44799",
+            "name": "Elemental Damage"
+          },
+          {
+            "id": "48199",
+            "name": "Rage on Hit"
           },
           {
             "id": "48287",
@@ -8390,6 +8607,10 @@
           {
             "id": "48828",
             "name": "Physical Damage and Strength"
+          },
+          {
+            "id": "49254",
+            "name": "Retribution"
           },
           {
             "id": "59335",
@@ -8418,10 +8639,32 @@
         ],
         "nextConnectedNodes": [
           {
+            "id": "55373",
+            "name": "Life and Strength",
+            "sequence": 1,
+            "kind": "passive",
+            "neighbors": [
+              "58833"
+            ]
+          },
+          {
+            "id": "17674",
+            "name": "Physical Damage",
+            "sequence": 2,
+            "kind": "passive",
+            "neighbors": [
+              "13782"
+            ]
+          },
+          {
             "id": "12382",
             "name": "Life Mastery",
             "sequence": 5,
             "kind": "mastery",
+            "neighbors": [
+              "55485",
+              "12702"
+            ],
             "effect": "+30 to maximum Life",
             "effectId": "47642",
             "when": "Take with the Life Mastery node."
@@ -8430,126 +8673,178 @@
             "id": "28330",
             "name": "Strength",
             "sequence": 9,
-            "kind": "passive"
+            "kind": "passive",
+            "neighbors": [
+              "46578",
+              "19144"
+            ]
           },
           {
             "id": "65034",
             "name": "Life",
             "sequence": 15,
-            "kind": "passive"
+            "kind": "passive",
+            "neighbors": [
+              "55485"
+            ]
           },
           {
-            "id": "29353",
+            "id": "50570",
             "name": "Strength",
-            "sequence": 22,
-            "kind": "passive"
+            "sequence": 21,
+            "kind": "passive",
+            "neighbors": [
+              "29353"
+            ]
+          },
+          {
+            "id": "31080",
+            "name": "Dexterity",
+            "sequence": 25,
+            "kind": "passive",
+            "neighbors": [
+              "43374"
+            ]
           },
           {
             "id": "64406",
             "name": "Armour Mastery",
             "sequence": 39,
             "kind": "mastery",
-            "effect": "+1% to all maximum Elemental Resistances if Equipped Helmet, Body Armour, Gloves, and Boots all have Armour",
-            "effectId": "7137",
-            "when": "Only when all four armour slots have Armour; Armour/ES bases qualify."
+            "neighbors": [
+              "33287"
+            ]
           },
           {
             "id": "30691",
             "name": "Intelligence",
             "sequence": 40,
-            "kind": "passive"
+            "kind": "passive",
+            "neighbors": [
+              "43374"
+            ]
+          },
+          {
+            "id": "29933",
+            "name": "Life",
+            "sequence": 44,
+            "kind": "passive",
+            "neighbors": [
+              "1325"
+            ]
           },
           {
             "id": "39678",
             "name": "Armour",
             "sequence": 74,
-            "kind": "passive"
+            "kind": "passive",
+            "neighbors": [
+              "3644"
+            ]
+          },
+          {
+            "id": "10073",
+            "name": "Armour and Guard Skill Cooldown Recovery",
+            "sequence": 77,
+            "kind": "passive",
+            "neighbors": [
+              "24083"
+            ]
+          },
+          {
+            "id": "47427",
+            "name": "Staff Damage and Stun Duration",
+            "sequence": 88,
+            "kind": "passive",
+            "neighbors": [
+              "23027"
+            ]
           }
         ],
         "newNumericPassiveNodeIdsSincePreviousImport": [
-          "1325",
-          "3644",
-          "4707",
-          "5233",
-          "10108",
-          "16544",
-          "22441",
-          "24083",
-          "30380",
-          "31471",
-          "31961",
-          "32690",
-          "33287",
-          "34590",
-          "35936",
-          "37326",
-          "48109",
-          "53118",
-          "55676",
-          "57011",
-          "59928",
-          "63282",
-          "63723",
-          "64882",
-          "65485"
+          "1203",
+          "6712",
+          "9471",
+          "10031",
+          "11730",
+          "12536",
+          "15064",
+          "16994",
+          "23027",
+          "24716",
+          "29353",
+          "33435",
+          "34171",
+          "36489",
+          "36949",
+          "40907",
+          "41472",
+          "44202",
+          "44799",
+          "48199",
+          "49254",
+          "60472"
         ],
         "removedNumericPassiveNodeIdsSincePreviousImport": []
       },
       "skills": {
-        "main": "Static Strike (level 11, 2% quality) + Shockwave (level 5) + Ruthless (level 14) + Melee Physical Damage (level 10)",
+        "main": "Static Strike (level 15, 2% quality) + Shockwave (level 13) + Ruthless (level 16) + Melee Physical Damage (level 14)",
         "auraGroups": [
-          "Hatred (level 8)"
+          "Hatred (level 14)"
         ],
         "allGroups": [
           {
-            "slot": "Helmet",
-            "gems": "Leap Slam (level 12) + Faster Attacks (level 12) + Momentum (level 14)"
-          },
-          {
-            "slot": "Gloves",
-            "gems": "Frostblink (level 6) + Desecrate (level 8)"
-          },
-          {
-            "slot": "Gloves",
-            "gems": "Hatred (level 8)"
-          },
-          {
             "slot": "Weapon 1",
-            "gems": "Static Strike (level 11, 2% quality) + Shockwave (level 5) + Ruthless (level 14) + Melee Physical Damage (level 10)"
+            "gems": "Static Strike (level 15, 2% quality) + Shockwave (level 13) + Ruthless (level 16) + Melee Physical Damage (level 14)"
+          },
+          {
+            "slot": "Helmet",
+            "gems": "Leap Slam (level 15) + Faster Attacks (level 15) + Momentum (level 16)"
+          },
+          {
+            "slot": "Gloves",
+            "gems": "Frostblink (level 6) + Desecrate (level 13)"
+          },
+          {
+            "slot": "Gloves",
+            "gems": "Hatred (level 14)"
           },
           {
             "slot": "Body Armour",
-            "gems": "Molten Shell (level 10) + Automation (level 8)"
+            "gems": "Molten Shell (level 14) + Automation (level 14)"
           },
           {
             "slot": "Boots",
-            "gems": "Sunder (level 10) + General's Cry (level 7) + Autoexertion (level 7) + Pulverise (level 7)"
+            "gems": "Sunder (level 14) + General's Cry (level 14) + Autoexertion (level 14) + Pulverise (level 14)"
           }
-        ]
+        ],
+        "calculationNote": "Static Strike is selected as the main active skill. PoB reports 5,759.2 CombinedDPS for that selected setup; this is not a combined damage total for the separate Sunder/General's Cry group."
       },
       "gear": [
         {
           "slot": "Weapon 1",
           "rarity": "RARE",
-          "name": "Carrion Beam",
-          "base": "Military Staff",
+          "name": "Dire Bane",
+          "base": "Foul Staff",
           "mods": [
             "+22% Chance to Block Attack Damage",
-            "Adds 18 to 40 Physical Damage",
-            "Adds 5 to 76 Lightning Damage",
-            "+23% Global Critical Strike Multiplier",
-            "79% increased Physical Damage (crafted)"
+            "51% increased Physical Damage",
+            "Adds 14 to 32 Physical Damage",
+            "Adds 74 to 130 Cold Damage",
+            "+13% Chance to Block Spell Damage",
+            "15% increased Attack Speed (crafted)"
           ]
         },
         {
           "slot": "Helmet",
-          "rarity": "UNIQUE",
-          "name": "Ezomyte Peak",
-          "base": "Iron Hat",
+          "rarity": "RARE",
+          "name": "Beast Keep",
+          "base": "Siege Helmet",
           "mods": [
-            "+43 to maximum Life",
-            "20% increased Area of Effect",
-            "Unwavering Stance"
+            "+32 Strength",
+            "+68 maximum Life",
+            "+14% Fire Resistance",
+            "+28% Cold Resistance (crafted)"
           ]
         },
         {
@@ -8558,8 +8853,8 @@
           "name": "Loath Keep",
           "base": "War Plate",
           "mods": [
-            "+50 to maximum Life",
             "+20 Strength",
+            "+50 maximum Life",
             "46% increased Armour",
             "+66 Armour (crafted)"
           ]
@@ -8571,8 +8866,8 @@
           "base": "Steel Gauntlets",
           "mods": [
             "+17 Dexterity",
-            "+23% Lightning Resistance",
             "35% increased Armour",
+            "+23% Lightning Resistance",
             "Adds 3 to 7 Physical Damage to Attacks (crafted)"
           ]
         },
@@ -8582,7 +8877,7 @@
           "name": "Domination Spur",
           "base": "Plated Greaves",
           "mods": [
-            "+76 to maximum Life",
+            "+76 maximum Life",
             "20% increased Movement Speed",
             "+66 Armour (crafted)"
           ]
@@ -8596,20 +8891,22 @@
             "+47 to all Attributes",
             "+17% to all Elemental Resistances",
             "1.8% of Physical Attack Damage Leeched as Life",
+            "50% increased total Recovery per second from Life Leech",
             "37% increased Damage while Leeching"
           ]
         },
         {
           "slot": "Ring 1",
           "rarity": "RARE",
-          "name": "Agony Coil",
+          "name": "Rift Finger",
           "base": "Two-Stone Ring",
           "mods": [
-            "+12% to Cold and Lightning Resistances",
-            "+31 to maximum Mana",
-            "+20% Lightning Resistance",
-            "+11 Strength",
-            "+21 Intelligence"
+            "+16% Fire and Cold Resistances",
+            "+66 maximum Life",
+            "+33 Strength",
+            "+17 Intelligence",
+            "Adds 11 to 16 Cold Damage to Attacks",
+            "Adds 5 to 10 Physical Damage to Attacks (crafted)"
           ]
         },
         {
@@ -8618,10 +8915,11 @@
           "name": "Ghoul Turn",
           "base": "Two-Stone Ring",
           "mods": [
-            "+70 to maximum Life",
-            "Regenerate 9.1 Life per second",
+            "+15% Fire and Lightning Resistances",
             "+17% Fire Resistance",
-            "+15% to Fire and Lightning Resistances",
+            "+70 maximum Life",
+            "Regenerate 9.1 Life per second",
+            "+26 maximum Energy Shield",
             "Gain 10 Mana per Enemy Killed"
           ]
         },
@@ -8632,52 +8930,71 @@
           "base": "Rustic Sash",
           "mods": [
             "24% increased Global Physical Damage",
-            "+31 to maximum Mana",
+            "+31 maximum Mana",
             "+23% Fire Resistance",
-            "12% increased Flask Life Recovery Rate"
+            "+12% Flask Life Recovery Rate"
           ]
         }
       ],
       "findings": [
         {
           "severity": "good",
-          "title": "The damage setup has come together",
-          "detail": "Level-50 export has a four-link Static Strike + Shockwave + Ruthless + Melee Physical Damage, plus a separate General's Cry + Sunder + Autoexertion + Pulverise four-link. Desecrate is in the utility sockets. PoB reports 2,773 combined DPS and 100% hit chance with its level-77 enemy configuration; use this as a comparison, not a promise for the current campaign area.",
-          "action": "Keep this setup while it feels good. Your current rare Military Staff is a workable physical base; prioritize defense before chasing another damage upgrade."
+          "title": "The character made a large defensive and damage step",
+          "detail": "Compared with the level-50 import, Life rose 1,879→2,950, Armour 2,425→3,083, configured physical maximum hit 2,666→3,979, and Total EHP 4,381.9→8,347.2. Cold Resistance is now capped. These are PoB outputs, not a confirmed current-zone simulation.",
+          "action": "Good progress. Keep building Life and physical-hit protection before taking harder bosses or pushing deeper."
         },
         {
           "severity": "warning",
-          "title": "HC survivability is the priority now",
-          "detail": "The export shows 1,879 Life, 2,425 Armour, 21 Evasion, 22% attack block, 0% spell suppression, a 2,666 physical maximum hit, and a 1,632 chaos maximum hit. Ezomyte Peak grants Unwavering Stance, so evasion is not a defense layer. These values leave little room for mistakes in HCSSF.",
-          "action": "Raise Life and cap Cold Resistance before taking a risky boss or pushing deeper into late campaign."
+          "title": "Cold and Lightning overcap are thin for the next Kitava penalty",
+          "detail": "With the current -30 resistance penalty, Fire is 76% (+62 overcap), Cold 75% (+14), Lightning 75% (+8), and Chaos -30%. The Act is unknown, so this export cannot establish whether the next penalty is imminent.",
+          "action": "Prioritize Cold and Lightning Resistance on upgrades. Aim to add roughly 30% overcap across elemental resistances before the next Kitava penalty; verify the in-game panel after it."
         },
         {
           "severity": "warning",
-          "title": "Cold and Chaos Resistance need work",
-          "detail": "PoB reports Fire 76% (+20 overcap), Cold 45% (no overcap), Lightning 75% (+28 overcap), and Chaos -30%, with resistancePenalty=-30 in the configuration.",
-          "action": "Get at least 30% more Cold Resistance immediately. Favor life plus Cold/Chaos Resistance on gloves, belt, and chest; recheck all caps after the next Kitava penalty."
-        },
-        {
-          "severity": "warning",
-          "title": "Mana recovery may fail in a long fight",
-          "detail": "Static Strike costs 19 Mana per use; the configured rate is 24.46 Mana/sec, versus 7.7 Mana/sec regeneration and no Mana leech. Ghoul Turn's 10 Mana per kill helps clear, not single-target.",
-          "action": "Keep the Mana Flask equipped and make sure it can sustain Static Strike through a boss. Do not drop it until actual boss testing shows the cost is covered."
+          "title": "Maximum-hit thresholds are still the HCSSF concern",
+          "detail": "PoB reports 3,979 physical maximum hit and 2,506 chaos maximum hit, despite 8,347 Total EHP. Armour is 3,083, attack block 22%, spell block 13%, and spell suppression 0%. The configured Total EHP should not be read as a single-hit threshold.",
+          "action": "Favor flat Life and armour/physical mitigation; do not trade away defenses for a small damage increase."
         },
         {
           "severity": "good",
-          "title": "Reliquarian and the selected masteries are now verified",
-          "detail": "The active 3_30 tree allocates Reliquarian start plus both passive-point branches. Four mastery selections are verified from effect IDs: Charge Mastery 100% increased Charge Duration; Two Hand Mastery 40% increased hit damage against Rare/Unique enemies; Attack Mastery +1 nearby target for non-Vaal Strike Skills; Fortify Mastery: Melee Hits Fortify and -3 maximum Fortification.",
-          "action": "No mastery correction is needed from this import. The +1 target mastery supports clear, while the Two Hand mastery helps single-target."
+          "title": "The General's Cry and Sunder four-link remains in place",
+          "detail": "Boots still have Sunder 14 + General's Cry 14 + Autoexertion 14 + Pulverise 14. The main four-link is Static Strike 15 (2% quality) + Shockwave 13 + Ruthless 16 + Melee Physical Damage 14. This export only selects Static Strike for its 5,759.2 CombinedDPS output, so it does not quantify the secondary warcry setup.",
+          "action": "Since the character feels good with this setup, keep it for now. Judge it by actual clear and boss performance; do not interpret the displayed DPS as both setups added together."
+        },
+        {
+          "severity": "good",
+          "title": "The Rage Mastery now has its exact effect recorded",
+          "detail": "The selected Rage Mastery is effect 19628: Enemies within 6 metres are Intimidated while you have Rage. Rage on Hit node 48199 is also allocated. Other selected effects remain: Charge Mastery 100% increased Charge Duration; Two Hand Mastery 40% increased hit damage against Rare and Unique enemies; Attack Mastery makes non-Vaal Strike Skills target 1 additional nearby Enemy; Fortify Mastery gives Melee Hits Fortify and -3 maximum Fortification.",
+          "action": "No mastery correction is needed; the selected Rage effect is now explicit in the dashboard."
+        },
+        {
+          "severity": "good",
+          "title": "Carnage Heart and the rare gear provide useful leech, life, and resistances",
+          "detail": "Carnage Heart supplies attributes, elemental resistance, physical attack leech, and increased damage while leeching. The gloves and belt have no Life; the chest has only +50 Life. Four equipped armour slots are Armour bases.",
+          "action": "Keep Carnage Heart while its stats solve gear needs. Upgrade gloves/belt/chest for Life and Cold/Lightning resistance. The planned Armour Mastery +1% maximum elemental resistance option is available if all four armour slots remain Armour bases."
+        },
+        {
+          "severity": "warning",
+          "title": "Mana flask still matters for sustained attacks",
+          "detail": "Static Strike costs 19 Mana and is calculated at 30.50 Mana/sec, against 8.4 Mana/sec regeneration and no Mana leech; 143 Mana is unreserved. Mana gained per enemy killed on Ghoul Turn helps clear but not a long single-target fight.",
+          "action": "Keep a Mana Flask available until sustained boss testing proves you can maintain Static Strike without it."
+        },
+        {
+          "severity": "good",
+          "title": "Twenty-two passive nodes were added with no removals",
+          "detail": "The 3_30 tree maps all 85 allocated IDs. 38 match nodes in the planned 93-node campaign route; 22 IDs are new since level 50 and none were removed. The current tree adds more Life, Rage, attack, and elemental-damage choices beyond the written route; follow live connectivity for future steps.",
+          "action": "The next connected defensive picks include Life Mastery 12382, Life nodes 29933 and 65034, and Armour Mastery 64406. Use the listed exact mastery effect when selecting one."
         }
       ],
       "nextActions": [
-        "Before another risky boss, raise the exported 45% Cold Resistance to the 75% cap. Fire and Lightning are currently capped; Chaos Resistance is -30%.",
-        "Take Life Mastery node 12382 next and choose +30 maximum Life (effect 47642); then take adjacent Life node 65034 (+5% maximum Life). Both are connected to the current tree.",
-        "Upgrade gloves or belt first: both currently have no Life. Look for Life plus Cold Resistance; improve the 50-Life body armour next.",
-        "Keep the Mana Flask. Static Strike costs 19 Mana per use; configured cost is 24.46 Mana/sec versus 7.7 Mana/sec regeneration and no Mana leech. Mana on kill helps clear, not bosses.",
-        "Keep the current four-link Static Strike and General's Cry + Sunder + Autoexertion + Pulverise side setup. Desecrate is available for corpse generation.",
-        "Recheck all elemental caps after the next Kitava penalty; this export has +20 Fire / +28 Lightning overcap and no Cold overcap.",
-        "Use /passives to verify quest rewards. The export shows 59 regular allocated nodes plus both Reliquarian point-grant nodes; it does not confirm quest rewards."
+        "Act remains unconfirmed; do not infer it from level 61. Use the current in-game zone / quest state for boss risk decisions.",
+        "Prioritize more Life and physical-hit mitigation. The current PoB physical maximum hit is 3,979 and chaos maximum hit is 2,506; Total EHP is not a one-hit threshold.",
+        "Upgrade gloves, belt, and then chest for flat Life while preserving resistances. Cold has only +14% overcap and Lightning +8% with resistancePenalty=-30; build toward +30% overcap to absorb the next Kitava penalty.",
+        "Next connected passive priority: Life Mastery node 12382 and select +30 to maximum Life (effect 47642); then consider Life node 29933 (+6% maximum Life) and node 65034 (+5% maximum Life).",
+        "When taking Armour Mastery node 64406, the specific max-res option is effect 7137: +1% to all maximum Elemental Resistances if helmet, body armour, gloves, and boots all have Armour. All four current armour slots meet that condition.",
+        "Keep the Mana Flask available: Static Strike costs 19 Mana / 30.50 Mana per second in this config, versus 8.4 Mana/sec regeneration and no Mana leech.",
+        "Keep the current Static Strike and General's Cry + Sunder setup while it feels good. The PoB CombinedDPS value selects Static Strike only and does not total the separate Sunder group.",
+        "Use /passives to confirm campaign quest rewards. The PoB tree shows 81 regular allocated passive/mastery nodes plus Scion/Reliquarian start and both Reliquarian passive-point nodes."
       ]
     },
     "lastReviewedAt": "2026-11-23",
@@ -9333,6 +9650,991 @@
           "Upgrade gloves and boots for life/resistance; prioritize movement speed on boots.",
           "Keep the mana flask or lower reservation if mana is not sustainable.",
           "Complete Normal Lab when safe; the build plan takes both passive-point rewards."
+        ]
+      },
+      {
+        "reviewedAt": "2026-11-23",
+        "source": {
+          "kind": "Reviewed Path of Building XML",
+          "file": "3.30 Static Strike Reliquarian(1).xml",
+          "treeVersion": "3_30",
+          "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua",
+          "treeMappingBlobSha": "a87a349236f1c690f74e07d337ccb60d145209cc",
+          "note": "Active tree/skill/item/config set 1. Raw PoB XML, account hashes, item unique IDs, and local notes are excluded."
+        },
+        "character": {
+          "label": "Reliquarian Static Strike Scion",
+          "nameVerified": false,
+          "level": 50,
+          "class": "Scion",
+          "ascendancy": "Reliquarian (tree confirms selected class and both passive-point nodes)",
+          "league": "HC SSF Covens",
+          "act": null,
+          "actSource": "Not reported with this level-50 export; level does not identify the current Act.",
+          "status": "active",
+          "bandit": "PoB setting: Alira; in-game reward not confirmed",
+          "pantheon": {
+            "major": "PoB setting: None",
+            "minor": "PoB setting: Tukohama; in-game activation unconfirmed"
+          }
+        },
+        "stats": {
+          "life": 1879,
+          "mana": 440,
+          "manaUnreserved": 132,
+          "manaRegenPerSecond": 7.7,
+          "lifeRegenPerSecond": 42.9,
+          "armour": 2425,
+          "evasion": 21,
+          "energyShield": 28,
+          "fireResistance": 76,
+          "fireOvercap": 20,
+          "coldResistance": 45,
+          "coldOvercap": 0,
+          "lightningResistance": 75,
+          "lightningOvercap": 28,
+          "chaosResistance": -30,
+          "chaosOvercap": 0,
+          "accuracy": 286,
+          "hitChance": 100,
+          "combinedDps": 2772.5910325234,
+          "averageDamage": 2153.468763125,
+          "attackRate": 1.2875,
+          "manaCost": 19,
+          "manaPerSecondCost": 24.4625,
+          "configuredTotalEhp": 4381.9236789548,
+          "configuredPhysicalMaxHit": 2666,
+          "configuredElementalMaxHit": {
+            "fire": 8293,
+            "cold": 3860,
+            "lightning": 7997
+          },
+          "configuredChaosMaxHit": 1632,
+          "physicalDamageReduction": 22,
+          "attackBlock": 22,
+          "spellSuppression": 0,
+          "lifeLeechGainRate": 72.496666337695,
+          "manaLeechGainRate": 0,
+          "maximumEnduranceCharges": 4
+        },
+        "configuration": {
+          "enemyLevel": 77,
+          "resistancePenalty": -30,
+          "warning": "PoB output uses enemy level 77 and a -30 resistance penalty. The current Act is unconfirmed, so these are import values, not a confirmed current-zone/boss simulation."
+        },
+        "progress": {
+          "allocatedNodeIds": [
+            "1325",
+            "3644",
+            "4707",
+            "5233",
+            "6289",
+            "6912",
+            "8629",
+            "10108",
+            "12702",
+            "12809",
+            "13714",
+            "13782",
+            "13922",
+            "14056",
+            "14767",
+            "14930",
+            "16544",
+            "19144",
+            "19939",
+            "22441",
+            "22703",
+            "24083",
+            "24914",
+            "25781",
+            "27140",
+            "27301",
+            "27718",
+            "29292",
+            "30380",
+            "30733",
+            "31471",
+            "31961",
+            "32690",
+            "33287",
+            "33508",
+            "34400",
+            "34590",
+            "35503",
+            "35936",
+            "36881",
+            "37326",
+            "43374",
+            "46578",
+            "48109",
+            "48287",
+            "48828",
+            "49178",
+            "53118",
+            "55485",
+            "55676",
+            "57011",
+            "58833",
+            "59335",
+            "59928",
+            "61262",
+            "62530",
+            "62662",
+            "63282",
+            "63723",
+            "64816",
+            "64882",
+            "65167",
+            "65485"
+          ],
+          "allocatedNodeCountIncludingClassStart": 63,
+          "allocatedPassivePoints": 59,
+          "passiveCountFromPob": 59,
+          "actualTreeVersion": "3_30",
+          "passiveValidation": "All 63 allocated IDs map to matching PoB Community 3_30 tree data. They include Scion start (58833), Reliquarian start (10108), and both Reliquarian passive-point nodes (35936 and 22441); 59 regular passive/mastery nodes are allocated. Quest-point completion is unknown.",
+          "allocatedNodes": [
+            {
+              "id": "1325",
+              "name": "Golem's Blood"
+            },
+            {
+              "id": "3644",
+              "name": "Strength"
+            },
+            {
+              "id": "4707",
+              "name": "Charge Mastery"
+            },
+            {
+              "id": "5233",
+              "name": "Strength"
+            },
+            {
+              "id": "6289",
+              "name": "Bloodless"
+            },
+            {
+              "id": "6912",
+              "name": "Two Hand Mastery"
+            },
+            {
+              "id": "8629",
+              "name": "Attack Mastery"
+            },
+            {
+              "id": "10108",
+              "name": "Reliquarian"
+            },
+            {
+              "id": "12702",
+              "name": "Path of the Warrior"
+            },
+            {
+              "id": "12809",
+              "name": "Berserking"
+            },
+            {
+              "id": "13714",
+              "name": "Life"
+            },
+            {
+              "id": "13782",
+              "name": "Physical Damage"
+            },
+            {
+              "id": "13922",
+              "name": "Steadfast"
+            },
+            {
+              "id": "14056",
+              "name": "Strength"
+            },
+            {
+              "id": "14767",
+              "name": "Fortification Duration"
+            },
+            {
+              "id": "14930",
+              "name": "Strength"
+            },
+            {
+              "id": "16544",
+              "name": "Dexterity"
+            },
+            {
+              "id": "19144",
+              "name": "Sentinel"
+            },
+            {
+              "id": "19939",
+              "name": "Life"
+            },
+            {
+              "id": "22441",
+              "name": "Passive Point"
+            },
+            {
+              "id": "22703",
+              "name": "Strength"
+            },
+            {
+              "id": "24083",
+              "name": "Strength"
+            },
+            {
+              "id": "24914",
+              "name": "Strength"
+            },
+            {
+              "id": "25781",
+              "name": "Maximum Fortification"
+            },
+            {
+              "id": "27140",
+              "name": "Two Handed Melee Damage and Leech"
+            },
+            {
+              "id": "27301",
+              "name": "Martial Experience"
+            },
+            {
+              "id": "27718",
+              "name": "Attack Speed"
+            },
+            {
+              "id": "29292",
+              "name": "Attack Speed"
+            },
+            {
+              "id": "30380",
+              "name": "Life and Elemental Resistances"
+            },
+            {
+              "id": "30733",
+              "name": "Strength"
+            },
+            {
+              "id": "31471",
+              "name": "Life"
+            },
+            {
+              "id": "31961",
+              "name": "Resolute Technique"
+            },
+            {
+              "id": "32690",
+              "name": "Area of Effect per Endurance Charge"
+            },
+            {
+              "id": "33287",
+              "name": "Juggernaut"
+            },
+            {
+              "id": "33508",
+              "name": "Fire Resistance"
+            },
+            {
+              "id": "34400",
+              "name": "Strength"
+            },
+            {
+              "id": "34590",
+              "name": "Rage on Hit"
+            },
+            {
+              "id": "35503",
+              "name": "Lightning Resistance"
+            },
+            {
+              "id": "35936",
+              "name": "Passive Point"
+            },
+            {
+              "id": "36881",
+              "name": "Cold Resistance"
+            },
+            {
+              "id": "37326",
+              "name": "Stamina"
+            },
+            {
+              "id": "43374",
+              "name": "Strength"
+            },
+            {
+              "id": "46578",
+              "name": "Strength"
+            },
+            {
+              "id": "48109",
+              "name": "Life Regeneration per Endurance Charge"
+            },
+            {
+              "id": "48287",
+              "name": "Life"
+            },
+            {
+              "id": "48828",
+              "name": "Physical Damage and Strength"
+            },
+            {
+              "id": "49178",
+              "name": "Strength"
+            },
+            {
+              "id": "53118",
+              "name": "Barbarism"
+            },
+            {
+              "id": "55485",
+              "name": "Constitution"
+            },
+            {
+              "id": "55676",
+              "name": "Life and Armour"
+            },
+            {
+              "id": "57011",
+              "name": "Stun Duration per Endurance Charge"
+            },
+            {
+              "id": "58833",
+              "name": "Seven"
+            },
+            {
+              "id": "59335",
+              "name": "Fortify Mastery"
+            },
+            {
+              "id": "59928",
+              "name": "Strength"
+            },
+            {
+              "id": "61262",
+              "name": "Strength"
+            },
+            {
+              "id": "62530",
+              "name": "Fortification Duration"
+            },
+            {
+              "id": "62662",
+              "name": "Physical Damage"
+            },
+            {
+              "id": "63282",
+              "name": "Strength"
+            },
+            {
+              "id": "63723",
+              "name": "Strength"
+            },
+            {
+              "id": "64816",
+              "name": "Two Handed Melee Damage and Leech"
+            },
+            {
+              "id": "64882",
+              "name": "Disciple of the Unyielding"
+            },
+            {
+              "id": "65167",
+              "name": "Life"
+            },
+            {
+              "id": "65485",
+              "name": "Armour per Endurance Charge"
+            }
+          ],
+          "masteryEffects": [
+            {
+              "nodeId": "4707",
+              "nodeName": "Charge Mastery",
+              "effectId": "29652",
+              "effect": "100% increased Charge Duration"
+            },
+            {
+              "nodeId": "6912",
+              "nodeName": "Two Hand Mastery",
+              "effectId": "27095",
+              "effect": "40% increased Damage with Hits against Rare and Unique Enemies"
+            },
+            {
+              "nodeId": "8629",
+              "nodeName": "Attack Mastery",
+              "effectId": "39154",
+              "effect": "Non-Vaal Strike Skills target 1 additional nearby Enemy"
+            },
+            {
+              "nodeId": "59335",
+              "nodeName": "Fortify Mastery",
+              "effectId": "28469",
+              "effect": "Melee Hits Fortify; -3 to maximum Fortification"
+            }
+          ],
+          "guideRouteTotal": 93,
+          "guideRouteNodesCurrentlyAllocated": 29,
+          "guideRouteOverlap": [
+            {
+              "sequence": 3,
+              "id": "13782",
+              "name": "Physical Damage",
+              "kind": "passive"
+            },
+            {
+              "sequence": 4,
+              "id": "12702",
+              "name": "Path of the Warrior",
+              "kind": "passive"
+            },
+            {
+              "sequence": 6,
+              "id": "55485",
+              "name": "Constitution",
+              "kind": "passive"
+            },
+            {
+              "sequence": 7,
+              "id": "13714",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 8,
+              "id": "46578",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 10,
+              "id": "19144",
+              "name": "Sentinel",
+              "kind": "passive"
+            },
+            {
+              "sequence": 11,
+              "id": "30733",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 12,
+              "id": "49178",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 13,
+              "id": "43374",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 23,
+              "id": "63282",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 24,
+              "id": "31961",
+              "name": "Resolute Technique",
+              "kind": "keystone"
+            },
+            {
+              "sequence": 30,
+              "id": "59928",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 31,
+              "id": "30380",
+              "name": "Life and Elemental Resistances",
+              "kind": "passive"
+            },
+            {
+              "sequence": 32,
+              "id": "53118",
+              "name": "Barbarism",
+              "kind": "passive"
+            },
+            {
+              "sequence": 33,
+              "id": "63723",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 34,
+              "id": "48109",
+              "name": "Life Regeneration per Endurance Charge",
+              "kind": "passive"
+            },
+            {
+              "sequence": 35,
+              "id": "37326",
+              "name": "Stamina",
+              "kind": "passive"
+            },
+            {
+              "sequence": 36,
+              "id": "5233",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 37,
+              "id": "55676",
+              "name": "Life and Armour",
+              "kind": "passive"
+            },
+            {
+              "sequence": 38,
+              "id": "33287",
+              "name": "Juggernaut",
+              "kind": "passive"
+            },
+            {
+              "sequence": 45,
+              "id": "1325",
+              "name": "Golem's Blood",
+              "kind": "passive"
+            },
+            {
+              "sequence": 63,
+              "id": "31471",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 64,
+              "id": "24083",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 65,
+              "id": "16544",
+              "name": "Dexterity",
+              "kind": "passive"
+            },
+            {
+              "sequence": 66,
+              "id": "65485",
+              "name": "Armour per Endurance Charge",
+              "kind": "passive"
+            },
+            {
+              "sequence": 67,
+              "id": "57011",
+              "name": "Stun Duration per Endurance Charge",
+              "kind": "passive"
+            },
+            {
+              "sequence": 68,
+              "id": "32690",
+              "name": "Area of Effect per Endurance Charge",
+              "kind": "passive"
+            },
+            {
+              "sequence": 69,
+              "id": "64882",
+              "name": "Disciple of the Unyielding",
+              "kind": "passive"
+            },
+            {
+              "sequence": 73,
+              "id": "3644",
+              "name": "Strength",
+              "kind": "passive"
+            }
+          ],
+          "outsideGuideNodes": [
+            {
+              "id": "4707",
+              "name": "Charge Mastery"
+            },
+            {
+              "id": "6289",
+              "name": "Bloodless"
+            },
+            {
+              "id": "6912",
+              "name": "Two Hand Mastery"
+            },
+            {
+              "id": "8629",
+              "name": "Attack Mastery"
+            },
+            {
+              "id": "12809",
+              "name": "Berserking"
+            },
+            {
+              "id": "13922",
+              "name": "Steadfast"
+            },
+            {
+              "id": "14056",
+              "name": "Strength"
+            },
+            {
+              "id": "14767",
+              "name": "Fortification Duration"
+            },
+            {
+              "id": "14930",
+              "name": "Strength"
+            },
+            {
+              "id": "19939",
+              "name": "Life"
+            },
+            {
+              "id": "22703",
+              "name": "Strength"
+            },
+            {
+              "id": "24914",
+              "name": "Strength"
+            },
+            {
+              "id": "25781",
+              "name": "Maximum Fortification"
+            },
+            {
+              "id": "27140",
+              "name": "Two Handed Melee Damage and Leech"
+            },
+            {
+              "id": "27301",
+              "name": "Martial Experience"
+            },
+            {
+              "id": "27718",
+              "name": "Attack Speed"
+            },
+            {
+              "id": "29292",
+              "name": "Attack Speed"
+            },
+            {
+              "id": "33508",
+              "name": "Fire Resistance"
+            },
+            {
+              "id": "34400",
+              "name": "Strength"
+            },
+            {
+              "id": "34590",
+              "name": "Rage on Hit"
+            },
+            {
+              "id": "35503",
+              "name": "Lightning Resistance"
+            },
+            {
+              "id": "36881",
+              "name": "Cold Resistance"
+            },
+            {
+              "id": "48287",
+              "name": "Life"
+            },
+            {
+              "id": "48828",
+              "name": "Physical Damage and Strength"
+            },
+            {
+              "id": "59335",
+              "name": "Fortify Mastery"
+            },
+            {
+              "id": "61262",
+              "name": "Strength"
+            },
+            {
+              "id": "62530",
+              "name": "Fortification Duration"
+            },
+            {
+              "id": "62662",
+              "name": "Physical Damage"
+            },
+            {
+              "id": "64816",
+              "name": "Two Handed Melee Damage and Leech"
+            },
+            {
+              "id": "65167",
+              "name": "Life"
+            }
+          ],
+          "nextConnectedNodes": [
+            {
+              "id": "12382",
+              "name": "Life Mastery",
+              "sequence": 5,
+              "kind": "mastery",
+              "effect": "+30 to maximum Life",
+              "effectId": "47642",
+              "when": "Take with the Life Mastery node."
+            },
+            {
+              "id": "28330",
+              "name": "Strength",
+              "sequence": 9,
+              "kind": "passive"
+            },
+            {
+              "id": "65034",
+              "name": "Life",
+              "sequence": 15,
+              "kind": "passive"
+            },
+            {
+              "id": "29353",
+              "name": "Strength",
+              "sequence": 22,
+              "kind": "passive"
+            },
+            {
+              "id": "64406",
+              "name": "Armour Mastery",
+              "sequence": 39,
+              "kind": "mastery",
+              "effect": "+1% to all maximum Elemental Resistances if Equipped Helmet, Body Armour, Gloves, and Boots all have Armour",
+              "effectId": "7137",
+              "when": "Only when all four armour slots have Armour; Armour/ES bases qualify."
+            },
+            {
+              "id": "30691",
+              "name": "Intelligence",
+              "sequence": 40,
+              "kind": "passive"
+            },
+            {
+              "id": "39678",
+              "name": "Armour",
+              "sequence": 74,
+              "kind": "passive"
+            }
+          ],
+          "newNumericPassiveNodeIdsSincePreviousImport": [
+            "1325",
+            "3644",
+            "4707",
+            "5233",
+            "10108",
+            "16544",
+            "22441",
+            "24083",
+            "30380",
+            "31471",
+            "31961",
+            "32690",
+            "33287",
+            "34590",
+            "35936",
+            "37326",
+            "48109",
+            "53118",
+            "55676",
+            "57011",
+            "59928",
+            "63282",
+            "63723",
+            "64882",
+            "65485"
+          ],
+          "removedNumericPassiveNodeIdsSincePreviousImport": []
+        },
+        "skills": {
+          "main": "Static Strike (level 11, 2% quality) + Shockwave (level 5) + Ruthless (level 14) + Melee Physical Damage (level 10)",
+          "auraGroups": [
+            "Hatred (level 8)"
+          ],
+          "allGroups": [
+            {
+              "slot": "Helmet",
+              "gems": "Leap Slam (level 12) + Faster Attacks (level 12) + Momentum (level 14)"
+            },
+            {
+              "slot": "Gloves",
+              "gems": "Frostblink (level 6) + Desecrate (level 8)"
+            },
+            {
+              "slot": "Gloves",
+              "gems": "Hatred (level 8)"
+            },
+            {
+              "slot": "Weapon 1",
+              "gems": "Static Strike (level 11, 2% quality) + Shockwave (level 5) + Ruthless (level 14) + Melee Physical Damage (level 10)"
+            },
+            {
+              "slot": "Body Armour",
+              "gems": "Molten Shell (level 10) + Automation (level 8)"
+            },
+            {
+              "slot": "Boots",
+              "gems": "Sunder (level 10) + General's Cry (level 7) + Autoexertion (level 7) + Pulverise (level 7)"
+            }
+          ]
+        },
+        "gear": [
+          {
+            "slot": "Weapon 1",
+            "rarity": "RARE",
+            "name": "Carrion Beam",
+            "base": "Military Staff",
+            "mods": [
+              "+22% Chance to Block Attack Damage",
+              "Adds 18 to 40 Physical Damage",
+              "Adds 5 to 76 Lightning Damage",
+              "+23% Global Critical Strike Multiplier",
+              "79% increased Physical Damage (crafted)"
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "rarity": "UNIQUE",
+            "name": "Ezomyte Peak",
+            "base": "Iron Hat",
+            "mods": [
+              "+43 to maximum Life",
+              "20% increased Area of Effect",
+              "Unwavering Stance"
+            ]
+          },
+          {
+            "slot": "Body Armour",
+            "rarity": "RARE",
+            "name": "Loath Keep",
+            "base": "War Plate",
+            "mods": [
+              "+50 to maximum Life",
+              "+20 Strength",
+              "46% increased Armour",
+              "+66 Armour (crafted)"
+            ]
+          },
+          {
+            "slot": "Gloves",
+            "rarity": "RARE",
+            "name": "Rage Hold",
+            "base": "Steel Gauntlets",
+            "mods": [
+              "+17 Dexterity",
+              "+23% Lightning Resistance",
+              "35% increased Armour",
+              "Adds 3 to 7 Physical Damage to Attacks (crafted)"
+            ]
+          },
+          {
+            "slot": "Boots",
+            "rarity": "RARE",
+            "name": "Domination Spur",
+            "base": "Plated Greaves",
+            "mods": [
+              "+76 to maximum Life",
+              "20% increased Movement Speed",
+              "+66 Armour (crafted)"
+            ]
+          },
+          {
+            "slot": "Amulet",
+            "rarity": "UNIQUE",
+            "name": "Carnage Heart",
+            "base": "Onyx Amulet",
+            "mods": [
+              "+47 to all Attributes",
+              "+17% to all Elemental Resistances",
+              "1.8% of Physical Attack Damage Leeched as Life",
+              "37% increased Damage while Leeching"
+            ]
+          },
+          {
+            "slot": "Ring 1",
+            "rarity": "RARE",
+            "name": "Agony Coil",
+            "base": "Two-Stone Ring",
+            "mods": [
+              "+12% to Cold and Lightning Resistances",
+              "+31 to maximum Mana",
+              "+20% Lightning Resistance",
+              "+11 Strength",
+              "+21 Intelligence"
+            ]
+          },
+          {
+            "slot": "Ring 2",
+            "rarity": "RARE",
+            "name": "Ghoul Turn",
+            "base": "Two-Stone Ring",
+            "mods": [
+              "+70 to maximum Life",
+              "Regenerate 9.1 Life per second",
+              "+17% Fire Resistance",
+              "+15% to Fire and Lightning Resistances",
+              "Gain 10 Mana per Enemy Killed"
+            ]
+          },
+          {
+            "slot": "Belt",
+            "rarity": "RARE",
+            "name": "Corpse Snare",
+            "base": "Rustic Sash",
+            "mods": [
+              "24% increased Global Physical Damage",
+              "+31 to maximum Mana",
+              "+23% Fire Resistance",
+              "12% increased Flask Life Recovery Rate"
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "The damage setup has come together",
+            "detail": "Level-50 export has a four-link Static Strike + Shockwave + Ruthless + Melee Physical Damage, plus a separate General's Cry + Sunder + Autoexertion + Pulverise four-link. Desecrate is in the utility sockets. PoB reports 2,773 combined DPS and 100% hit chance with its level-77 enemy configuration; use this as a comparison, not a promise for the current campaign area.",
+            "action": "Keep this setup while it feels good. Your current rare Military Staff is a workable physical base; prioritize defense before chasing another damage upgrade."
+          },
+          {
+            "severity": "warning",
+            "title": "HC survivability is the priority now",
+            "detail": "The export shows 1,879 Life, 2,425 Armour, 21 Evasion, 22% attack block, 0% spell suppression, a 2,666 physical maximum hit, and a 1,632 chaos maximum hit. Ezomyte Peak grants Unwavering Stance, so evasion is not a defense layer. These values leave little room for mistakes in HCSSF.",
+            "action": "Raise Life and cap Cold Resistance before taking a risky boss or pushing deeper into late campaign."
+          },
+          {
+            "severity": "warning",
+            "title": "Cold and Chaos Resistance need work",
+            "detail": "PoB reports Fire 76% (+20 overcap), Cold 45% (no overcap), Lightning 75% (+28 overcap), and Chaos -30%, with resistancePenalty=-30 in the configuration.",
+            "action": "Get at least 30% more Cold Resistance immediately. Favor life plus Cold/Chaos Resistance on gloves, belt, and chest; recheck all caps after the next Kitava penalty."
+          },
+          {
+            "severity": "warning",
+            "title": "Mana recovery may fail in a long fight",
+            "detail": "Static Strike costs 19 Mana per use; the configured rate is 24.46 Mana/sec, versus 7.7 Mana/sec regeneration and no Mana leech. Ghoul Turn's 10 Mana per kill helps clear, not single-target.",
+            "action": "Keep the Mana Flask equipped and make sure it can sustain Static Strike through a boss. Do not drop it until actual boss testing shows the cost is covered."
+          },
+          {
+            "severity": "good",
+            "title": "Reliquarian and the selected masteries are now verified",
+            "detail": "The active 3_30 tree allocates Reliquarian start plus both passive-point branches. Four mastery selections are verified from effect IDs: Charge Mastery 100% increased Charge Duration; Two Hand Mastery 40% increased hit damage against Rare/Unique enemies; Attack Mastery +1 nearby target for non-Vaal Strike Skills; Fortify Mastery: Melee Hits Fortify and -3 maximum Fortification.",
+            "action": "No mastery correction is needed from this import. The +1 target mastery supports clear, while the Two Hand mastery helps single-target."
+          }
+        ],
+        "nextActions": [
+          "Before another risky boss, raise the exported 45% Cold Resistance to the 75% cap. Fire and Lightning are currently capped; Chaos Resistance is -30%.",
+          "Take Life Mastery node 12382 next and choose +30 maximum Life (effect 47642); then take adjacent Life node 65034 (+5% maximum Life). Both are connected to the current tree.",
+          "Upgrade gloves or belt first: both currently have no Life. Look for Life plus Cold Resistance; improve the 50-Life body armour next.",
+          "Keep the Mana Flask. Static Strike costs 19 Mana per use; configured cost is 24.46 Mana/sec versus 7.7 Mana/sec regeneration and no Mana leech. Mana on kill helps clear, not bosses.",
+          "Keep the current four-link Static Strike and General's Cry + Sunder + Autoexertion + Pulverise side setup. Desecrate is available for corpse generation.",
+          "Recheck all elemental caps after the next Kitava penalty; this export has +20 Fire / +28 Lightning overcap and no Cold overcap.",
+          "Use /passives to verify quest rewards. The export shows 59 regular allocated nodes plus both Reliquarian point-grant nodes; it does not confirm quest rewards."
         ]
       }
     ]
