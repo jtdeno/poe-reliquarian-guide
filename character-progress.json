@@ -8208,27 +8208,37 @@
           {
             "nodeId": 4707,
             "effectId": 29652,
-            "description": "100% increased Charge Duration"
+            "description": "100% increased Charge Duration",
+            "nodeName": "Charge Mastery",
+            "effect": "100% increased Charge Duration"
           },
           {
             "nodeId": 6912,
             "effectId": 27095,
-            "description": "40% increased Damage with Hits against Rare and Unique Enemies"
+            "description": "40% increased Damage with Hits against Rare and Unique Enemies",
+            "nodeName": "Two Hand Mastery",
+            "effect": "40% increased Damage with Hits against Rare and Unique Enemies"
           },
           {
             "nodeId": 8629,
             "effectId": 39154,
-            "description": "Non-Vaal Strike Skills target 1 additional nearby Enemy"
+            "description": "Non-Vaal Strike Skills target 1 additional nearby Enemy",
+            "nodeName": "Attack Mastery",
+            "effect": "Non-Vaal Strike Skills target 1 additional nearby Enemy"
           },
           {
             "nodeId": 9471,
             "effectId": 19628,
-            "description": "Enemies within 6 metres are Intimidated while you have Rage"
+            "description": "Enemies within 6 metres are Intimidated while you have Rage",
+            "nodeName": "Rage Mastery",
+            "effect": "Enemies within 6 metres are Intimidated while you have Rage"
           },
           {
             "nodeId": 59335,
             "effectId": 28469,
-            "description": "Melee Hits Fortify; -3 to maximum Fortification"
+            "description": "Melee Hits Fortify; -3 to maximum Fortification",
+            "nodeName": "Fortify Mastery",
+            "effect": "Melee Hits Fortify; -3 to maximum Fortification"
           }
         ],
         "guideRouteTotal": 93,
