@@ -5602,7 +5602,7 @@
       "notes": "Death was player-reported. Retains the last verified level-60 PoB snapshot; no invented post-snapshot stats or passives."
     }
   },
-  "activeBuild": "hierophant",
+  "activeBuild": "staticStrike",
   "slayer": {
     "format": "slayer-character-progress-v1",
     "publishedAt": "2026-11-19",
@@ -6742,6 +6742,945 @@
       "Begin Templar and level Rolling Magma; take early life/resist nodes.",
       "After first Lab, switch to Storm Burst totems only with correctly leveled gems and a working 4-link.",
       "At each checkpoint submit a PoB XML so confirmed stats, passives and checklists can replace this planned entry."
+    ]
+  },
+  "staticStrike": {
+    "format": "scion-reliquarian-static-strike-plan-v1",
+    "publishedAt": "2026-11-22",
+    "source": {
+      "kind": "planning guide; researched PoB Community tree and public build references",
+      "patchContext": "3.30",
+      "treeVersion": "3_30",
+      "treeMappingSource": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua",
+      "treeMappingBlobSha": "a87a349236f1c690f74e07d337ccb60d145209cc",
+      "references": [
+        "https://pobarchives.com/build/eUGHgN3N",
+        "https://pobarchives.com/build/tLhhgCQ9",
+        "https://www.poewiki.net/wiki/Static_Strike",
+        "https://www.poewiki.net/wiki/The_Yielding_Mortality"
+      ],
+      "note": "All nodes are planned, not character progress. The route was connected and node names matched to the listed 3_30 tree data. Act totals are targets; verify available points with /passives."
+    },
+    "character": {
+      "label": "Reliquarian Static Strike Scion",
+      "class": "Scion",
+      "ascendancy": "Reliquarian",
+      "league": "HC SSF",
+      "level": null,
+      "act": null,
+      "status": "planned",
+      "nameVerified": false
+    },
+    "plan": {
+      "skill": "Static Strike",
+      "weapon": "Two-handed physical staff",
+      "defensiveFocus": "Life, armour, endurance charges, capped elemental resistances, and safe first-hit activation.",
+      "campaignPassivePoints": 93,
+      "actMilestones": [
+        {
+          "act": 1,
+          "firstPoint": 1,
+          "lastPoint": 13,
+          "points": 13,
+          "goal": "Scion start and first life/weapon path",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 1,
+              "id": "55373",
+              "name": "Life and Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 2,
+              "id": "17674",
+              "name": "Physical Damage",
+              "kind": "passive"
+            },
+            {
+              "sequence": 3,
+              "id": "13782",
+              "name": "Physical Damage",
+              "kind": "passive"
+            },
+            {
+              "sequence": 4,
+              "id": "12702",
+              "name": "Path of the Warrior",
+              "kind": "passive"
+            },
+            {
+              "sequence": 5,
+              "id": "12382",
+              "name": "Life Mastery",
+              "kind": "mastery"
+            },
+            {
+              "sequence": 6,
+              "id": "55485",
+              "name": "Constitution",
+              "kind": "passive"
+            },
+            {
+              "sequence": 7,
+              "id": "13714",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 8,
+              "id": "46578",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 9,
+              "id": "28330",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 10,
+              "id": "19144",
+              "name": "Sentinel",
+              "kind": "passive"
+            },
+            {
+              "sequence": 11,
+              "id": "30733",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 12,
+              "id": "49178",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 13,
+              "id": "43374",
+              "name": "Strength",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "firstPoint": 14,
+          "lastPoint": 25,
+          "points": 12,
+          "goal": "Complete core life and hit reliability",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 14,
+              "id": "40907",
+              "name": "Unwavering Stance",
+              "kind": "passive"
+            },
+            {
+              "sequence": 15,
+              "id": "65034",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 16,
+              "id": "46910",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 17,
+              "id": "33740",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 18,
+              "id": "15405",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 19,
+              "id": "50862",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 20,
+              "id": "50422",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 21,
+              "id": "50570",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 22,
+              "id": "29353",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 23,
+              "id": "63282",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 24,
+              "id": "31961",
+              "name": "Resolute Technique",
+              "kind": "keystone"
+            },
+            {
+              "sequence": 25,
+              "id": "31080",
+              "name": "Dexterity",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "firstPoint": 26,
+          "lastPoint": 40,
+          "points": 15,
+          "goal": "Build armour, life and endurance-charge foundation",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 26,
+              "id": "49412",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 27,
+              "id": "24383",
+              "name": "Warrior's Blood",
+              "kind": "passive"
+            },
+            {
+              "sequence": 28,
+              "id": "5152",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 29,
+              "id": "61198",
+              "name": "Heart of the Warrior",
+              "kind": "passive"
+            },
+            {
+              "sequence": 30,
+              "id": "59928",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 31,
+              "id": "30380",
+              "name": "Life and Elemental Resistances",
+              "kind": "passive"
+            },
+            {
+              "sequence": 32,
+              "id": "53118",
+              "name": "Barbarism",
+              "kind": "passive"
+            },
+            {
+              "sequence": 33,
+              "id": "63723",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 34,
+              "id": "48109",
+              "name": "Life Regeneration per Endurance Charge",
+              "kind": "passive"
+            },
+            {
+              "sequence": 35,
+              "id": "37326",
+              "name": "Stamina",
+              "kind": "passive"
+            },
+            {
+              "sequence": 36,
+              "id": "5233",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 37,
+              "id": "55676",
+              "name": "Life and Armour",
+              "kind": "passive"
+            },
+            {
+              "sequence": 38,
+              "id": "33287",
+              "name": "Juggernaut",
+              "kind": "passive"
+            },
+            {
+              "sequence": 39,
+              "id": "64406",
+              "name": "Armour Mastery",
+              "kind": "mastery"
+            },
+            {
+              "sequence": 40,
+              "id": "30691",
+              "name": "Intelligence",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 4,
+          "firstPoint": 41,
+          "lastPoint": 48,
+          "points": 8,
+          "goal": "Round out life and first staff defence",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 41,
+              "id": "476",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 42,
+              "id": "24865",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 43,
+              "id": "34031",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 44,
+              "id": "29933",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 45,
+              "id": "1325",
+              "name": "Golem's Blood",
+              "kind": "passive"
+            },
+            {
+              "sequence": 46,
+              "id": "44202",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 47,
+              "id": "23027",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 48,
+              "id": "6712",
+              "name": "Life",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 5,
+          "firstPoint": 49,
+          "lastPoint": 56,
+          "points": 8,
+          "goal": "Staff damage and life; keep campaign risk low",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 49,
+              "id": "36949",
+              "name": "Devotion",
+              "kind": "passive"
+            },
+            {
+              "sequence": 50,
+              "id": "34009",
+              "name": "Master of the Arena",
+              "kind": "passive"
+            },
+            {
+              "sequence": 51,
+              "id": "18302",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 52,
+              "id": "48438",
+              "name": "Bravery",
+              "kind": "passive"
+            },
+            {
+              "sequence": 53,
+              "id": "44967",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 54,
+              "id": "15631",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 55,
+              "id": "41599",
+              "name": "Staff Damage and Block",
+              "kind": "passive"
+            },
+            {
+              "sequence": 56,
+              "id": "1761",
+              "name": "Staff Damage and Armour",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 6,
+          "firstPoint": 57,
+          "lastPoint": 66,
+          "points": 10,
+          "goal": "Armour, charges and recovery",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 57,
+              "id": "36859",
+              "name": "Steelwood Stance",
+              "kind": "passive"
+            },
+            {
+              "sequence": 58,
+              "id": "20551",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 59,
+              "id": "58449",
+              "name": "Born to Fight",
+              "kind": "passive"
+            },
+            {
+              "sequence": 60,
+              "id": "38777",
+              "name": "Melee Damage",
+              "kind": "passive"
+            },
+            {
+              "sequence": 61,
+              "id": "2454",
+              "name": "Two Handed Melee Damage",
+              "kind": "passive"
+            },
+            {
+              "sequence": 62,
+              "id": "14606",
+              "name": "Butchery",
+              "kind": "passive"
+            },
+            {
+              "sequence": 63,
+              "id": "31471",
+              "name": "Life",
+              "kind": "passive"
+            },
+            {
+              "sequence": 64,
+              "id": "24083",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 65,
+              "id": "16544",
+              "name": "Dexterity",
+              "kind": "passive"
+            },
+            {
+              "sequence": 66,
+              "id": "65485",
+              "name": "Armour per Endurance Charge",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 7,
+          "firstPoint": 67,
+          "lastPoint": 74,
+          "points": 8,
+          "goal": "Finish the main HC tree skeleton",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 67,
+              "id": "57011",
+              "name": "Stun Duration per Endurance Charge",
+              "kind": "passive"
+            },
+            {
+              "sequence": 68,
+              "id": "32690",
+              "name": "Area of Effect per Endurance Charge",
+              "kind": "passive"
+            },
+            {
+              "sequence": 69,
+              "id": "64882",
+              "name": "Disciple of the Unyielding",
+              "kind": "passive"
+            },
+            {
+              "sequence": 70,
+              "id": "60472",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 71,
+              "id": "34171",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 72,
+              "id": "11730",
+              "name": "Endurance",
+              "kind": "passive"
+            },
+            {
+              "sequence": 73,
+              "id": "3644",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 74,
+              "id": "39678",
+              "name": "Armour",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 8,
+          "firstPoint": 75,
+          "lastPoint": 80,
+          "points": 6,
+          "goal": "Add life and cost efficiency",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 75,
+              "id": "64221",
+              "name": "Armour",
+              "kind": "passive"
+            },
+            {
+              "sequence": 76,
+              "id": "54629",
+              "name": "Inexorable",
+              "kind": "passive"
+            },
+            {
+              "sequence": 77,
+              "id": "10073",
+              "name": "Armour and Guard Skill Cooldown Recovery",
+              "kind": "passive"
+            },
+            {
+              "sequence": 78,
+              "id": "49147",
+              "name": "Armour and Guard Skill Cooldown Recovery",
+              "kind": "passive"
+            },
+            {
+              "sequence": 79,
+              "id": "49416",
+              "name": "Adamant",
+              "kind": "passive"
+            },
+            {
+              "sequence": 80,
+              "id": "7374",
+              "name": "Life and Cost Efficiency",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 9,
+          "firstPoint": 81,
+          "lastPoint": 85,
+          "points": 5,
+          "goal": "Add final campaign defences",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 81,
+              "id": "11088",
+              "name": "Life and Cost Efficiency",
+              "kind": "passive"
+            },
+            {
+              "sequence": 82,
+              "id": "3533",
+              "name": "Life and Cost Efficiency",
+              "kind": "passive"
+            },
+            {
+              "sequence": 83,
+              "id": "65108",
+              "name": "Tireless",
+              "kind": "passive"
+            },
+            {
+              "sequence": 84,
+              "id": "6968",
+              "name": "Staff Mastery",
+              "kind": "mastery"
+            },
+            {
+              "sequence": 85,
+              "id": "49109",
+              "name": "Armour and Evasion",
+              "kind": "passive"
+            }
+          ]
+        },
+        {
+          "act": 10,
+          "firstPoint": 86,
+          "lastPoint": 93,
+          "points": 8,
+          "goal": "Complete 93-point campaign plan",
+          "respec": "No respec planned during this milestone.",
+          "plannedNodes": [
+            {
+              "sequence": 86,
+              "id": "21435",
+              "name": "Cloth and Chain",
+              "kind": "passive"
+            },
+            {
+              "sequence": 87,
+              "id": "19750",
+              "name": "Armour and Evasion Mastery",
+              "kind": "mastery"
+            },
+            {
+              "sequence": 88,
+              "id": "47427",
+              "name": "Staff Damage and Stun Duration",
+              "kind": "passive"
+            },
+            {
+              "sequence": 89,
+              "id": "60740",
+              "name": "Staff Damage and Stun Duration",
+              "kind": "passive"
+            },
+            {
+              "sequence": 90,
+              "id": "37639",
+              "name": "Staff Damage and Stun Duration",
+              "kind": "passive"
+            },
+            {
+              "sequence": 91,
+              "id": "56001",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 92,
+              "id": "11859",
+              "name": "Strength",
+              "kind": "passive"
+            },
+            {
+              "sequence": 93,
+              "id": "4833",
+              "name": "Vigour",
+              "kind": "passive"
+            }
+          ]
+        }
+      ],
+      "masteryChoices": [
+        {
+          "nodeId": "12382",
+          "nodeName": "Life Mastery",
+          "effectId": "47642",
+          "effect": "+30 to maximum Life",
+          "when": "Take with the Life Mastery node."
+        },
+        {
+          "nodeId": "64406",
+          "nodeName": "Armour Mastery",
+          "effectId": "7137",
+          "effect": "+1% to all maximum Elemental Resistances if Equipped Helmet, Body Armour, Gloves, and Boots all have Armour",
+          "when": "Only when all four armour slots have Armour; Armour/ES bases qualify."
+        },
+        {
+          "nodeId": "6968",
+          "nodeName": "Staff Mastery",
+          "effectId": "50863",
+          "effect": "Recover 2% Life when you Block Attack Damage while wielding a Staff",
+          "when": "Choose the life-recovery-on-staff-block line."
+        },
+        {
+          "nodeId": "19750",
+          "nodeName": "Armour and Evasion Mastery",
+          "effectId": "62285",
+          "effect": "8% increased Armour per Endurance Charge",
+          "when": "Choose the endurance-charge armour line."
+        }
+      ],
+      "temporaryKeystone": {
+        "nodeId": "31961",
+        "name": "Resolute Technique",
+        "reason": "Campaign hit reliability for HCSSF; prevents critical strikes and is refunded before crit conversion."
+      },
+      "endgameCritConversion": {
+        "condition": "Only after a high-physical-DPS staff, reliable accuracy, and useful crit chance/multiplier are available.",
+        "refundNodeIds": [
+          "31961"
+        ],
+        "addedNodes": [
+          {
+            "sequence": 1,
+            "id": "51559",
+            "name": "Smashing Strikes"
+          },
+          {
+            "sequence": 2,
+            "id": "48282",
+            "name": "Staff Critical Strike Chance"
+          },
+          {
+            "sequence": 3,
+            "id": "39761",
+            "name": "Counterweight"
+          },
+          {
+            "sequence": 4,
+            "id": "62416",
+            "name": "Staff Mastery",
+            "effectId": "28589",
+            "effect": "30% increased Defences while wielding a Staff"
+          },
+          {
+            "sequence": 5,
+            "id": "42917",
+            "name": "Whirling Barrier"
+          },
+          {
+            "sequence": 6,
+            "id": "16754",
+            "name": "Staff Critical Strike Chance"
+          }
+        ],
+        "totalAllocatedAfterConversion": 98,
+        "note": "Optional endgame route, separate from the 93-point campaign plan."
+      },
+      "ascendancy": {
+        "normal": {
+          "points": 2,
+          "selection": "Take both passive-point rewards; save display choices."
+        },
+        "cruel": {
+          "points": 4,
+          "display": "Armour Display → Death’s Door",
+          "effect": "+1 maximum Endurance Charge, bleed immunity, and movement speed."
+        },
+        "merciless": {
+          "points": 6,
+          "display": "Martial Weapon Display → Tidebreaker",
+          "effect": "Endurance Charges on melee stun and increased damage per Endurance Charge."
+        },
+        "eternal": {
+          "points": 8,
+          "display": "Jewellery Display → The Arkhon’s Tools",
+          "effect": "Scorching Skitterbot and increased non-damaging ailment effect.",
+          "note": "Three borrowed-power selections and the passive-point rewards; no fourth display assumed."
+        }
+      }
+    },
+    "gearPlan": {
+      "weapon": {
+        "base": "Two-handed physical staff / warstaff",
+        "priority": [
+          "High physical DPS",
+          "Accuracy / reliable hit chance",
+          "Useful attack speed",
+          "Staff block"
+        ],
+        "note": "Upgrade weapon often. Staff block is useful extra mitigation, not shield-level block."
+      },
+      "armour": {
+        "target": "Armour or Armour/Energy Shield bases",
+        "slots": "Helmet, body armour, gloves, boots",
+        "note": "Life and resistance first. Armour/Evasion is fine if item is better. Armour mastery needs Armour on all four slots."
+      },
+      "affixes": [
+        "Maximum Life",
+        "Elemental resistance to cap after Kitava penalties",
+        "Accuracy until hits are reliable",
+        "Armour",
+        "Strength/Dexterity for gem requirements",
+        "Chaos resistance as later goal"
+      ],
+      "uniques": [
+        {
+          "name": "Kaom's Sign",
+          "role": "Helpful early ring for +1 maximum Endurance Charge; use only if rare gear still covers life, resists, accuracy."
+        },
+        {
+          "name": "The Yielding Mortality",
+          "role": "High-end Reliquarian Imperial Staff chase; never a league-starter requirement."
+        },
+        {
+          "name": "Rumi's Concoction",
+          "role": "Optional defensive flask if found; do not assume permanent uptime."
+        },
+        {
+          "name": "The Interrogation",
+          "role": "Late damage option only after testing ailment and critical-strike defenses."
+        },
+        {
+          "name": "Yoke of Suffering",
+          "role": "Possible later damage amulet if multiple ailments are reliably applied."
+        }
+      ],
+      "flaskPlan": [
+        "Life flask with bleed removal until Death’s Door is confirmed",
+        "Quicksilver flask",
+        "Granite flask",
+        "Basalt or defensive utility flask as available",
+        "Mana flask until Static Strike sustain is comfortable"
+      ]
+    },
+    "gems": [
+      {
+        "stage": "Act 1 · levels 1–11",
+        "setup": "Spectral Throw or Splitting Steel + Chance to Bleed + Onslaught",
+        "notes": "Choose the safer feel; keep upgrading physical weapon."
+      },
+      {
+        "stage": "Level 12 · Static Strike",
+        "setup": "Static Strike + Added Fire Damage + Chance to Bleed or Onslaught",
+        "notes": "Test safely. Activate beams with a melee hit, then move."
+      },
+      {
+        "stage": "Level 18 · 4-link",
+        "setup": "Static Strike + Melee Physical Damage + Added Fire Damage + Shockwave Support",
+        "notes": "Shockwave requires staff or mace; use strongest available physical support."
+      },
+      {
+        "stage": "Optional charge link",
+        "setup": "Endurance Charge on Melee Stun",
+        "notes": "Use only if charges are generated safely and reliably."
+      },
+      {
+        "stage": "Campaign / early maps",
+        "setup": "Static Strike + Shockwave + Melee Physical + Elemental Damage with Attacks; Trinity only if all three resonances stay active",
+        "notes": "Vaal Ancestral Warchief optional for bosses."
+      },
+      {
+        "stage": "Endgame crit 6-link",
+        "setup": "Static Strike + Void Shockwave + Melee Physical + Elemental Damage with Attacks + Trinity + Increased Critical Damage",
+        "notes": "Use regular Shockwave until Void Shockwave drops. Do not use crit support before respec."
+      }
+    ],
+    "campaign": [
+      {
+        "act": "Act 1",
+        "tasks": [
+          "Level with Spectral Throw or Splitting Steel and a fresh physical weapon.",
+          "Prioritize life, armour, and elemental resistances."
+        ]
+      },
+      {
+        "act": "Act 2",
+        "tasks": [
+          "Switch at level 12 if weapon and feel are good; test Static Strike safely.",
+          "Complete passive-point quests and follow the point route."
+        ]
+      },
+      {
+        "act": "Acts 3–4",
+        "tasks": [
+          "Add Shockwave at level 18 with staff or mace.",
+          "Use Endurance Charge on Melee Stun only if it works without unsafe extra hits."
+        ]
+      },
+      {
+        "act": "Act 5",
+        "tasks": [
+          "Re-cap elemental resistance after Kitava.",
+          "Keep Resolute Technique; don't take crit yet."
+        ]
+      },
+      {
+        "act": "Acts 6–10",
+        "tasks": [
+          "Maintain life and armour while filling route.",
+          "Take Reliquarian powers in Labyrinth order.",
+          "Re-cap resistance after Act 10 Kitava; build chaos resistance as practical."
+        ]
+      },
+      {
+        "act": "Early maps",
+        "tasks": [
+          "Start with safe white maps and check life, armour, resists, accuracy, damage, and recovery.",
+          "Raise tiers only when clear and bosses remain safe."
+        ]
+      }
+    ],
+    "passivePlanNotes": [
+      "Connected 93-point route in 3.30 data, allocated from Scion start.",
+      "Act-end targets: 13 / 25 / 40 / 48 / 56 / 66 / 74 / 80 / 85 / 93; confirm with /passives.",
+      "Resolute Technique is temporary. Refund it only when accuracy and crit gear are ready.",
+      "All nodes and mastery effects are planned, not verified character allocations."
+    ],
+    "safety": [
+      "Static Strike's first melee hit is the riskiest part. Activate from a safe edge, then move.",
+      "Never run physical reflect; avoid reduced maximum resistance and severe recovery reduction.",
+      "Staff block is supplemental mitigation, not shield block.",
+      "Keep Resolute Technique until accuracy and crit gear support a deliberate respec.",
+      "The +1% maximum resistance mastery requires Armour in all four armour slots.",
+      "Do not count on melee stun charges against bosses without adds.",
+      "Do not break life, resistance caps, or attributes for a unique swap."
     ]
   }
 }
