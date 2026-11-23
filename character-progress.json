@@ -7464,6 +7464,13 @@
           "effectId": "62285",
           "effect": "8% increased Armour per Endurance Charge",
           "when": "Choose the endurance-charge armour line."
+        },
+        {
+          "nodeId": "62416",
+          "nodeName": "Staff Mastery",
+          "effectId": "28589",
+          "effect": "30% increased Defences while wielding a Staff",
+          "when": "Only when taking the optional endgame crit conversion route."
         }
       ],
       "temporaryKeystone": {
