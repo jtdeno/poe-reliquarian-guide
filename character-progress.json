@@ -12160,12 +12160,12 @@
     "character": {
       "label": "Stormbound Elementalist",
       "class": "Witch",
-      "ascendancy": "None",
+      "ascendancy": "Elementalist",
       "status": "playing",
-      "level": 29,
+      "level": 34,
       "act": 3,
       "league": "HC SSF Covens",
-      "stage": "Act 3 transition (inferred from level and gems)",
+      "stage": "Normal Lab completed; Act 3–4 transition (act unconfirmed)",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
       "bandit": "Alira"
@@ -12177,39 +12177,40 @@
       "treeUrl": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua"
     },
     "stats": {
-      "life": 942,
-      "mana": 497,
-      "manaUnreserved": 102,
-      "manaRegenPerSecond": 10,
-      "lifeRegenPerSecond": 25.3,
-      "energyShield": 83,
-      "armour": 738,
-      "evasion": 18,
+      "life": 1051,
+      "mana": 451,
+      "manaUnreserved": 80,
+      "manaRegenPerSecond": 9.1,
+      "lifeRegenPerSecond": 40.6,
+      "energyShield": 85,
+      "armour": 1083,
+      "evasion": 19,
       "attackBlock": 25,
-      "spellBlock": 18,
+      "spellBlock": 19,
       "fireResistance": 75,
       "coldResistance": 75,
       "lightningResistance": 74,
       "chaosResistance": 8,
       "fireOvercap": 45,
       "coldOvercap": 44,
-      "strength": 67,
-      "dexterity": 87,
+      "strength": 89,
+      "dexterity": 79,
       "intelligence": 180,
-      "combinedDps": 109.88346900564,
+      "combinedDps": 483.63288746904,
       "mainSkill": "Charged Dash",
-      "manaCostPerSecond": 28.52,
-      "physicalMaxHit": 1155,
-      "lightningMaxHit": 3534,
-      "fireMaxHit": 3661,
-      "coldMaxHit": 3661,
-      "chaosMaxHit": 1024,
-      "accuracy": 515,
-      "hitChance": 44
+      "manaCostPerSecond": 34.224,
+      "physicalMaxHit": 1432,
+      "lightningMaxHit": 4291,
+      "fireMaxHit": 4444,
+      "coldMaxHit": 4444,
+      "chaosMaxHit": 1260,
+      "accuracy": 695,
+      "hitChance": 53
     },
     "progress": {
       "completedPassiveIds": [
         1203,
+        4177,
         4184,
         4397,
         5743,
@@ -12222,13 +12223,17 @@
         13009,
         14057,
         17735,
+        19103,
+        24824,
         26270,
+        26481,
         27203,
         30225,
         30693,
         31875,
         32241,
         33435,
+        35260,
         36542,
         37569,
         41190,
@@ -12253,10 +12258,15 @@
         "four-link",
         "life-mastery",
         "determination",
-        "tempest-shield"
+        "tempest-shield",
+        "normal-lab",
+        "shaper-of-storms",
+        "spiritual-aid",
+        "molten-shell"
       ],
       "allocatedNodeIds": [
         1203,
+        4177,
         4184,
         4397,
         5743,
@@ -12269,13 +12279,17 @@
         13009,
         14057,
         17735,
+        19103,
+        24824,
         26270,
+        26481,
         27203,
         30225,
         30693,
         31875,
         32241,
         33435,
+        35260,
         36542,
         37569,
         41190,
@@ -12290,20 +12304,28 @@
         60398,
         64210
       ],
-      "allocatedPassivePoints": 33,
+      "allocatedPassivePoints": 38,
       "outsideGuideNodes": [],
       "nextRoute": [
-        26481,
-        19103,
-        35260,
-        4177,
-        24824,
-        42668,
-        43689,
         39648,
         17821,
-        21330
-      ]
+        21330,
+        42668,
+        43689,
+        12536,
+        15064,
+        31931,
+        15631,
+        64426,
+        1593,
+        20832,
+        25535
+      ],
+      "ascendancyNodeIds": [
+        58998,
+        27038
+      ],
+      "ascendancyPoints": 2
     },
     "plan": {
       "startNode": 54447,
@@ -13531,7 +13553,7 @@
         }
       ],
       "notes": [
-        "Level 29 transition: all 33 allocated points on plan, +30 life mastery confirmed. Skip optional 44799 for now. Finish Spiritual Aid, Spiritual Command, Quick Recovery; verify accuracy before dangerous encounters.",
+        "Level 34: 38 regular points on route; Shaper of Storms confirmed. Prioritize Quick Recovery before remaining Spiritual Command nodes due to mana deficit. Optional 44799 still deferred.",
         "Milestones assume helping Alira (+15% all elemental resistances), one fewer point from Act 2 onward than kill-all. Check /passives. Actual imported allocations are shown separately from planned nodes.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it.",
         "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first.",
@@ -13732,50 +13754,50 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "Check in-game Charged Dash hit chance; target 95–100%. Test Additional Accuracy in place of Added Lightning if needed. Add accuracy gear or level Precision within mana budget.",
-      "Next 4 points: Minion Damage and Life 26481, Righteous Army 19103, Minion Damage 35260, Spiritual Aid 4177. Then Spiritual Command via 24824, 42668, 43689; Quick Recovery via 39648, 17821, 21330.",
-      "Complete Normal Lab when comfortable; Shaper of Storms first. Seek Projection if available; avoid forcing a risky lab run.",
-      "Test Al Dhih and Bramble Thirst in safe areas, comparing damage, attack feel, life on hit, mana and Enduring Cry. Keep both until confirmed.",
-      "Cap lightning, craft life on Wrath Grip if possible, replace belt/gloves with life and accuracy/resists. Keep a spell leveling fallback."
+      "Prioritize Quick Recovery: Mana Regeneration and Life 39648, 17821, Quick Recovery 21330; then finish Spiritual Command via 42668 and 43689 once mana sustainable.",
+      "Check in-game accuracy; test Additional Accuracy if below 90–95%; seek mana leech from attack damage (not physical-only), or enduring mana flask. Avoid overleveling Precision.",
+      "Continue Sanctuary route 12536, 15064, 31931, 15631, 64426, 1593, 20832; then shield mastery 25535 effect 30612. Follow Sovereignty for reservation efficiency.",
+      "Replace belt/gloves and craft life on Wrath Grip. Cap lightning and get 105% uncapped elemental resists before Act 5 Kitava. Maintain Dexterity for gem levels.",
+      "Keep regular Charged Dash until Projection is obtained and tested. At 38 consider Wave of Conviction + Hextouch + Conductivity; verify lightning exposure. Add Frostblink and useful flask affixes."
     ],
     "lastReviewedAt": "2026-11-24",
     "snapshot": {
       "reviewedAt": "2026-11-24",
       "source": {
         "kind": "Reviewed PoB XML",
-        "file": "3.30 Charged Dash Elementalist - Experimental(2).xml",
+        "file": "3.30 Charged Dash Elementalist - Experimental(3).xml",
         "treeVersion": "3.30"
       },
       "stats": {
-        "life": 942,
-        "mana": 497,
-        "manaUnreserved": 102,
-        "manaRegenPerSecond": 10,
-        "lifeRegenPerSecond": 25.3,
-        "energyShield": 83,
-        "armour": 738,
-        "evasion": 18,
+        "life": 1051,
+        "mana": 451,
+        "manaUnreserved": 80,
+        "manaRegenPerSecond": 9.1,
+        "lifeRegenPerSecond": 40.6,
+        "energyShield": 85,
+        "armour": 1083,
+        "evasion": 19,
         "attackBlock": 25,
-        "spellBlock": 18,
+        "spellBlock": 19,
         "fireResistance": 75,
         "coldResistance": 75,
         "lightningResistance": 74,
         "chaosResistance": 8,
         "fireOvercap": 45,
         "coldOvercap": 44,
-        "strength": 67,
-        "dexterity": 87,
+        "strength": 89,
+        "dexterity": 79,
         "intelligence": 180,
-        "combinedDps": 109.88346900564,
+        "combinedDps": 483.63288746904,
         "mainSkill": "Charged Dash",
-        "manaCostPerSecond": 28.52,
-        "physicalMaxHit": 1155,
-        "lightningMaxHit": 3534,
-        "fireMaxHit": 3661,
-        "coldMaxHit": 3661,
-        "chaosMaxHit": 1024,
-        "accuracy": 515,
-        "hitChance": 44
+        "manaCostPerSecond": 34.224,
+        "physicalMaxHit": 1432,
+        "lightningMaxHit": 4291,
+        "fireMaxHit": 4444,
+        "coldMaxHit": 4444,
+        "chaosMaxHit": 1260,
+        "accuracy": 695,
+        "hitChance": 53
       },
       "skills": [
         {
@@ -13787,10 +13809,32 @@
             "Elemental Damage with Attacks"
           ],
           "levels": [
-            1,
-            6,
+            2,
             8,
-            1
+            9,
+            4
+          ]
+        },
+        {
+          "slot": "Weapon 1",
+          "gems": [
+            "Shield Charge",
+            "Faster Attacks",
+            "Precision"
+          ],
+          "levels": [
+            8,
+            7,
+            2
+          ]
+        },
+        {
+          "slot": "Helmet",
+          "gems": [
+            "Molten Shell"
+          ],
+          "levels": [
+            4
           ]
         },
         {
@@ -13800,28 +13844,8 @@
             "Determination"
           ],
           "levels": [
-            1,
-            1
-          ]
-        },
-        {
-          "slot": "Weapon 1",
-          "gems": [
-            "Shield Charge",
-            "Faster Attacks"
-          ],
-          "levels": [
-            1,
-            1
-          ]
-        },
-        {
-          "slot": "Weapon 1",
-          "gems": [
-            "Precision"
-          ],
-          "levels": [
-            1
+            4,
+            3
           ]
         },
         {
@@ -13831,8 +13855,8 @@
             "Summon Phantasm"
           ],
           "levels": [
-            8,
-            8
+            9,
+            9
           ]
         },
         {
@@ -13843,17 +13867,17 @@
             "Enduring Cry"
           ],
           "levels": [
-            1,
-            1,
-            1
+            3,
+            4,
+            6
           ]
         }
       ],
       "gear": [
         [
           "Weapon",
-          "Bramble Thirst · Blinder",
-          "70.5 raw DPS, 12 life on hit, 1.55 APS, +68 mana; equipped. Keep Al Dhih for controlled comparison."
+          "Morbid Roar · Sparkling Claw",
+          "20% quality; crafted 3–80 lightning attack damage; +116 accuracy; 15 life/hit; 10 life/kill; 16% attack speed. Exact tooltip DPS not exported."
         ],
         [
           "Shield",
@@ -13887,8 +13911,8 @@
         ],
         [
           "Amulet",
-          "Jade Amulet",
-          "+20 Dex; upgrade rare with accuracy/life if possible"
+          "Wrath Gorget · Amber Amulet",
+          "+22 strength, +12 dexterity, 19% global crit; no life; only 6 Dexterity above current gem requirement."
         ],
         [
           "Ring 1",
@@ -13902,70 +13926,80 @@
         ],
         [
           "Flasks",
-          "Grand Life, 2 Greater Life, Quicksilver, Grand Mana",
-          "Roll magic affixes, instant/partial instant life when available"
+          "Colossal Life, Grand Life, Greater Life, Quicksilver, Colossal Mana of Grounding",
+          "Shock flask suffix redundant while Tempest Shield active; seek mana sustain and bleed/freeze protection."
         ]
       ],
       "findings": [
         {
           "severity": "good",
-          "title": "Transition completed",
-          "detail": "Charged Dash 4-link equipped; 942 life, 738 armour, 25/18 attack/spell block. Alira confirmed. All 33 allocated passives on guide including +30 life mastery."
-        },
-        {
-          "severity": "warning",
-          "title": "Verify real campaign hit chance",
-          "detail": "PoB reports 515 accuracy and 44% hit chance, with level 84 enemy placeholder and no explicit override. Check in-game hit chance or set correct enemy level; below 90% consider Additional Accuracy instead of Added Lightning, level Precision as mana permits, add accuracy gear."
-        },
-        {
-          "severity": "warning",
-          "title": "Mana sustain",
-          "detail": "102 unreserved mana, 28.52/sec cost and 10/sec regen. Grand Mana Flask equipped; do not overlevel Precision blindly."
-        },
-        {
-          "severity": "warning",
-          "title": "Damage is not yet established",
-          "detail": "PoB shows 109.9 combined DPS for level 1 Charged Dash, not comparable to old spell DPS due to skill mechanics/configuration. No ascendancy or Spiritual Aid yet. Test in safe zones."
+          "title": "Spiritual Aid and Shaper of Storms confirmed",
+          "detail": "38 regular passive points on planned route; 2 ascendancy points allocated (58998, 27038). Shaper of Storms guarantees shock on hits against eligible enemies, with minimum 25% increased damage taken."
         },
         {
           "severity": "good",
-          "title": "Resistance and gear improvements",
-          "detail": "75/75/74 res, +8 chaos, four-link boots and movement speed. Cap lightning; replace weak gloves and normal belt. Retain both claws."
+          "title": "Morbid Roar upgraded",
+          "detail": "Equipped claw has 20% quality and crafted 3–80 lightning attack damage, stronger than the previous 3–33 craft. Exported combined DPS 483.6 versus 109.9 at level 29."
+        },
+        {
+          "severity": "warning",
+          "title": "Mana sustain is urgent",
+          "detail": "80 unreserved mana; cost 34.224/sec versus regen 9.1/sec. About 3.2 seconds continuous channel absent flask. Seek mana leech from attack damage, reduced cost or enduring mana flask; prioritize Quick Recovery before additional attack speed."
+        },
+        {
+          "severity": "warning",
+          "title": "Accuracy still needs verification",
+          "detail": "695 accuracy, PoB 53% hit chance; level 84 placeholder is not proof of actual enemy level. Check in-game chance and test Additional Accuracy if below 90–95%."
+        },
+        {
+          "severity": "warning",
+          "title": "Dexterity and gear",
+          "detail": "79 Dex versus 73 required; keep enough for gem levels. Replace normal belt and magic gloves with life, lightning resistance and accuracy. Craft life on Wrath Grip; retain resists through Kitava."
+        },
+        {
+          "severity": "warning",
+          "title": "Flask suffix redundancy",
+          "detail": "Grounding on mana flask redundant while Tempest Shield grants shock immunity. Seek useful mana prefix and bleed/freeze immunity on suitable flasks; all life flasks normal."
         }
       ],
       "nextActions": [
-        "Check in-game Charged Dash hit chance; target 95–100%. Test Additional Accuracy in place of Added Lightning if needed. Add accuracy gear or level Precision within mana budget.",
-        "Next 4 points: Minion Damage and Life 26481, Righteous Army 19103, Minion Damage 35260, Spiritual Aid 4177. Then Spiritual Command via 24824, 42668, 43689; Quick Recovery via 39648, 17821, 21330.",
-        "Complete Normal Lab when comfortable; Shaper of Storms first. Seek Projection if available; avoid forcing a risky lab run.",
-        "Test Al Dhih and Bramble Thirst in safe areas, comparing damage, attack feel, life on hit, mana and Enduring Cry. Keep both until confirmed.",
-        "Cap lightning, craft life on Wrath Grip if possible, replace belt/gloves with life and accuracy/resists. Keep a spell leveling fallback."
+        "Prioritize Quick Recovery: Mana Regeneration and Life 39648, 17821, Quick Recovery 21330; then finish Spiritual Command via 42668 and 43689 once mana sustainable.",
+        "Check in-game accuracy; test Additional Accuracy if below 90–95%; seek mana leech from attack damage (not physical-only), or enduring mana flask. Avoid overleveling Precision.",
+        "Continue Sanctuary route 12536, 15064, 31931, 15631, 64426, 1593, 20832; then shield mastery 25535 effect 30612. Follow Sovereignty for reservation efficiency.",
+        "Replace belt/gloves and craft life on Wrath Grip. Cap lightning and get 105% uncapped elemental resists before Act 5 Kitava. Maintain Dexterity for gem levels.",
+        "Keep regular Charged Dash until Projection is obtained and tested. At 38 consider Wave of Conviction + Hextouch + Conductivity; verify lightning exposure. Add Frostblink and useful flask affixes."
       ]
     },
     "findings": [
       {
         "severity": "good",
-        "title": "Transition completed",
-        "detail": "Charged Dash 4-link equipped; 942 life, 738 armour, 25/18 attack/spell block. Alira confirmed. All 33 allocated passives on guide including +30 life mastery."
-      },
-      {
-        "severity": "warning",
-        "title": "Verify real campaign hit chance",
-        "detail": "PoB reports 515 accuracy and 44% hit chance, with level 84 enemy placeholder and no explicit override. Check in-game hit chance or set correct enemy level; below 90% consider Additional Accuracy instead of Added Lightning, level Precision as mana permits, add accuracy gear."
-      },
-      {
-        "severity": "warning",
-        "title": "Mana sustain",
-        "detail": "102 unreserved mana, 28.52/sec cost and 10/sec regen. Grand Mana Flask equipped; do not overlevel Precision blindly."
-      },
-      {
-        "severity": "warning",
-        "title": "Damage is not yet established",
-        "detail": "PoB shows 109.9 combined DPS for level 1 Charged Dash, not comparable to old spell DPS due to skill mechanics/configuration. No ascendancy or Spiritual Aid yet. Test in safe zones."
+        "title": "Spiritual Aid and Shaper of Storms confirmed",
+        "detail": "38 regular passive points on planned route; 2 ascendancy points allocated (58998, 27038). Shaper of Storms guarantees shock on hits against eligible enemies, with minimum 25% increased damage taken."
       },
       {
         "severity": "good",
-        "title": "Resistance and gear improvements",
-        "detail": "75/75/74 res, +8 chaos, four-link boots and movement speed. Cap lightning; replace weak gloves and normal belt. Retain both claws."
+        "title": "Morbid Roar upgraded",
+        "detail": "Equipped claw has 20% quality and crafted 3–80 lightning attack damage, stronger than the previous 3–33 craft. Exported combined DPS 483.6 versus 109.9 at level 29."
+      },
+      {
+        "severity": "warning",
+        "title": "Mana sustain is urgent",
+        "detail": "80 unreserved mana; cost 34.224/sec versus regen 9.1/sec. About 3.2 seconds continuous channel absent flask. Seek mana leech from attack damage, reduced cost or enduring mana flask; prioritize Quick Recovery before additional attack speed."
+      },
+      {
+        "severity": "warning",
+        "title": "Accuracy still needs verification",
+        "detail": "695 accuracy, PoB 53% hit chance; level 84 placeholder is not proof of actual enemy level. Check in-game chance and test Additional Accuracy if below 90–95%."
+      },
+      {
+        "severity": "warning",
+        "title": "Dexterity and gear",
+        "detail": "79 Dex versus 73 required; keep enough for gem levels. Replace normal belt and magic gloves with life, lightning resistance and accuracy. Craft life on Wrath Grip; retain resists through Kitava."
+      },
+      {
+        "severity": "warning",
+        "title": "Flask suffix redundancy",
+        "detail": "Grounding on mana flask redundant while Tempest Shield grants shock immunity. Seek useful mana prefix and bleed/freeze immunity on suitable flasks; all life flasks normal."
       }
     ],
     "snapshotHistory": [
@@ -14307,25 +14341,236 @@
           "Keep Axiom for spells. Collect a rare fast attack weapon with flat elemental or physical damage, attack speed and accuracy. Transfer the main link to body armour when changing weapon.",
           "At level 28 buy Charged Dash from Siosa when Library completed; trial only with usable weapon and links. Aim for Normal Lab / Shaper of Storms and Projection around 33–35; no forced transition."
         ]
+      },
+      {
+        "reviewedAt": "2026-11-24",
+        "source": {
+          "kind": "Reviewed PoB XML",
+          "file": "3.30 Charged Dash Elementalist - Experimental(2).xml",
+          "treeVersion": "3.30"
+        },
+        "stats": {
+          "life": 942,
+          "mana": 497,
+          "manaUnreserved": 102,
+          "manaRegenPerSecond": 10,
+          "lifeRegenPerSecond": 25.3,
+          "energyShield": 83,
+          "armour": 738,
+          "evasion": 18,
+          "attackBlock": 25,
+          "spellBlock": 18,
+          "fireResistance": 75,
+          "coldResistance": 75,
+          "lightningResistance": 74,
+          "chaosResistance": 8,
+          "fireOvercap": 45,
+          "coldOvercap": 44,
+          "strength": 67,
+          "dexterity": 87,
+          "intelligence": 180,
+          "combinedDps": 109.88346900564,
+          "mainSkill": "Charged Dash",
+          "manaCostPerSecond": 28.52,
+          "physicalMaxHit": 1155,
+          "lightningMaxHit": 3534,
+          "fireMaxHit": 3661,
+          "coldMaxHit": 3661,
+          "chaosMaxHit": 1024,
+          "accuracy": 515,
+          "hitChance": 44
+        },
+        "skills": [
+          {
+            "slot": "Boots",
+            "gems": [
+              "Charged Dash",
+              "Added Lightning Damage",
+              "Infused Channelling",
+              "Elemental Damage with Attacks"
+            ],
+            "levels": [
+              1,
+              6,
+              8,
+              1
+            ]
+          },
+          {
+            "slot": "Gloves",
+            "gems": [
+              "Tempest Shield",
+              "Determination"
+            ],
+            "levels": [
+              1,
+              1
+            ]
+          },
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Shield Charge",
+              "Faster Attacks"
+            ],
+            "levels": [
+              1,
+              1
+            ]
+          },
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Precision"
+            ],
+            "levels": [
+              1
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Holy Flame Totem",
+              "Summon Phantasm"
+            ],
+            "levels": [
+              8,
+              8
+            ]
+          },
+          {
+            "slot": "Body Armour",
+            "gems": [
+              "Conductivity",
+              "Wave of Conviction",
+              "Enduring Cry"
+            ],
+            "levels": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "gear": [
+          [
+            "Weapon",
+            "Bramble Thirst · Blinder",
+            "70.5 raw DPS, 12 life on hit, 1.55 APS, +68 mana; equipped. Keep Al Dhih for controlled comparison."
+          ],
+          [
+            "Shield",
+            "Corpse Fend · Cedar Tower Shield",
+            "145 armour, +26 life, 18% elemental ailment avoidance"
+          ],
+          [
+            "Boots",
+            "Rune Track · Ringmail Boots",
+            "4-link main skill, +38 life, 13% movement speed, fire/lightning res"
+          ],
+          [
+            "Body Armour",
+            "Rift Shelter · Ringmail Coat",
+            "Triple resistances, +32 mana, crafted +23 life"
+          ],
+          [
+            "Helmet",
+            "Hypnotic Halo",
+            "50 life, 14% global accuracy"
+          ],
+          [
+            "Gloves",
+            "Pixie's Chain Gloves",
+            "Weak life-less cold resistance gloves; upgrade accuracy/life/lightning"
+          ],
+          [
+            "Belt",
+            "Chain Belt",
+            "+19 ES only; upgrade life and lightning resistance"
+          ],
+          [
+            "Amulet",
+            "Jade Amulet",
+            "+20 Dex; upgrade rare with accuracy/life if possible"
+          ],
+          [
+            "Ring 1",
+            "Carrion Grip",
+            "+73 accuracy, physical attack damage; keep"
+          ],
+          [
+            "Ring 2",
+            "Wrath Grip",
+            "33% fire / 30% cold resist, lightning attack damage; craft life"
+          ],
+          [
+            "Flasks",
+            "Grand Life, 2 Greater Life, Quicksilver, Grand Mana",
+            "Roll magic affixes, instant/partial instant life when available"
+          ]
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "Transition completed",
+            "detail": "Charged Dash 4-link equipped; 942 life, 738 armour, 25/18 attack/spell block. Alira confirmed. All 33 allocated passives on guide including +30 life mastery."
+          },
+          {
+            "severity": "warning",
+            "title": "Verify real campaign hit chance",
+            "detail": "PoB reports 515 accuracy and 44% hit chance, with level 84 enemy placeholder and no explicit override. Check in-game hit chance or set correct enemy level; below 90% consider Additional Accuracy instead of Added Lightning, level Precision as mana permits, add accuracy gear."
+          },
+          {
+            "severity": "warning",
+            "title": "Mana sustain",
+            "detail": "102 unreserved mana, 28.52/sec cost and 10/sec regen. Grand Mana Flask equipped; do not overlevel Precision blindly."
+          },
+          {
+            "severity": "warning",
+            "title": "Damage is not yet established",
+            "detail": "PoB shows 109.9 combined DPS for level 1 Charged Dash, not comparable to old spell DPS due to skill mechanics/configuration. No ascendancy or Spiritual Aid yet. Test in safe zones."
+          },
+          {
+            "severity": "good",
+            "title": "Resistance and gear improvements",
+            "detail": "75/75/74 res, +8 chaos, four-link boots and movement speed. Cap lightning; replace weak gloves and normal belt. Retain both claws."
+          }
+        ],
+        "nextActions": [
+          "Check in-game Charged Dash hit chance; target 95–100%. Test Additional Accuracy in place of Added Lightning if needed. Add accuracy gear or level Precision within mana budget.",
+          "Next 4 points: Minion Damage and Life 26481, Righteous Army 19103, Minion Damage 35260, Spiritual Aid 4177. Then Spiritual Command via 24824, 42668, 43689; Quick Recovery via 39648, 17821, 21330.",
+          "Complete Normal Lab when comfortable; Shaper of Storms first. Seek Projection if available; avoid forcing a risky lab run.",
+          "Test Al Dhih and Bramble Thirst in safe areas, comparing damage, attack feel, life on hit, mana and Enduring Cry. Keep both until confirmed.",
+          "Cap lightning, craft life on Wrath Grip if possible, replace belt/gloves with life and accuracy/resists. Keep a spell leveling fallback."
+        ]
       }
     ],
     "inventoryWatchlist": {
       "weapons": [
         {
-          "name": "Bramble Thirst",
+          "name": "Morbid Roar",
           "status": "equipped",
-          "dps": 70.525
+          "quality": 20,
+          "lightningDamage": [
+            3,
+            80
+          ],
+          "accuracy": 116,
+          "lifeOnHit": 15,
+          "attackSpeed": 1.86,
+          "priorTooltipDps": 143.22,
+          "dps": null,
+          "note": "Current exact weapon DPS not exported; lightning craft and quality increased."
         },
         {
           "name": "Al Dhih",
-          "status": "keep for testing",
+          "status": "unique backup",
           "dps": 78.65
-        },
-        {
-          "name": "Demon Needle",
-          "status": "recommended sell",
-          "dps": 64.37
         }
+      ],
+      "soldWeapons": [
+        "Bramble Thirst",
+        "Demon Needle"
       ],
       "rings": [
         {
