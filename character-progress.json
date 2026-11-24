@@ -1,6 +1,6 @@
 {
   "format": "reliquarian-character-progress-v1",
-  "publishedAt": "2026-11-24",
+  "publishedAt": "2026-11-23",
   "source": {
     "kind": "reviewed PoB XML",
     "file": "3.29 ReliMinesHCSSF(8).xml",
@@ -6746,7 +6746,7 @@
   },
   "staticStrike": {
     "format": "scion-reliquarian-static-strike-plan-v1",
-    "publishedAt": "2026-11-24",
+    "publishedAt": "2026-11-23",
     "source": {
       "kind": "planning guide; researched PoB Community tree and public build references",
       "patchContext": "3.30",
@@ -7698,7 +7698,7 @@
       "Do not break life, resistance caps, or attributes for a unique swap."
     ],
     "snapshot": {
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-23",
       "source": {
         "kind": "Reviewed Path of Building XML",
         "file": "3.30 Static Strike Reliquarian(3).xml",
@@ -9200,7 +9200,7 @@
         "Keep the Divine Mana Flask available. PoB estimates 24.08 Mana/sec for Static Strike versus 10.3 regen plus 10.87 leech; another support can raise the cost."
       ]
     },
-    "lastReviewedAt": "2026-11-24",
+    "lastReviewedAt": "2026-11-23",
     "snapshotHistory": [
       {
         "reviewedAt": "2026-11-23",
