@@ -12162,13 +12162,13 @@
       "class": "Witch",
       "ascendancy": "None",
       "status": "playing",
-      "level": 7,
-      "act": 1,
+      "level": 21,
+      "act": 2,
       "league": "HC SSF Covens",
-      "stage": "Early campaign (Act 1 inferred from level)",
+      "stage": "Act 2 (inferred from level and Alira)",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
-      "bandit": "None (not yet selected in level 7 import)"
+      "bandit": "Alira"
     },
     "source": {
       "kind": "Theorycraft; connected 3.30 PoB Community tree, not a simulated character",
@@ -12177,85 +12177,109 @@
       "treeUrl": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua"
     },
     "stats": {
-      "life": 167,
-      "mana": 118,
-      "manaUnreserved": 118,
-      "manaRegenPerSecond": 3.3,
-      "lifeRegenPerSecond": 2,
-      "energyShield": 0,
-      "armour": 77,
-      "evasion": 71,
-      "attackBlock": 24,
+      "life": 576,
+      "mana": 325,
+      "manaUnreserved": 195,
+      "manaRegenPerSecond": 10.1,
+      "lifeRegenPerSecond": 5.9,
+      "energyShield": 69,
+      "armour": 370,
+      "evasion": 18,
+      "attackBlock": 26,
       "spellBlock": 0,
-      "fireResistance": 10,
-      "coldResistance": 17,
-      "lightningResistance": 0,
+      "fireResistance": 40,
+      "coldResistance": 75,
+      "coldOvercap": 62,
+      "lightningResistance": 73,
       "chaosResistance": 0,
-      "strength": 14,
-      "dexterity": 14,
-      "intelligence": 52,
-      "combinedDps": 36.580342180816,
-      "mainSkill": "Rolling Magma",
-      "manaCostPerSecond": 10.714285714286,
-      "physicalMaxHit": 181,
-      "lightningMaxHit": 162
+      "strength": 77,
+      "dexterity": 87,
+      "intelligence": 150,
+      "combinedDps": 643.63767341651,
+      "mainSkill": "Lightning Tendrils",
+      "manaCostPerSecond": 26.2,
+      "physicalMaxHit": 712,
+      "lightningMaxHit": 2150,
+      "fireMaxHit": 1024,
+      "coldMaxHit": 2304,
+      "chaosMaxHit": 576
     },
     "progress": {
       "completedPassiveIds": [
+        1203,
+        4184,
+        4397,
+        6237,
+        8135,
+        11128,
         11420,
-        57264
+        13009,
+        17735,
+        27203,
+        30225,
+        30693,
+        31875,
+        33435,
+        36542,
+        37569,
+        41472,
+        44529,
+        48362,
+        49254,
+        57264,
+        58402,
+        58453,
+        60398
       ],
       "completedTaskIds": [
         "spell-bridge",
         "movement-skill",
-        "shield-equipped"
+        "shield-equipped",
+        "alira",
+        "dexterity-67"
       ],
       "allocatedNodeIds": [
-        11420,
-        17579,
-        21934,
-        33296,
-        36774,
-        57264
-      ],
-      "allocatedPassivePoints": 6,
-      "outsideGuideNodes": [
-        {
-          "id": 33296,
-          "name": "Spell Damage",
-          "stats": [
-            "12% increased Spell Damage"
-          ]
-        },
-        {
-          "id": 36774,
-          "name": "Spell Damage",
-          "stats": [
-            "10% increased Spell Damage"
-          ]
-        },
-        {
-          "id": 17579,
-          "name": "Spell Damage",
-          "stats": [
-            "10% increased Spell Damage"
-          ]
-        },
-        {
-          "id": 21934,
-          "name": "Spell Damage",
-          "stats": [
-            "10% increased Spell Damage"
-          ]
-        }
-      ],
-      "nextRoute": [
-        48362,
-        27203,
-        11128,
-        8135,
+        1203,
         4184,
-        30225
+        4397,
+        6237,
+        8135,
+        11128,
+        11420,
+        13009,
+        17735,
+        27203,
+        30225,
+        30693,
+        31875,
+        33435,
+        36542,
+        37569,
+        41472,
+        44529,
+        48362,
+        49254,
+        57264,
+        58402,
+        58453,
+        60398
+      ],
+      "allocatedPassivePoints": 24,
+      "outsideGuideNodes": [],
+      "nextRoute": [
+        6764,
+        14057,
+        9386,
+        5743,
+        58218,
+        32241,
+        64210,
+        26270,
+        41190,
+        26481,
+        19103,
+        35260,
+        4177
       ]
     },
     "plan": {
@@ -13484,7 +13508,7 @@
         }
       ],
       "notes": [
-        "Level 7 import uses the parallel spell-damage branch to Arcanist's Dominion. Keep it until the attack swap. Skip original points 2–4 for now; next points are original 6–11. Before continuing toward Retribution via node 4397, either connect the Intelligence branch and refund the four spell nodes, or temporarily add 4397 from Arcanist's Dominion; see current review for exact refund order.",
+        "Level 21 import has already refunded the temporary spell branch. All 24 allocated nodes are on the planned route; original point 21 (44799) is unallocated but optional because Holy Dominion and Divine Fervour are already connected. Prioritize Purity of Flesh and Spiritual Aid instead. No further respec required now.",
         "Milestones assume helping Alira (+15% all elemental resistances), one fewer point from Act 2 onward than kill-all. Check /passives. Actual imported allocations are shown separately from planned nodes.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it.",
         "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first.",
@@ -13685,188 +13709,379 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "Allocate Mana and Life (48362), Heart and Soul (27203), Avoid Interruption while Casting and Elemental Resistances (11128), Practical Application (8135), Elemental Damage (4184), Lightning Walker (30225).",
-      "Keep the current spell route until the attack transition; then allocate Intelligence nodes 37569 → 36542 → 4397 before refunding 21934, 17579, 36774, 33296 in that order, retaining Arcanist’s Dominion and all connected branches. Requires three spare points or a staged respec.",
-      "Keep Rolling Magma + Elemental Proliferation and Flame Wall; add Combustion at level 8 if available and a 3-link. Do not force Lightning Tendrils.",
-      "Fill second ring and belt; improve cold resistance before Merveil, and get movement speed boots.",
-      "Collect a fast melee weapon (sceptre preferred), 67 Dexterity and suitable links ahead of level 28."
+      "Take Intelligence (6764), Life and Energy Shield (14057, 9386, 5743), Purity of Flesh (58218), Life Mastery (32241, effect 47642: +30 life).",
+      "Then follow Spiritual Aid route: Intelligence 64210, 26270; Minion Damage and Life 41190, 26481; Righteous Army 19103; Minion Damage 35260; Spiritual Aid 4177. Continue Spiritual Command. Defer optional skipped Elemental Damage node 44799 until after those priorities.",
+      "Replace Mind Hold or belt/gloves to cap fire and lightning; keep Carrion Grip for accuracy. Seek movement speed boots and larger mana flask.",
+      "Keep Axiom for spells. Collect a rare fast attack weapon with flat elemental or physical damage, attack speed and accuracy. Transfer the main link to body armour when changing weapon.",
+      "At level 28 buy Charged Dash from Siosa when Library completed; trial only with usable weapon and links. Aim for Normal Lab / Shaper of Storms and Projection around 33–35; no forced transition."
     ],
     "lastReviewedAt": "2026-11-24",
     "snapshot": {
       "reviewedAt": "2026-11-24",
       "source": {
         "kind": "Reviewed PoB XML",
-        "file": "3.30 Charged Dash Elementalist - Experimental.xml",
+        "file": "3.30 Charged Dash Elementalist - Experimental(1).xml",
         "treeVersion": "3.30"
       },
       "stats": {
-        "life": 167,
-        "mana": 118,
-        "manaUnreserved": 118,
-        "manaRegenPerSecond": 3.3,
-        "lifeRegenPerSecond": 2,
-        "energyShield": 0,
-        "armour": 77,
-        "evasion": 71,
-        "attackBlock": 24,
+        "life": 576,
+        "mana": 325,
+        "manaUnreserved": 195,
+        "manaRegenPerSecond": 10.1,
+        "lifeRegenPerSecond": 5.9,
+        "energyShield": 69,
+        "armour": 370,
+        "evasion": 18,
+        "attackBlock": 26,
         "spellBlock": 0,
-        "fireResistance": 10,
-        "coldResistance": 17,
-        "lightningResistance": 0,
+        "fireResistance": 40,
+        "coldResistance": 75,
+        "coldOvercap": 62,
+        "lightningResistance": 73,
         "chaosResistance": 0,
-        "strength": 14,
-        "dexterity": 14,
-        "intelligence": 52,
-        "combinedDps": 36.580342180816,
-        "mainSkill": "Rolling Magma",
-        "manaCostPerSecond": 10.714285714286,
-        "physicalMaxHit": 181,
-        "lightningMaxHit": 162
+        "strength": 77,
+        "dexterity": 87,
+        "intelligence": 150,
+        "combinedDps": 643.63767341651,
+        "mainSkill": "Lightning Tendrils",
+        "manaCostPerSecond": 26.2,
+        "physicalMaxHit": 712,
+        "lightningMaxHit": 2150,
+        "fireMaxHit": 1024,
+        "coldMaxHit": 2304,
+        "chaosMaxHit": 576
       },
       "skills": [
         {
-          "slot": "Body Armour",
+          "slot": "Weapon 1",
           "gems": [
-            "Rolling Magma",
-            "Elemental Proliferation"
+            "Lightning Tendrils",
+            "Infused Channelling",
+            "Added Lightning Damage"
           ],
           "levels": [
-            4,
-            4
+            7,
+            6,
+            5
+          ]
+        },
+        {
+          "slot": "Weapon 2",
+          "gems": [
+            "Holy Flame Totem",
+            "Summon Phantasm"
+          ],
+          "levels": [
+            6,
+            6
+          ]
+        },
+        {
+          "slot": "Weapon 2",
+          "gems": [
+            "Herald of Thunder"
+          ],
+          "levels": [
+            2
+          ]
+        },
+        {
+          "slot": "Gloves",
+          "gems": [
+            "Orb of Storms"
+          ],
+          "levels": [
+            6
           ]
         },
         {
           "slot": "Boots",
           "gems": [
-            "Flame Wall"
+            "Clarity"
           ],
           "levels": [
             2
           ]
         },
         {
-          "slot": "Helmet",
+          "slot": "Boots",
           "gems": [
             "Frostblink"
           ],
           "levels": [
-            2
-          ]
-        },
-        {
-          "slot": "Weapon 1",
-          "gems": [
-            "Fireball",
-            "Arcane Surge"
-          ],
-          "levels": [
-            4,
-            4
+            6
           ]
         }
       ],
       "gear": [
         [
           "Weapon 1",
-          "Charged Goat's Horn",
-          "13% increased Lightning Damage; adds 2–3 fire damage to spells and attacks"
+          "Axiom Perpetuum · Bronze Sceptre",
+          "Excellent spell leveling; flat damage and crit modifiers are spell-only, not attack scaling."
         ],
         [
           "Weapon 2",
-          "Grim Span · Rotted Round Shield",
-          "24% character attack block; +6% cold resistance; +1 socketed melee gems"
+          "Empyrean Barrier · Rawhide Tower Shield",
+          "+42 total life, 2.5 life regen/sec, cold and lightning resistances"
+        ],
+        [
+          "Helmet",
+          "Hypnotic Halo · Barbute Helmet",
+          "+50 life, 14% global accuracy, 122 armour; keep"
         ],
         [
           "Body Armour",
-          "Dragon Curtain · Scale Vest",
-          "+7 life; 2 life regen/sec; +11% cold resistance"
+          "Blight Keep · Ringmail Coat",
+          "138 armour, 32 ES, three linked white sockets, no life modifier"
+        ],
+        [
+          "Gloves",
+          "Pixie's Chain Gloves of the Inuit",
+          "Cold resistance; replace with life/fire resistance"
+        ],
+        [
+          "Boots",
+          "Studded Iron Greaves of the Cloud",
+          "No movement speed; upgrade"
         ],
         [
           "Amulet",
-          "Ghoul Locket · Paua Amulet",
-          "+8 life; +10% fire resistance; 30% mana regen; 6 mana on kill"
+          "Jade Amulet",
+          "+20 Dexterity"
         ],
         [
           "Ring 1",
-          "Coral Ring",
-          "+23 life"
+          "Carrion Grip · Sapphire Ring",
+          "+73 accuracy, flat physical attacks, +3 attributes; keep for transition"
         ],
         [
-          "Helmet / Gloves / Boots",
-          "Normal iron bases",
-          "Replace with life, resistances and movement speed"
+          "Ring 2",
+          "Mind Hold · Sapphire Ring",
+          "34% cold resistance; replace with fire resistance/life if possible"
         ],
         [
-          "Ring 2 / Belt",
-          "Empty",
-          "Fill immediately with life/resists or Dexterity"
+          "Belt",
+          "Chain Belt",
+          "+19 ES only; replace with life/resist belt"
         ],
         [
           "Flasks",
-          "2 Medium Life, Small Life, Quicksilver, Large Mana",
-          "Upgrade the Small Life Flask as soon as practical"
+          "2 Greater Life, Medium Life, Quicksilver, Small Mana",
+          "Upgrade mana flask and third life flask; roll useful affixes"
         ]
       ],
       "findings": [
         {
           "severity": "good",
-          "title": "Healthy opening setup",
-          "detail": "Rolling Magma + Elemental Proliferation, Flame Wall and Frostblink are all in place. Shield and Quicksilver equipped."
+          "title": "Alira and attributes ready",
+          "detail": "Alira confirmed; 87 Dexterity exceeds the 67 requirement for level-1 Charged Dash. No respec needed: previous four spell nodes refunded and all allocated nodes are on the planned route."
         },
         {
           "severity": "warning",
-          "title": "Fill empty gear slots and improve resistances",
-          "detail": "167 life; 10/17/0 elemental resistances. Find a belt and second ring; target cold for Merveil and life on rares."
+          "title": "Fire resistance and movement",
+          "detail": "40% fire, 73% lightning, 137% uncapped cold. Replace cold-heavy ring or weak belt/gloves with fire resistance and life. Boots lack movement speed."
+        },
+        {
+          "severity": "good",
+          "title": "Strong spell bridge",
+          "detail": "Axiom Perpetuum, Lightning Tendrils 3-link and Orb of Storms are excellent while leveling. The sceptre is not an attack weapon upgrade: its added damage and crit are spell-only."
         },
         {
           "severity": "warning",
-          "title": "Alternate spell route is valid",
-          "detail": "Six regular points allocated; two match the original route, four are alternate spell-damage nodes. Arcanist's Dominion is already reached. Keep the spell path for leveling; do not allocate the parallel Intelligence path now."
-        },
-        {
-          "severity": "warning",
-          "title": "Dexterity is a future swap gate",
-          "detail": "14 Dexterity now; Practical Application and Precision supply +20 each, leaving 13 short of 67 before gear/other travel. Jade Amulet or gear solves this."
+          "title": "Mana sustain",
+          "detail": "26.2 mana/sec channelling versus 10.1 regen; Small Mana Flask is outdated."
         },
         {
           "severity": "unknown",
-          "title": "Attack damage not evaluated yet",
-          "detail": "36.6 combined DPS and 100% hit chance are for the current spell configuration, not Charged Dash. Current wand cannot use Charged Dash."
+          "title": "Attack transition not tested",
+          "detail": "643.6 combined DPS and 100% hit chance are for Lightning Tendrils. Acquire a rare attack sceptre or other valid melee weapon and test actual Charged Dash accuracy, damage and sustain."
         }
       ],
       "nextActions": [
-        "Allocate Mana and Life (48362), Heart and Soul (27203), Avoid Interruption while Casting and Elemental Resistances (11128), Practical Application (8135), Elemental Damage (4184), Lightning Walker (30225).",
-        "Keep the current spell route until the attack transition; then allocate Intelligence nodes 37569 → 36542 → 4397 before refunding 21934, 17579, 36774, 33296 in that order, retaining Arcanist’s Dominion and all connected branches. Requires three spare points or a staged respec.",
-        "Keep Rolling Magma + Elemental Proliferation and Flame Wall; add Combustion at level 8 if available and a 3-link. Do not force Lightning Tendrils.",
-        "Fill second ring and belt; improve cold resistance before Merveil, and get movement speed boots.",
-        "Collect a fast melee weapon (sceptre preferred), 67 Dexterity and suitable links ahead of level 28."
+        "Take Intelligence (6764), Life and Energy Shield (14057, 9386, 5743), Purity of Flesh (58218), Life Mastery (32241, effect 47642: +30 life).",
+        "Then follow Spiritual Aid route: Intelligence 64210, 26270; Minion Damage and Life 41190, 26481; Righteous Army 19103; Minion Damage 35260; Spiritual Aid 4177. Continue Spiritual Command. Defer optional skipped Elemental Damage node 44799 until after those priorities.",
+        "Replace Mind Hold or belt/gloves to cap fire and lightning; keep Carrion Grip for accuracy. Seek movement speed boots and larger mana flask.",
+        "Keep Axiom for spells. Collect a rare fast attack weapon with flat elemental or physical damage, attack speed and accuracy. Transfer the main link to body armour when changing weapon.",
+        "At level 28 buy Charged Dash from Siosa when Library completed; trial only with usable weapon and links. Aim for Normal Lab / Shaper of Storms and Projection around 33–35; no forced transition."
       ]
     },
     "findings": [
       {
         "severity": "good",
-        "title": "Healthy opening setup",
-        "detail": "Rolling Magma + Elemental Proliferation, Flame Wall and Frostblink are all in place. Shield and Quicksilver equipped."
+        "title": "Alira and attributes ready",
+        "detail": "Alira confirmed; 87 Dexterity exceeds the 67 requirement for level-1 Charged Dash. No respec needed: previous four spell nodes refunded and all allocated nodes are on the planned route."
       },
       {
         "severity": "warning",
-        "title": "Fill empty gear slots and improve resistances",
-        "detail": "167 life; 10/17/0 elemental resistances. Find a belt and second ring; target cold for Merveil and life on rares."
+        "title": "Fire resistance and movement",
+        "detail": "40% fire, 73% lightning, 137% uncapped cold. Replace cold-heavy ring or weak belt/gloves with fire resistance and life. Boots lack movement speed."
+      },
+      {
+        "severity": "good",
+        "title": "Strong spell bridge",
+        "detail": "Axiom Perpetuum, Lightning Tendrils 3-link and Orb of Storms are excellent while leveling. The sceptre is not an attack weapon upgrade: its added damage and crit are spell-only."
       },
       {
         "severity": "warning",
-        "title": "Alternate spell route is valid",
-        "detail": "Six regular points allocated; two match the original route, four are alternate spell-damage nodes. Arcanist's Dominion is already reached. Keep the spell path for leveling; do not allocate the parallel Intelligence path now."
-      },
-      {
-        "severity": "warning",
-        "title": "Dexterity is a future swap gate",
-        "detail": "14 Dexterity now; Practical Application and Precision supply +20 each, leaving 13 short of 67 before gear/other travel. Jade Amulet or gear solves this."
+        "title": "Mana sustain",
+        "detail": "26.2 mana/sec channelling versus 10.1 regen; Small Mana Flask is outdated."
       },
       {
         "severity": "unknown",
-        "title": "Attack damage not evaluated yet",
-        "detail": "36.6 combined DPS and 100% hit chance are for the current spell configuration, not Charged Dash. Current wand cannot use Charged Dash."
+        "title": "Attack transition not tested",
+        "detail": "643.6 combined DPS and 100% hit chance are for Lightning Tendrils. Acquire a rare attack sceptre or other valid melee weapon and test actual Charged Dash accuracy, damage and sustain."
+      }
+    ],
+    "snapshotHistory": [
+      {
+        "reviewedAt": "2026-11-24",
+        "source": {
+          "kind": "Reviewed PoB XML",
+          "file": "3.30 Charged Dash Elementalist - Experimental.xml",
+          "treeVersion": "3.30"
+        },
+        "stats": {
+          "life": 167,
+          "mana": 118,
+          "manaUnreserved": 118,
+          "manaRegenPerSecond": 3.3,
+          "lifeRegenPerSecond": 2,
+          "energyShield": 0,
+          "armour": 77,
+          "evasion": 71,
+          "attackBlock": 24,
+          "spellBlock": 0,
+          "fireResistance": 10,
+          "coldResistance": 17,
+          "lightningResistance": 0,
+          "chaosResistance": 0,
+          "strength": 14,
+          "dexterity": 14,
+          "intelligence": 52,
+          "combinedDps": 36.580342180816,
+          "mainSkill": "Rolling Magma",
+          "manaCostPerSecond": 10.714285714286,
+          "physicalMaxHit": 181,
+          "lightningMaxHit": 162
+        },
+        "skills": [
+          {
+            "slot": "Body Armour",
+            "gems": [
+              "Rolling Magma",
+              "Elemental Proliferation"
+            ],
+            "levels": [
+              4,
+              4
+            ]
+          },
+          {
+            "slot": "Boots",
+            "gems": [
+              "Flame Wall"
+            ],
+            "levels": [
+              2
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "gems": [
+              "Frostblink"
+            ],
+            "levels": [
+              2
+            ]
+          },
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Fireball",
+              "Arcane Surge"
+            ],
+            "levels": [
+              4,
+              4
+            ]
+          }
+        ],
+        "gear": [
+          [
+            "Weapon 1",
+            "Charged Goat's Horn",
+            "13% increased Lightning Damage; adds 2–3 fire damage to spells and attacks"
+          ],
+          [
+            "Weapon 2",
+            "Grim Span · Rotted Round Shield",
+            "24% character attack block; +6% cold resistance; +1 socketed melee gems"
+          ],
+          [
+            "Body Armour",
+            "Dragon Curtain · Scale Vest",
+            "+7 life; 2 life regen/sec; +11% cold resistance"
+          ],
+          [
+            "Amulet",
+            "Ghoul Locket · Paua Amulet",
+            "+8 life; +10% fire resistance; 30% mana regen; 6 mana on kill"
+          ],
+          [
+            "Ring 1",
+            "Coral Ring",
+            "+23 life"
+          ],
+          [
+            "Helmet / Gloves / Boots",
+            "Normal iron bases",
+            "Replace with life, resistances and movement speed"
+          ],
+          [
+            "Ring 2 / Belt",
+            "Empty",
+            "Fill immediately with life/resists or Dexterity"
+          ],
+          [
+            "Flasks",
+            "2 Medium Life, Small Life, Quicksilver, Large Mana",
+            "Upgrade the Small Life Flask as soon as practical"
+          ]
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "Healthy opening setup",
+            "detail": "Rolling Magma + Elemental Proliferation, Flame Wall and Frostblink are all in place. Shield and Quicksilver equipped."
+          },
+          {
+            "severity": "warning",
+            "title": "Fill empty gear slots and improve resistances",
+            "detail": "167 life; 10/17/0 elemental resistances. Find a belt and second ring; target cold for Merveil and life on rares."
+          },
+          {
+            "severity": "warning",
+            "title": "Alternate spell route is valid",
+            "detail": "Six regular points allocated; two match the original route, four are alternate spell-damage nodes. Arcanist's Dominion is already reached. Keep the spell path for leveling; do not allocate the parallel Intelligence path now."
+          },
+          {
+            "severity": "warning",
+            "title": "Dexterity is a future swap gate",
+            "detail": "14 Dexterity now; Practical Application and Precision supply +20 each, leaving 13 short of 67 before gear/other travel. Jade Amulet or gear solves this."
+          },
+          {
+            "severity": "unknown",
+            "title": "Attack damage not evaluated yet",
+            "detail": "36.6 combined DPS and 100% hit chance are for the current spell configuration, not Charged Dash. Current wand cannot use Charged Dash."
+          }
+        ],
+        "nextActions": [
+          "Allocate Mana and Life (48362), Heart and Soul (27203), Avoid Interruption while Casting and Elemental Resistances (11128), Practical Application (8135), Elemental Damage (4184), Lightning Walker (30225).",
+          "Keep the current spell route until the attack transition; then allocate Intelligence nodes 37569 → 36542 → 4397 before refunding 21934, 17579, 36774, 33296 in that order, retaining Arcanist’s Dominion and all connected branches. Requires three spare points or a staged respec.",
+          "Keep Rolling Magma + Elemental Proliferation and Flame Wall; add Combustion at level 8 if available and a 3-link. Do not force Lightning Tendrils.",
+          "Fill second ring and belt; improve cold resistance before Merveil, and get movement speed boots.",
+          "Collect a fast melee weapon (sceptre preferred), 67 Dexterity and suitable links ahead of level 28."
+        ]
       }
     ]
   }
