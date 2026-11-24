@@ -12166,7 +12166,9 @@
       "act": 1,
       "league": "HC SSF Covens",
       "stage": "Early campaign (Act 1 inferred from level)",
-      "plannedAscendancy": "Elementalist"
+      "plannedAscendancy": "Elementalist",
+      "plannedBandit": "Alira",
+      "bandit": "None (not yet selected in level 7 import)"
     },
     "source": {
       "kind": "Theorycraft; connected 3.30 PoB Community tree, not a simulated character",
@@ -12259,7 +12261,7 @@
     "plan": {
       "startNode": 54447,
       "totalPoints": 97,
-      "campaignPoints": 93,
+      "campaignPoints": 92,
       "actMilestones": [
         {
           "act": 1,
@@ -12411,7 +12413,7 @@
         {
           "act": 2,
           "firstPoint": 14,
-          "lastPoint": 25,
+          "lastPoint": 24,
           "plannedNodes": [
             {
               "sequence": 14,
@@ -12533,7 +12535,14 @@
                 "30% increased Melee Critical Strike Chance",
                 "+10 to Strength and Intelligence"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": 3,
+          "firstPoint": 25,
+          "lastPoint": 39,
+          "plannedNodes": [
             {
               "sequence": 25,
               "id": 58402,
@@ -12543,14 +12552,7 @@
               "stats": [
                 "+10 to Intelligence"
               ]
-            }
-          ]
-        },
-        {
-          "act": 3,
-          "firstPoint": 26,
-          "lastPoint": 40,
-          "plannedNodes": [
+            },
             {
               "sequence": 26,
               "id": 6764,
@@ -12717,7 +12719,14 @@
                 "Minions have 4% increased Attack Speed",
                 "Minions have 4% increased Cast Speed"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": 4,
+          "firstPoint": 40,
+          "lastPoint": 47,
+          "plannedNodes": [
             {
               "sequence": 40,
               "id": 42668,
@@ -12728,14 +12737,7 @@
                 "Minions have 4% increased Attack Speed",
                 "Minions have 4% increased Cast Speed"
               ]
-            }
-          ]
-        },
-        {
-          "act": 4,
-          "firstPoint": 41,
-          "lastPoint": 48,
-          "plannedNodes": [
+            },
             {
               "sequence": 41,
               "id": 43689,
@@ -12811,7 +12813,14 @@
               "stats": [
                 "+10 to Strength"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": 5,
+          "firstPoint": 48,
+          "lastPoint": 55,
+          "plannedNodes": [
             {
               "sequence": 48,
               "id": 15631,
@@ -12821,14 +12830,7 @@
               "stats": [
                 "+10 to Strength"
               ]
-            }
-          ]
-        },
-        {
-          "act": 5,
-          "firstPoint": 49,
-          "lastPoint": 56,
-          "plannedNodes": [
+            },
             {
               "sequence": 49,
               "id": 64426,
@@ -12919,7 +12921,14 @@
                 "12% increased Mana Reservation Efficiency of Skills",
                 "10% increased effect of Non-Curse Auras from your Skills"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": 6,
+          "firstPoint": 56,
+          "lastPoint": 65,
+          "plannedNodes": [
             {
               "sequence": 56,
               "id": 47197,
@@ -12948,14 +12957,7 @@
               ],
               "effectId": 61097,
               "effect": "Auras from your Skills have 10% increased Effect on you"
-            }
-          ]
-        },
-        {
-          "act": 6,
-          "firstPoint": 57,
-          "lastPoint": 66,
-          "plannedNodes": [
+            },
             {
               "sequence": 57,
               "id": 10031,
@@ -13070,7 +13072,14 @@
               ],
               "effectId": 48720,
               "effect": "You take 30% reduced Extra Damage from Critical Strikes"
-            },
+            }
+          ]
+        },
+        {
+          "act": 7,
+          "firstPoint": 66,
+          "lastPoint": 73,
+          "plannedNodes": [
             {
               "sequence": 66,
               "id": 19919,
@@ -13080,14 +13089,7 @@
               "stats": [
                 "+3% chance to Block Spell Damage while holding a Staff or Shield"
               ]
-            }
-          ]
-        },
-        {
-          "act": 7,
-          "firstPoint": 67,
-          "lastPoint": 74,
-          "plannedNodes": [
+            },
             {
               "sequence": 67,
               "id": 55743,
@@ -13173,7 +13175,14 @@
               "stats": [
                 "Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments Your Critical Strikes do not deal extra Damage Ailments never count as being from Critical Strikes"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": 8,
+          "firstPoint": 74,
+          "lastPoint": 79,
+          "plannedNodes": [
             {
               "sequence": 74,
               "id": 367,
@@ -13183,14 +13192,7 @@
               "stats": [
                 "6% increased maximum Energy Shield"
               ]
-            }
-          ]
-        },
-        {
-          "act": 8,
-          "firstPoint": 75,
-          "lastPoint": 80,
-          "plannedNodes": [
+            },
             {
               "sequence": 75,
               "id": 33864,
@@ -13240,7 +13242,14 @@
               "stats": [
                 "+10 to Intelligence"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": 9,
+          "firstPoint": 80,
+          "lastPoint": 84,
+          "plannedNodes": [
             {
               "sequence": 80,
               "id": 15167,
@@ -13251,14 +13260,7 @@
                 "20% increased Effect of Buffs granted by your Golems",
                 "Golems have 15% increased Maximum Life"
               ]
-            }
-          ]
-        },
-        {
-          "act": 9,
-          "firstPoint": 81,
-          "lastPoint": 85,
-          "plannedNodes": [
+            },
             {
               "sequence": 81,
               "id": 24872,
@@ -13301,7 +13303,14 @@
                 "8% increased Accuracy Rating with Maces or Sceptres",
                 "12% increased Elemental Damage with Maces or Sceptres"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": 10,
+          "firstPoint": 85,
+          "lastPoint": 92,
+          "plannedNodes": [
             {
               "sequence": 85,
               "id": 24677,
@@ -13312,14 +13321,7 @@
                 "8% increased Accuracy Rating with Maces or Sceptres",
                 "12% increased Elemental Damage with Maces or Sceptres"
               ]
-            }
-          ]
-        },
-        {
-          "act": 10,
-          "firstPoint": 86,
-          "lastPoint": 93,
-          "plannedNodes": [
+            },
             {
               "sequence": 86,
               "id": 60619,
@@ -13392,7 +13394,14 @@
                 "2% Chance to Block Spell Damage",
                 "5% increased maximum Mana"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": "Early maps",
+          "firstPoint": 93,
+          "lastPoint": 97,
+          "plannedNodes": [
             {
               "sequence": 93,
               "id": 18174,
@@ -13403,14 +13412,7 @@
                 "6% Chance to Block Spell Damage",
                 "1% increased Mana Regeneration Rate per 1% Chance to Block Spell Damage"
               ]
-            }
-          ]
-        },
-        {
-          "act": "Early maps",
-          "firstPoint": 94,
-          "lastPoint": 97,
-          "plannedNodes": [
+            },
             {
               "sequence": 94,
               "id": 29061,
@@ -13483,10 +13485,17 @@
       ],
       "notes": [
         "Level 7 import uses the parallel spell-damage branch to Arcanist's Dominion. Keep it until the attack swap. Skip original points 2–4 for now; next points are original 6–11. Before continuing toward Retribution via node 4397, either connect the Intelligence branch and refund the four spell nodes, or temporarily add 4397 from Arcanist's Dominion; see current review for exact refund order.",
-        "Milestones count quest points as available; check /passives. Actual imported allocations are shown separately from planned nodes.",
+        "Milestones assume helping Alira (+15% all elemental resistances), one fewer point from Act 2 onward than kill-all. Check /passives. Actual imported allocations are shown separately from planned nodes.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it.",
-        "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first."
-      ]
+        "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first.",
+        "Keep Alira through campaign and early maps; reconsider only after gear caps resistances without her. The original 97-node route is preserved: point 93 (Mystic Bulwark) moves to early maps."
+      ],
+      "bandit": {
+        "recommended": "Alira",
+        "reward": "+15% to all Elemental Resistances",
+        "cost": "One passive point versus killing all",
+        "reconsider": "Late maps, only if gear can maintain resistance caps after removing the bonus."
+      }
     },
     "gems": [
       {
@@ -13672,7 +13681,8 @@
       "Before maps: aim for 4,000 life, capped elemental resists, nonnegative chaos resistance, 15k armour with sustainable buffs, 50% attack block / 40% spell block as stretch goals; never claim these from the tree alone.",
       "Keep a life flask and real attack life/mana recovery; use flat life on hit or elemental/attack leech on gear, not physical-only leech after conversion.",
       "Avoid reflect, reduced max res, severe recovery penalties and dangerous damage combinations. Do not assume charges or fortify on bosses.",
-      "No required uniques; do not invest in CI or crit stacking without a tested PoB."
+      "No required uniques; do not invest in CI or crit stacking without a tested PoB.",
+      "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
       "Allocate Mana and Life (48362), Heart and Soul (27203), Avoid Interruption while Casting and Elemental Resistances (11128), Practical Application (8135), Elemental Damage (4184), Lightning Walker (30225).",
