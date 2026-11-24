@@ -9162,8 +9162,8 @@
         },
         {
           "severity": "good",
-          "title": "Damage is higher in PoB, but maps expose the weak weapon and four-link",
-          "detail": "Static Strike's configured CombinedDPS is 9,112, up from 5,759 at level 61 (+58%) with the same PoB enemy level 77. Map monsters are not the same as that configured target. Dire Bane is still an item-level 57 Foul Staff with only four sockets, 51% increased Physical Damage, and 14–32 added Physical Damage; it has not been upgraded since level 61.",
+          "title": "The weapon and four-link are the clear damage bottlenecks",
+          "detail": "Static Strike is calculated at 9,112 CombinedDPS with the current PoB settings. The level-61 export showed 5,759, but the configurations differ: this import enables all 7 Endurance Charges, while the prior import showed 1/6, so the numbers are not a clean before/after comparison. Dire Bane is still an item-level 57 Foul Staff with only four sockets, 51% increased Physical Damage, and 14–32 added Physical Damage; it has not been upgraded since level 61.",
           "action": "Prioritize a higher-level staff with a strong local physical-DPS roll (flat physical plus increased physical), and a fifth link for Static Strike. Resolute Technique is allocated, so do not spend affixes on crit chance or multiplier."
         },
         {
