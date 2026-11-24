@@ -12162,10 +12162,10 @@
       "class": "Witch",
       "ascendancy": "None",
       "status": "playing",
-      "level": 21,
-      "act": 2,
+      "level": 29,
+      "act": 3,
       "league": "HC SSF Covens",
-      "stage": "Act 2 (inferred from level and Alira)",
+      "stage": "Act 3 transition (inferred from level and gems)",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
       "bandit": "Alira"
@@ -12177,109 +12177,132 @@
       "treeUrl": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua"
     },
     "stats": {
-      "life": 576,
-      "mana": 325,
-      "manaUnreserved": 195,
-      "manaRegenPerSecond": 10.1,
-      "lifeRegenPerSecond": 5.9,
-      "energyShield": 69,
-      "armour": 370,
+      "life": 942,
+      "mana": 497,
+      "manaUnreserved": 102,
+      "manaRegenPerSecond": 10,
+      "lifeRegenPerSecond": 25.3,
+      "energyShield": 83,
+      "armour": 738,
       "evasion": 18,
-      "attackBlock": 26,
-      "spellBlock": 0,
-      "fireResistance": 40,
+      "attackBlock": 25,
+      "spellBlock": 18,
+      "fireResistance": 75,
       "coldResistance": 75,
-      "coldOvercap": 62,
-      "lightningResistance": 73,
-      "chaosResistance": 0,
-      "strength": 77,
+      "lightningResistance": 74,
+      "chaosResistance": 8,
+      "fireOvercap": 45,
+      "coldOvercap": 44,
+      "strength": 67,
       "dexterity": 87,
-      "intelligence": 150,
-      "combinedDps": 643.63767341651,
-      "mainSkill": "Lightning Tendrils",
-      "manaCostPerSecond": 26.2,
-      "physicalMaxHit": 712,
-      "lightningMaxHit": 2150,
-      "fireMaxHit": 1024,
-      "coldMaxHit": 2304,
-      "chaosMaxHit": 576
+      "intelligence": 180,
+      "combinedDps": 109.88346900564,
+      "mainSkill": "Charged Dash",
+      "manaCostPerSecond": 28.52,
+      "physicalMaxHit": 1155,
+      "lightningMaxHit": 3534,
+      "fireMaxHit": 3661,
+      "coldMaxHit": 3661,
+      "chaosMaxHit": 1024,
+      "accuracy": 515,
+      "hitChance": 44
     },
     "progress": {
       "completedPassiveIds": [
         1203,
         4184,
         4397,
+        5743,
         6237,
+        6764,
         8135,
+        9386,
         11128,
         11420,
         13009,
+        14057,
         17735,
+        26270,
         27203,
         30225,
         30693,
         31875,
+        32241,
         33435,
         36542,
         37569,
+        41190,
         41472,
         44529,
         48362,
         49254,
         57264,
+        58218,
         58402,
         58453,
-        60398
+        60398,
+        64210
       ],
       "completedTaskIds": [
         "spell-bridge",
         "movement-skill",
         "shield-equipped",
         "alira",
-        "dexterity-67"
+        "dexterity-67",
+        "charged-dash-level-28",
+        "four-link",
+        "life-mastery",
+        "determination",
+        "tempest-shield"
       ],
       "allocatedNodeIds": [
         1203,
         4184,
         4397,
+        5743,
         6237,
+        6764,
         8135,
+        9386,
         11128,
         11420,
         13009,
+        14057,
         17735,
+        26270,
         27203,
         30225,
         30693,
         31875,
+        32241,
         33435,
         36542,
         37569,
+        41190,
         41472,
         44529,
         48362,
         49254,
         57264,
+        58218,
         58402,
         58453,
-        60398
+        60398,
+        64210
       ],
-      "allocatedPassivePoints": 24,
+      "allocatedPassivePoints": 33,
       "outsideGuideNodes": [],
       "nextRoute": [
-        6764,
-        14057,
-        9386,
-        5743,
-        58218,
-        32241,
-        64210,
-        26270,
-        41190,
         26481,
         19103,
         35260,
-        4177
+        4177,
+        24824,
+        42668,
+        43689,
+        39648,
+        17821,
+        21330
       ]
     },
     "plan": {
@@ -13508,7 +13531,7 @@
         }
       ],
       "notes": [
-        "Level 21 import has already refunded the temporary spell branch. All 24 allocated nodes are on the planned route; original point 21 (44799) is unallocated but optional because Holy Dominion and Divine Fervour are already connected. Prioritize Purity of Flesh and Spiritual Aid instead. No further respec required now.",
+        "Level 29 transition: all 33 allocated points on plan, +30 life mastery confirmed. Skip optional 44799 for now. Finish Spiritual Aid, Spiritual Command, Quick Recovery; verify accuracy before dangerous encounters.",
         "Milestones assume helping Alira (+15% all elemental resistances), one fewer point from Act 2 onward than kill-all. Check /passives. Actual imported allocations are shown separately from planned nodes.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it.",
         "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first.",
@@ -13709,60 +13732,96 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "Take Intelligence (6764), Life and Energy Shield (14057, 9386, 5743), Purity of Flesh (58218), Life Mastery (32241, effect 47642: +30 life).",
-      "Then follow Spiritual Aid route: Intelligence 64210, 26270; Minion Damage and Life 41190, 26481; Righteous Army 19103; Minion Damage 35260; Spiritual Aid 4177. Continue Spiritual Command. Defer optional skipped Elemental Damage node 44799 until after those priorities.",
-      "Replace Mind Hold or belt/gloves to cap fire and lightning; keep Carrion Grip for accuracy. Seek movement speed boots and larger mana flask.",
-      "Keep Axiom for spells. Collect a rare fast attack weapon with flat elemental or physical damage, attack speed and accuracy. Transfer the main link to body armour when changing weapon.",
-      "At level 28 buy Charged Dash from Siosa when Library completed; trial only with usable weapon and links. Aim for Normal Lab / Shaper of Storms and Projection around 33–35; no forced transition."
+      "Check in-game Charged Dash hit chance; target 95–100%. Test Additional Accuracy in place of Added Lightning if needed. Add accuracy gear or level Precision within mana budget.",
+      "Next 4 points: Minion Damage and Life 26481, Righteous Army 19103, Minion Damage 35260, Spiritual Aid 4177. Then Spiritual Command via 24824, 42668, 43689; Quick Recovery via 39648, 17821, 21330.",
+      "Complete Normal Lab when comfortable; Shaper of Storms first. Seek Projection if available; avoid forcing a risky lab run.",
+      "Test Al Dhih and Bramble Thirst in safe areas, comparing damage, attack feel, life on hit, mana and Enduring Cry. Keep both until confirmed.",
+      "Cap lightning, craft life on Wrath Grip if possible, replace belt/gloves with life and accuracy/resists. Keep a spell leveling fallback."
     ],
     "lastReviewedAt": "2026-11-24",
     "snapshot": {
       "reviewedAt": "2026-11-24",
       "source": {
         "kind": "Reviewed PoB XML",
-        "file": "3.30 Charged Dash Elementalist - Experimental(1).xml",
+        "file": "3.30 Charged Dash Elementalist - Experimental(2).xml",
         "treeVersion": "3.30"
       },
       "stats": {
-        "life": 576,
-        "mana": 325,
-        "manaUnreserved": 195,
-        "manaRegenPerSecond": 10.1,
-        "lifeRegenPerSecond": 5.9,
-        "energyShield": 69,
-        "armour": 370,
+        "life": 942,
+        "mana": 497,
+        "manaUnreserved": 102,
+        "manaRegenPerSecond": 10,
+        "lifeRegenPerSecond": 25.3,
+        "energyShield": 83,
+        "armour": 738,
         "evasion": 18,
-        "attackBlock": 26,
-        "spellBlock": 0,
-        "fireResistance": 40,
+        "attackBlock": 25,
+        "spellBlock": 18,
+        "fireResistance": 75,
         "coldResistance": 75,
-        "coldOvercap": 62,
-        "lightningResistance": 73,
-        "chaosResistance": 0,
-        "strength": 77,
+        "lightningResistance": 74,
+        "chaosResistance": 8,
+        "fireOvercap": 45,
+        "coldOvercap": 44,
+        "strength": 67,
         "dexterity": 87,
-        "intelligence": 150,
-        "combinedDps": 643.63767341651,
-        "mainSkill": "Lightning Tendrils",
-        "manaCostPerSecond": 26.2,
-        "physicalMaxHit": 712,
-        "lightningMaxHit": 2150,
-        "fireMaxHit": 1024,
-        "coldMaxHit": 2304,
-        "chaosMaxHit": 576
+        "intelligence": 180,
+        "combinedDps": 109.88346900564,
+        "mainSkill": "Charged Dash",
+        "manaCostPerSecond": 28.52,
+        "physicalMaxHit": 1155,
+        "lightningMaxHit": 3534,
+        "fireMaxHit": 3661,
+        "coldMaxHit": 3661,
+        "chaosMaxHit": 1024,
+        "accuracy": 515,
+        "hitChance": 44
       },
       "skills": [
         {
-          "slot": "Weapon 1",
+          "slot": "Boots",
           "gems": [
-            "Lightning Tendrils",
+            "Charged Dash",
+            "Added Lightning Damage",
             "Infused Channelling",
-            "Added Lightning Damage"
+            "Elemental Damage with Attacks"
           ],
           "levels": [
-            7,
+            1,
             6,
-            5
+            8,
+            1
+          ]
+        },
+        {
+          "slot": "Gloves",
+          "gems": [
+            "Tempest Shield",
+            "Determination"
+          ],
+          "levels": [
+            1,
+            1
+          ]
+        },
+        {
+          "slot": "Weapon 1",
+          "gems": [
+            "Shield Charge",
+            "Faster Attacks"
+          ],
+          "levels": [
+            1,
+            1
+          ]
+        },
+        {
+          "slot": "Weapon 1",
+          "gems": [
+            "Precision"
+          ],
+          "levels": [
+            1
           ]
         },
         {
@@ -13772,164 +13831,141 @@
             "Summon Phantasm"
           ],
           "levels": [
-            6,
-            6
+            8,
+            8
           ]
         },
         {
-          "slot": "Weapon 2",
+          "slot": "Body Armour",
           "gems": [
-            "Herald of Thunder"
+            "Conductivity",
+            "Wave of Conviction",
+            "Enduring Cry"
           ],
           "levels": [
-            2
-          ]
-        },
-        {
-          "slot": "Gloves",
-          "gems": [
-            "Orb of Storms"
-          ],
-          "levels": [
-            6
-          ]
-        },
-        {
-          "slot": "Boots",
-          "gems": [
-            "Clarity"
-          ],
-          "levels": [
-            2
-          ]
-        },
-        {
-          "slot": "Boots",
-          "gems": [
-            "Frostblink"
-          ],
-          "levels": [
-            6
+            1,
+            1,
+            1
           ]
         }
       ],
       "gear": [
         [
-          "Weapon 1",
-          "Axiom Perpetuum · Bronze Sceptre",
-          "Excellent spell leveling; flat damage and crit modifiers are spell-only, not attack scaling."
+          "Weapon",
+          "Bramble Thirst · Blinder",
+          "70.5 raw DPS, 12 life on hit, 1.55 APS, +68 mana; equipped. Keep Al Dhih for controlled comparison."
         ],
         [
-          "Weapon 2",
-          "Empyrean Barrier · Rawhide Tower Shield",
-          "+42 total life, 2.5 life regen/sec, cold and lightning resistances"
-        ],
-        [
-          "Helmet",
-          "Hypnotic Halo · Barbute Helmet",
-          "+50 life, 14% global accuracy, 122 armour; keep"
-        ],
-        [
-          "Body Armour",
-          "Blight Keep · Ringmail Coat",
-          "138 armour, 32 ES, three linked white sockets, no life modifier"
-        ],
-        [
-          "Gloves",
-          "Pixie's Chain Gloves of the Inuit",
-          "Cold resistance; replace with life/fire resistance"
+          "Shield",
+          "Corpse Fend · Cedar Tower Shield",
+          "145 armour, +26 life, 18% elemental ailment avoidance"
         ],
         [
           "Boots",
-          "Studded Iron Greaves of the Cloud",
-          "No movement speed; upgrade"
+          "Rune Track · Ringmail Boots",
+          "4-link main skill, +38 life, 13% movement speed, fire/lightning res"
         ],
         [
-          "Amulet",
-          "Jade Amulet",
-          "+20 Dexterity"
+          "Body Armour",
+          "Rift Shelter · Ringmail Coat",
+          "Triple resistances, +32 mana, crafted +23 life"
         ],
         [
-          "Ring 1",
-          "Carrion Grip · Sapphire Ring",
-          "+73 accuracy, flat physical attacks, +3 attributes; keep for transition"
+          "Helmet",
+          "Hypnotic Halo",
+          "50 life, 14% global accuracy"
         ],
         [
-          "Ring 2",
-          "Mind Hold · Sapphire Ring",
-          "34% cold resistance; replace with fire resistance/life if possible"
+          "Gloves",
+          "Pixie's Chain Gloves",
+          "Weak life-less cold resistance gloves; upgrade accuracy/life/lightning"
         ],
         [
           "Belt",
           "Chain Belt",
-          "+19 ES only; replace with life/resist belt"
+          "+19 ES only; upgrade life and lightning resistance"
+        ],
+        [
+          "Amulet",
+          "Jade Amulet",
+          "+20 Dex; upgrade rare with accuracy/life if possible"
+        ],
+        [
+          "Ring 1",
+          "Carrion Grip",
+          "+73 accuracy, physical attack damage; keep"
+        ],
+        [
+          "Ring 2",
+          "Wrath Grip",
+          "33% fire / 30% cold resist, lightning attack damage; craft life"
         ],
         [
           "Flasks",
-          "2 Greater Life, Medium Life, Quicksilver, Small Mana",
-          "Upgrade mana flask and third life flask; roll useful affixes"
+          "Grand Life, 2 Greater Life, Quicksilver, Grand Mana",
+          "Roll magic affixes, instant/partial instant life when available"
         ]
       ],
       "findings": [
         {
           "severity": "good",
-          "title": "Alira and attributes ready",
-          "detail": "Alira confirmed; 87 Dexterity exceeds the 67 requirement for level-1 Charged Dash. No respec needed: previous four spell nodes refunded and all allocated nodes are on the planned route."
+          "title": "Transition completed",
+          "detail": "Charged Dash 4-link equipped; 942 life, 738 armour, 25/18 attack/spell block. Alira confirmed. All 33 allocated passives on guide including +30 life mastery."
         },
         {
           "severity": "warning",
-          "title": "Fire resistance and movement",
-          "detail": "40% fire, 73% lightning, 137% uncapped cold. Replace cold-heavy ring or weak belt/gloves with fire resistance and life. Boots lack movement speed."
-        },
-        {
-          "severity": "good",
-          "title": "Strong spell bridge",
-          "detail": "Axiom Perpetuum, Lightning Tendrils 3-link and Orb of Storms are excellent while leveling. The sceptre is not an attack weapon upgrade: its added damage and crit are spell-only."
+          "title": "Verify real campaign hit chance",
+          "detail": "PoB reports 515 accuracy and 44% hit chance, with level 84 enemy placeholder and no explicit override. Check in-game hit chance or set correct enemy level; below 90% consider Additional Accuracy instead of Added Lightning, level Precision as mana permits, add accuracy gear."
         },
         {
           "severity": "warning",
           "title": "Mana sustain",
-          "detail": "26.2 mana/sec channelling versus 10.1 regen; Small Mana Flask is outdated."
+          "detail": "102 unreserved mana, 28.52/sec cost and 10/sec regen. Grand Mana Flask equipped; do not overlevel Precision blindly."
         },
         {
-          "severity": "unknown",
-          "title": "Attack transition not tested",
-          "detail": "643.6 combined DPS and 100% hit chance are for Lightning Tendrils. Acquire a rare attack sceptre or other valid melee weapon and test actual Charged Dash accuracy, damage and sustain."
+          "severity": "warning",
+          "title": "Damage is not yet established",
+          "detail": "PoB shows 109.9 combined DPS for level 1 Charged Dash, not comparable to old spell DPS due to skill mechanics/configuration. No ascendancy or Spiritual Aid yet. Test in safe zones."
+        },
+        {
+          "severity": "good",
+          "title": "Resistance and gear improvements",
+          "detail": "75/75/74 res, +8 chaos, four-link boots and movement speed. Cap lightning; replace weak gloves and normal belt. Retain both claws."
         }
       ],
       "nextActions": [
-        "Take Intelligence (6764), Life and Energy Shield (14057, 9386, 5743), Purity of Flesh (58218), Life Mastery (32241, effect 47642: +30 life).",
-        "Then follow Spiritual Aid route: Intelligence 64210, 26270; Minion Damage and Life 41190, 26481; Righteous Army 19103; Minion Damage 35260; Spiritual Aid 4177. Continue Spiritual Command. Defer optional skipped Elemental Damage node 44799 until after those priorities.",
-        "Replace Mind Hold or belt/gloves to cap fire and lightning; keep Carrion Grip for accuracy. Seek movement speed boots and larger mana flask.",
-        "Keep Axiom for spells. Collect a rare fast attack weapon with flat elemental or physical damage, attack speed and accuracy. Transfer the main link to body armour when changing weapon.",
-        "At level 28 buy Charged Dash from Siosa when Library completed; trial only with usable weapon and links. Aim for Normal Lab / Shaper of Storms and Projection around 33–35; no forced transition."
+        "Check in-game Charged Dash hit chance; target 95–100%. Test Additional Accuracy in place of Added Lightning if needed. Add accuracy gear or level Precision within mana budget.",
+        "Next 4 points: Minion Damage and Life 26481, Righteous Army 19103, Minion Damage 35260, Spiritual Aid 4177. Then Spiritual Command via 24824, 42668, 43689; Quick Recovery via 39648, 17821, 21330.",
+        "Complete Normal Lab when comfortable; Shaper of Storms first. Seek Projection if available; avoid forcing a risky lab run.",
+        "Test Al Dhih and Bramble Thirst in safe areas, comparing damage, attack feel, life on hit, mana and Enduring Cry. Keep both until confirmed.",
+        "Cap lightning, craft life on Wrath Grip if possible, replace belt/gloves with life and accuracy/resists. Keep a spell leveling fallback."
       ]
     },
     "findings": [
       {
         "severity": "good",
-        "title": "Alira and attributes ready",
-        "detail": "Alira confirmed; 87 Dexterity exceeds the 67 requirement for level-1 Charged Dash. No respec needed: previous four spell nodes refunded and all allocated nodes are on the planned route."
+        "title": "Transition completed",
+        "detail": "Charged Dash 4-link equipped; 942 life, 738 armour, 25/18 attack/spell block. Alira confirmed. All 33 allocated passives on guide including +30 life mastery."
       },
       {
         "severity": "warning",
-        "title": "Fire resistance and movement",
-        "detail": "40% fire, 73% lightning, 137% uncapped cold. Replace cold-heavy ring or weak belt/gloves with fire resistance and life. Boots lack movement speed."
-      },
-      {
-        "severity": "good",
-        "title": "Strong spell bridge",
-        "detail": "Axiom Perpetuum, Lightning Tendrils 3-link and Orb of Storms are excellent while leveling. The sceptre is not an attack weapon upgrade: its added damage and crit are spell-only."
+        "title": "Verify real campaign hit chance",
+        "detail": "PoB reports 515 accuracy and 44% hit chance, with level 84 enemy placeholder and no explicit override. Check in-game hit chance or set correct enemy level; below 90% consider Additional Accuracy instead of Added Lightning, level Precision as mana permits, add accuracy gear."
       },
       {
         "severity": "warning",
         "title": "Mana sustain",
-        "detail": "26.2 mana/sec channelling versus 10.1 regen; Small Mana Flask is outdated."
+        "detail": "102 unreserved mana, 28.52/sec cost and 10/sec regen. Grand Mana Flask equipped; do not overlevel Precision blindly."
       },
       {
-        "severity": "unknown",
-        "title": "Attack transition not tested",
-        "detail": "643.6 combined DPS and 100% hit chance are for Lightning Tendrils. Acquire a rare attack sceptre or other valid melee weapon and test actual Charged Dash accuracy, damage and sustain."
+        "severity": "warning",
+        "title": "Damage is not yet established",
+        "detail": "PoB shows 109.9 combined DPS for level 1 Charged Dash, not comparable to old spell DPS due to skill mechanics/configuration. No ascendancy or Spiritual Aid yet. Test in safe zones."
+      },
+      {
+        "severity": "good",
+        "title": "Resistance and gear improvements",
+        "detail": "75/75/74 res, +8 chaos, four-link boots and movement speed. Cap lightning; replace weak gloves and normal belt. Retain both claws."
       }
     ],
     "snapshotHistory": [
@@ -14082,7 +14118,233 @@
           "Fill second ring and belt; improve cold resistance before Merveil, and get movement speed boots.",
           "Collect a fast melee weapon (sceptre preferred), 67 Dexterity and suitable links ahead of level 28."
         ]
+      },
+      {
+        "reviewedAt": "2026-11-24",
+        "source": {
+          "kind": "Reviewed PoB XML",
+          "file": "3.30 Charged Dash Elementalist - Experimental(1).xml",
+          "treeVersion": "3.30"
+        },
+        "stats": {
+          "life": 576,
+          "mana": 325,
+          "manaUnreserved": 195,
+          "manaRegenPerSecond": 10.1,
+          "lifeRegenPerSecond": 5.9,
+          "energyShield": 69,
+          "armour": 370,
+          "evasion": 18,
+          "attackBlock": 26,
+          "spellBlock": 0,
+          "fireResistance": 40,
+          "coldResistance": 75,
+          "coldOvercap": 62,
+          "lightningResistance": 73,
+          "chaosResistance": 0,
+          "strength": 77,
+          "dexterity": 87,
+          "intelligence": 150,
+          "combinedDps": 643.63767341651,
+          "mainSkill": "Lightning Tendrils",
+          "manaCostPerSecond": 26.2,
+          "physicalMaxHit": 712,
+          "lightningMaxHit": 2150,
+          "fireMaxHit": 1024,
+          "coldMaxHit": 2304,
+          "chaosMaxHit": 576
+        },
+        "skills": [
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Lightning Tendrils",
+              "Infused Channelling",
+              "Added Lightning Damage"
+            ],
+            "levels": [
+              7,
+              6,
+              5
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Holy Flame Totem",
+              "Summon Phantasm"
+            ],
+            "levels": [
+              6,
+              6
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Herald of Thunder"
+            ],
+            "levels": [
+              2
+            ]
+          },
+          {
+            "slot": "Gloves",
+            "gems": [
+              "Orb of Storms"
+            ],
+            "levels": [
+              6
+            ]
+          },
+          {
+            "slot": "Boots",
+            "gems": [
+              "Clarity"
+            ],
+            "levels": [
+              2
+            ]
+          },
+          {
+            "slot": "Boots",
+            "gems": [
+              "Frostblink"
+            ],
+            "levels": [
+              6
+            ]
+          }
+        ],
+        "gear": [
+          [
+            "Weapon 1",
+            "Axiom Perpetuum · Bronze Sceptre",
+            "Excellent spell leveling; flat damage and crit modifiers are spell-only, not attack scaling."
+          ],
+          [
+            "Weapon 2",
+            "Empyrean Barrier · Rawhide Tower Shield",
+            "+42 total life, 2.5 life regen/sec, cold and lightning resistances"
+          ],
+          [
+            "Helmet",
+            "Hypnotic Halo · Barbute Helmet",
+            "+50 life, 14% global accuracy, 122 armour; keep"
+          ],
+          [
+            "Body Armour",
+            "Blight Keep · Ringmail Coat",
+            "138 armour, 32 ES, three linked white sockets, no life modifier"
+          ],
+          [
+            "Gloves",
+            "Pixie's Chain Gloves of the Inuit",
+            "Cold resistance; replace with life/fire resistance"
+          ],
+          [
+            "Boots",
+            "Studded Iron Greaves of the Cloud",
+            "No movement speed; upgrade"
+          ],
+          [
+            "Amulet",
+            "Jade Amulet",
+            "+20 Dexterity"
+          ],
+          [
+            "Ring 1",
+            "Carrion Grip · Sapphire Ring",
+            "+73 accuracy, flat physical attacks, +3 attributes; keep for transition"
+          ],
+          [
+            "Ring 2",
+            "Mind Hold · Sapphire Ring",
+            "34% cold resistance; replace with fire resistance/life if possible"
+          ],
+          [
+            "Belt",
+            "Chain Belt",
+            "+19 ES only; replace with life/resist belt"
+          ],
+          [
+            "Flasks",
+            "2 Greater Life, Medium Life, Quicksilver, Small Mana",
+            "Upgrade mana flask and third life flask; roll useful affixes"
+          ]
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "Alira and attributes ready",
+            "detail": "Alira confirmed; 87 Dexterity exceeds the 67 requirement for level-1 Charged Dash. No respec needed: previous four spell nodes refunded and all allocated nodes are on the planned route."
+          },
+          {
+            "severity": "warning",
+            "title": "Fire resistance and movement",
+            "detail": "40% fire, 73% lightning, 137% uncapped cold. Replace cold-heavy ring or weak belt/gloves with fire resistance and life. Boots lack movement speed."
+          },
+          {
+            "severity": "good",
+            "title": "Strong spell bridge",
+            "detail": "Axiom Perpetuum, Lightning Tendrils 3-link and Orb of Storms are excellent while leveling. The sceptre is not an attack weapon upgrade: its added damage and crit are spell-only."
+          },
+          {
+            "severity": "warning",
+            "title": "Mana sustain",
+            "detail": "26.2 mana/sec channelling versus 10.1 regen; Small Mana Flask is outdated."
+          },
+          {
+            "severity": "unknown",
+            "title": "Attack transition not tested",
+            "detail": "643.6 combined DPS and 100% hit chance are for Lightning Tendrils. Acquire a rare attack sceptre or other valid melee weapon and test actual Charged Dash accuracy, damage and sustain."
+          }
+        ],
+        "nextActions": [
+          "Take Intelligence (6764), Life and Energy Shield (14057, 9386, 5743), Purity of Flesh (58218), Life Mastery (32241, effect 47642: +30 life).",
+          "Then follow Spiritual Aid route: Intelligence 64210, 26270; Minion Damage and Life 41190, 26481; Righteous Army 19103; Minion Damage 35260; Spiritual Aid 4177. Continue Spiritual Command. Defer optional skipped Elemental Damage node 44799 until after those priorities.",
+          "Replace Mind Hold or belt/gloves to cap fire and lightning; keep Carrion Grip for accuracy. Seek movement speed boots and larger mana flask.",
+          "Keep Axiom for spells. Collect a rare fast attack weapon with flat elemental or physical damage, attack speed and accuracy. Transfer the main link to body armour when changing weapon.",
+          "At level 28 buy Charged Dash from Siosa when Library completed; trial only with usable weapon and links. Aim for Normal Lab / Shaper of Storms and Projection around 33–35; no forced transition."
+        ]
       }
-    ]
+    ],
+    "inventoryWatchlist": {
+      "weapons": [
+        {
+          "name": "Bramble Thirst",
+          "status": "equipped",
+          "dps": 70.525
+        },
+        {
+          "name": "Al Dhih",
+          "status": "keep for testing",
+          "dps": 78.65
+        },
+        {
+          "name": "Demon Needle",
+          "status": "recommended sell",
+          "dps": 64.37
+        }
+      ],
+      "rings": [
+        {
+          "name": "Carrion Grip",
+          "status": "equipped"
+        },
+        {
+          "name": "Wrath Grip",
+          "status": "equipped"
+        },
+        {
+          "name": "Dread Band",
+          "status": "recommended sell"
+        },
+        {
+          "name": "Mind Hold",
+          "status": "recommended sell"
+        }
+      ]
+    }
   }
 }
