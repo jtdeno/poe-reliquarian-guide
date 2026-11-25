@@ -12162,10 +12162,10 @@
       "class": "Witch",
       "ascendancy": "Elementalist",
       "status": "playing",
-      "level": 57,
+      "level": 61,
       "act": null,
       "league": "HC SSF Covens",
-      "stage": "Level 57 · post-Brine King · EO allocated; exact act unconfirmed",
+      "stage": "Level 61 · Cruel Lab complete · four golems; exact act unconfirmed",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
       "bandit": "Alira"
@@ -12177,38 +12177,38 @@
       "treeUrl": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua"
     },
     "stats": {
-      "life": 2867,
-      "mana": 775,
-      "manaUnreserved": 227,
-      "manaRegenPerSecond": 19,
-      "lifeRegenPerSecond": 230.6,
-      "energyShield": 165,
-      "armour": 4245,
-      "evasion": 20,
+      "life": 2959,
+      "mana": 840,
+      "manaUnreserved": 248,
+      "manaRegenPerSecond": 47.2,
+      "lifeRegenPerSecond": 333,
+      "energyShield": 203,
+      "armour": 5646,
+      "evasion": 24,
       "attackBlock": 29,
       "spellBlock": 30,
       "fireResistance": 76,
       "coldResistance": 76,
       "lightningResistance": 76,
       "chaosResistance": -1,
-      "fireOvercap": 24,
-      "coldOvercap": 17,
-      "lightningOvercap": 19,
+      "fireOvercap": 30,
+      "coldOvercap": 23,
+      "lightningOvercap": 25,
       "strength": 219,
       "dexterity": 156,
-      "intelligence": 263,
-      "combinedDps": 2343.4664277,
-      "mainSkill": "Charged Dash of Projection",
-      "manaCostPerSecond": 43.754,
-      "physicalMaxHit": 4161,
-      "lightningMaxHit": 12802,
-      "fireMaxHit": 12802,
-      "coldMaxHit": 12802,
-      "chaosMaxHit": 3259,
-      "accuracy": 1488,
-      "hitChance": 76,
-      "hitDps": 2209.24053174,
-      "averageHit": 1009.8462
+      "intelligence": 323,
+      "combinedDps": 3424.859300675,
+      "manaCostPerSecond": 48.43,
+      "physicalMaxHit": 4634,
+      "lightningMaxHit": 13802,
+      "fireMaxHit": 13802,
+      "coldMaxHit": 13802,
+      "chaosMaxHit": 3489,
+      "accuracy": 1838,
+      "hitChance": 82,
+      "hitDps": 3227.388397175,
+      "averageHit": 1332.80545,
+      "mainSkill": "Charged Dash of Projection"
     },
     "progress": {
       "completedPassiveIds": [
@@ -12216,6 +12216,7 @@
         3167,
         4177,
         4184,
+        4367,
         4397,
         5743,
         5935,
@@ -12231,15 +12232,18 @@
         13009,
         14057,
         15064,
+        15167,
         15631,
         17735,
         17821,
         19103,
+        19501,
         20832,
         21330,
         21413,
         22088,
         24824,
+        24872,
         26270,
         26481,
         27203,
@@ -12250,6 +12254,7 @@
         32241,
         32932,
         33435,
+        34506,
         35260,
         36542,
         36949,
@@ -12259,6 +12264,7 @@
         41472,
         42668,
         43689,
+        44184,
         44529,
         47197,
         48362,
@@ -12271,6 +12277,7 @@
         58402,
         58453,
         60398,
+        63447,
         64210,
         64426
       ],
@@ -12305,13 +12312,20 @@
         "resistances-capped",
         "elemental-overload",
         "expertise-refunded",
-        "jewellery-upgrades"
+        "jewellery-upgrades",
+        "cruel-lab",
+        "liege-of-the-primordial",
+        "golem-commander",
+        "stone-golem",
+        "lightning-golem",
+        "flame-golem"
       ],
       "allocatedNodeIds": [
         1203,
         3167,
         4177,
         4184,
+        4367,
         4397,
         5743,
         5935,
@@ -12328,15 +12342,18 @@
         13009,
         14057,
         15064,
+        15167,
         15631,
         17735,
         17821,
         19103,
+        19501,
         20832,
         21330,
         21413,
         22088,
         24824,
+        24872,
         26270,
         26481,
         27203,
@@ -12347,16 +12364,20 @@
         32241,
         32932,
         33435,
+        34506,
         35260,
         36542,
+        36678,
         36949,
         37569,
         39648,
+        39841,
         41190,
         41472,
         42668,
         42760,
         43689,
+        44184,
         44529,
         44967,
         46340,
@@ -12373,10 +12394,11 @@
         58453,
         60398,
         62214,
+        63447,
         64210,
         64426
       ],
-      "allocatedPassivePoints": 67,
+      "allocatedPassivePoints": 76,
       "outsideGuideNodes": [
         {
           "id": 6359,
@@ -12386,10 +12408,38 @@
           ]
         },
         {
+          "id": 36678,
+          "name": "Intelligence",
+          "stats": [
+            "Verified alternate Golem Commander travel; keep"
+          ]
+        },
+        {
+          "id": 39841,
+          "name": "Intelligence",
+          "stats": [
+            "Verified alternate Golem Commander travel; keep"
+          ]
+        },
+        {
+          "id": 42760,
+          "name": "Intelligence",
+          "stats": [
+            "+10 to Intelligence; alternate Elemental Overload route"
+          ]
+        },
+        {
           "id": 44967,
           "name": "Strength",
           "stats": [
             "+10 Strength; alternate travel"
+          ]
+        },
+        {
+          "id": 46340,
+          "name": "Intelligence",
+          "stats": [
+            "+10 to Intelligence; alternate Elemental Overload route"
           ]
         },
         {
@@ -12405,46 +12455,77 @@
           "stats": [
             "Alternate Sanctuary approach; keep"
           ]
-        },
-        {
-          "id": 42760,
-          "name": "Intelligence",
-          "stats": [
-            "+10 to Intelligence; alternate Elemental Overload route"
-          ]
-        },
-        {
-          "id": 46340,
-          "name": "Intelligence",
-          "stats": [
-            "+10 to Intelligence; alternate Elemental Overload route"
-          ]
         }
       ],
       "nextRoute": [
-        36678,
-        39841,
-        63447,
-        44184,
-        4367,
-        19501,
-        15167,
-        24872,
-        34506
+        14936,
+        21958,
+        19919,
+        55743,
+        6967,
+        38921,
+        25535,
+        60472,
+        29061,
+        55993,
+        41251,
+        13164
       ],
       "ascendancyNodeIds": [
-        58998,
-        27038
+        27038,
+        54279,
+        56461,
+        58998
       ],
-      "ascendancyPoints": 2,
+      "ascendancyPoints": 4,
       "nextRouteNodes": [
         {
-          "id": 36678,
-          "name": "Intelligence"
+          "id": 14936,
+          "name": "Life"
         },
         {
-          "id": 39841,
-          "name": "Intelligence"
+          "id": 21958,
+          "name": "Cruel Preparation"
+        },
+        {
+          "id": 19919,
+          "name": "Spell Block"
+        },
+        {
+          "id": 55743,
+          "name": "Spell Block"
+        },
+        {
+          "id": 6967,
+          "name": "Safeguard"
+        },
+        {
+          "id": 38921,
+          "name": "Block Mastery"
+        },
+        {
+          "id": 25535,
+          "name": "Shield Mastery"
+        },
+        {
+          "id": 60472,
+          "name": "Strength"
+        },
+        {
+          "id": 29061,
+          "name": "Elemental Damage"
+        },
+        {
+          "id": 55993,
+          "name": "Elemental Damage"
+        },
+        {
+          "id": 41251,
+          "name": "Ailment Effect"
+        },
+        {
+          "id": 13164,
+          "name": "Divine Judgement"
         }
       ]
     },
@@ -13674,7 +13755,7 @@
         }
       ],
       "notes": [
-        "Level 57: EO allocated by alternate route; Expertise refunded. Next nine nodes toward Golem Commander from #42760 via #36678 and #39841; use actual next route rather than original milestone table. Four-link campaign baseline; Cruel Lab next.",
+        "Level 61: Cruel Lab and Golem Commander complete; retain alternate travel. Exact next route prioritizes Cruel Preparation, Safeguard and shield mastery, then Divine Judgement; actual next route overrides the original milestone table.",
         "Milestones assume helping Alira (+15% all elemental resistances), one fewer point from Act 2 onward than kill-all. Check /passives. Actual imported allocations are shown separately from planned nodes.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it.",
         "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first.",
@@ -13791,10 +13872,10 @@
           "Summon Ice Golem",
           "Summon Stone Golem",
           "Summon Lightning Golem",
-          "Summon Chaos Golem"
+          "Summon Flame Golem"
         ],
         "linked": false,
-        "notes": "One until Liege, three after Liege, four after Golem Commander. Prioritize Ice/Stone/Lightning; Chaos if chaos resistance is poor. Do not count four before allocation."
+        "notes": "Four allowed now (Liege + Golem Commander). Swap Flame for Chaos if chaos resistance is poor; keep gems socketed but remove from skill bar after summoning."
       },
       {
         "title": "Boss utility · independent sockets",
@@ -13809,14 +13890,14 @@
     ],
     "ascendancy": [
       [
-        "Normal",
+        "Normal · complete",
         "Shaper of Storms",
         "Guaranteed shock, at least 25%."
       ],
       [
-        "Cruel",
+        "Cruel · complete",
         "Liege of the Primordial",
-        "Three golems and automatic resummoning."
+        "Four golems with Golem Commander; automatic resummoning."
       ],
       [
         "Merciless",
@@ -13885,70 +13966,56 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "Cruel Lab: Liege of the Primordial; add Lightning and Stone Golems within summon limit.",
-      "Next nine points from allocated #42760: Intelligence #36678 → Intelligence #39841 → Intelligence #63447 → Intelligence #44184 → Intelligence #4367 → Intelligence #19501 → Golem Life and Buff Effect #15167 → Golem Life and Buff Effect #24872 → Golem Commander #34506. Actual connected route, not original travel.",
-      "Test Trinity in place of Added Lightning only if sustained resonance and better single-target performance; keep current four-link otherwise. Five-link opportunistic.",
-      "Gamble claws and shields; upgrade helmet. Keep current jewellery crafts. Add resistance buffer and chaos resistance before Act 10.",
-      "Fix flasks and mana sustain; verify campaign hit chance, lightning exposure, curse and shock."
+      "Next points (connected from allocated #44184): Life #14936 → Cruel Preparation #21958 (+16% increased life total and +5% all elemental resistance).",
+      "Then Spell Block #19919 → Spell Block #55743 → Safeguard #6967 → Block Mastery #38921: 20 Life gained when you Block; 20 Mana gained when you Block. Connected from #6764.",
+      "Shield Mastery #25535: +1% Chance to Block Attack Damage per 5% Chance to Block on Equipped Shield (from Sanctuary #20832).",
+      "Then damage route from #26270: Strength #60472 → Elemental Damage #29061 → Elemental Damage #55993 → Ailment Effect #41251 → Divine Judgement #13164. Skip mace-only Galvanic Hammer while using claws.",
+      "Keep four golems; level Flame/Stone/Lightning; swap Flame for Chaos Golem before Kitava if chaos resistance remains low. Merciless Lab: Bastion of Elements when safe.",
+      "Upgrade flasks, chest, shield and helmet; fix resistance buffer before Act 10. Keep four-link; quality Projection when affordable."
     ],
     "lastReviewedAt": "2026-11-25",
     "snapshot": {
       "reviewedAt": "2026-11-25",
       "source": {
         "kind": "Reviewed PoB XML",
-        "file": "3.30 Charged Dash Elementalist - Experimental(8).xml",
+        "file": "3.30 Charged Dash Elementalist - Experimental(10).xml",
         "treeVersion": "3.30"
       },
       "stats": {
-        "life": 2867,
-        "mana": 775,
-        "manaUnreserved": 227,
-        "manaRegenPerSecond": 19,
-        "lifeRegenPerSecond": 230.6,
-        "energyShield": 165,
-        "armour": 4245,
-        "evasion": 20,
+        "life": 2959,
+        "mana": 840,
+        "manaUnreserved": 248,
+        "manaRegenPerSecond": 47.2,
+        "lifeRegenPerSecond": 333,
+        "energyShield": 203,
+        "armour": 5646,
+        "evasion": 24,
         "attackBlock": 29,
         "spellBlock": 30,
         "fireResistance": 76,
         "coldResistance": 76,
         "lightningResistance": 76,
         "chaosResistance": -1,
-        "fireOvercap": 24,
-        "coldOvercap": 17,
-        "lightningOvercap": 19,
+        "fireOvercap": 30,
+        "coldOvercap": 23,
+        "lightningOvercap": 25,
         "strength": 219,
         "dexterity": 156,
-        "intelligence": 263,
-        "combinedDps": 2343.4664277,
-        "mainSkill": "Charged Dash of Projection",
-        "manaCostPerSecond": 43.754,
-        "physicalMaxHit": 4161,
-        "lightningMaxHit": 12802,
-        "fireMaxHit": 12802,
-        "coldMaxHit": 12802,
-        "chaosMaxHit": 3259,
-        "accuracy": 1488,
-        "hitChance": 76,
-        "hitDps": 2209.24053174,
-        "averageHit": 1009.8462
+        "intelligence": 323,
+        "combinedDps": 3424.859300675,
+        "manaCostPerSecond": 48.43,
+        "physicalMaxHit": 4634,
+        "lightningMaxHit": 13802,
+        "fireMaxHit": 13802,
+        "coldMaxHit": 13802,
+        "chaosMaxHit": 3489,
+        "accuracy": 1838,
+        "hitChance": 82,
+        "hitDps": 3227.388397175,
+        "averageHit": 1332.80545,
+        "mainSkill": "Charged Dash of Projection"
       },
       "skills": [
-        {
-          "slot": "Boots",
-          "gems": [
-            "Charged Dash of Projection",
-            "Added Lightning Damage",
-            "Infused Channelling",
-            "Elemental Damage with Attacks"
-          ],
-          "levels": [
-            11,
-            15,
-            15,
-            12
-          ]
-        },
         {
           "slot": "Gloves",
           "gems": [
@@ -13958,10 +14025,19 @@
             "Frostblink"
           ],
           "levels": [
-            13,
-            12,
             14,
-            14
+            14,
+            15,
+            15
+          ]
+        },
+        {
+          "slot": "Helmet",
+          "gems": [
+            "Summon Flame Golem"
+          ],
+          "levels": [
+            7
           ]
         },
         {
@@ -13970,7 +14046,7 @@
             "Molten Shell"
           ],
           "levels": [
-            13
+            14
           ]
         },
         {
@@ -13981,9 +14057,9 @@
             "Hextouch"
           ],
           "levels": [
-            12,
-            13,
-            8
+            14,
+            14,
+            10
           ]
         },
         {
@@ -13992,7 +14068,25 @@
             "Summon Ice Golem"
           ],
           "levels": [
-            11
+            13
+          ]
+        },
+        {
+          "slot": "Weapon 2",
+          "gems": [
+            "Summon Stone Golem"
+          ],
+          "levels": [
+            7
+          ]
+        },
+        {
+          "slot": "Weapon 2",
+          "gems": [
+            "Summon Lightning Golem"
+          ],
+          "levels": [
+            7
           ]
         },
         {
@@ -14006,6 +14100,21 @@
             15,
             15,
             2
+          ]
+        },
+        {
+          "slot": "Boots",
+          "gems": [
+            "Charged Dash of Projection",
+            "Added Lightning Damage",
+            "Infused Channelling",
+            "Elemental Damage with Attacks"
+          ],
+          "levels": [
+            13,
+            15,
+            15,
+            14
           ]
         }
       ],
@@ -14069,63 +14178,74 @@
       "findings": [
         {
           "severity": "good",
-          "title": "Jewellery and Elemental Overload confirmed",
-          "detail": "2867 life (+13.6%), 2343.5 combined DPS (+61.3%), 4245 armour, 230.6 regen. Soul Band, Invasion Lash and Maelstrom Torc equipped. Expertise refunded; 156 Dex vs 117 required. EO uptime and complete release-cycle DPS not measured."
+          "title": "Cruel Lab and Golem Commander complete",
+          "detail": "Shaper of Storms and Liege of the Primordial confirmed. Golem Commander and both buff-effect small nodes allocated. Four golems allowed; Ice 13, Flame/Stone/Lightning 7. All nine prior route points completed; no respec needed."
+        },
+        {
+          "severity": "good",
+          "title": "Level 61 vs level 57",
+          "detail": "Life 2867 → 2959 (+3.2%), armour 4245 → 5646 (+33%), regen 230.6 → 333/s (+44%), exported combined DPS 2343.5 → 3424.9 (+46%). Physical max hit 4161 → 4634. PoB hit chance 76 → 82%; campaign enemy and full release-cycle DPS not verified."
         },
         {
           "severity": "warning",
-          "title": "Cruel Lab and golems next",
-          "detail": "Only Shaper of Storms allocated. Complete Cruel Lab, add Lightning and Stone Golems within actual summon limit, then Golem Commander."
+          "title": "Before Act 10: life and resistance",
+          "detail": "76% elemental resists; uncapped 106 fire/99 cold/101 lightning under -30 penalty. Need +0/+7/+5 respectively for 76% after next penalty; chaos -1% becomes -31% without upgrades. Cruel Preparation adds 5% all elemental resistance. Chaos Golem can replace Flame if needed; aim for positive chaos after Kitava."
+        },
+        {
+          "severity": "good",
+          "title": "Mana sustain much improved",
+          "detail": "248 free mana, 47.2 regen vs 48.43 cost/sec. No mana leech, but only 1.23/sec deficit before other costs; keep current Precision 2 initially and level gradually only if sustain remains comfortable. Check campaign hit chance using area-level enemy."
         },
         {
           "severity": "warning",
-          "title": "Four-link and mana",
-          "detail": "Original four-link remains equipped. Optional Trinity trial only if resonance sustains and damage improves. 227 free mana, 19 regen vs 43.754 cost/sec, zero leech; about 9.2 seconds continuous channel without recovery."
+          "title": "Gear and flasks",
+          "detail": "Beast Salvation Colosseum Plate found but not equipped in XML: 750 armour, 93 life, 37.1 regen, 33 lightning res, open suffix. Craft cold resistance to offset 28 lost from current chest; obtain four linked sockets for utility. Upgrade weak shield and helmet; replace third life flask with Granite, roll instant Divine life and bleed/corrupted blood protection. Shock suffix redundant with Tempest Shield."
         },
         {
           "severity": "warning",
-          "title": "Prepare second resistance penalty",
-          "detail": "Currently uncapped 100 fire/93 cold/95 lightning, chaos -1. Need +6 fire/+13 cold/+11 lightning for 76% after second penalty. Aim +30 chaos or better before penalty."
-        },
-        {
-          "severity": "warning",
-          "title": "Gear and flask priorities",
-          "detail": "Seek stronger elemental claw and higher armour/block shield; helmet next. Granite instead of third life flask, instant life and bleed/freeze protection. Current jewellery crafts appropriate."
+          "title": "Damage and exposure",
+          "detail": "Keep the current Projection 4-link; test Trinity only with sustained resonance. Add Added Lightning to Wave of Conviction/Conductivity/Hextouch if fourth linked socket available; verify lightning exposure. Keep EO, no Resolute Technique. Five-link opportunistic."
         }
       ],
       "nextActions": [
-        "Cruel Lab: Liege of the Primordial; add Lightning and Stone Golems within summon limit.",
-        "Next nine points from allocated #42760: Intelligence #36678 → Intelligence #39841 → Intelligence #63447 → Intelligence #44184 → Intelligence #4367 → Intelligence #19501 → Golem Life and Buff Effect #15167 → Golem Life and Buff Effect #24872 → Golem Commander #34506. Actual connected route, not original travel.",
-        "Test Trinity in place of Added Lightning only if sustained resonance and better single-target performance; keep current four-link otherwise. Five-link opportunistic.",
-        "Gamble claws and shields; upgrade helmet. Keep current jewellery crafts. Add resistance buffer and chaos resistance before Act 10.",
-        "Fix flasks and mana sustain; verify campaign hit chance, lightning exposure, curse and shock."
+        "Next points (connected from allocated #44184): Life #14936 → Cruel Preparation #21958 (+16% increased life total and +5% all elemental resistance).",
+        "Then Spell Block #19919 → Spell Block #55743 → Safeguard #6967 → Block Mastery #38921: 20 Life gained when you Block; 20 Mana gained when you Block. Connected from #6764.",
+        "Shield Mastery #25535: +1% Chance to Block Attack Damage per 5% Chance to Block on Equipped Shield (from Sanctuary #20832).",
+        "Then damage route from #26270: Strength #60472 → Elemental Damage #29061 → Elemental Damage #55993 → Ailment Effect #41251 → Divine Judgement #13164. Skip mace-only Galvanic Hammer while using claws.",
+        "Keep four golems; level Flame/Stone/Lightning; swap Flame for Chaos Golem before Kitava if chaos resistance remains low. Merciless Lab: Bastion of Elements when safe.",
+        "Upgrade flasks, chest, shield and helmet; fix resistance buffer before Act 10. Keep four-link; quality Projection when affordable."
       ]
     },
     "findings": [
       {
         "severity": "good",
-        "title": "Jewellery and Elemental Overload confirmed",
-        "detail": "2867 life (+13.6%), 2343.5 combined DPS (+61.3%), 4245 armour, 230.6 regen. Soul Band, Invasion Lash and Maelstrom Torc equipped. Expertise refunded; 156 Dex vs 117 required. EO uptime and complete release-cycle DPS not measured."
+        "title": "Cruel Lab and Golem Commander complete",
+        "detail": "Shaper of Storms and Liege of the Primordial confirmed. Golem Commander and both buff-effect small nodes allocated. Four golems allowed; Ice 13, Flame/Stone/Lightning 7. All nine prior route points completed; no respec needed."
+      },
+      {
+        "severity": "good",
+        "title": "Level 61 vs level 57",
+        "detail": "Life 2867 → 2959 (+3.2%), armour 4245 → 5646 (+33%), regen 230.6 → 333/s (+44%), exported combined DPS 2343.5 → 3424.9 (+46%). Physical max hit 4161 → 4634. PoB hit chance 76 → 82%; campaign enemy and full release-cycle DPS not verified."
       },
       {
         "severity": "warning",
-        "title": "Cruel Lab and golems next",
-        "detail": "Only Shaper of Storms allocated. Complete Cruel Lab, add Lightning and Stone Golems within actual summon limit, then Golem Commander."
+        "title": "Before Act 10: life and resistance",
+        "detail": "76% elemental resists; uncapped 106 fire/99 cold/101 lightning under -30 penalty. Need +0/+7/+5 respectively for 76% after next penalty; chaos -1% becomes -31% without upgrades. Cruel Preparation adds 5% all elemental resistance. Chaos Golem can replace Flame if needed; aim for positive chaos after Kitava."
+      },
+      {
+        "severity": "good",
+        "title": "Mana sustain much improved",
+        "detail": "248 free mana, 47.2 regen vs 48.43 cost/sec. No mana leech, but only 1.23/sec deficit before other costs; keep current Precision 2 initially and level gradually only if sustain remains comfortable. Check campaign hit chance using area-level enemy."
       },
       {
         "severity": "warning",
-        "title": "Four-link and mana",
-        "detail": "Original four-link remains equipped. Optional Trinity trial only if resonance sustains and damage improves. 227 free mana, 19 regen vs 43.754 cost/sec, zero leech; about 9.2 seconds continuous channel without recovery."
+        "title": "Gear and flasks",
+        "detail": "Beast Salvation Colosseum Plate found but not equipped in XML: 750 armour, 93 life, 37.1 regen, 33 lightning res, open suffix. Craft cold resistance to offset 28 lost from current chest; obtain four linked sockets for utility. Upgrade weak shield and helmet; replace third life flask with Granite, roll instant Divine life and bleed/corrupted blood protection. Shock suffix redundant with Tempest Shield."
       },
       {
         "severity": "warning",
-        "title": "Prepare second resistance penalty",
-        "detail": "Currently uncapped 100 fire/93 cold/95 lightning, chaos -1. Need +6 fire/+13 cold/+11 lightning for 76% after second penalty. Aim +30 chaos or better before penalty."
-      },
-      {
-        "severity": "warning",
-        "title": "Gear and flask priorities",
-        "detail": "Seek stronger elemental claw and higher armour/block shield; helmet next. Granite instead of third life flask, instant life and bleed/freeze protection. Current jewellery crafts appropriate."
+        "title": "Damage and exposure",
+        "detail": "Keep the current Projection 4-link; test Trinity only with sustained resonance. Add Added Lightning to Wave of Conviction/Conductivity/Hextouch if fourth linked socket available; verify lightning exposure. Keep EO, no Resolute Technique. Five-link opportunistic."
       }
     ],
     "snapshotHistory": [
@@ -15290,6 +15410,215 @@
           "Verify actual campaign hit chance, lightning exposure, Conductivity and shock; seek elemental attack mana leech or enduring mana flask. Quality Projection when affordable.",
           "Upgrade Carrion Grip and amulet for damage/life/resists; seek stronger claw with lightning damage. Save Fusings for worthwhile five-link base; prioritize cold/lightning overcap and flask fixes."
         ]
+      },
+      {
+        "reviewedAt": "2026-11-25",
+        "source": {
+          "kind": "Reviewed PoB XML",
+          "file": "3.30 Charged Dash Elementalist - Experimental(8).xml",
+          "treeVersion": "3.30"
+        },
+        "stats": {
+          "life": 2867,
+          "mana": 775,
+          "manaUnreserved": 227,
+          "manaRegenPerSecond": 19,
+          "lifeRegenPerSecond": 230.6,
+          "energyShield": 165,
+          "armour": 4245,
+          "evasion": 20,
+          "attackBlock": 29,
+          "spellBlock": 30,
+          "fireResistance": 76,
+          "coldResistance": 76,
+          "lightningResistance": 76,
+          "chaosResistance": -1,
+          "fireOvercap": 24,
+          "coldOvercap": 17,
+          "lightningOvercap": 19,
+          "strength": 219,
+          "dexterity": 156,
+          "intelligence": 263,
+          "combinedDps": 2343.4664277,
+          "mainSkill": "Charged Dash of Projection",
+          "manaCostPerSecond": 43.754,
+          "physicalMaxHit": 4161,
+          "lightningMaxHit": 12802,
+          "fireMaxHit": 12802,
+          "coldMaxHit": 12802,
+          "chaosMaxHit": 3259,
+          "accuracy": 1488,
+          "hitChance": 76,
+          "hitDps": 2209.24053174,
+          "averageHit": 1009.8462
+        },
+        "skills": [
+          {
+            "slot": "Boots",
+            "gems": [
+              "Charged Dash of Projection",
+              "Added Lightning Damage",
+              "Infused Channelling",
+              "Elemental Damage with Attacks"
+            ],
+            "levels": [
+              11,
+              15,
+              15,
+              12
+            ]
+          },
+          {
+            "slot": "Gloves",
+            "gems": [
+              "Tempest Shield",
+              "Determination",
+              "Enduring Cry",
+              "Frostblink"
+            ],
+            "levels": [
+              13,
+              12,
+              14,
+              14
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "gems": [
+              "Molten Shell"
+            ],
+            "levels": [
+              13
+            ]
+          },
+          {
+            "slot": "Body Armour",
+            "gems": [
+              "Conductivity",
+              "Wave of Conviction",
+              "Hextouch"
+            ],
+            "levels": [
+              12,
+              13,
+              8
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Summon Ice Golem"
+            ],
+            "levels": [
+              11
+            ]
+          },
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Shield Charge",
+              "Faster Attacks",
+              "Precision"
+            ],
+            "levels": [
+              15,
+              15,
+              2
+            ]
+          }
+        ],
+        "gear": [
+          [
+            "Weapon",
+            "Grim Slicer · Gut Ripper",
+            "20% quality, crafted 11% attack speed, 44 life/hit, 323 accuracy, 85 mana, 40–72 fire and 27–49 cold; keep seeking damage upgrade."
+          ],
+          [
+            "Shield",
+            "Corpse Fend · Cedar Tower Shield",
+            "20% quality, 174 armour, 55 life, 18% ailment avoidance; upgrade base."
+          ],
+          [
+            "Boots",
+            "Hate Track · Ancient Greaves",
+            "20% quality, 234 armour, 61 life, 20% movement, 23 cold/21 chaos resistance, 37 Strength, main four-link."
+          ],
+          [
+            "Body Armour",
+            "Ghoul Carapace · Holy Chainmail",
+            "20% quality, 344 armour, 73 ES, 49 life, 14 lightning and crafted 28 cold res; five-link opportunistic."
+          ],
+          [
+            "Helmet",
+            "Hypnotic Halo · Barbute Helmet",
+            "20% quality, 147 armour, 50 life, 14% global accuracy, crafted 21 lightning res."
+          ],
+          [
+            "Gloves",
+            "Honour Knuckle · Mesh Gloves",
+            "74 life, crafted 24 Dexterity, flat lightning attack damage, four-link."
+          ],
+          [
+            "Belt",
+            "Invasion Lash · Heavy Belt",
+            "82 life, 32 Strength, 27.5 regen, 12 fire res, crafted 22% elemental attack damage."
+          ],
+          [
+            "Amulet",
+            "Maelstrom Torc · Turquoise Amulet",
+            "32 Dex/Int, 10 Strength, 12–22 cold attacks, 38 mana, 5.8 regen, crafted 53 life."
+          ],
+          [
+            "Ring 1",
+            "Soul Band · Two-Stone Ring",
+            "108 life, 36 Dex, 16 Str/Int, 12 fire/lightning, crafted 24 cold resistance, 3–4 physical attacks."
+          ],
+          [
+            "Ring 2",
+            "Ghoul Turn · Two-Stone Ring",
+            "70 life, 26 ES, 10 mana/kill, 9.1 regen, 32 fire/15 lightning, 6–10 physical attacks."
+          ],
+          [
+            "Flasks",
+            "Sacred Life of Warding, Prudent Colossal Life, normal Colossal Life, normal Quicksilver, Colossal Mana of Grounding",
+            "Replace third life with Granite; instant life and bleed/freeze protection; shock suffix redundant."
+          ]
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "Jewellery and Elemental Overload confirmed",
+            "detail": "2867 life (+13.6%), 2343.5 combined DPS (+61.3%), 4245 armour, 230.6 regen. Soul Band, Invasion Lash and Maelstrom Torc equipped. Expertise refunded; 156 Dex vs 117 required. EO uptime and complete release-cycle DPS not measured."
+          },
+          {
+            "severity": "warning",
+            "title": "Cruel Lab and golems next",
+            "detail": "Only Shaper of Storms allocated. Complete Cruel Lab, add Lightning and Stone Golems within actual summon limit, then Golem Commander."
+          },
+          {
+            "severity": "warning",
+            "title": "Four-link and mana",
+            "detail": "Original four-link remains equipped. Optional Trinity trial only if resonance sustains and damage improves. 227 free mana, 19 regen vs 43.754 cost/sec, zero leech; about 9.2 seconds continuous channel without recovery."
+          },
+          {
+            "severity": "warning",
+            "title": "Prepare second resistance penalty",
+            "detail": "Currently uncapped 100 fire/93 cold/95 lightning, chaos -1. Need +6 fire/+13 cold/+11 lightning for 76% after second penalty. Aim +30 chaos or better before penalty."
+          },
+          {
+            "severity": "warning",
+            "title": "Gear and flask priorities",
+            "detail": "Seek stronger elemental claw and higher armour/block shield; helmet next. Granite instead of third life flask, instant life and bleed/freeze protection. Current jewellery crafts appropriate."
+          }
+        ],
+        "nextActions": [
+          "Cruel Lab: Liege of the Primordial; add Lightning and Stone Golems within summon limit.",
+          "Next nine points from allocated #42760: Intelligence #36678 → Intelligence #39841 → Intelligence #63447 → Intelligence #44184 → Intelligence #4367 → Intelligence #19501 → Golem Life and Buff Effect #15167 → Golem Life and Buff Effect #24872 → Golem Commander #34506. Actual connected route, not original travel.",
+          "Test Trinity in place of Added Lightning only if sustained resonance and better single-target performance; keep current four-link otherwise. Five-link opportunistic.",
+          "Gamble claws and shields; upgrade helmet. Keep current jewellery crafts. Add resistance buffer and chaos resistance before Act 10.",
+          "Fix flasks and mana sustain; verify campaign hit chance, lightning exposure, curse and shock."
+        ]
       }
     ],
     "inventoryWatchlist": {
@@ -15366,6 +15695,17 @@
         {
           "name": "Mind Hold",
           "status": "recommended sell"
+        }
+      ],
+      "bodyArmour": [
+        {
+          "name": "Beast Salvation",
+          "status": "candidate; not equipped in XML",
+          "armour": 750,
+          "life": 93,
+          "lifeRegen": 37.1,
+          "lightningResistance": 33,
+          "openSuffix": true
         }
       ]
     }
