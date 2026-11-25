@@ -12162,10 +12162,10 @@
       "class": "Witch",
       "ascendancy": "Elementalist",
       "status": "playing",
-      "level": 42,
-      "act": null,
+      "level": 54,
+      "act": 7,
       "league": "HC SSF Covens",
-      "stage": "Projection acquired; campaign act unconfirmed",
+      "stage": "Act 7 · Brine King defeated · damage priority",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
       "bandit": "Alira"
@@ -12177,46 +12177,52 @@
       "treeUrl": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua"
     },
     "stats": {
-      "life": 1759,
-      "mana": 514,
-      "manaUnreserved": 96,
-      "manaRegenPerSecond": 12.6,
-      "lifeRegenPerSecond": 117.3,
-      "energyShield": 108,
-      "armour": 1524,
-      "evasion": 19,
-      "attackBlock": 25,
-      "spellBlock": 21,
-      "fireResistance": 75,
-      "coldResistance": 18,
-      "lightningResistance": 29,
-      "chaosResistance": -52,
-      "fireOvercap": 18,
-      "strength": 143,
-      "dexterity": 103,
-      "intelligence": 188,
-      "combinedDps": 617.42696265743,
+      "life": 2523,
+      "mana": 673,
+      "manaUnreserved": 193,
+      "manaRegenPerSecond": 16.5,
+      "lifeRegenPerSecond": 202.7,
+      "energyShield": 158,
+      "armour": 4030,
+      "evasion": 20,
+      "attackBlock": 29,
+      "spellBlock": 29,
+      "fireResistance": 76,
+      "coldResistance": 76,
+      "lightningResistance": 76,
+      "chaosResistance": -1,
+      "fireOvercap": 45,
+      "coldOvercap": 21,
+      "lightningOvercap": 7,
+      "strength": 164,
+      "dexterity": 137,
+      "intelligence": 204,
+      "combinedDps": 1452.5112627328,
       "mainSkill": "Charged Dash of Projection",
-      "manaCostPerSecond": 38.9856,
-      "physicalMaxHit": 2288,
-      "lightningMaxHit": 2729,
-      "fireMaxHit": 7212,
-      "coldMaxHit": 2376,
-      "chaosMaxHit": 1258,
-      "accuracy": 775,
-      "hitChance": 56
+      "manaCostPerSecond": 35.0032,
+      "physicalMaxHit": 3747,
+      "lightningMaxHit": 11422,
+      "fireMaxHit": 11422,
+      "coldMaxHit": 11422,
+      "chaosMaxHit": 2897,
+      "accuracy": 1504,
+      "hitChance": 77
     },
     "progress": {
       "completedPassiveIds": [
         1203,
+        3167,
         4177,
         4184,
         4397,
         5743,
+        5935,
         6237,
         6764,
         8135,
         9386,
+        9392,
+        10031,
         11128,
         11420,
         12536,
@@ -12227,19 +12233,22 @@
         17735,
         17821,
         19103,
+        20832,
         21330,
+        21413,
         24824,
         26270,
-        26481,
         27203,
         30225,
         30693,
         31875,
         31931,
         32241,
+        32932,
         33435,
         35260,
         36542,
+        36949,
         37569,
         39648,
         41190,
@@ -12247,14 +12256,18 @@
         42668,
         43689,
         44529,
+        47197,
         48362,
         49254,
+        50862,
+        52462,
         57264,
         58218,
         58402,
         58453,
         60398,
-        64210
+        64210,
+        64426
       ],
       "completedTaskIds": [
         "spell-bridge",
@@ -12274,18 +12287,34 @@
         "projection",
         "spiritual-command",
         "quick-recovery",
-        "frostblink"
+        "frostblink",
+        "kitava-act5",
+        "brine-king",
+        "sanctuary",
+        "sovereignty",
+        "devotion",
+        "combat-stamina",
+        "armour-mastery",
+        "ice-golem",
+        "hextouch",
+        "expertise",
+        "resistances-capped"
       ],
       "allocatedNodeIds": [
         1203,
+        3167,
         4177,
         4184,
         4397,
         5743,
+        5935,
         6237,
+        6359,
         6764,
         8135,
         9386,
+        9392,
+        10031,
         11128,
         11420,
         12536,
@@ -12296,19 +12325,23 @@
         17735,
         17821,
         19103,
+        20832,
         21330,
+        21413,
         24824,
         26270,
-        26481,
         27203,
         30225,
         30693,
         31875,
         31931,
         32241,
+        32245,
+        32932,
         33435,
         35260,
         36542,
+        36949,
         37569,
         39648,
         41190,
@@ -12316,26 +12349,74 @@
         42668,
         43689,
         44529,
+        44967,
+        47197,
         48362,
         49254,
+        50422,
+        50862,
+        52462,
         57264,
         58218,
         58402,
         58453,
         60398,
-        64210
+        62214,
+        64210,
+        64426
       ],
-      "allocatedPassivePoints": 47,
-      "outsideGuideNodes": [],
+      "allocatedPassivePoints": 63,
+      "outsideGuideNodes": [
+        {
+          "id": 6359,
+          "name": "Armour and Life",
+          "stats": [
+            "Alternate Combat Stamina route"
+          ]
+        },
+        {
+          "id": 32245,
+          "name": "Expertise",
+          "stats": [
+            "+30 Dexterity; temporary until gear supports gems"
+          ]
+        },
+        {
+          "id": 44967,
+          "name": "Strength",
+          "stats": [
+            "+10 Strength; alternate travel"
+          ]
+        },
+        {
+          "id": 50422,
+          "name": "Strength",
+          "stats": [
+            "+10 Strength; alternate travel"
+          ]
+        },
+        {
+          "id": 62214,
+          "name": "Shield Spell Block and Elemental Resistances with a Shield",
+          "stats": [
+            "Alternate Sanctuary approach; keep"
+          ]
+        }
+      ],
       "nextRoute": [
-        64426,
-        1593,
-        20832,
-        25535,
-        5935,
-        9392,
-        32932,
-        47197
+        7938,
+        14021,
+        55332,
+        22088,
+        367,
+        33864,
+        63447,
+        44184,
+        4367,
+        19501,
+        15167,
+        24872,
+        34506
       ],
       "ascendancyNodeIds": [
         58998,
@@ -13569,7 +13650,7 @@
         }
       ],
       "notes": [
-        "Level 42: Projection, Spiritual Command and Quick Recovery confirmed; 47 regular points on plan. Finish Sanctuary and Sovereignty. Verify PoB resistance penalty before proceeding.",
+        "Level 54: prioritize damage on a four-link through Act 10; EO next via 7938/14021/55332/22088, then Golem Commander. Five-link is opportunistic. Keep alternate Combat Stamina/Sanctuary travel and Expertise; do not duplicate bypassed nodes. Original milestone table retained as reference; actual next route overrides it.",
         "Milestones assume helping Alira (+15% all elemental resistances), one fewer point from Act 2 onward than kill-all. Check /passives. Actual imported allocations are shown separately from planned nodes.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it.",
         "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first.",
@@ -13770,48 +13851,52 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "Verify actual resistances and PoB penalty. Before Act 5 Kitava aim for 105 uncapped elemental resistances; if pre-Kitava inference correct need 27 cold and 16 lightning before upcoming tree bonuses.",
-      "Finish Sanctuary via 64426, 1593, 20832; Shield Mastery 25535 effect 30612. Then Sovereignty via 5935, 9392, 32932 and Reservation Mastery 47197 effect 61097.",
-      "Test Projection safely, keep current four-link. Consider Hextouch with Wave of Conviction and Conductivity; ensure lightning exposure. Seek mana leech applicable to elemental attacks or reduced channel cost; keep mana flask.",
-      "Keep Ghoul Turn and Carrion Grip equipped, Wrath Grip backup. Seek cold/lightning resistance and life on amulet/body armour or shield; maintain accuracy."
+      "Next 4 points: Intelligence #7938 → Intelligence #14021 → Intelligence #55332 → Elemental Overload #22088. Connected from allocated #4397. Keep Expertise and alternate routes; no respec required now.",
+      "Complete Cruel Lab when available; Liege of the Primordial, then regular Lightning and Stone Golems alongside Ice Golem within actual summon limit.",
+      "Test four-link Projection / Elemental Damage with Attacks / Infused Channelling / Trinity instead of Added Lightning. Keep Added Lightning if resonance or single-target damage is worse. No five-link dependency.",
+      "After EO, path toward Golem Commander (367,33864,63447,44184,4367,19501,15167,24872,34506); verify connected route as allocations change. Skip mace-only Galvanic Hammer while using claws.",
+      "Verify actual campaign hit chance, lightning exposure, Conductivity and shock; seek elemental attack mana leech or enduring mana flask. Quality Projection when affordable.",
+      "Upgrade Carrion Grip and amulet for damage/life/resists; seek stronger claw with lightning damage. Save Fusings for worthwhile five-link base; prioritize cold/lightning overcap and flask fixes."
     ],
-    "lastReviewedAt": "2026-11-24",
+    "lastReviewedAt": "2026-11-25",
     "snapshot": {
-      "reviewedAt": "2026-11-24",
+      "reviewedAt": "2026-11-25",
       "source": {
         "kind": "Reviewed PoB XML",
-        "file": "3.30 Charged Dash Elementalist - Experimental(4).xml",
+        "file": "3.30 Charged Dash Elementalist - Experimental(7).xml",
         "treeVersion": "3.30"
       },
       "stats": {
-        "life": 1759,
-        "mana": 514,
-        "manaUnreserved": 96,
-        "manaRegenPerSecond": 12.6,
-        "lifeRegenPerSecond": 117.3,
-        "energyShield": 108,
-        "armour": 1524,
-        "evasion": 19,
-        "attackBlock": 25,
-        "spellBlock": 21,
-        "fireResistance": 75,
-        "coldResistance": 18,
-        "lightningResistance": 29,
-        "chaosResistance": -52,
-        "fireOvercap": 18,
-        "strength": 143,
-        "dexterity": 103,
-        "intelligence": 188,
-        "combinedDps": 617.42696265743,
+        "life": 2523,
+        "mana": 673,
+        "manaUnreserved": 193,
+        "manaRegenPerSecond": 16.5,
+        "lifeRegenPerSecond": 202.7,
+        "energyShield": 158,
+        "armour": 4030,
+        "evasion": 20,
+        "attackBlock": 29,
+        "spellBlock": 29,
+        "fireResistance": 76,
+        "coldResistance": 76,
+        "lightningResistance": 76,
+        "chaosResistance": -1,
+        "fireOvercap": 45,
+        "coldOvercap": 21,
+        "lightningOvercap": 7,
+        "strength": 164,
+        "dexterity": 137,
+        "intelligence": 204,
+        "combinedDps": 1452.5112627328,
         "mainSkill": "Charged Dash of Projection",
-        "manaCostPerSecond": 38.9856,
-        "physicalMaxHit": 2288,
-        "lightningMaxHit": 2729,
-        "fireMaxHit": 7212,
-        "coldMaxHit": 2376,
-        "chaosMaxHit": 1258,
-        "accuracy": 775,
-        "hitChance": 56
+        "manaCostPerSecond": 35.0032,
+        "physicalMaxHit": 3747,
+        "lightningMaxHit": 11422,
+        "fireMaxHit": 11422,
+        "coldMaxHit": 11422,
+        "chaosMaxHit": 2897,
+        "accuracy": 1504,
+        "hitChance": 77
       },
       "skills": [
         {
@@ -13823,10 +13908,10 @@
             "Elemental Damage with Attacks"
           ],
           "levels": [
-            1,
-            10,
-            11,
-            8
+            9,
+            14,
+            14,
+            11
           ]
         },
         {
@@ -13834,11 +13919,44 @@
           "gems": [
             "Tempest Shield",
             "Determination",
+            "Enduring Cry",
             "Frostblink"
           ],
           "levels": [
-            8,
-            7,
+            12,
+            11,
+            13,
+            13
+          ]
+        },
+        {
+          "slot": "Helmet",
+          "gems": [
+            "Molten Shell"
+          ],
+          "levels": [
+            12
+          ]
+        },
+        {
+          "slot": "Body Armour",
+          "gems": [
+            "Conductivity",
+            "Wave of Conviction",
+            "Hextouch"
+          ],
+          "levels": [
+            11,
+            12,
+            7
+          ]
+        },
+        {
+          "slot": "Weapon 2",
+          "gems": [
+            "Summon Ice Golem"
+          ],
+          "levels": [
             10
           ]
         },
@@ -13850,151 +13968,140 @@
             "Precision"
           ],
           "levels": [
-            11,
-            10,
+            14,
+            14,
             2
-          ]
-        },
-        {
-          "slot": "Helmet",
-          "gems": [
-            "Molten Shell"
-          ],
-          "levels": [
-            8
-          ]
-        },
-        {
-          "slot": "Weapon 2",
-          "gems": [
-            "Holy Flame Totem",
-            "Summon Phantasm"
-          ],
-          "levels": [
-            11,
-            11
-          ]
-        },
-        {
-          "slot": "Body Armour",
-          "gems": [
-            "Conductivity",
-            "Wave of Conviction",
-            "Enduring Cry"
-          ],
-          "levels": [
-            7,
-            8,
-            9
           ]
         }
       ],
       "gear": [
         [
           "Weapon",
-          "Morbid Roar · Sparkling Claw",
-          "20% quality; crafted 3–80 lightning attack damage; +116 accuracy; 15 life/hit; 10 life/kill; 16% attack speed. Exact tooltip DPS not exported."
+          "Grim Slicer · Gut Ripper",
+          "20% quality, crafted 11% attack speed, 44 life/hit, 323 accuracy, 85 mana, 40–72 fire and 27–49 cold; keep seeking damage upgrade."
         ],
         [
           "Shield",
-          "Corpse Fend",
-          "55 total life, 145 armour, 18% ailment avoidance"
+          "Corpse Fend · Cedar Tower Shield",
+          "20% quality, 174 armour, 55 life, 18% ailment avoidance; upgrade base."
         ],
         [
           "Boots",
-          "Rune Track · Ringmail Boots",
-          "4-link main skill, +38 life, 13% movement speed, fire/lightning res"
+          "Hate Track · Ancient Greaves",
+          "20% quality, 234 armour, 61 life, 20% movement, 23 cold/21 chaos resistance, 37 Strength, main four-link."
         ],
         [
           "Body Armour",
-          "Rift Shelter · Ringmail Coat",
-          "Triple resistances, +32 mana, crafted +23 life"
+          "Ghoul Carapace · Holy Chainmail",
+          "20% quality, 344 armour, 73 ES, 49 life, 14 lightning and crafted 28 cold res; five-link opportunistic."
         ],
         [
           "Helmet",
-          "Hypnotic Halo",
-          "+50 life, 14% global accuracy, crafted +24 Strength"
+          "Hypnotic Halo · Barbute Helmet",
+          "20% quality, 147 armour, 50 life, 14% global accuracy, crafted 21 lightning res."
         ],
         [
           "Gloves",
           "Honour Knuckle · Mesh Gloves",
-          "+74 life, +24 Dex crafted, 2–27 lightning attack damage, 4-link; excellent"
+          "74 life, crafted 24 Dexterity, flat lightning attack damage, four-link."
         ],
         [
           "Belt",
           "Gloom Leash · Leather Belt",
-          "+64 total life, 23.8 life regen/sec, 18% fire resistance"
+          "64 total life, 23.8 life regen/sec, 18 fire res."
         ],
         [
           "Amulet",
-          "Wrath Gorget · Amber Amulet",
-          "+22 strength, +12 dexterity, 19% global crit; no life; only 6 Dexterity above current gem requirement."
+          "Corpse Scarab · Turquoise Amulet",
+          "16 Dex/Int, 27 fire res, 4 mana/kill, crafted 31 life; transitional."
         ],
         [
           "Ring 1",
-          "Carrion Grip",
-          "+73 accuracy, physical attack damage; keep"
+          "Carrion Grip · Sapphire Ring",
+          "28 cold res, 73 accuracy, crafted 32 life; upgrade."
         ],
         [
           "Ring 2",
-          "Ghoul Turn",
-          "+70 life, +26 ES, +10 mana on kill, 9.1 life regen, 32 fire/15 lightning res, 6–10 physical attacks"
+          "Ghoul Turn · Two-Stone Ring",
+          "70 life, 26 ES, 10 mana/kill, 9.1 regen, 32 fire/15 lightning, 6–10 physical attacks."
         ],
         [
           "Flasks",
-          "Prudent Colossal Life, Colossal Life, Grand Life, Quicksilver, Colossal Mana of Grounding",
-          "Seek instant life, bleed/freeze protection and mana sustain; shock suffix redundant with Tempest Shield"
+          "Sacred Life of Warding, Prudent Colossal Life, normal Colossal Life, normal Quicksilver, Colossal Mana of Grounding",
+          "Replace third life with Granite; instant life and bleed/freeze protection; shock suffix redundant."
         ]
       ],
       "findings": [
         {
           "severity": "good",
-          "title": "Projection acquired",
-          "detail": "Level 1 Charged Dash of Projection equipped in correct four-link. Spiritual Command and Quick Recovery completed."
+          "title": "Brine King defeated; strong campaign defences",
+          "detail": "2523 life, 4030 armour, 202.7 life regeneration/sec; all elemental resists 76% with confirmed -30 penalty. Chaos -1%. No need to rush further defensive passives."
         },
         {
           "severity": "warning",
-          "title": "Resistance configuration discrepancy",
-          "detail": "Export omitted explicit resistance penalty, and reports 75/18/29/-52. Likely default -60 penalty: inferred uncapped 153/78/89/8 before Kitava; after first penalty 123/48/59/-22. Verify in game and set appropriate PoB penalty; do not assume actual cap."
+          "title": "Single-target damage is the priority",
+          "detail": "User reports slow bosses. Exported combined DPS 1452.5 (1283.7 hit DPS); full release cycle and actual campaign enemy settings not verified. Prioritize Elemental Overload, Cruel Lab, and four-link testing."
+        },
+        {
+          "severity": "warning",
+          "title": "Four-link is the campaign baseline",
+          "detail": "Test Trinity replacing Added Lightning Damage on Grim Slicer. Keep only if all three resonance bars stay active against a durable single target and damage improves. Otherwise revert. Five-link is opportunistic; do not spend Fusings on mediocre campaign armour."
+        },
+        {
+          "severity": "warning",
+          "title": "Boss mana and exposure",
+          "detail": "193 unreserved mana; 35/sec cost vs 16.5 regen; 14 mana per kill but zero leech. Check lightning exposure from Wave of Conviction, curse and shock settings; weapon attack damage does not apply to the spell."
         },
         {
           "severity": "good",
-          "title": "Life and regeneration surged",
-          "detail": "1759 life, 117.3 life regen/sec, 1524 armour. New gloves, belt, ring and shield life craft are excellent."
+          "title": "Dexterity and resistance crafts confirmed",
+          "detail": "Expertise +30 Dex allocated; 137 Dex vs 109 required. Keep temporary node until gear supports gem requirements. Helmet lightning craft, chest cold craft, ring and amulet life crafts all present."
         },
         {
           "severity": "warning",
-          "title": "Mana and accuracy still need work",
-          "detail": "96 unreserved mana; 39/sec cost versus 12.6/sec regen. Ghoul Turn gives 10 mana per kill but no boss sustain. 775 accuracy and exported 56% hit chance; verify actual campaign hit chance."
+          "title": "Act 10 resistance buffer and flasks",
+          "detail": "Current uncapped 121 fire/97 cold/83 lightning. Need another 9 cold and 23 lightning for 76% after next penalty; aim +30 chaos before Act 10. Replace third life flask with Granite; roll instant life and bleed/freeze protection."
         }
       ],
       "nextActions": [
-        "Verify actual resistances and PoB penalty. Before Act 5 Kitava aim for 105 uncapped elemental resistances; if pre-Kitava inference correct need 27 cold and 16 lightning before upcoming tree bonuses.",
-        "Finish Sanctuary via 64426, 1593, 20832; Shield Mastery 25535 effect 30612. Then Sovereignty via 5935, 9392, 32932 and Reservation Mastery 47197 effect 61097.",
-        "Test Projection safely, keep current four-link. Consider Hextouch with Wave of Conviction and Conductivity; ensure lightning exposure. Seek mana leech applicable to elemental attacks or reduced channel cost; keep mana flask.",
-        "Keep Ghoul Turn and Carrion Grip equipped, Wrath Grip backup. Seek cold/lightning resistance and life on amulet/body armour or shield; maintain accuracy."
+        "Next 4 points: Intelligence #7938 → Intelligence #14021 → Intelligence #55332 → Elemental Overload #22088. Connected from allocated #4397. Keep Expertise and alternate routes; no respec required now.",
+        "Complete Cruel Lab when available; Liege of the Primordial, then regular Lightning and Stone Golems alongside Ice Golem within actual summon limit.",
+        "Test four-link Projection / Elemental Damage with Attacks / Infused Channelling / Trinity instead of Added Lightning. Keep Added Lightning if resonance or single-target damage is worse. No five-link dependency.",
+        "After EO, path toward Golem Commander (367,33864,63447,44184,4367,19501,15167,24872,34506); verify connected route as allocations change. Skip mace-only Galvanic Hammer while using claws.",
+        "Verify actual campaign hit chance, lightning exposure, Conductivity and shock; seek elemental attack mana leech or enduring mana flask. Quality Projection when affordable.",
+        "Upgrade Carrion Grip and amulet for damage/life/resists; seek stronger claw with lightning damage. Save Fusings for worthwhile five-link base; prioritize cold/lightning overcap and flask fixes."
       ]
     },
     "findings": [
       {
         "severity": "good",
-        "title": "Projection acquired",
-        "detail": "Level 1 Charged Dash of Projection equipped in correct four-link. Spiritual Command and Quick Recovery completed."
+        "title": "Brine King defeated; strong campaign defences",
+        "detail": "2523 life, 4030 armour, 202.7 life regeneration/sec; all elemental resists 76% with confirmed -30 penalty. Chaos -1%. No need to rush further defensive passives."
       },
       {
         "severity": "warning",
-        "title": "Resistance configuration discrepancy",
-        "detail": "Export omitted explicit resistance penalty, and reports 75/18/29/-52. Likely default -60 penalty: inferred uncapped 153/78/89/8 before Kitava; after first penalty 123/48/59/-22. Verify in game and set appropriate PoB penalty; do not assume actual cap."
+        "title": "Single-target damage is the priority",
+        "detail": "User reports slow bosses. Exported combined DPS 1452.5 (1283.7 hit DPS); full release cycle and actual campaign enemy settings not verified. Prioritize Elemental Overload, Cruel Lab, and four-link testing."
+      },
+      {
+        "severity": "warning",
+        "title": "Four-link is the campaign baseline",
+        "detail": "Test Trinity replacing Added Lightning Damage on Grim Slicer. Keep only if all three resonance bars stay active against a durable single target and damage improves. Otherwise revert. Five-link is opportunistic; do not spend Fusings on mediocre campaign armour."
+      },
+      {
+        "severity": "warning",
+        "title": "Boss mana and exposure",
+        "detail": "193 unreserved mana; 35/sec cost vs 16.5 regen; 14 mana per kill but zero leech. Check lightning exposure from Wave of Conviction, curse and shock settings; weapon attack damage does not apply to the spell."
       },
       {
         "severity": "good",
-        "title": "Life and regeneration surged",
-        "detail": "1759 life, 117.3 life regen/sec, 1524 armour. New gloves, belt, ring and shield life craft are excellent."
+        "title": "Dexterity and resistance crafts confirmed",
+        "detail": "Expertise +30 Dex allocated; 137 Dex vs 109 required. Keep temporary node until gear supports gem requirements. Helmet lightning craft, chest cold craft, ring and amulet life crafts all present."
       },
       {
         "severity": "warning",
-        "title": "Mana and accuracy still need work",
-        "detail": "96 unreserved mana; 39/sec cost versus 12.6/sec regen. Ghoul Turn gives 10 mana per kill but no boss sustain. 775 accuracy and exported 56% hit chance; verify actual campaign hit chance."
+        "title": "Act 10 resistance buffer and flasks",
+        "detail": "Current uncapped 121 fire/97 cold/83 lightning. Need another 9 cold and 23 lightning for 76% after next penalty; aim +30 chaos before Act 10. Replace third life flask with Granite; roll instant life and bleed/freeze protection."
       }
     ],
     "snapshotHistory": [
@@ -14747,34 +14854,248 @@
           "Replace belt/gloves and craft life on Wrath Grip. Cap lightning and get 105% uncapped elemental resists before Act 5 Kitava. Maintain Dexterity for gem levels.",
           "Keep regular Charged Dash until Projection is obtained and tested. At 38 consider Wave of Conviction + Hextouch + Conductivity; verify lightning exposure. Add Frostblink and useful flask affixes."
         ]
+      },
+      {
+        "reviewedAt": "2026-11-24",
+        "source": {
+          "kind": "Reviewed PoB XML",
+          "file": "3.30 Charged Dash Elementalist - Experimental(4).xml",
+          "treeVersion": "3.30"
+        },
+        "stats": {
+          "life": 1759,
+          "mana": 514,
+          "manaUnreserved": 96,
+          "manaRegenPerSecond": 12.6,
+          "lifeRegenPerSecond": 117.3,
+          "energyShield": 108,
+          "armour": 1524,
+          "evasion": 19,
+          "attackBlock": 25,
+          "spellBlock": 21,
+          "fireResistance": 75,
+          "coldResistance": 18,
+          "lightningResistance": 29,
+          "chaosResistance": -52,
+          "fireOvercap": 18,
+          "strength": 143,
+          "dexterity": 103,
+          "intelligence": 188,
+          "combinedDps": 617.42696265743,
+          "mainSkill": "Charged Dash of Projection",
+          "manaCostPerSecond": 38.9856,
+          "physicalMaxHit": 2288,
+          "lightningMaxHit": 2729,
+          "fireMaxHit": 7212,
+          "coldMaxHit": 2376,
+          "chaosMaxHit": 1258,
+          "accuracy": 775,
+          "hitChance": 56
+        },
+        "skills": [
+          {
+            "slot": "Boots",
+            "gems": [
+              "Charged Dash of Projection",
+              "Added Lightning Damage",
+              "Infused Channelling",
+              "Elemental Damage with Attacks"
+            ],
+            "levels": [
+              1,
+              10,
+              11,
+              8
+            ]
+          },
+          {
+            "slot": "Gloves",
+            "gems": [
+              "Tempest Shield",
+              "Determination",
+              "Frostblink"
+            ],
+            "levels": [
+              8,
+              7,
+              10
+            ]
+          },
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Shield Charge",
+              "Faster Attacks",
+              "Precision"
+            ],
+            "levels": [
+              11,
+              10,
+              2
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "gems": [
+              "Molten Shell"
+            ],
+            "levels": [
+              8
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Holy Flame Totem",
+              "Summon Phantasm"
+            ],
+            "levels": [
+              11,
+              11
+            ]
+          },
+          {
+            "slot": "Body Armour",
+            "gems": [
+              "Conductivity",
+              "Wave of Conviction",
+              "Enduring Cry"
+            ],
+            "levels": [
+              7,
+              8,
+              9
+            ]
+          }
+        ],
+        "gear": [
+          [
+            "Weapon",
+            "Morbid Roar · Sparkling Claw",
+            "20% quality; crafted 3–80 lightning attack damage; +116 accuracy; 15 life/hit; 10 life/kill; 16% attack speed. Exact tooltip DPS not exported."
+          ],
+          [
+            "Shield",
+            "Corpse Fend",
+            "55 total life, 145 armour, 18% ailment avoidance"
+          ],
+          [
+            "Boots",
+            "Rune Track · Ringmail Boots",
+            "4-link main skill, +38 life, 13% movement speed, fire/lightning res"
+          ],
+          [
+            "Body Armour",
+            "Rift Shelter · Ringmail Coat",
+            "Triple resistances, +32 mana, crafted +23 life"
+          ],
+          [
+            "Helmet",
+            "Hypnotic Halo",
+            "+50 life, 14% global accuracy, crafted +24 Strength"
+          ],
+          [
+            "Gloves",
+            "Honour Knuckle · Mesh Gloves",
+            "+74 life, +24 Dex crafted, 2–27 lightning attack damage, 4-link; excellent"
+          ],
+          [
+            "Belt",
+            "Gloom Leash · Leather Belt",
+            "+64 total life, 23.8 life regen/sec, 18% fire resistance"
+          ],
+          [
+            "Amulet",
+            "Wrath Gorget · Amber Amulet",
+            "+22 strength, +12 dexterity, 19% global crit; no life; only 6 Dexterity above current gem requirement."
+          ],
+          [
+            "Ring 1",
+            "Carrion Grip",
+            "+73 accuracy, physical attack damage; keep"
+          ],
+          [
+            "Ring 2",
+            "Ghoul Turn",
+            "+70 life, +26 ES, +10 mana on kill, 9.1 life regen, 32 fire/15 lightning res, 6–10 physical attacks"
+          ],
+          [
+            "Flasks",
+            "Prudent Colossal Life, Colossal Life, Grand Life, Quicksilver, Colossal Mana of Grounding",
+            "Seek instant life, bleed/freeze protection and mana sustain; shock suffix redundant with Tempest Shield"
+          ]
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "Projection acquired",
+            "detail": "Level 1 Charged Dash of Projection equipped in correct four-link. Spiritual Command and Quick Recovery completed."
+          },
+          {
+            "severity": "warning",
+            "title": "Resistance configuration discrepancy",
+            "detail": "Export omitted explicit resistance penalty, and reports 75/18/29/-52. Likely default -60 penalty: inferred uncapped 153/78/89/8 before Kitava; after first penalty 123/48/59/-22. Verify in game and set appropriate PoB penalty; do not assume actual cap."
+          },
+          {
+            "severity": "good",
+            "title": "Life and regeneration surged",
+            "detail": "1759 life, 117.3 life regen/sec, 1524 armour. New gloves, belt, ring and shield life craft are excellent."
+          },
+          {
+            "severity": "warning",
+            "title": "Mana and accuracy still need work",
+            "detail": "96 unreserved mana; 39/sec cost versus 12.6/sec regen. Ghoul Turn gives 10 mana per kill but no boss sustain. 775 accuracy and exported 56% hit chance; verify actual campaign hit chance."
+          }
+        ],
+        "nextActions": [
+          "Verify actual resistances and PoB penalty. Before Act 5 Kitava aim for 105 uncapped elemental resistances; if pre-Kitava inference correct need 27 cold and 16 lightning before upcoming tree bonuses.",
+          "Finish Sanctuary via 64426, 1593, 20832; Shield Mastery 25535 effect 30612. Then Sovereignty via 5935, 9392, 32932 and Reservation Mastery 47197 effect 61097.",
+          "Test Projection safely, keep current four-link. Consider Hextouch with Wave of Conviction and Conductivity; ensure lightning exposure. Seek mana leech applicable to elemental attacks or reduced channel cost; keep mana flask.",
+          "Keep Ghoul Turn and Carrion Grip equipped, Wrath Grip backup. Seek cold/lightning resistance and life on amulet/body armour or shield; maintain accuracy."
+        ]
       }
     ],
     "inventoryWatchlist": {
       "weapons": [
         {
-          "name": "Morbid Roar",
+          "name": "Grim Slicer",
           "status": "equipped",
+          "quality": 20,
+          "craftedAttackSpeed": 11,
+          "accuracy": 323,
+          "lifeOnHit": 44,
+          "mana": 85,
+          "fireDamage": [
+            40,
+            72
+          ],
+          "coldDamage": [
+            27,
+            49
+          ]
+        },
+        {
+          "name": "Morbid Roar",
+          "status": "damage backup; retention not reconfirmed",
           "quality": 20,
           "lightningDamage": [
             3,
             80
-          ],
-          "accuracy": 116,
-          "lifeOnHit": 15,
-          "attackSpeed": 1.86,
-          "priorTooltipDps": 143.22,
-          "dps": null,
-          "note": "Current exact weapon DPS not exported; lightning craft and quality increased."
+          ]
         },
         {
-          "name": "Al Dhih",
-          "status": "unique backup",
-          "dps": 78.65
+          "name": "Advancing Fortress",
+          "status": "stashed defensive backup",
+          "lifeOnHit": 44,
+          "attackBlock": 15
         }
       ],
       "soldWeapons": [
         "Bramble Thirst",
-        "Demon Needle"
+        "Demon Needle",
+        "Al Dhih",
+        "Pain Fang",
+        "Pandemonium Edge"
       ],
       "rings": [
         {
@@ -14783,11 +15104,16 @@
         },
         {
           "name": "Carrion Grip",
-          "status": "equipped"
+          "status": "equipped",
+          "craftedLife": 32
+        },
+        {
+          "name": "Gale Gyre",
+          "status": "offensive backup"
         },
         {
           "name": "Wrath Grip",
-          "status": "backup"
+          "status": "resistance backup"
         },
         {
           "name": "Dread Band",
