@@ -12162,10 +12162,10 @@
       "class": "Witch",
       "ascendancy": "Elementalist",
       "status": "playing",
-      "level": 54,
-      "act": 7,
+      "level": 57,
+      "act": null,
       "league": "HC SSF Covens",
-      "stage": "Act 7 · Brine King defeated · damage priority",
+      "stage": "Level 57 · post-Brine King · EO allocated; exact act unconfirmed",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
       "bandit": "Alira"
@@ -12177,36 +12177,38 @@
       "treeUrl": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua"
     },
     "stats": {
-      "life": 2523,
-      "mana": 673,
-      "manaUnreserved": 193,
-      "manaRegenPerSecond": 16.5,
-      "lifeRegenPerSecond": 202.7,
-      "energyShield": 158,
-      "armour": 4030,
+      "life": 2867,
+      "mana": 775,
+      "manaUnreserved": 227,
+      "manaRegenPerSecond": 19,
+      "lifeRegenPerSecond": 230.6,
+      "energyShield": 165,
+      "armour": 4245,
       "evasion": 20,
       "attackBlock": 29,
-      "spellBlock": 29,
+      "spellBlock": 30,
       "fireResistance": 76,
       "coldResistance": 76,
       "lightningResistance": 76,
       "chaosResistance": -1,
-      "fireOvercap": 45,
-      "coldOvercap": 21,
-      "lightningOvercap": 7,
-      "strength": 164,
-      "dexterity": 137,
-      "intelligence": 204,
-      "combinedDps": 1452.5112627328,
+      "fireOvercap": 24,
+      "coldOvercap": 17,
+      "lightningOvercap": 19,
+      "strength": 219,
+      "dexterity": 156,
+      "intelligence": 263,
+      "combinedDps": 2343.4664277,
       "mainSkill": "Charged Dash of Projection",
-      "manaCostPerSecond": 35.0032,
-      "physicalMaxHit": 3747,
-      "lightningMaxHit": 11422,
-      "fireMaxHit": 11422,
-      "coldMaxHit": 11422,
-      "chaosMaxHit": 2897,
-      "accuracy": 1504,
-      "hitChance": 77
+      "manaCostPerSecond": 43.754,
+      "physicalMaxHit": 4161,
+      "lightningMaxHit": 12802,
+      "fireMaxHit": 12802,
+      "coldMaxHit": 12802,
+      "chaosMaxHit": 3259,
+      "accuracy": 1488,
+      "hitChance": 76,
+      "hitDps": 2209.24053174,
+      "averageHit": 1009.8462
     },
     "progress": {
       "completedPassiveIds": [
@@ -12236,8 +12238,10 @@
         20832,
         21330,
         21413,
+        22088,
         24824,
         26270,
+        26481,
         27203,
         30225,
         30693,
@@ -12261,6 +12265,7 @@
         49254,
         50862,
         52462,
+        55332,
         57264,
         58218,
         58402,
@@ -12297,8 +12302,10 @@
         "armour-mastery",
         "ice-golem",
         "hextouch",
-        "expertise",
-        "resistances-capped"
+        "resistances-capped",
+        "elemental-overload",
+        "expertise-refunded",
+        "jewellery-upgrades"
       ],
       "allocatedNodeIds": [
         1203,
@@ -12328,15 +12335,16 @@
         20832,
         21330,
         21413,
+        22088,
         24824,
         26270,
+        26481,
         27203,
         30225,
         30693,
         31875,
         31931,
         32241,
-        32245,
         32932,
         33435,
         35260,
@@ -12347,15 +12355,18 @@
         41190,
         41472,
         42668,
+        42760,
         43689,
         44529,
         44967,
+        46340,
         47197,
         48362,
         49254,
         50422,
         50862,
         52462,
+        55332,
         57264,
         58218,
         58402,
@@ -12365,20 +12376,13 @@
         64210,
         64426
       ],
-      "allocatedPassivePoints": 63,
+      "allocatedPassivePoints": 67,
       "outsideGuideNodes": [
         {
           "id": 6359,
           "name": "Armour and Life",
           "stats": [
             "Alternate Combat Stamina route"
-          ]
-        },
-        {
-          "id": 32245,
-          "name": "Expertise",
-          "stats": [
-            "+30 Dexterity; temporary until gear supports gems"
           ]
         },
         {
@@ -12401,15 +12405,25 @@
           "stats": [
             "Alternate Sanctuary approach; keep"
           ]
+        },
+        {
+          "id": 42760,
+          "name": "Intelligence",
+          "stats": [
+            "+10 to Intelligence; alternate Elemental Overload route"
+          ]
+        },
+        {
+          "id": 46340,
+          "name": "Intelligence",
+          "stats": [
+            "+10 to Intelligence; alternate Elemental Overload route"
+          ]
         }
       ],
       "nextRoute": [
-        7938,
-        14021,
-        55332,
-        22088,
-        367,
-        33864,
+        36678,
+        39841,
         63447,
         44184,
         4367,
@@ -12422,7 +12436,17 @@
         58998,
         27038
       ],
-      "ascendancyPoints": 2
+      "ascendancyPoints": 2,
+      "nextRouteNodes": [
+        {
+          "id": 36678,
+          "name": "Intelligence"
+        },
+        {
+          "id": 39841,
+          "name": "Intelligence"
+        }
+      ]
     },
     "plan": {
       "startNode": 54447,
@@ -13650,7 +13674,7 @@
         }
       ],
       "notes": [
-        "Level 54: prioritize damage on a four-link through Act 10; EO next via 7938/14021/55332/22088, then Golem Commander. Five-link is opportunistic. Keep alternate Combat Stamina/Sanctuary travel and Expertise; do not duplicate bypassed nodes. Original milestone table retained as reference; actual next route overrides it.",
+        "Level 57: EO allocated by alternate route; Expertise refunded. Next nine nodes toward Golem Commander from #42760 via #36678 and #39841; use actual next route rather than original milestone table. Four-link campaign baseline; Cruel Lab next.",
         "Milestones assume helping Alira (+15% all elemental resistances), one fewer point from Act 2 onward than kill-all. Check /passives. Actual imported allocations are shown separately from planned nodes.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it.",
         "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first.",
@@ -13861,52 +13885,53 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "Next 4 points: Intelligence #7938 → Intelligence #14021 → Intelligence #55332 → Elemental Overload #22088. Connected from allocated #4397. Keep Expertise and alternate routes; no respec required now.",
-      "Complete Cruel Lab when available; Liege of the Primordial, then regular Lightning and Stone Golems alongside Ice Golem within actual summon limit.",
-      "Test four-link Projection / Elemental Damage with Attacks / Infused Channelling / Trinity instead of Added Lightning. Keep Added Lightning if resonance or single-target damage is worse. No five-link dependency.",
-      "After EO, path toward Golem Commander (367,33864,63447,44184,4367,19501,15167,24872,34506); verify connected route as allocations change. Skip mace-only Galvanic Hammer while using claws.",
-      "Verify actual campaign hit chance, lightning exposure, Conductivity and shock; seek elemental attack mana leech or enduring mana flask. Quality Projection when affordable.",
-      "Upgrade Carrion Grip and amulet for damage/life/resists; seek stronger claw with lightning damage. Save Fusings for worthwhile five-link base; prioritize cold/lightning overcap and flask fixes."
+      "Cruel Lab: Liege of the Primordial; add Lightning and Stone Golems within summon limit.",
+      "Next nine points from allocated #42760: Intelligence #36678 → Intelligence #39841 → Intelligence #63447 → Intelligence #44184 → Intelligence #4367 → Intelligence #19501 → Golem Life and Buff Effect #15167 → Golem Life and Buff Effect #24872 → Golem Commander #34506. Actual connected route, not original travel.",
+      "Test Trinity in place of Added Lightning only if sustained resonance and better single-target performance; keep current four-link otherwise. Five-link opportunistic.",
+      "Gamble claws and shields; upgrade helmet. Keep current jewellery crafts. Add resistance buffer and chaos resistance before Act 10.",
+      "Fix flasks and mana sustain; verify campaign hit chance, lightning exposure, curse and shock."
     ],
     "lastReviewedAt": "2026-11-25",
     "snapshot": {
       "reviewedAt": "2026-11-25",
       "source": {
         "kind": "Reviewed PoB XML",
-        "file": "3.30 Charged Dash Elementalist - Experimental(7).xml",
+        "file": "3.30 Charged Dash Elementalist - Experimental(8).xml",
         "treeVersion": "3.30"
       },
       "stats": {
-        "life": 2523,
-        "mana": 673,
-        "manaUnreserved": 193,
-        "manaRegenPerSecond": 16.5,
-        "lifeRegenPerSecond": 202.7,
-        "energyShield": 158,
-        "armour": 4030,
+        "life": 2867,
+        "mana": 775,
+        "manaUnreserved": 227,
+        "manaRegenPerSecond": 19,
+        "lifeRegenPerSecond": 230.6,
+        "energyShield": 165,
+        "armour": 4245,
         "evasion": 20,
         "attackBlock": 29,
-        "spellBlock": 29,
+        "spellBlock": 30,
         "fireResistance": 76,
         "coldResistance": 76,
         "lightningResistance": 76,
         "chaosResistance": -1,
-        "fireOvercap": 45,
-        "coldOvercap": 21,
-        "lightningOvercap": 7,
-        "strength": 164,
-        "dexterity": 137,
-        "intelligence": 204,
-        "combinedDps": 1452.5112627328,
+        "fireOvercap": 24,
+        "coldOvercap": 17,
+        "lightningOvercap": 19,
+        "strength": 219,
+        "dexterity": 156,
+        "intelligence": 263,
+        "combinedDps": 2343.4664277,
         "mainSkill": "Charged Dash of Projection",
-        "manaCostPerSecond": 35.0032,
-        "physicalMaxHit": 3747,
-        "lightningMaxHit": 11422,
-        "fireMaxHit": 11422,
-        "coldMaxHit": 11422,
-        "chaosMaxHit": 2897,
-        "accuracy": 1504,
-        "hitChance": 77
+        "manaCostPerSecond": 43.754,
+        "physicalMaxHit": 4161,
+        "lightningMaxHit": 12802,
+        "fireMaxHit": 12802,
+        "coldMaxHit": 12802,
+        "chaosMaxHit": 3259,
+        "accuracy": 1488,
+        "hitChance": 76,
+        "hitDps": 2209.24053174,
+        "averageHit": 1009.8462
       },
       "skills": [
         {
@@ -13918,10 +13943,10 @@
             "Elemental Damage with Attacks"
           ],
           "levels": [
-            9,
-            14,
-            14,
-            11
+            11,
+            15,
+            15,
+            12
           ]
         },
         {
@@ -13933,10 +13958,10 @@
             "Frostblink"
           ],
           "levels": [
-            12,
-            11,
             13,
-            13
+            12,
+            14,
+            14
           ]
         },
         {
@@ -13945,7 +13970,7 @@
             "Molten Shell"
           ],
           "levels": [
-            12
+            13
           ]
         },
         {
@@ -13956,9 +13981,9 @@
             "Hextouch"
           ],
           "levels": [
-            11,
             12,
-            7
+            13,
+            8
           ]
         },
         {
@@ -13967,7 +13992,7 @@
             "Summon Ice Golem"
           ],
           "levels": [
-            10
+            11
           ]
         },
         {
@@ -13978,8 +14003,8 @@
             "Precision"
           ],
           "levels": [
-            14,
-            14,
+            15,
+            15,
             2
           ]
         }
@@ -14017,18 +14042,18 @@
         ],
         [
           "Belt",
-          "Gloom Leash · Leather Belt",
-          "64 total life, 23.8 life regen/sec, 18 fire res."
+          "Invasion Lash · Heavy Belt",
+          "82 life, 32 Strength, 27.5 regen, 12 fire res, crafted 22% elemental attack damage."
         ],
         [
           "Amulet",
-          "Corpse Scarab · Turquoise Amulet",
-          "16 Dex/Int, 27 fire res, 4 mana/kill, crafted 31 life; transitional."
+          "Maelstrom Torc · Turquoise Amulet",
+          "32 Dex/Int, 10 Strength, 12–22 cold attacks, 38 mana, 5.8 regen, crafted 53 life."
         ],
         [
           "Ring 1",
-          "Carrion Grip · Sapphire Ring",
-          "28 cold res, 73 accuracy, crafted 32 life; upgrade."
+          "Soul Band · Two-Stone Ring",
+          "108 life, 36 Dex, 16 Str/Int, 12 fire/lightning, crafted 24 cold resistance, 3–4 physical attacks."
         ],
         [
           "Ring 2",
@@ -14044,74 +14069,63 @@
       "findings": [
         {
           "severity": "good",
-          "title": "Brine King defeated; strong campaign defences",
-          "detail": "2523 life, 4030 armour, 202.7 life regeneration/sec; all elemental resists 76% with confirmed -30 penalty. Chaos -1%. No need to rush further defensive passives."
+          "title": "Jewellery and Elemental Overload confirmed",
+          "detail": "2867 life (+13.6%), 2343.5 combined DPS (+61.3%), 4245 armour, 230.6 regen. Soul Band, Invasion Lash and Maelstrom Torc equipped. Expertise refunded; 156 Dex vs 117 required. EO uptime and complete release-cycle DPS not measured."
         },
         {
           "severity": "warning",
-          "title": "Single-target damage is the priority",
-          "detail": "User reports slow bosses. Exported combined DPS 1452.5 (1283.7 hit DPS); full release cycle and actual campaign enemy settings not verified. Prioritize Elemental Overload, Cruel Lab, and four-link testing."
+          "title": "Cruel Lab and golems next",
+          "detail": "Only Shaper of Storms allocated. Complete Cruel Lab, add Lightning and Stone Golems within actual summon limit, then Golem Commander."
         },
         {
           "severity": "warning",
-          "title": "Four-link is the campaign baseline",
-          "detail": "Test Trinity replacing Added Lightning Damage on Grim Slicer. Keep only if all three resonance bars stay active against a durable single target and damage improves. Otherwise revert. Five-link is opportunistic; do not spend Fusings on mediocre campaign armour."
+          "title": "Four-link and mana",
+          "detail": "Original four-link remains equipped. Optional Trinity trial only if resonance sustains and damage improves. 227 free mana, 19 regen vs 43.754 cost/sec, zero leech; about 9.2 seconds continuous channel without recovery."
         },
         {
           "severity": "warning",
-          "title": "Boss mana and exposure",
-          "detail": "193 unreserved mana; 35/sec cost vs 16.5 regen; 14 mana per kill but zero leech. Check lightning exposure from Wave of Conviction, curse and shock settings; weapon attack damage does not apply to the spell."
-        },
-        {
-          "severity": "good",
-          "title": "Dexterity and resistance crafts confirmed",
-          "detail": "Expertise +30 Dex allocated; 137 Dex vs 109 required. Keep temporary node until gear supports gem requirements. Helmet lightning craft, chest cold craft, ring and amulet life crafts all present."
+          "title": "Prepare second resistance penalty",
+          "detail": "Currently uncapped 100 fire/93 cold/95 lightning, chaos -1. Need +6 fire/+13 cold/+11 lightning for 76% after second penalty. Aim +30 chaos or better before penalty."
         },
         {
           "severity": "warning",
-          "title": "Act 10 resistance buffer and flasks",
-          "detail": "Current uncapped 121 fire/97 cold/83 lightning. Need another 9 cold and 23 lightning for 76% after next penalty; aim +30 chaos before Act 10. Replace third life flask with Granite; roll instant life and bleed/freeze protection."
+          "title": "Gear and flask priorities",
+          "detail": "Seek stronger elemental claw and higher armour/block shield; helmet next. Granite instead of third life flask, instant life and bleed/freeze protection. Current jewellery crafts appropriate."
         }
       ],
       "nextActions": [
-        "Next 4 points: Intelligence #7938 → Intelligence #14021 → Intelligence #55332 → Elemental Overload #22088. Connected from allocated #4397. Keep Expertise and alternate routes; no respec required now.",
-        "Complete Cruel Lab when available; Liege of the Primordial, then regular Lightning and Stone Golems alongside Ice Golem within actual summon limit.",
-        "Test four-link Projection / Elemental Damage with Attacks / Infused Channelling / Trinity instead of Added Lightning. Keep Added Lightning if resonance or single-target damage is worse. No five-link dependency.",
-        "After EO, path toward Golem Commander (367,33864,63447,44184,4367,19501,15167,24872,34506); verify connected route as allocations change. Skip mace-only Galvanic Hammer while using claws.",
-        "Verify actual campaign hit chance, lightning exposure, Conductivity and shock; seek elemental attack mana leech or enduring mana flask. Quality Projection when affordable.",
-        "Upgrade Carrion Grip and amulet for damage/life/resists; seek stronger claw with lightning damage. Save Fusings for worthwhile five-link base; prioritize cold/lightning overcap and flask fixes."
+        "Cruel Lab: Liege of the Primordial; add Lightning and Stone Golems within summon limit.",
+        "Next nine points from allocated #42760: Intelligence #36678 → Intelligence #39841 → Intelligence #63447 → Intelligence #44184 → Intelligence #4367 → Intelligence #19501 → Golem Life and Buff Effect #15167 → Golem Life and Buff Effect #24872 → Golem Commander #34506. Actual connected route, not original travel.",
+        "Test Trinity in place of Added Lightning only if sustained resonance and better single-target performance; keep current four-link otherwise. Five-link opportunistic.",
+        "Gamble claws and shields; upgrade helmet. Keep current jewellery crafts. Add resistance buffer and chaos resistance before Act 10.",
+        "Fix flasks and mana sustain; verify campaign hit chance, lightning exposure, curse and shock."
       ]
     },
     "findings": [
       {
         "severity": "good",
-        "title": "Brine King defeated; strong campaign defences",
-        "detail": "2523 life, 4030 armour, 202.7 life regeneration/sec; all elemental resists 76% with confirmed -30 penalty. Chaos -1%. No need to rush further defensive passives."
+        "title": "Jewellery and Elemental Overload confirmed",
+        "detail": "2867 life (+13.6%), 2343.5 combined DPS (+61.3%), 4245 armour, 230.6 regen. Soul Band, Invasion Lash and Maelstrom Torc equipped. Expertise refunded; 156 Dex vs 117 required. EO uptime and complete release-cycle DPS not measured."
       },
       {
         "severity": "warning",
-        "title": "Single-target damage is the priority",
-        "detail": "User reports slow bosses. Exported combined DPS 1452.5 (1283.7 hit DPS); full release cycle and actual campaign enemy settings not verified. Prioritize Elemental Overload, Cruel Lab, and four-link testing."
+        "title": "Cruel Lab and golems next",
+        "detail": "Only Shaper of Storms allocated. Complete Cruel Lab, add Lightning and Stone Golems within actual summon limit, then Golem Commander."
       },
       {
         "severity": "warning",
-        "title": "Four-link is the campaign baseline",
-        "detail": "Test Trinity replacing Added Lightning Damage on Grim Slicer. Keep only if all three resonance bars stay active against a durable single target and damage improves. Otherwise revert. Five-link is opportunistic; do not spend Fusings on mediocre campaign armour."
+        "title": "Four-link and mana",
+        "detail": "Original four-link remains equipped. Optional Trinity trial only if resonance sustains and damage improves. 227 free mana, 19 regen vs 43.754 cost/sec, zero leech; about 9.2 seconds continuous channel without recovery."
       },
       {
         "severity": "warning",
-        "title": "Boss mana and exposure",
-        "detail": "193 unreserved mana; 35/sec cost vs 16.5 regen; 14 mana per kill but zero leech. Check lightning exposure from Wave of Conviction, curse and shock settings; weapon attack damage does not apply to the spell."
-      },
-      {
-        "severity": "good",
-        "title": "Dexterity and resistance crafts confirmed",
-        "detail": "Expertise +30 Dex allocated; 137 Dex vs 109 required. Keep temporary node until gear supports gem requirements. Helmet lightning craft, chest cold craft, ring and amulet life crafts all present."
+        "title": "Prepare second resistance penalty",
+        "detail": "Currently uncapped 100 fire/93 cold/95 lightning, chaos -1. Need +6 fire/+13 cold/+11 lightning for 76% after second penalty. Aim +30 chaos or better before penalty."
       },
       {
         "severity": "warning",
-        "title": "Act 10 resistance buffer and flasks",
-        "detail": "Current uncapped 121 fire/97 cold/83 lightning. Need another 9 cold and 23 lightning for 76% after next penalty; aim +30 chaos before Act 10. Replace third life flask with Granite; roll instant life and bleed/freeze protection."
+        "title": "Gear and flask priorities",
+        "detail": "Seek stronger elemental claw and higher armour/block shield; helmet next. Granite instead of third life flask, instant life and bleed/freeze protection. Current jewellery crafts appropriate."
       }
     ],
     "snapshotHistory": [
@@ -15063,6 +15077,219 @@
           "Test Projection safely, keep current four-link. Consider Hextouch with Wave of Conviction and Conductivity; ensure lightning exposure. Seek mana leech applicable to elemental attacks or reduced channel cost; keep mana flask.",
           "Keep Ghoul Turn and Carrion Grip equipped, Wrath Grip backup. Seek cold/lightning resistance and life on amulet/body armour or shield; maintain accuracy."
         ]
+      },
+      {
+        "reviewedAt": "2026-11-25",
+        "source": {
+          "kind": "Reviewed PoB XML",
+          "file": "3.30 Charged Dash Elementalist - Experimental(7).xml",
+          "treeVersion": "3.30"
+        },
+        "stats": {
+          "life": 2523,
+          "mana": 673,
+          "manaUnreserved": 193,
+          "manaRegenPerSecond": 16.5,
+          "lifeRegenPerSecond": 202.7,
+          "energyShield": 158,
+          "armour": 4030,
+          "evasion": 20,
+          "attackBlock": 29,
+          "spellBlock": 29,
+          "fireResistance": 76,
+          "coldResistance": 76,
+          "lightningResistance": 76,
+          "chaosResistance": -1,
+          "fireOvercap": 45,
+          "coldOvercap": 21,
+          "lightningOvercap": 7,
+          "strength": 164,
+          "dexterity": 137,
+          "intelligence": 204,
+          "combinedDps": 1452.5112627328,
+          "mainSkill": "Charged Dash of Projection",
+          "manaCostPerSecond": 35.0032,
+          "physicalMaxHit": 3747,
+          "lightningMaxHit": 11422,
+          "fireMaxHit": 11422,
+          "coldMaxHit": 11422,
+          "chaosMaxHit": 2897,
+          "accuracy": 1504,
+          "hitChance": 77
+        },
+        "skills": [
+          {
+            "slot": "Boots",
+            "gems": [
+              "Charged Dash of Projection",
+              "Added Lightning Damage",
+              "Infused Channelling",
+              "Elemental Damage with Attacks"
+            ],
+            "levels": [
+              9,
+              14,
+              14,
+              11
+            ]
+          },
+          {
+            "slot": "Gloves",
+            "gems": [
+              "Tempest Shield",
+              "Determination",
+              "Enduring Cry",
+              "Frostblink"
+            ],
+            "levels": [
+              12,
+              11,
+              13,
+              13
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "gems": [
+              "Molten Shell"
+            ],
+            "levels": [
+              12
+            ]
+          },
+          {
+            "slot": "Body Armour",
+            "gems": [
+              "Conductivity",
+              "Wave of Conviction",
+              "Hextouch"
+            ],
+            "levels": [
+              11,
+              12,
+              7
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Summon Ice Golem"
+            ],
+            "levels": [
+              10
+            ]
+          },
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Shield Charge",
+              "Faster Attacks",
+              "Precision"
+            ],
+            "levels": [
+              14,
+              14,
+              2
+            ]
+          }
+        ],
+        "gear": [
+          [
+            "Weapon",
+            "Grim Slicer · Gut Ripper",
+            "20% quality, crafted 11% attack speed, 44 life/hit, 323 accuracy, 85 mana, 40–72 fire and 27–49 cold; keep seeking damage upgrade."
+          ],
+          [
+            "Shield",
+            "Corpse Fend · Cedar Tower Shield",
+            "20% quality, 174 armour, 55 life, 18% ailment avoidance; upgrade base."
+          ],
+          [
+            "Boots",
+            "Hate Track · Ancient Greaves",
+            "20% quality, 234 armour, 61 life, 20% movement, 23 cold/21 chaos resistance, 37 Strength, main four-link."
+          ],
+          [
+            "Body Armour",
+            "Ghoul Carapace · Holy Chainmail",
+            "20% quality, 344 armour, 73 ES, 49 life, 14 lightning and crafted 28 cold res; five-link opportunistic."
+          ],
+          [
+            "Helmet",
+            "Hypnotic Halo · Barbute Helmet",
+            "20% quality, 147 armour, 50 life, 14% global accuracy, crafted 21 lightning res."
+          ],
+          [
+            "Gloves",
+            "Honour Knuckle · Mesh Gloves",
+            "74 life, crafted 24 Dexterity, flat lightning attack damage, four-link."
+          ],
+          [
+            "Belt",
+            "Gloom Leash · Leather Belt",
+            "64 total life, 23.8 life regen/sec, 18 fire res."
+          ],
+          [
+            "Amulet",
+            "Corpse Scarab · Turquoise Amulet",
+            "16 Dex/Int, 27 fire res, 4 mana/kill, crafted 31 life; transitional."
+          ],
+          [
+            "Ring 1",
+            "Carrion Grip · Sapphire Ring",
+            "28 cold res, 73 accuracy, crafted 32 life; upgrade."
+          ],
+          [
+            "Ring 2",
+            "Ghoul Turn · Two-Stone Ring",
+            "70 life, 26 ES, 10 mana/kill, 9.1 regen, 32 fire/15 lightning, 6–10 physical attacks."
+          ],
+          [
+            "Flasks",
+            "Sacred Life of Warding, Prudent Colossal Life, normal Colossal Life, normal Quicksilver, Colossal Mana of Grounding",
+            "Replace third life with Granite; instant life and bleed/freeze protection; shock suffix redundant."
+          ]
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "Brine King defeated; strong campaign defences",
+            "detail": "2523 life, 4030 armour, 202.7 life regeneration/sec; all elemental resists 76% with confirmed -30 penalty. Chaos -1%. No need to rush further defensive passives."
+          },
+          {
+            "severity": "warning",
+            "title": "Single-target damage is the priority",
+            "detail": "User reports slow bosses. Exported combined DPS 1452.5 (1283.7 hit DPS); full release cycle and actual campaign enemy settings not verified. Prioritize Elemental Overload, Cruel Lab, and four-link testing."
+          },
+          {
+            "severity": "warning",
+            "title": "Four-link is the campaign baseline",
+            "detail": "Test Trinity replacing Added Lightning Damage on Grim Slicer. Keep only if all three resonance bars stay active against a durable single target and damage improves. Otherwise revert. Five-link is opportunistic; do not spend Fusings on mediocre campaign armour."
+          },
+          {
+            "severity": "warning",
+            "title": "Boss mana and exposure",
+            "detail": "193 unreserved mana; 35/sec cost vs 16.5 regen; 14 mana per kill but zero leech. Check lightning exposure from Wave of Conviction, curse and shock settings; weapon attack damage does not apply to the spell."
+          },
+          {
+            "severity": "good",
+            "title": "Dexterity and resistance crafts confirmed",
+            "detail": "Expertise +30 Dex allocated; 137 Dex vs 109 required. Keep temporary node until gear supports gem requirements. Helmet lightning craft, chest cold craft, ring and amulet life crafts all present."
+          },
+          {
+            "severity": "warning",
+            "title": "Act 10 resistance buffer and flasks",
+            "detail": "Current uncapped 121 fire/97 cold/83 lightning. Need another 9 cold and 23 lightning for 76% after next penalty; aim +30 chaos before Act 10. Replace third life flask with Granite; roll instant life and bleed/freeze protection."
+          }
+        ],
+        "nextActions": [
+          "Next 4 points: Intelligence #7938 → Intelligence #14021 → Intelligence #55332 → Elemental Overload #22088. Connected from allocated #4397. Keep Expertise and alternate routes; no respec required now.",
+          "Complete Cruel Lab when available; Liege of the Primordial, then regular Lightning and Stone Golems alongside Ice Golem within actual summon limit.",
+          "Test four-link Projection / Elemental Damage with Attacks / Infused Channelling / Trinity instead of Added Lightning. Keep Added Lightning if resonance or single-target damage is worse. No five-link dependency.",
+          "After EO, path toward Golem Commander (367,33864,63447,44184,4367,19501,15167,24872,34506); verify connected route as allocations change. Skip mace-only Galvanic Hammer while using claws.",
+          "Verify actual campaign hit chance, lightning exposure, Conductivity and shock; seek elemental attack mana leech or enduring mana flask. Quality Projection when affordable.",
+          "Upgrade Carrion Grip and amulet for damage/life/resists; seek stronger claw with lightning damage. Save Fusings for worthwhile five-link base; prioritize cold/lightning overcap and flask fixes."
+        ]
       }
     ],
     "inventoryWatchlist": {
@@ -15109,12 +15336,19 @@
       ],
       "rings": [
         {
+          "name": "Soul Band",
+          "status": "equipped",
+          "life": 108,
+          "dexterity": 36,
+          "craftedColdResistance": 24
+        },
+        {
           "name": "Ghoul Turn",
           "status": "equipped"
         },
         {
           "name": "Carrion Grip",
-          "status": "equipped",
+          "status": "replaced; stash/sale unconfirmed",
           "craftedLife": 32
         },
         {
