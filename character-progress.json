@@ -13703,6 +13703,16 @@
         "notes": "Farm a green transfigured gem at Divine Font; no teleport, but still stationary while channeling. Normal Charged Dash is the fallback."
       },
       {
+        "title": "Act 7 · four-link damage trial",
+        "gems": [
+          "Charged Dash of Projection",
+          "Elemental Damage with Attacks",
+          "Infused Channelling",
+          "Trinity"
+        ],
+        "notes": "Test instead of Added Lightning Damage against a single durable enemy; all three resonance bars must sustain and damage must improve. Otherwise revert. Four-link is the expected campaign setup."
+      },
+      {
         "title": "5-link · physical weapon",
         "gems": [
           "Charged Dash of Projection",
@@ -13711,7 +13721,7 @@
           "Elemental Damage with Attacks",
           "Physical to Lightning"
         ],
-        "notes": "Completes conversion of base physical damage; for a flat elemental weapon use Lightning Penetration instead."
+        "notes": "Optional late campaign or early maps upgrade, not a prerequisite. On current mixed-element claw test Trinity if resonance works, otherwise compare damage supports; Physical to Lightning for physical weapon. Save Fusings for a worthwhile base."
       },
       {
         "title": "6-link · physical weapon",
