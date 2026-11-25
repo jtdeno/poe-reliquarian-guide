@@ -12222,6 +12222,7 @@
         5743,
         5935,
         6237,
+        6359,
         6764,
         6967,
         8135,
@@ -12234,6 +12235,7 @@
         13009,
         13164,
         14057,
+        14936,
         15064,
         15167,
         15631,
@@ -12245,6 +12247,7 @@
         20832,
         21330,
         21413,
+        21958,
         22088,
         24824,
         24872,
@@ -12263,20 +12266,26 @@
         34506,
         35260,
         36542,
+        36678,
         36949,
         37569,
         38921,
         39648,
+        39841,
         41190,
         41251,
         41472,
         42668,
+        42760,
         43689,
         44184,
         44529,
+        44967,
+        46340,
         47197,
         48362,
         49254,
+        50422,
         50862,
         52462,
         55332,
@@ -12288,6 +12297,7 @@
         58453,
         60398,
         60472,
+        62214,
         63447,
         64210,
         64426
@@ -12432,79 +12442,7 @@
         64426
       ],
       "allocatedPassivePoints": 88,
-      "outsideGuideNodes": [
-        {
-          "id": 6359,
-          "name": "Armour and Life",
-          "stats": [
-            "Alternate Combat Stamina route"
-          ]
-        },
-        {
-          "id": 14936,
-          "name": "Life",
-          "stats": [
-            "6% increased maximum Life"
-          ]
-        },
-        {
-          "id": 21958,
-          "name": "Cruel Preparation",
-          "stats": [
-            "10% increased maximum Life",
-            "+5% to all Elemental Resistances"
-          ]
-        },
-        {
-          "id": 36678,
-          "name": "Intelligence",
-          "stats": [
-            "Verified alternate Golem Commander travel; keep"
-          ]
-        },
-        {
-          "id": 39841,
-          "name": "Intelligence",
-          "stats": [
-            "Verified alternate Golem Commander travel; keep"
-          ]
-        },
-        {
-          "id": 42760,
-          "name": "Intelligence",
-          "stats": [
-            "+10 to Intelligence; alternate Elemental Overload route"
-          ]
-        },
-        {
-          "id": 44967,
-          "name": "Strength",
-          "stats": [
-            "+10 Strength; alternate travel"
-          ]
-        },
-        {
-          "id": 46340,
-          "name": "Intelligence",
-          "stats": [
-            "+10 to Intelligence; alternate Elemental Overload route"
-          ]
-        },
-        {
-          "id": 50422,
-          "name": "Strength",
-          "stats": [
-            "+10 Strength; alternate travel"
-          ]
-        },
-        {
-          "id": 62214,
-          "name": "Shield Spell Block and Elemental Resistances with a Shield",
-          "stats": [
-            "Alternate Sanctuary approach; keep"
-          ]
-        }
-      ],
+      "outsideGuideNodes": [],
       "nextRoute": [
         38989,
         15046,
@@ -12569,8 +12507,8 @@
     },
     "plan": {
       "startNode": 54447,
-      "totalPoints": 97,
-      "campaignPoints": 92,
+      "totalPoints": 98,
+      "campaignPoints": 88,
       "actMilestones": [
         {
           "act": 1,
@@ -12722,7 +12660,7 @@
         {
           "act": 2,
           "firstPoint": 14,
-          "lastPoint": 24,
+          "lastPoint": 23,
           "plannedNodes": [
             {
               "sequence": 14,
@@ -12803,10 +12741,10 @@
             },
             {
               "sequence": 21,
-              "id": 44799,
+              "id": 58453,
               "name": "Elemental Damage",
               "kind": "small",
-              "goal": "Holy Dominion",
+              "goal": "Holy Dominion → Divine Fervour",
               "stats": [
                 "10% increased Elemental Damage"
               ]
@@ -12825,16 +12763,6 @@
             },
             {
               "sequence": 23,
-              "id": 58453,
-              "name": "Elemental Damage",
-              "kind": "small",
-              "goal": "Divine Fervour",
-              "stats": [
-                "10% increased Elemental Damage"
-              ]
-            },
-            {
-              "sequence": 24,
               "id": 30693,
               "name": "Divine Fervour",
               "kind": "notable",
@@ -12849,11 +12777,11 @@
         },
         {
           "act": 3,
-          "firstPoint": 25,
-          "lastPoint": 39,
+          "firstPoint": 24,
+          "lastPoint": 38,
           "plannedNodes": [
             {
-              "sequence": 25,
+              "sequence": 24,
               "id": 58402,
               "name": "Intelligence",
               "kind": "small",
@@ -12863,7 +12791,7 @@
               ]
             },
             {
-              "sequence": 26,
+              "sequence": 25,
               "id": 6764,
               "name": "Intelligence",
               "kind": "small",
@@ -12873,7 +12801,7 @@
               ]
             },
             {
-              "sequence": 27,
+              "sequence": 26,
               "id": 14057,
               "name": "Life and Energy Shield",
               "kind": "small",
@@ -12884,7 +12812,7 @@
               ]
             },
             {
-              "sequence": 28,
+              "sequence": 27,
               "id": 9386,
               "name": "Life and Energy Shield",
               "kind": "small",
@@ -12895,7 +12823,7 @@
               ]
             },
             {
-              "sequence": 29,
+              "sequence": 28,
               "id": 5743,
               "name": "Life and Energy Shield",
               "kind": "small",
@@ -12906,7 +12834,7 @@
               ]
             },
             {
-              "sequence": 30,
+              "sequence": 29,
               "id": 58218,
               "name": "Purity of Flesh",
               "kind": "notable",
@@ -12918,34 +12846,19 @@
               ]
             },
             {
-              "sequence": 31,
+              "sequence": 30,
               "id": 32241,
               "name": "Life Mastery",
               "kind": "mastery",
               "goal": "Life Mastery",
               "stats": [
-                "10% more Maximum Life if you have at least 6 Life Masteries allocated",
-                "effect",
-                "stats",
-                "15% increased maximum Life if there are no Life Modifiers on Equipped Body Armour",
-                "effect",
-                "stats",
-                "+30 to maximum Life",
-                "effect",
-                "stats",
-                "You count as on Low Life while at 55% of maximum Life or below",
-                "effect",
-                "stats",
-                "You count as on Full Life while at 90% of maximum Life or above",
-                "effect",
-                "stats",
-                "Skills Cost Life instead of 15% of Mana Cost"
+                "+30 to maximum Life"
               ],
               "effectId": 47642,
               "effect": "+30 to maximum Life"
             },
             {
-              "sequence": 32,
+              "sequence": 31,
               "id": 64210,
               "name": "Intelligence",
               "kind": "small",
@@ -12955,7 +12868,7 @@
               ]
             },
             {
-              "sequence": 33,
+              "sequence": 32,
               "id": 26270,
               "name": "Intelligence",
               "kind": "small",
@@ -12965,7 +12878,7 @@
               ]
             },
             {
-              "sequence": 34,
+              "sequence": 33,
               "id": 41190,
               "name": "Minion Damage and Life",
               "kind": "small",
@@ -12976,7 +12889,7 @@
               ]
             },
             {
-              "sequence": 35,
+              "sequence": 34,
               "id": 26481,
               "name": "Minion Damage and Life",
               "kind": "small",
@@ -12987,7 +12900,7 @@
               ]
             },
             {
-              "sequence": 36,
+              "sequence": 35,
               "id": 19103,
               "name": "Righteous Army",
               "kind": "notable",
@@ -12999,7 +12912,7 @@
               ]
             },
             {
-              "sequence": 37,
+              "sequence": 36,
               "id": 35260,
               "name": "Minion Damage",
               "kind": "small",
@@ -13009,7 +12922,7 @@
               ]
             },
             {
-              "sequence": 38,
+              "sequence": 37,
               "id": 4177,
               "name": "Spiritual Aid",
               "kind": "notable",
@@ -13019,7 +12932,7 @@
               ]
             },
             {
-              "sequence": 39,
+              "sequence": 38,
               "id": 24824,
               "name": "Minion Attack and Cast Speed",
               "kind": "small",
@@ -13033,11 +12946,11 @@
         },
         {
           "act": 4,
-          "firstPoint": 40,
-          "lastPoint": 47,
+          "firstPoint": 39,
+          "lastPoint": 46,
           "plannedNodes": [
             {
-              "sequence": 40,
+              "sequence": 39,
               "id": 42668,
               "name": "Minion Attack and Cast Speed",
               "kind": "small",
@@ -13048,7 +12961,7 @@
               ]
             },
             {
-              "sequence": 41,
+              "sequence": 40,
               "id": 43689,
               "name": "Spiritual Command",
               "kind": "notable",
@@ -13060,7 +12973,7 @@
               ]
             },
             {
-              "sequence": 42,
+              "sequence": 41,
               "id": 39648,
               "name": "Mana Regeneration and Life",
               "kind": "small",
@@ -13071,7 +12984,7 @@
               ]
             },
             {
-              "sequence": 43,
+              "sequence": 42,
               "id": 17821,
               "name": "Mana Regeneration and Life",
               "kind": "small",
@@ -13082,7 +12995,7 @@
               ]
             },
             {
-              "sequence": 44,
+              "sequence": 43,
               "id": 21330,
               "name": "Quick Recovery",
               "kind": "notable",
@@ -13094,7 +13007,7 @@
               ]
             },
             {
-              "sequence": 45,
+              "sequence": 44,
               "id": 12536,
               "name": "Elemental Damage",
               "kind": "small",
@@ -13104,7 +13017,7 @@
               ]
             },
             {
-              "sequence": 46,
+              "sequence": 45,
               "id": 15064,
               "name": "Strength",
               "kind": "small",
@@ -13114,7 +13027,7 @@
               ]
             },
             {
-              "sequence": 47,
+              "sequence": 46,
               "id": 31931,
               "name": "Strength",
               "kind": "small",
@@ -13127,11 +13040,11 @@
         },
         {
           "act": 5,
-          "firstPoint": 48,
+          "firstPoint": 47,
           "lastPoint": 55,
           "plannedNodes": [
             {
-              "sequence": 48,
+              "sequence": 47,
               "id": 15631,
               "name": "Strength",
               "kind": "small",
@@ -13141,7 +13054,27 @@
               ]
             },
             {
+              "sequence": 48,
+              "id": 44967,
+              "name": "Strength",
+              "kind": "small",
+              "goal": "Combat Stamina",
+              "stats": [
+                "+10 to Strength"
+              ]
+            },
+            {
               "sequence": 49,
+              "id": 50422,
+              "name": "Strength",
+              "kind": "small",
+              "goal": "Combat Stamina",
+              "stats": [
+                "+10 to Strength"
+              ]
+            },
+            {
+              "sequence": 50,
               "id": 64426,
               "name": "Elemental Resistances with a Shield",
               "kind": "small",
@@ -13151,18 +13084,18 @@
               ]
             },
             {
-              "sequence": 50,
-              "id": 1593,
-              "name": "Shield Block and Elemental Resistances with a Shield",
+              "sequence": 51,
+              "id": 62214,
+              "name": "Shield Spell Block and Elemental Resistances with a Shield",
               "kind": "small",
               "goal": "Sanctuary",
               "stats": [
-                "+3% Chance to Block Attack Damage while holding a Shield",
+                "+3% Chance to Block Spell Damage while holding a Shield",
                 "+3% Elemental Resistances while holding a Shield"
               ]
             },
             {
-              "sequence": 51,
+              "sequence": 52,
               "id": 20832,
               "name": "Sanctuary",
               "kind": "notable",
@@ -13172,33 +13105,6 @@
                 "+4% Chance to Block Spell Damage while holding a Shield",
                 "+1% to all maximum Elemental Resistances"
               ]
-            },
-            {
-              "sequence": 52,
-              "id": 25535,
-              "name": "Shield Mastery",
-              "kind": "mastery",
-              "goal": "Shield Mastery",
-              "stats": [
-                "30% chance to Avoid being Stunned while holding a Shield",
-                "effect",
-                "stats",
-                "+1% Chance to Block Attack Damage per 5% Chance to Block on Equipped Shield",
-                "effect",
-                "stats",
-                "Intimidate Enemies for 4 seconds on Block while holding a Shield",
-                "effect",
-                "stats",
-                "20% chance to Avoid Elemental Ailments while holding a Shield",
-                "effect",
-                "stats",
-                "2% increased Attack Damage per 75 Armour or Evasion Rating on Shield",
-                "effect",
-                "stats",
-                "+1% to Critical Strike Multiplier per 10 Maximum Energy Shield on Shield"
-              ],
-              "effectId": 30612,
-              "effect": "+1% Chance to Block Attack Damage per 5% Chance to Block on Equipped Shield"
             },
             {
               "sequence": 53,
@@ -13236,7 +13142,7 @@
         {
           "act": 6,
           "firstPoint": 56,
-          "lastPoint": 65,
+          "lastPoint": 58,
           "plannedNodes": [
             {
               "sequence": 56,
@@ -13245,24 +13151,7 @@
               "kind": "mastery",
               "goal": "Reservation Mastery",
               "stats": [
-                "8% increased Damage for each of your Aura or Herald Skills affecting you",
-                "effect",
-                "reminderText",
-                "(Maximum Resistances cannot be raised above 90%)",
-                "stats",
-                "+1% to all maximum Elemental Resistances if you have Reserved Life and Mana",
-                "effect",
-                "stats",
-                "20% increased Life Reservation Efficiency of Skills",
-                "effect",
-                "stats",
-                "30% increased Area of Effect of Aura Skills",
-                "effect",
-                "stats",
-                "Auras from your Skills have 10% increased Effect on you",
-                "effect",
-                "stats",
-                "Non-Curse Aura Skills have 50% increased Duration"
+                "Auras from your Skills have 10% increased Effect on you"
               ],
               "effectId": 61097,
               "effect": "Auras from your Skills have 10% increased Effect on you"
@@ -13287,29 +13176,16 @@
                 "10% increased maximum Life",
                 "25% increased Effect of Consecrated Ground you create"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "act": 7,
+          "firstPoint": 59,
+          "lastPoint": 67,
+          "plannedNodes": [
             {
               "sequence": 59,
-              "id": 44908,
-              "name": "Strength",
-              "kind": "small",
-              "goal": "Combat Stamina",
-              "stats": [
-                "+10 to Strength"
-              ]
-            },
-            {
-              "sequence": 60,
-              "id": 2913,
-              "name": "Dexterity",
-              "kind": "small",
-              "goal": "Combat Stamina",
-              "stats": [
-                "+10 to Dexterity"
-              ]
-            },
-            {
-              "sequence": 61,
               "id": 50862,
               "name": "Strength",
               "kind": "small",
@@ -13319,7 +13195,7 @@
               ]
             },
             {
-              "sequence": 62,
+              "sequence": 60,
               "id": 3167,
               "name": "Life Regeneration",
               "kind": "small",
@@ -13329,18 +13205,18 @@
               ]
             },
             {
-              "sequence": 63,
-              "id": 7335,
-              "name": "Armour and Life Regeneration",
+              "sequence": 61,
+              "id": 6359,
+              "name": "Armour and Life",
               "kind": "small",
               "goal": "Combat Stamina",
               "stats": [
                 "10% increased Armour",
-                "Regenerate 0.6% of Life per second"
+                "3% increased maximum Life"
               ]
             },
             {
-              "sequence": 64,
+              "sequence": 62,
               "id": 21413,
               "name": "Combat Stamina",
               "kind": "notable",
@@ -13352,121 +13228,39 @@
               ]
             },
             {
-              "sequence": 65,
+              "sequence": 63,
               "id": 52462,
               "name": "Armour Mastery",
               "kind": "mastery",
               "goal": "Armour Mastery",
               "stats": [
-                "+1 Armour per 2 Strength",
-                "effect",
-                "stats",
-                "You take 30% reduced Extra Damage from Critical Strikes",
-                "effect",
-                "reminderText",
-                "(Armour is treated as this percentage of its actual value, only for calculating damage mitigation)",
-                "stats",
-                "20% chance to Defend with 200% of Armour",
-                "effect",
-                "reminderText",
-                "(Maximum Resistances cannot be raised above 90%)",
-                "stats",
-                "+1% to all maximum Elemental Resistances if Equipped Helmet, Body Armour, Gloves, and Boots all have Armour",
-                "effect",
-                "stats",
-                "20% increased Armour per second you've been stationary, up to a maximum of 100%",
-                "effect",
-                "stats",
-                "100% increased Armour from Equipped Boots and Gloves"
+                "You take 30% reduced Extra Damage from Critical Strikes"
               ],
               "effectId": 48720,
               "effect": "You take 30% reduced Extra Damage from Critical Strikes"
-            }
-          ]
-        },
-        {
-          "act": 7,
-          "firstPoint": 66,
-          "lastPoint": 73,
-          "plannedNodes": [
+            },
+            {
+              "sequence": 64,
+              "id": 46340,
+              "name": "Intelligence",
+              "kind": "small",
+              "goal": "Elemental Overload",
+              "stats": [
+                "+10 to Intelligence"
+              ]
+            },
+            {
+              "sequence": 65,
+              "id": 42760,
+              "name": "Intelligence",
+              "kind": "small",
+              "goal": "Elemental Overload",
+              "stats": [
+                "+10 to Intelligence"
+              ]
+            },
             {
               "sequence": 66,
-              "id": 19919,
-              "name": "Spell Block",
-              "kind": "small",
-              "goal": "Safeguard",
-              "stats": [
-                "+3% chance to Block Spell Damage while holding a Staff or Shield"
-              ]
-            },
-            {
-              "sequence": 67,
-              "id": 55743,
-              "name": "Spell Block",
-              "kind": "small",
-              "goal": "Safeguard",
-              "stats": [
-                "+4% chance to Block Spell Damage while holding a Staff or Shield"
-              ]
-            },
-            {
-              "sequence": 68,
-              "id": 6967,
-              "name": "Safeguard",
-              "kind": "notable",
-              "goal": "Safeguard",
-              "stats": [
-                "+3% to maximum Chance to Block Spell Damage",
-                "Recover 50 Energy Shield when you Block Spell Damage",
-                "+10% chance to Block Spell Damage while holding a Staff or Shield"
-              ]
-            },
-            {
-              "sequence": 69,
-              "id": 38921,
-              "name": "Block Mastery",
-              "kind": "mastery",
-              "goal": "Block Mastery",
-              "stats": [
-                "+2% to maximum Chance to Block Attack Damage",
-                "effect",
-                "reminderText",
-                "(Maximum Chance to Block Spell Damage cannot be raised above 90%)",
-                "stats",
-                "+2% to maximum Chance to Block Spell Damage",
-                "effect",
-                "stats",
-                "20 Life gained when you Block",
-                "20 Mana gained when you Block",
-                "effect",
-                "stats",
-                "+1% Chance to Block Spell Damage per 5% Chance to Block Attack Damage"
-              ],
-              "effectId": 23442,
-              "effect": "20 Life gained when you Block; 20 Mana gained when you Block"
-            },
-            {
-              "sequence": 70,
-              "id": 7938,
-              "name": "Intelligence",
-              "kind": "small",
-              "goal": "Elemental Overload",
-              "stats": [
-                "+10 to Intelligence"
-              ]
-            },
-            {
-              "sequence": 71,
-              "id": 14021,
-              "name": "Intelligence",
-              "kind": "small",
-              "goal": "Elemental Overload",
-              "stats": [
-                "+10 to Intelligence"
-              ]
-            },
-            {
-              "sequence": 72,
               "id": 55332,
               "name": "Intelligence",
               "kind": "small",
@@ -13476,44 +13270,44 @@
               ]
             },
             {
-              "sequence": 73,
+              "sequence": 67,
               "id": 22088,
               "name": "Elemental Overload",
               "kind": "keystone",
               "goal": "Elemental Overload",
               "stats": [
-                "Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments Your Critical Strikes do not deal extra Damage Ailments never count as being from Critical Strikes"
+                "Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments\\\nYour Critical Strikes do not deal extra Damage\\\nAilments never count as being from Critical Strikes"
               ]
             }
           ]
         },
         {
           "act": 8,
-          "firstPoint": 74,
-          "lastPoint": 79,
+          "firstPoint": 68,
+          "lastPoint": 73,
           "plannedNodes": [
             {
-              "sequence": 74,
-              "id": 367,
-              "name": "Energy Shield",
+              "sequence": 68,
+              "id": 36678,
+              "name": "Intelligence",
               "kind": "small",
               "goal": "Golem Commander",
               "stats": [
-                "6% increased maximum Energy Shield"
+                "+10 to Intelligence"
               ]
             },
             {
-              "sequence": 75,
-              "id": 33864,
-              "name": "Energy Shield",
+              "sequence": 69,
+              "id": 39841,
+              "name": "Intelligence",
               "kind": "small",
               "goal": "Golem Commander",
               "stats": [
-                "6% increased maximum Energy Shield"
+                "+10 to Intelligence"
               ]
             },
             {
-              "sequence": 76,
+              "sequence": 70,
               "id": 63447,
               "name": "Intelligence",
               "kind": "small",
@@ -13523,7 +13317,7 @@
               ]
             },
             {
-              "sequence": 77,
+              "sequence": 71,
               "id": 44184,
               "name": "Intelligence",
               "kind": "small",
@@ -13533,7 +13327,7 @@
               ]
             },
             {
-              "sequence": 78,
+              "sequence": 72,
               "id": 4367,
               "name": "Intelligence",
               "kind": "small",
@@ -13543,7 +13337,7 @@
               ]
             },
             {
-              "sequence": 79,
+              "sequence": 73,
               "id": 19501,
               "name": "Intelligence",
               "kind": "small",
@@ -13556,11 +13350,11 @@
         },
         {
           "act": 9,
-          "firstPoint": 80,
-          "lastPoint": 84,
+          "firstPoint": 74,
+          "lastPoint": 76,
           "plannedNodes": [
             {
-              "sequence": 80,
+              "sequence": 74,
               "id": 15167,
               "name": "Golem Life and Buff Effect",
               "kind": "small",
@@ -13571,7 +13365,7 @@
               ]
             },
             {
-              "sequence": 81,
+              "sequence": 75,
               "id": 24872,
               "name": "Golem Life and Buff Effect",
               "kind": "small",
@@ -13582,7 +13376,7 @@
               ]
             },
             {
-              "sequence": 82,
+              "sequence": 76,
               "id": 34506,
               "name": "Golem Commander",
               "kind": "notable",
@@ -13591,139 +13385,104 @@
                 "40% increased Effect of Buffs granted by your Golems",
                 "+1 to maximum number of Summoned Golems"
               ]
-            },
-            {
-              "sequence": 83,
-              "id": 27134,
-              "name": "Mace Damage",
-              "kind": "small",
-              "goal": "Galvanic Hammer",
-              "stats": [
-                "Mace or Sceptre Attacks deal 14% increased Damage with Hits and Ailments"
-              ]
-            },
-            {
-              "sequence": 84,
-              "id": 61950,
-              "name": "Mace Elemental Damage and Accuracy",
-              "kind": "small",
-              "goal": "Galvanic Hammer",
-              "stats": [
-                "8% increased Accuracy Rating with Maces or Sceptres",
-                "12% increased Elemental Damage with Maces or Sceptres"
-              ]
             }
           ]
         },
         {
           "act": 10,
-          "firstPoint": 85,
-          "lastPoint": 92,
+          "firstPoint": 77,
+          "lastPoint": 88,
           "plannedNodes": [
             {
-              "sequence": 85,
-              "id": 24677,
-              "name": "Mace Elemental Damage and Accuracy",
+              "sequence": 77,
+              "id": 14936,
+              "name": "Life",
               "kind": "small",
-              "goal": "Galvanic Hammer",
+              "goal": "Cruel Preparation",
               "stats": [
-                "8% increased Accuracy Rating with Maces or Sceptres",
-                "12% increased Elemental Damage with Maces or Sceptres"
+                "6% increased maximum Life"
               ]
             },
             {
-              "sequence": 86,
-              "id": 60619,
-              "name": "Galvanic Hammer",
+              "sequence": 78,
+              "id": 21958,
+              "name": "Cruel Preparation",
               "kind": "notable",
-              "goal": "Galvanic Hammer",
+              "goal": "Cruel Preparation",
               "stats": [
-                "10% increased Accuracy Rating with Maces or Sceptres",
-                "30% increased Elemental Damage with Maces or Sceptres",
-                "Damage with Weapons Penetrates 5% Elemental Resistances"
+                "10% increased maximum Life",
+                "+5% to all Elemental Resistances"
               ]
             },
             {
-              "sequence": 87,
+              "sequence": 79,
+              "id": 19919,
+              "name": "Spell Block",
+              "kind": "small",
+              "goal": "Safeguard",
+              "stats": [
+                "+3% chance to Block Spell Damage while holding a Staff or Shield"
+              ]
+            },
+            {
+              "sequence": 80,
+              "id": 55743,
+              "name": "Spell Block",
+              "kind": "small",
+              "goal": "Safeguard",
+              "stats": [
+                "+4% chance to Block Spell Damage while holding a Staff or Shield"
+              ]
+            },
+            {
+              "sequence": 81,
+              "id": 6967,
+              "name": "Safeguard",
+              "kind": "notable",
+              "goal": "Safeguard",
+              "stats": [
+                "+3% to maximum Chance to Block Spell Damage",
+                "Recover 50 Energy Shield when you Block Spell Damage",
+                "+10% chance to Block Spell Damage while holding a Staff or Shield"
+              ]
+            },
+            {
+              "sequence": 82,
+              "id": 38921,
+              "name": "Block Mastery",
+              "kind": "mastery",
+              "goal": "Block Mastery",
+              "stats": [
+                "20 Life gained when you Block",
+                "20 Mana gained when you Block"
+              ],
+              "effectId": 23442,
+              "effect": "20 Life gained when you Block; 20 Mana gained when you Block"
+            },
+            {
+              "sequence": 83,
+              "id": 25535,
+              "name": "Shield Mastery",
+              "kind": "mastery",
+              "goal": "Shield Mastery",
+              "stats": [
+                "+1% Chance to Block Attack Damage per 5% Chance to Block on Equipped Shield"
+              ],
+              "effectId": 30612,
+              "effect": "+1% Chance to Block Attack Damage per 5% Chance to Block on Equipped Shield"
+            },
+            {
+              "sequence": 84,
               "id": 60472,
               "name": "Strength",
               "kind": "small",
-              "goal": "Endurance",
+              "goal": "Divine Judgement / Endurance",
               "stats": [
                 "+10 to Strength"
               ]
             },
             {
-              "sequence": 88,
-              "id": 34171,
-              "name": "Strength",
-              "kind": "small",
-              "goal": "Endurance",
-              "stats": [
-                "+10 to Strength"
-              ]
-            },
-            {
-              "sequence": 89,
-              "id": 11730,
-              "name": "Endurance",
-              "kind": "notable",
-              "goal": "Endurance",
-              "stats": [
-                "+1 to Maximum Endurance Charges"
-              ]
-            },
-            {
-              "sequence": 90,
-              "id": 1031,
-              "name": "Intelligence",
-              "kind": "small",
-              "goal": "Mystic Bulwark",
-              "stats": [
-                "+10 to Intelligence"
-              ]
-            },
-            {
-              "sequence": 91,
-              "id": 19635,
-              "name": "Intelligence",
-              "kind": "small",
-              "goal": "Mystic Bulwark",
-              "stats": [
-                "+10 to Intelligence"
-              ]
-            },
-            {
-              "sequence": 92,
-              "id": 50826,
-              "name": "Mana and Spell Block",
-              "kind": "small",
-              "goal": "Mystic Bulwark",
-              "stats": [
-                "2% Chance to Block Spell Damage",
-                "5% increased maximum Mana"
-              ]
-            }
-          ]
-        },
-        {
-          "act": "Early maps",
-          "firstPoint": 93,
-          "lastPoint": 97,
-          "plannedNodes": [
-            {
-              "sequence": 93,
-              "id": 18174,
-              "name": "Mystic Bulwark",
-              "kind": "notable",
-              "goal": "Mystic Bulwark",
-              "stats": [
-                "6% Chance to Block Spell Damage",
-                "1% increased Mana Regeneration Rate per 1% Chance to Block Spell Damage"
-              ]
-            },
-            {
-              "sequence": 94,
+              "sequence": 85,
               "id": 29061,
               "name": "Elemental Damage",
               "kind": "small",
@@ -13733,7 +13492,7 @@
               ]
             },
             {
-              "sequence": 95,
+              "sequence": 86,
               "id": 55993,
               "name": "Elemental Damage",
               "kind": "small",
@@ -13743,7 +13502,7 @@
               ]
             },
             {
-              "sequence": 96,
+              "sequence": 87,
               "id": 41251,
               "name": "Ailment Effect",
               "kind": "small",
@@ -13753,13 +13512,130 @@
               ]
             },
             {
-              "sequence": 97,
+              "sequence": 88,
               "id": 13164,
               "name": "Divine Judgement",
               "kind": "notable",
               "goal": "Divine Judgement",
               "stats": [
                 "50% increased Elemental Damage"
+              ]
+            }
+          ]
+        },
+        {
+          "act": "Early maps",
+          "firstPoint": 89,
+          "lastPoint": 98,
+          "plannedNodes": [
+            {
+              "sequence": 89,
+              "id": 38989,
+              "name": "Minion Damage",
+              "kind": "small",
+              "goal": "Redemption",
+              "stats": [
+                "Minions deal 16% increased Damage"
+              ]
+            },
+            {
+              "sequence": 90,
+              "id": 15046,
+              "name": "Redemption",
+              "kind": "notable",
+              "goal": "Redemption",
+              "stats": [
+                "Minions deal 20% increased Damage",
+                "Minions have 10% increased Attack Speed",
+                "Minions have 10% increased Cast Speed"
+              ]
+            },
+            {
+              "sequence": 91,
+              "id": 7374,
+              "name": "Life and Cost Efficiency",
+              "kind": "small",
+              "goal": "Tireless",
+              "stats": [
+                "5% increased maximum Life",
+                "5% increased Cost Efficiency"
+              ]
+            },
+            {
+              "sequence": 92,
+              "id": 11088,
+              "name": "Life and Cost Efficiency",
+              "kind": "small",
+              "goal": "Tireless",
+              "stats": [
+                "5% increased maximum Life",
+                "5% increased Cost Efficiency"
+              ]
+            },
+            {
+              "sequence": 93,
+              "id": 3533,
+              "name": "Life and Cost Efficiency",
+              "kind": "small",
+              "goal": "Tireless",
+              "stats": [
+                "5% increased maximum Life",
+                "5% increased Cost Efficiency"
+              ]
+            },
+            {
+              "sequence": 94,
+              "id": 65108,
+              "name": "Tireless",
+              "kind": "notable",
+              "goal": "Tireless",
+              "stats": [
+                "10% increased maximum Life",
+                "10% increased Cost Efficiency"
+              ]
+            },
+            {
+              "sequence": 95,
+              "id": 29106,
+              "name": "Minion Damage and Attack and Cast Speed",
+              "kind": "small",
+              "goal": "Redemption · extra damage and speed",
+              "stats": [
+                "Minions deal 10% increased Damage",
+                "Minions have 3% increased Attack Speed",
+                "Minions have 3% increased Cast Speed"
+              ]
+            },
+            {
+              "sequence": 96,
+              "id": 25332,
+              "name": "Minion Damage and Attack and Cast Speed",
+              "kind": "small",
+              "goal": "Redemption · extra damage and speed",
+              "stats": [
+                "Minions deal 10% increased Damage",
+                "Minions have 3% increased Attack Speed",
+                "Minions have 3% increased Cast Speed"
+              ]
+            },
+            {
+              "sequence": 97,
+              "id": 34171,
+              "name": "Strength",
+              "kind": "small",
+              "goal": "Endurance",
+              "stats": [
+                "+10 to Strength"
+              ]
+            },
+            {
+              "sequence": 98,
+              "id": 11730,
+              "name": "Endurance",
+              "kind": "notable",
+              "goal": "Endurance",
+              "stats": [
+                "+1 to Maximum Endurance Charges"
               ]
             }
           ]
@@ -13793,11 +13669,11 @@
         }
       ],
       "notes": [
-        "Level 69 early maps: damage priority. Redemption (two connected points), then Tireless, then two minion damage/attack speed smalls. Endurance if charges maintained. Actual next route overrides original milestone table.",
-        "Milestones assume helping Alira (+15% all elemental resistances), one fewer point from Act 2 onward than kill-all. Check /passives. Actual imported allocations are shown separately from planned nodes.",
-        "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it.",
-        "Sceptre is the default for Galvanic Hammer. If using a claw or sword instead, skip its weapon-specific branch and allocate the other map targets first.",
-        "Keep Alira through campaign and early maps; reconsider only after gear caps resistances without her. The original 97-node route is preserved: point 93 (Mystic Bulwark) moves to early maps."
+        "Reconciled to the level 69 post-Kitava PoB: all 88 currently allocated regular points are in the main route. Campaign act groupings and within-stage order are reconstructed, not a timestamped allocation log; every step is connected in the 3.30 tree.",
+        "Early-map points 89–98 match the current next-route recommendation: Redemption, Tireless, two minion damage/speed smalls, Endurance if charges maintained. Claw-based plan; no Galvanic Hammer or mace/sceptre-only branch.",
+        "Milestones assume helping Alira (+15% all elemental resistances). Point 88 is the actual map-entry checkpoint, not a claim that all optional quest points were obtained; check /passives.",
+        "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it. Spiritual Aid and Spiritual Command scale personal damage and attack speed through minion modifiers.",
+        "Keep Alira through early maps; reconsider only after gear caps resistances without her. Revisit further expansion after the next PoB checkpoint. No duplicate travel or refunded Expertise required."
       ],
       "bandit": {
         "recommended": "Alira",
@@ -13952,8 +13828,8 @@
     "gear": [
       [
         "Weapon",
-        "Rare one-handed sceptre",
-        "Attack DPS, attack speed, flat lightning/elemental or physical damage; spell damage alone does not scale Charged Dash. Claw or sword acceptable before Galvanic Hammer."
+        "Rare claw with life gained on hit",
+        "Target 300+ elemental DPS, fast base (1.70+ attacks/sec desirable), two strong flat elemental rolls, accuracy and 40+ life gained on hit. Spell damage does not scale Charged Dash."
       ],
       [
         "Shield",
