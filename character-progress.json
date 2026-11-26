@@ -12162,10 +12162,10 @@
       "class": "Witch",
       "ascendancy": "Elementalist",
       "status": "playing",
-      "level": 71,
+      "level": 74,
       "act": null,
       "league": "HC SSF Covens",
-      "stage": "Early maps · level 71 · unmodified T1 farming · Merciless Lab complete",
+      "stage": "Early maps · level 74 · lightly modified T1 farming",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
       "bandit": "Alira"
@@ -12177,12 +12177,12 @@
       "treeUrl": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua"
     },
     "stats": {
-      "life": 4253,
-      "mana": 846,
-      "manaUnreserved": 218,
-      "manaRegenPerSecond": 59.8,
-      "lifeRegenPerSecond": 532.7,
-      "energyShield": 79,
+      "life": 4604,
+      "mana": 935,
+      "manaUnreserved": 247,
+      "manaRegenPerSecond": 63.6,
+      "lifeRegenPerSecond": 558.3,
+      "energyShield": 66,
       "armour": 9275,
       "evasion": 316,
       "attackBlock": 34,
@@ -12191,24 +12191,24 @@
       "coldResistance": 76,
       "lightningResistance": 76,
       "chaosResistance": -13,
-      "fireOvercap": 44,
-      "coldOvercap": 18,
-      "lightningOvercap": 32,
+      "fireOvercap": 12,
+      "coldOvercap": 48,
+      "lightningOvercap": 17,
       "strength": 200,
       "dexterity": 152,
-      "intelligence": 288,
-      "combinedDps": 6994.349760465,
-      "manaCostPerSecond": 63.7272,
-      "physicalMaxHit": 6712,
-      "lightningMaxHit": 19480,
-      "fireMaxHit": 19480,
-      "coldMaxHit": 19480,
-      "chaosMaxHit": 4585,
-      "accuracy": 2107,
-      "hitChance": 86,
-      "hitDps": 6639.827380965,
-      "averageHit": 2500.59405,
-      "totalEHP": 21551.701634599,
+      "intelligence": 307,
+      "combinedDps": 9382.0228425,
+      "manaCostPerSecond": 54.45,
+      "physicalMaxHit": 7066,
+      "lightningMaxHit": 20731,
+      "fireMaxHit": 20731,
+      "coldMaxHit": 20731,
+      "chaosMaxHit": 4895,
+      "accuracy": 2422,
+      "hitChance": 90,
+      "hitDps": 9088.7680125,
+      "averageHit": 3672.2295,
+      "totalEHP": 22928.446864181,
       "mainSkill": "Charged Dash of Projection"
     },
     "progress": {
@@ -12255,11 +12255,13 @@
         22088,
         24824,
         24872,
+        25332,
         25535,
         26270,
         26481,
         27203,
         29061,
+        29106,
         30225,
         30693,
         31875,
@@ -12305,7 +12307,8 @@
         62214,
         63447,
         64210,
-        64426
+        64426,
+        65108
       ],
       "completedTaskIds": [
         "spell-bridge",
@@ -12357,7 +12360,9 @@
         "maps",
         "redemption",
         "merciless-lab",
-        "mastermind-of-discord"
+        "mastermind-of-discord",
+        "tireless",
+        "granite-automated"
       ],
       "allocatedNodeIds": [
         1203,
@@ -12402,11 +12407,13 @@
         22088,
         24824,
         24872,
+        25332,
         25535,
         26270,
         26481,
         27203,
         29061,
+        29106,
         30225,
         30693,
         31875,
@@ -12452,14 +12459,20 @@
         62214,
         63447,
         64210,
-        64426
+        64426,
+        65108
       ],
-      "allocatedPassivePoints": 93,
+      "allocatedPassivePoints": 96,
       "outsideGuideNodes": [],
       "nextRoute": [
-        65108,
-        29106,
-        25332,
+        54954,
+        23215,
+        4854,
+        12503,
+        60554,
+        27611,
+        7092,
+        14665,
         34171,
         11730
       ],
@@ -12474,16 +12487,36 @@
       "ascendancyPoints": 6,
       "nextRouteNodes": [
         {
-          "id": 65108,
-          "name": "Tireless"
+          "id": 54954,
+          "name": "Curse and Chaos Resistance"
         },
         {
-          "id": 29106,
-          "name": "Minion Damage and Attack and Cast Speed"
+          "id": 23215,
+          "name": "Curse and Chaos Resistance"
         },
         {
-          "id": 25332,
-          "name": "Minion Damage and Attack and Cast Speed"
+          "id": 4854,
+          "name": "Asylum"
+        },
+        {
+          "id": 12503,
+          "name": "Protection Mastery"
+        },
+        {
+          "id": 60554,
+          "name": "Minion Damage"
+        },
+        {
+          "id": 27611,
+          "name": "Lord of the Dead"
+        },
+        {
+          "id": 7092,
+          "name": "Physical and Lightning Damage"
+        },
+        {
+          "id": 14665,
+          "name": "Divine Wrath"
         },
         {
           "id": 34171,
@@ -12497,7 +12530,7 @@
     },
     "plan": {
       "startNode": 54447,
-      "totalPoints": 98,
+      "totalPoints": 106,
       "campaignPoints": 88,
       "actMilestones": [
         {
@@ -13516,7 +13549,7 @@
         {
           "act": "Early maps",
           "firstPoint": 89,
-          "lastPoint": 98,
+          "lastPoint": 106,
           "plannedNodes": [
             {
               "sequence": 89,
@@ -13610,6 +13643,96 @@
             },
             {
               "sequence": 97,
+              "id": 54954,
+              "name": "Curse and Chaos Resistance",
+              "kind": "small",
+              "goal": "Asylum",
+              "stats": [
+                "+6% to Chaos Resistance",
+                "6% reduced Effect of Curses on you"
+              ]
+            },
+            {
+              "sequence": 98,
+              "id": 23215,
+              "name": "Curse and Chaos Resistance",
+              "kind": "small",
+              "goal": "Asylum",
+              "stats": [
+                "+6% to Chaos Resistance",
+                "6% reduced Effect of Curses on you"
+              ]
+            },
+            {
+              "sequence": 99,
+              "id": 4854,
+              "name": "Asylum",
+              "kind": "notable",
+              "goal": "Asylum",
+              "stats": [
+                "+18% to Chaos Resistance",
+                "18% reduced Effect of Curses on you"
+              ]
+            },
+            {
+              "sequence": 100,
+              "id": 12503,
+              "name": "Protection Mastery",
+              "kind": "mastery",
+              "goal": "Protection Mastery",
+              "stats": [
+                "Corrupted Blood cannot be inflicted on you"
+              ],
+              "effectId": 9074,
+              "effect": "Corrupted Blood cannot be inflicted on you"
+            },
+            {
+              "sequence": 101,
+              "id": 60554,
+              "name": "Minion Damage",
+              "kind": "small",
+              "goal": "Lord of the Dead",
+              "stats": [
+                "Minions deal 15% increased Damage"
+              ]
+            },
+            {
+              "sequence": 102,
+              "id": 27611,
+              "name": "Lord of the Dead",
+              "kind": "notable",
+              "goal": "Lord of the Dead",
+              "stats": [
+                "Minions have 15% increased maximum Life",
+                "Minions deal 20% increased Damage",
+                "+1 to Maximum number of Raised Zombies",
+                "+1 to Maximum number of Skeletons"
+              ]
+            },
+            {
+              "sequence": 103,
+              "id": 7092,
+              "name": "Physical and Lightning Damage",
+              "kind": "small",
+              "goal": "Divine Wrath",
+              "stats": [
+                "8% increased Lightning Damage",
+                "8% increased Physical Damage"
+              ]
+            },
+            {
+              "sequence": 104,
+              "id": 14665,
+              "name": "Divine Wrath",
+              "kind": "notable",
+              "goal": "Divine Wrath",
+              "stats": [
+                "Gain 5% of Physical Damage as Extra Lightning Damage",
+                "Damage Penetrates 5% Lightning Resistance"
+              ]
+            },
+            {
+              "sequence": 105,
               "id": 34171,
               "name": "Strength",
               "kind": "small",
@@ -13619,7 +13742,7 @@
               ]
             },
             {
-              "sequence": 98,
+              "sequence": 106,
               "id": 11730,
               "name": "Endurance",
               "kind": "notable",
@@ -13656,11 +13779,16 @@
           "nodeId": 38921,
           "effectId": 23442,
           "effect": "20 Life gained when you Block; 20 Mana gained when you Block"
+        },
+        {
+          "nodeId": 12503,
+          "effectId": 9074,
+          "effect": "Corrupted Blood cannot be inflicted on you"
         }
       ],
       "notes": [
-        "Reconciled to level 71 PoB: all 93 currently allocated regular points are in the main route (88 at map entry). Every step is connected in the 3.30 tree; campaign act groupings are reconstructed, not a timestamped log.",
-        "Early-map points 89–93 confirmed. Finish Tireless at 94, then two minion damage/speed smalls and Endurance if sustained. No mace/sceptre branch.",
+        "Reconciled to level 74 PoB: 96 actual regular points, all in main route (88 at map entry). Campaign stages reconstructed; all steps connected.",
+        "Early-map points 89–96 confirmed. Next Asylum and Protection Mastery to fix chaos/curse and corrupted blood, then Lord of the Dead, Divine Wrath, then Endurance if sustained.",
         "Milestones assume helping Alira (+15% all elemental resistances). Point 88 is the actual map-entry checkpoint, not a claim that all optional quest points were obtained; check /passives.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it. Spiritual Aid and Spiritual Command scale personal damage and attack speed through minion modifiers.",
         "Keep Alira through early maps; reconsider only after gear caps resistances without her. Revisit further expansion after the next PoB checkpoint. No duplicate travel or refunded Expertise required."
@@ -13728,9 +13856,9 @@
           "Added Lightning Damage",
           "Infused Channelling",
           "Elemental Damage with Attacks",
-          "Trinity"
+          "Inspiration"
         ],
-        "notes": "Equipped on Beast Salvation. Confirm full resonance on single target; if lightning resonance fails, replace Added Lightning with Inspiration and retest, or replace Trinity with Inspiration. Physical to Lightning reserved for high-physical weapon."
+        "notes": "Recommended swap at level 74 because Trinity rarely activates; export still has Trinity, not confirmed equipped. Keep leveling Trinity in weapon swap. Test Lightning Penetration if desired."
       },
       {
         "title": "6-link · physical weapon",
@@ -13871,27 +13999,27 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "Next point #94: Tireless #65108 from allocated #3533; then #95–96 Minion Damage and Attack and Cast Speed #29106 → #25332; #97–98 Strength #34171 → Endurance #11730 if charges maintained.",
-      "Replace Flame with Chaos Golem; roll instant Divine life and Granite. Keep Sealing for bleed/corrupted blood. Test positive chaos resistance with golems active.",
-      "Roll benign magic T1 maps for Atlas bonuses; try normal T2–3 after comfortable boss kills. Prioritize map sustain on Atlas, then safe crafting sources. Avoid reflect and dangerous mods.",
-      "Craft a fast elemental claw using spare bases/essences; verify Lightning Exposure and Trinity resonance; quality Projection when affordable.",
-      "Eternal Lab: Bastion of Elements when safe."
+      "Swap Trinity for Inspiration; do not force cold crafts. Test boss damage with Conductivity and confirmed lightning Exposure.",
+      "Swap Flame Golem for Chaos Golem. Next #97–99: Curse and Chaos Resistance #54954 → #23215 → Asylum #4854 from #46340. Then Protection Mastery #12503, effect #9074 Corrupted Blood cannot be inflicted on you.",
+      "Then #101–102 Minion Damage #60554 → Lord of the Dead #27611 from Arcanist's Dominion #11420. #103–104 Physical and Lightning Damage #7092 → Divine Wrath #14665 from #29061. #105–106 Strength #34171 → Endurance #11730 only if charges maintained.",
+      "Try normal T2–3, then benign magic white maps if safely clearing. Keep conservative map regex. Use shrines, strongboxes, selected essences for crafting.",
+      "Roll instant Divine life, retain Sealing until corrupted blood mastery taken and maintain bleed protection thereafter. Aim for fast 250–300+ eDPS claw; upgrade gloves and boots. Eternal Lab: Bastion of Elements when safe."
     ],
     "lastReviewedAt": "2026-11-25",
     "snapshot": {
       "reviewedAt": "2026-11-25",
       "source": {
         "kind": "Reviewed PoB XML",
-        "file": "3.30 Charged Dash Elementalist - Experimental(20261125-223419).xml",
+        "file": "3.30 Charged Dash Elementalist - Experimental(20261126-020210).xml",
         "treeVersion": "3.30"
       },
       "stats": {
-        "life": 4253,
-        "mana": 846,
-        "manaUnreserved": 218,
-        "manaRegenPerSecond": 59.8,
-        "lifeRegenPerSecond": 532.7,
-        "energyShield": 79,
+        "life": 4604,
+        "mana": 935,
+        "manaUnreserved": 247,
+        "manaRegenPerSecond": 63.6,
+        "lifeRegenPerSecond": 558.3,
+        "energyShield": 66,
         "armour": 9275,
         "evasion": 316,
         "attackBlock": 34,
@@ -13900,24 +14028,24 @@
         "coldResistance": 76,
         "lightningResistance": 76,
         "chaosResistance": -13,
-        "fireOvercap": 44,
-        "coldOvercap": 18,
-        "lightningOvercap": 32,
+        "fireOvercap": 12,
+        "coldOvercap": 48,
+        "lightningOvercap": 17,
         "strength": 200,
         "dexterity": 152,
-        "intelligence": 288,
-        "combinedDps": 6994.349760465,
-        "manaCostPerSecond": 63.7272,
-        "physicalMaxHit": 6712,
-        "lightningMaxHit": 19480,
-        "fireMaxHit": 19480,
-        "coldMaxHit": 19480,
-        "chaosMaxHit": 4585,
-        "accuracy": 2107,
-        "hitChance": 86,
-        "hitDps": 6639.827380965,
-        "averageHit": 2500.59405,
-        "totalEHP": 21551.701634599,
+        "intelligence": 307,
+        "combinedDps": 9382.0228425,
+        "manaCostPerSecond": 54.45,
+        "physicalMaxHit": 7066,
+        "lightningMaxHit": 20731,
+        "fireMaxHit": 20731,
+        "coldMaxHit": 20731,
+        "chaosMaxHit": 4895,
+        "accuracy": 2422,
+        "hitChance": 90,
+        "hitDps": 9088.7680125,
+        "averageHit": 3672.2295,
+        "totalEHP": 22928.446864181,
         "mainSkill": "Charged Dash of Projection"
       },
       "skills": [
@@ -13942,7 +14070,7 @@
             "Summon Ice Golem"
           ],
           "levels": [
-            16
+            17
           ]
         },
         {
@@ -13951,7 +14079,7 @@
             "Summon Stone Golem"
           ],
           "levels": [
-            15
+            16
           ]
         },
         {
@@ -13960,7 +14088,7 @@
             "Summon Lightning Golem"
           ],
           "levels": [
-            15
+            16
           ]
         },
         {
@@ -13973,11 +14101,11 @@
             "Trinity"
           ],
           "levels": [
-            16,
             17,
             17,
             17,
-            15
+            17,
+            16
           ]
         },
         {
@@ -14005,7 +14133,7 @@
             17,
             17,
             16,
-            16
+            17
           ]
         },
         {
@@ -14017,8 +14145,8 @@
           ],
           "levels": [
             17,
-            15,
-            14
+            16,
+            16
           ]
         },
         {
@@ -14027,15 +14155,15 @@
             "Summon Flame Golem"
           ],
           "levels": [
-            15
+            16
           ]
         }
       ],
       "gear": [
         [
           "Weapon",
-          "Grim Slicer · Gut Ripper",
-          "20% quality, crafted 11% attack speed, 44 life/hit, 323 accuracy, 85 mana, 40–72 fire and 27–49 cold; keep seeking damage upgrade."
+          "Dusk Fist · Eye Gouger",
+          "20% quality, 1.50 APS, 50 life/hit, 362 accuracy, 132 mana, 8–159 lightning and crafted 27–49 fire; 182 elemental DPS."
         ],
         [
           "Shield",
@@ -14079,75 +14207,75 @@
         ],
         [
           "Ring 2",
-          "Ghoul Turn · Two-Stone Ring",
-          "70 life, 26 ES, 10 mana/kill, 9.1 regen, 32 fire/15 lightning, 6–10 physical attacks."
+          "Fate Whorl · Sapphire Ring",
+          "103 life, 205 accuracy, 19 Int, 30 cold resistance, 18 ES, crafted 5–46 lightning attacks; open suffix for chaos resistance upon unlock."
         ],
         [
           "Flasks",
-          "Viscous Divine Life of Sealing, Wide Divine Life of Warding, Prudent Colossal Life, normal Quicksilver, Colossal Mana of Grounding",
-          "Bleed/corrupted blood and curse removal confirmed. Roll instant life and Granite; shock suffix redundant."
+          "Viscous Divine Life of Sealing, Wide Divine Life of Warding, Continuous Granite of the Abalone, normal Quicksilver, Colossal Mana of Grounding",
+          "Granite automated on full charges, 21% charge recovery, 45% armour. Roll instant life and better magic utility flasks."
         ]
       ],
       "findings": [
         {
           "severity": "good",
-          "title": "Level 71: Merciless Lab and Redemption complete",
-          "detail": "4253 life (+8.6%), 9275 armour, 532.7 regen/sec, 34/48 attack/spell block. Mastermind of Discord confirmed; Redemption and three Tireless smalls allocated. Exported hit DPS 6639.8; combined 6994.3 (+23.1%). Exposure and full Trinity resonance are not assumed by this export."
+          "title": "Level 74: progress and gearing",
+          "detail": "4604 life (+8.3%), 9275 armour before Granite, 558.3 regen/sec, 34/48 attack/spell block. 9382 exported combined DPS (+34.1%), 9089 hit DPS, 90% exported hit chance. Tide of improvements from Dusk Fist, Fate Whorl, Tireless, and minion damage/speed smalls. Full charge/release DPS not measured."
         },
         {
           "severity": "warning",
-          "title": "Ready to test easy magic tier-one maps",
-          "detail": "User is grinding unmodified T1s. Roll one benign mod with Transmutation/Alteration and complete the boss for Atlas bonus; then try normal T2–3 if comfortable. Avoid reflect, reduced recovery, extra damage, crit, reduced max res, reduced block and monster resistance mods. No need to grind unmodified T1s indefinitely."
+          "title": "Trinity no longer reliable",
+          "detail": "User reports rare activation after lightning-focused equipment changes. Export still has Trinity level 16; recommend Inspiration (not yet confirmed), keep Added Lightning and other three existing links. Test Lightning Penetration as alternative; no need to rebalance gear just to enable Trinity."
         },
         {
           "severity": "warning",
-          "title": "Fix chaos resistance and flasks now",
-          "detail": "Still -13% chaos and Flame Golem; replace Flame with Chaos Golem (+~30 chaos with buff effect) for positive chaos while active. Three life flasks unchanged; roll instant Divine life, retain Sealing for bleed/corrupted blood and use Granite instead of third life. Use magic Quicksilver and mana flask with useful affixes."
-        },
-        {
-          "severity": "warning",
-          "title": "Damage priority: weapon and map progression",
-          "detail": "Grim Slicer unchanged. Seek fast 250–300+ elemental DPS claw with accuracy and 40+ life on hit. Use elemental essences on spare claw bases, not equipped weapon. Verify Lightning Exposure and Trinity uptime against bosses. Aim for easy magic white-map completions and map sustain; low-risk essence encounters only."
+          "title": "Chaos and curse resilience first",
+          "detail": "-13% chaos unchanged, Flame Golem still socketed. Swap for Chaos Golem (+~30 chaos while active); Asylum path grants +30% chaos and 30% reduced curse effect for 3 points. Combined projected +47% while golem active. Fire overcap only 12, lightning 17. Protection mastery: Corrupted Blood cannot be inflicted on you."
         },
         {
           "severity": "good",
-          "title": "Mana nearly sustainable",
-          "detail": "218 free mana, 59.8 regen vs 63.7 channel cost/sec; roughly 55 seconds continuous channel without other skills or recovery mechanics. Finish Tireless; Mastermind adds regeneration after exposure. No mana leech."
+          "title": "Mana sustain and Granite",
+          "detail": "247 free mana, 63.6 regen vs 54.45 cost/sec; now positive before incidental costs. Automated Granite confirmed 21% charge recovery, 45% armour during effect; do not assume permanent flask uptime. Instant life still missing."
+        },
+        {
+          "severity": "warning",
+          "title": "Test higher tiers gradually",
+          "detail": "User is running lightly modified T1s. Start normal T2–3 then benign magic T2–3 if clear is comfortable. Use shrines, strongboxes and modest essences; no dangerous content or stacked modifiers. Prioritize elemental claw 250–300+ eDPS and gloves with Dexterity, life, attack speed and/or chaos resist."
         }
       ],
       "nextActions": [
-        "Next point #94: Tireless #65108 from allocated #3533; then #95–96 Minion Damage and Attack and Cast Speed #29106 → #25332; #97–98 Strength #34171 → Endurance #11730 if charges maintained.",
-        "Replace Flame with Chaos Golem; roll instant Divine life and Granite. Keep Sealing for bleed/corrupted blood. Test positive chaos resistance with golems active.",
-        "Roll benign magic T1 maps for Atlas bonuses; try normal T2–3 after comfortable boss kills. Prioritize map sustain on Atlas, then safe crafting sources. Avoid reflect and dangerous mods.",
-        "Craft a fast elemental claw using spare bases/essences; verify Lightning Exposure and Trinity resonance; quality Projection when affordable.",
-        "Eternal Lab: Bastion of Elements when safe."
+        "Swap Trinity for Inspiration; do not force cold crafts. Test boss damage with Conductivity and confirmed lightning Exposure.",
+        "Swap Flame Golem for Chaos Golem. Next #97–99: Curse and Chaos Resistance #54954 → #23215 → Asylum #4854 from #46340. Then Protection Mastery #12503, effect #9074 Corrupted Blood cannot be inflicted on you.",
+        "Then #101–102 Minion Damage #60554 → Lord of the Dead #27611 from Arcanist's Dominion #11420. #103–104 Physical and Lightning Damage #7092 → Divine Wrath #14665 from #29061. #105–106 Strength #34171 → Endurance #11730 only if charges maintained.",
+        "Try normal T2–3, then benign magic white maps if safely clearing. Keep conservative map regex. Use shrines, strongboxes, selected essences for crafting.",
+        "Roll instant Divine life, retain Sealing until corrupted blood mastery taken and maintain bleed protection thereafter. Aim for fast 250–300+ eDPS claw; upgrade gloves and boots. Eternal Lab: Bastion of Elements when safe."
       ]
     },
     "findings": [
       {
         "severity": "good",
-        "title": "Level 71: Merciless Lab and Redemption complete",
-        "detail": "4253 life (+8.6%), 9275 armour, 532.7 regen/sec, 34/48 attack/spell block. Mastermind of Discord confirmed; Redemption and three Tireless smalls allocated. Exported hit DPS 6639.8; combined 6994.3 (+23.1%). Exposure and full Trinity resonance are not assumed by this export."
+        "title": "Level 74: progress and gearing",
+        "detail": "4604 life (+8.3%), 9275 armour before Granite, 558.3 regen/sec, 34/48 attack/spell block. 9382 exported combined DPS (+34.1%), 9089 hit DPS, 90% exported hit chance. Tide of improvements from Dusk Fist, Fate Whorl, Tireless, and minion damage/speed smalls. Full charge/release DPS not measured."
       },
       {
         "severity": "warning",
-        "title": "Ready to test easy magic tier-one maps",
-        "detail": "User is grinding unmodified T1s. Roll one benign mod with Transmutation/Alteration and complete the boss for Atlas bonus; then try normal T2–3 if comfortable. Avoid reflect, reduced recovery, extra damage, crit, reduced max res, reduced block and monster resistance mods. No need to grind unmodified T1s indefinitely."
+        "title": "Trinity no longer reliable",
+        "detail": "User reports rare activation after lightning-focused equipment changes. Export still has Trinity level 16; recommend Inspiration (not yet confirmed), keep Added Lightning and other three existing links. Test Lightning Penetration as alternative; no need to rebalance gear just to enable Trinity."
       },
       {
         "severity": "warning",
-        "title": "Fix chaos resistance and flasks now",
-        "detail": "Still -13% chaos and Flame Golem; replace Flame with Chaos Golem (+~30 chaos with buff effect) for positive chaos while active. Three life flasks unchanged; roll instant Divine life, retain Sealing for bleed/corrupted blood and use Granite instead of third life. Use magic Quicksilver and mana flask with useful affixes."
-      },
-      {
-        "severity": "warning",
-        "title": "Damage priority: weapon and map progression",
-        "detail": "Grim Slicer unchanged. Seek fast 250–300+ elemental DPS claw with accuracy and 40+ life on hit. Use elemental essences on spare claw bases, not equipped weapon. Verify Lightning Exposure and Trinity uptime against bosses. Aim for easy magic white-map completions and map sustain; low-risk essence encounters only."
+        "title": "Chaos and curse resilience first",
+        "detail": "-13% chaos unchanged, Flame Golem still socketed. Swap for Chaos Golem (+~30 chaos while active); Asylum path grants +30% chaos and 30% reduced curse effect for 3 points. Combined projected +47% while golem active. Fire overcap only 12, lightning 17. Protection mastery: Corrupted Blood cannot be inflicted on you."
       },
       {
         "severity": "good",
-        "title": "Mana nearly sustainable",
-        "detail": "218 free mana, 59.8 regen vs 63.7 channel cost/sec; roughly 55 seconds continuous channel without other skills or recovery mechanics. Finish Tireless; Mastermind adds regeneration after exposure. No mana leech."
+        "title": "Mana sustain and Granite",
+        "detail": "247 free mana, 63.6 regen vs 54.45 cost/sec; now positive before incidental costs. Automated Granite confirmed 21% charge recovery, 45% armour during effect; do not assume permanent flask uptime. Instant life still missing."
+      },
+      {
+        "severity": "warning",
+        "title": "Test higher tiers gradually",
+        "detail": "User is running lightly modified T1s. Start normal T2–3 then benign magic T2–3 if clear is comfortable. Use shrines, strongboxes and modest essences; no dangerous content or stacked modifiers. Prioritize elemental claw 250–300+ eDPS and gloves with Dexterity, life, attack speed and/or chaos resist."
       }
     ],
     "snapshotHistory": [
@@ -16260,13 +16388,258 @@
           "Craft faster high-elemental claw with essence; prioritize two strong flat elements, attack speed, accuracy. Quality Projection when affordable. Keep Trinity if resonance mostly above half; otherwise replace with Inspiration.",
           "Replace Flame with Chaos Golem; roll instant Divine life and Granite. Start normal white maps; avoid reflect, no regen and dangerous modifiers."
         ]
+      },
+      {
+        "reviewedAt": "2026-11-25",
+        "source": {
+          "kind": "Reviewed PoB XML",
+          "file": "3.30 Charged Dash Elementalist - Experimental(20261125-223419).xml",
+          "treeVersion": "3.30"
+        },
+        "stats": {
+          "life": 4253,
+          "mana": 846,
+          "manaUnreserved": 218,
+          "manaRegenPerSecond": 59.8,
+          "lifeRegenPerSecond": 532.7,
+          "energyShield": 79,
+          "armour": 9275,
+          "evasion": 316,
+          "attackBlock": 34,
+          "spellBlock": 48,
+          "fireResistance": 76,
+          "coldResistance": 76,
+          "lightningResistance": 76,
+          "chaosResistance": -13,
+          "fireOvercap": 44,
+          "coldOvercap": 18,
+          "lightningOvercap": 32,
+          "strength": 200,
+          "dexterity": 152,
+          "intelligence": 288,
+          "combinedDps": 6994.349760465,
+          "manaCostPerSecond": 63.7272,
+          "physicalMaxHit": 6712,
+          "lightningMaxHit": 19480,
+          "fireMaxHit": 19480,
+          "coldMaxHit": 19480,
+          "chaosMaxHit": 4585,
+          "accuracy": 2107,
+          "hitChance": 86,
+          "hitDps": 6639.827380965,
+          "averageHit": 2500.59405,
+          "totalEHP": 21551.701634599,
+          "mainSkill": "Charged Dash of Projection"
+        },
+        "skills": [
+          {
+            "slot": "Gloves",
+            "gems": [
+              "Tempest Shield",
+              "Determination",
+              "Enduring Cry",
+              "Frostblink"
+            ],
+            "levels": [
+              17,
+              17,
+              17,
+              17
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Summon Ice Golem"
+            ],
+            "levels": [
+              16
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Summon Stone Golem"
+            ],
+            "levels": [
+              15
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Summon Lightning Golem"
+            ],
+            "levels": [
+              15
+            ]
+          },
+          {
+            "slot": "Body Armour",
+            "gems": [
+              "Charged Dash of Projection",
+              "Added Lightning Damage",
+              "Infused Channelling",
+              "Elemental Damage with Attacks",
+              "Trinity"
+            ],
+            "levels": [
+              16,
+              17,
+              17,
+              17,
+              15
+            ]
+          },
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Shield Charge",
+              "Faster Attacks",
+              "Precision"
+            ],
+            "levels": [
+              17,
+              17,
+              6
+            ]
+          },
+          {
+            "slot": "Boots",
+            "gems": [
+              "Conductivity",
+              "Wave of Conviction",
+              "Hextouch",
+              "Added Lightning Damage"
+            ],
+            "levels": [
+              17,
+              17,
+              16,
+              16
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "gems": [
+              "Molten Shell",
+              "Automation",
+              "More Duration"
+            ],
+            "levels": [
+              17,
+              15,
+              14
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "gems": [
+              "Summon Flame Golem"
+            ],
+            "levels": [
+              15
+            ]
+          }
+        ],
+        "gear": [
+          [
+            "Weapon",
+            "Grim Slicer · Gut Ripper",
+            "20% quality, crafted 11% attack speed, 44 life/hit, 323 accuracy, 85 mana, 40–72 fire and 27–49 cold; keep seeking damage upgrade."
+          ],
+          [
+            "Shield",
+            "Beast Ward · Crested Tower Shield",
+            "20% quality, 551 armour, 138 life, 24% fire res, crafted 134 accuracy; 3 independent golems."
+          ],
+          [
+            "Boots",
+            "Hate Track · Ancient Greaves",
+            "20% quality, 234 armour, 61 life, 20% movement, 23 cold/21 chaos res, 37 Str; 4-link exposure/curse."
+          ],
+          [
+            "Body Armour",
+            "Beast Salvation · Colosseum Plate",
+            "20% quality, 900 armour, 93 life, 37.1 regen, 33 lightning, crafted 30 cold; main five-link."
+          ],
+          [
+            "Helmet",
+            "Viper Corona · Lacquered Helmet",
+            "20% quality, 233 armour, 185 evasion, 97 life, 11% regen rate, 16 lightning res, 12% rarity; guard 3-link and Flame Golem."
+          ],
+          [
+            "Gloves",
+            "Honour Knuckle · Mesh Gloves",
+            "74 life, crafted 24 Dexterity, flat lightning attack damage, four-link."
+          ],
+          [
+            "Belt",
+            "Corruption Lash · Rustic Sash",
+            "102 life, 37 fire/18 lightning, 21% global physical, crafted 21% elemental damage with attacks, 5 ES."
+          ],
+          [
+            "Amulet",
+            "Onslaught Gorget · Jade Amulet",
+            "114 life, 18 cold/chaos, 28 Dex, 10–17 flat physical attacks, 23% rarity, crafted 15% lightning damage; crit multiplier wasted with EO."
+          ],
+          [
+            "Ring 1",
+            "Soul Band · Two-Stone Ring",
+            "108 life, 36 Dex, 16 Str/Int, 12 fire/lightning, crafted 24 cold resistance, 3–4 physical attacks."
+          ],
+          [
+            "Ring 2",
+            "Ghoul Turn · Two-Stone Ring",
+            "70 life, 26 ES, 10 mana/kill, 9.1 regen, 32 fire/15 lightning, 6–10 physical attacks."
+          ],
+          [
+            "Flasks",
+            "Viscous Divine Life of Sealing, Wide Divine Life of Warding, Prudent Colossal Life, normal Quicksilver, Colossal Mana of Grounding",
+            "Bleed/corrupted blood and curse removal confirmed. Roll instant life and Granite; shock suffix redundant."
+          ]
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "Level 71: Merciless Lab and Redemption complete",
+            "detail": "4253 life (+8.6%), 9275 armour, 532.7 regen/sec, 34/48 attack/spell block. Mastermind of Discord confirmed; Redemption and three Tireless smalls allocated. Exported hit DPS 6639.8; combined 6994.3 (+23.1%). Exposure and full Trinity resonance are not assumed by this export."
+          },
+          {
+            "severity": "warning",
+            "title": "Ready to test easy magic tier-one maps",
+            "detail": "User is grinding unmodified T1s. Roll one benign mod with Transmutation/Alteration and complete the boss for Atlas bonus; then try normal T2–3 if comfortable. Avoid reflect, reduced recovery, extra damage, crit, reduced max res, reduced block and monster resistance mods. No need to grind unmodified T1s indefinitely."
+          },
+          {
+            "severity": "warning",
+            "title": "Fix chaos resistance and flasks now",
+            "detail": "Still -13% chaos and Flame Golem; replace Flame with Chaos Golem (+~30 chaos with buff effect) for positive chaos while active. Three life flasks unchanged; roll instant Divine life, retain Sealing for bleed/corrupted blood and use Granite instead of third life. Use magic Quicksilver and mana flask with useful affixes."
+          },
+          {
+            "severity": "warning",
+            "title": "Damage priority: weapon and map progression",
+            "detail": "Grim Slicer unchanged. Seek fast 250–300+ elemental DPS claw with accuracy and 40+ life on hit. Use elemental essences on spare claw bases, not equipped weapon. Verify Lightning Exposure and Trinity uptime against bosses. Aim for easy magic white-map completions and map sustain; low-risk essence encounters only."
+          },
+          {
+            "severity": "good",
+            "title": "Mana nearly sustainable",
+            "detail": "218 free mana, 59.8 regen vs 63.7 channel cost/sec; roughly 55 seconds continuous channel without other skills or recovery mechanics. Finish Tireless; Mastermind adds regeneration after exposure. No mana leech."
+          }
+        ],
+        "nextActions": [
+          "Next point #94: Tireless #65108 from allocated #3533; then #95–96 Minion Damage and Attack and Cast Speed #29106 → #25332; #97–98 Strength #34171 → Endurance #11730 if charges maintained.",
+          "Replace Flame with Chaos Golem; roll instant Divine life and Granite. Keep Sealing for bleed/corrupted blood. Test positive chaos resistance with golems active.",
+          "Roll benign magic T1 maps for Atlas bonuses; try normal T2–3 after comfortable boss kills. Prioritize map sustain on Atlas, then safe crafting sources. Avoid reflect and dangerous mods.",
+          "Craft a fast elemental claw using spare bases/essences; verify Lightning Exposure and Trinity resonance; quality Projection when affordable.",
+          "Eternal Lab: Bastion of Elements when safe."
+        ]
       }
     ],
     "inventoryWatchlist": {
       "weapons": [
         {
           "name": "Grim Slicer",
-          "status": "equipped",
+          "status": "replaced; keep backup",
           "quality": 20,
           "craftedAttackSpeed": 11,
           "accuracy": 323,
@@ -16295,6 +16668,22 @@
           "status": "stashed defensive backup",
           "lifeOnHit": 44,
           "attackBlock": 15
+        },
+        {
+          "name": "Dusk Fist",
+          "status": "equipped",
+          "quality": 20,
+          "accuracy": 362,
+          "lifeOnHit": 50,
+          "mana": 132,
+          "fireDamage": [
+            27,
+            49
+          ],
+          "lightningDamage": [
+            8,
+            159
+          ]
         }
       ],
       "soldWeapons": [
@@ -16314,7 +16703,7 @@
         },
         {
           "name": "Ghoul Turn",
-          "status": "equipped"
+          "status": "replaced; keep backup"
         },
         {
           "name": "Carrion Grip",
@@ -16336,6 +16725,16 @@
         {
           "name": "Mind Hold",
           "status": "recommended sell"
+        },
+        {
+          "name": "Fate Whorl",
+          "status": "equipped",
+          "life": 103,
+          "accuracy": 205,
+          "craftedLightningDamage": [
+            5,
+            46
+          ]
         }
       ],
       "bodyArmour": [
