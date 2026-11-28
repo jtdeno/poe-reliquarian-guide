@@ -12161,14 +12161,17 @@
       "label": "Stormbound Elementalist",
       "class": "Witch",
       "ascendancy": "Elementalist",
-      "status": "playing",
-      "level": 81,
+      "status": "deceased",
+      "level": 82,
       "act": null,
       "league": "HC SSF Covens",
-      "stage": "Early maps · level 81 · automated Silver, Sol Mantle pending",
+      "stage": "Archived · Hardcore death at level 82",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
-      "bandit": "Alira"
+      "bandit": "Alira",
+      "deathLevel": 82,
+      "deathReportedOn": "2026-11-27",
+      "deathEvidence": "Player-reported death to a Maven-empowered boss in The Pit. Last verified PoB was level 81."
     },
     "source": {
       "kind": "Theorycraft; connected 3.30 PoB Community tree, not a simulated character",
@@ -14047,11 +14050,7 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "#104 Strength #34171 off allocated #60472 → #105 Basic Jewel Socket #26196; insert Blight Vessel (11% attack speed, 13% fire res).",
-      "#106 Minion Attack and Cast Speed #6685 → #107 Minion Damage #60554 → #108 Lord of the Dead #27611 → #109 Physical and Lightning Damage #7092 → #110 Divine Wrath #14665.",
-      "Solve Dexterity: at least +5 for Sol Mantle, preferably more for upcoming gem levels. Fate Whorl open suffix can craft Dexterity; verify resistances. Keep Soul Band until replacement attributes work.",
-      "Save 150 Fusings for guaranteed five-link on Sol Mantle in Excavation; keep Beast Salvation equipped. Prioritize 20 quality Projection and level Faster Attacks.",
-      "Progress to T6 and obtain Offering then Bastion of Elements; quality and automate Quicksilver, maintain bleed and instant life flask."
+      "Character archived. Prior route, equipment projects and PoB review are retained as historical reference."
     ],
     "lastReviewedAt": "2026-11-27",
     "snapshot": {
@@ -14338,6 +14337,11 @@
       ]
     },
     "findings": [
+      {
+        "severity": "warning",
+        "title": "Hardcore death at level 82",
+        "detail": "Died to a Maven-empowered boss in The Pit. Archived; the level 81 PoB is the last verified checkpoint."
+      },
       {
         "severity": "good",
         "title": "Level 81: offense improving",
@@ -17638,6 +17642,14 @@
           "fireResistance": 13
         }
       ]
+    },
+    "archive": {
+      "archived": true,
+      "reason": "Hardcore death — Maven-empowered boss in The Pit",
+      "deathLevel": 82,
+      "reportedOn": "2026-11-27",
+      "lastVerifiedPobLevel": 81,
+      "notes": "Final level is player-reported. Level 81 PoB stats, equipment and passives remain preserved; no level 82 allocations or equipment changes are inferred."
     }
   }
 }
