@@ -12162,10 +12162,10 @@
       "class": "Witch",
       "ascendancy": "Elementalist",
       "status": "playing",
-      "level": 79,
+      "level": 81,
       "act": null,
       "league": "HC SSF Covens",
-      "stage": "Early maps · level 79 · Gemini Claw and Faster Attacks",
+      "stage": "Early maps · level 81 · automated Silver, Sol Mantle pending",
       "plannedAscendancy": "Elementalist",
       "plannedBandit": "Alira",
       "bandit": "Alira"
@@ -12177,14 +12177,14 @@
       "treeUrl": "https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/dev/src/TreeData/3_30/tree.lua"
     },
     "stats": {
-      "life": 4732,
-      "mana": 960,
-      "manaUnreserved": 226,
-      "manaRegenPerSecond": 66.1,
-      "lifeRegenPerSecond": 630.2,
+      "life": 4788,
+      "mana": 974,
+      "manaUnreserved": 194,
+      "manaRegenPerSecond": 66.4,
+      "lifeRegenPerSecond": 634.9,
       "energyShield": 70,
       "armour": 10859,
-      "evasion": 324,
+      "evasion": 314,
       "attackBlock": 34,
       "spellBlock": 49,
       "fireResistance": 75,
@@ -12195,22 +12195,22 @@
       "coldOvercap": 35,
       "lightningOvercap": 4,
       "strength": 190,
-      "dexterity": 170,
+      "dexterity": 146,
       "intelligence": 327,
-      "combinedDps": 14114.581165349,
-      "manaCostPerSecond": 66.1752,
-      "physicalMaxHit": 7575,
-      "lightningMaxHit": 21807,
-      "fireMaxHit": 21028,
-      "coldMaxHit": 21807,
-      "chaosMaxHit": 7010,
-      "accuracy": 2248,
-      "hitChance": 88,
-      "hitDps": 14102.86966088,
-      "averageHit": 3836.0542,
-      "totalEHP": 26503.143044555,
-      "attackRate": 7.3528,
-      "waveHitRate": 3.6764,
+      "combinedDps": 17785.516476425,
+      "manaCostPerSecond": 74.3652,
+      "physicalMaxHit": 7634,
+      "lightningMaxHit": 22014,
+      "fireMaxHit": 21228,
+      "coldMaxHit": 22014,
+      "chaosMaxHit": 7077,
+      "accuracy": 2453,
+      "hitChance": 90,
+      "hitDps": 17773.29209565,
+      "averageHit": 4302.00225,
+      "totalEHP": 26753.949433936,
+      "attackRate": 8.2628,
+      "waveHitRate": 4.1314,
       "mainSkill": "Charged Dash of Projection"
     },
     "progress": {
@@ -12231,6 +12231,7 @@
         6764,
         6967,
         7374,
+        9370,
         9386,
         9392,
         10031,
@@ -12292,6 +12293,7 @@
         42760,
         43689,
         44184,
+        44360,
         44529,
         44967,
         46340,
@@ -12393,6 +12395,7 @@
         6764,
         6967,
         7374,
+        9370,
         9386,
         9392,
         10031,
@@ -12454,6 +12457,7 @@
         42760,
         43689,
         44184,
+        44360,
         44529,
         44967,
         46340,
@@ -12479,11 +12483,11 @@
         64426,
         65108
       ],
-      "allocatedPassivePoints": 101,
+      "allocatedPassivePoints": 103,
       "outsideGuideNodes": [],
       "nextRoute": [
-        9370,
-        44360,
+        34171,
+        26196,
         6685,
         60554,
         27611,
@@ -12501,12 +12505,12 @@
       "ascendancyPoints": 6,
       "nextRouteNodes": [
         {
-          "id": 9370,
-          "name": "Minion Attack and Cast Speed"
+          "id": 34171,
+          "name": "Strength"
         },
         {
-          "id": 44360,
-          "name": "Minion Attack and Cast Speed"
+          "id": 26196,
+          "name": "Basic Jewel Socket"
         },
         {
           "id": 6685,
@@ -12532,7 +12536,7 @@
     },
     "plan": {
       "startNode": 54447,
-      "totalPoints": 108,
+      "totalPoints": 110,
       "campaignPoints": 86,
       "actMilestones": [
         {
@@ -13528,7 +13532,7 @@
         {
           "act": "Early maps",
           "firstPoint": 87,
-          "lastPoint": 108,
+          "lastPoint": 110,
           "plannedNodes": [
             {
               "sequence": 87,
@@ -13723,6 +13727,24 @@
             },
             {
               "sequence": 104,
+              "id": 34171,
+              "name": "Strength",
+              "kind": "small",
+              "goal": "Blight Vessel jewel",
+              "stats": [
+                "+10 to Strength"
+              ]
+            },
+            {
+              "sequence": 105,
+              "id": 26196,
+              "name": "Basic Jewel Socket",
+              "kind": "socket",
+              "goal": "Blight Vessel jewel",
+              "stats": []
+            },
+            {
+              "sequence": 106,
               "id": 6685,
               "name": "Minion Attack and Cast Speed",
               "kind": "small",
@@ -13733,7 +13755,7 @@
               ]
             },
             {
-              "sequence": 105,
+              "sequence": 107,
               "id": 60554,
               "name": "Minion Damage",
               "kind": "small",
@@ -13743,7 +13765,7 @@
               ]
             },
             {
-              "sequence": 106,
+              "sequence": 108,
               "id": 27611,
               "name": "Lord of the Dead",
               "kind": "notable",
@@ -13756,7 +13778,7 @@
               ]
             },
             {
-              "sequence": 107,
+              "sequence": 109,
               "id": 7092,
               "name": "Physical and Lightning Damage",
               "kind": "small",
@@ -13767,7 +13789,7 @@
               ]
             },
             {
-              "sequence": 108,
+              "sequence": 110,
               "id": 14665,
               "name": "Divine Wrath",
               "kind": "notable",
@@ -13813,8 +13835,8 @@
         }
       ],
       "notes": [
-        "Level 79: 101 allocated points, all reconciled. Practical Application and its preceding cast-interruption node refunded; current campaign route shortened by two points; original map-entry checkpoint was 88.",
-        "Protection Mastery, attack speed beyond Precision, Sanctity and Intelligence travel confirmed. Next three minion speed nodes via Spiritual Command, then Lord of the Dead and Divine Wrath.",
+        "Level 81: 103 allocated regular points, all reconciled. Practical Application and preceding node refunded; original map entry 88 points.",
+        "Two minion speed nodes confirmed. Next Strength and Basic Jewel Socket along Endurance branch for Blight Vessel, then remaining minion speed, Lord of the Dead and Divine Wrath.",
         "Milestones assume helping Alira (+15% all elemental resistances). Current reconstructed campaign route has 86 points after two refunds; original map entry was 88. Check /passives for optional quest points.",
         "Elemental Overload requires Charged Dash itself to crit; do not use Resolute Technique with it. Spiritual Aid and Spiritual Command scale personal damage and attack speed through minion modifiers.",
         "Keep Alira through early maps; reconsider only after gear caps resistances without her. Revisit further expansion after the next PoB checkpoint. No duplicate travel or refunded Expertise required."
@@ -13884,7 +13906,7 @@
           "Elemental Damage with Attacks",
           "Faster Attacks"
         ],
-        "notes": "Confirmed level 12; stage generation improved with Gemini Claw. Keep Added Lightning and Infused Channelling. Level and quality Faster Attacks."
+        "notes": "Confirmed Faster Attacks level 16; maintain five-link until Sol Mantle linked."
       },
       {
         "title": "6-link · elemental claw",
@@ -14025,28 +14047,29 @@
       "Help Alira in Act 2 for +15% to all elemental resistances; do not mark the reward obtained until confirmed in a later PoB."
     ],
     "nextActions": [
-      "Restore fire resistance to 76% and build an overcap; Fate Whorl open suffix can craft fire (or combined fire/chaos when unlocked). Keep bleed flask.",
-      "Points #102–104: Minion Attack and Cast Speed #9370 → #44360 → #6685 (4% each); already connected via #5296. #105–106: Minion Damage #60554 → Lord of the Dead #27611; #107–108: Physical and Lightning Damage #7092 → Divine Wrath #14665.",
-      "Upgrade gloves with attack speed, accuracy, life and fire/chaos resistance; aim near 100% hit chance. Level Faster Attacks and quality Projection to 20%.",
-      "Gradually progress to Tier 6 maps for Offering to the Goddess; Eternal Lab Bastion of Elements when safe. Roll instant life and automate Silver/Basalt after mana sustain test."
+      "#104 Strength #34171 off allocated #60472 → #105 Basic Jewel Socket #26196; insert Blight Vessel (11% attack speed, 13% fire res).",
+      "#106 Minion Attack and Cast Speed #6685 → #107 Minion Damage #60554 → #108 Lord of the Dead #27611 → #109 Physical and Lightning Damage #7092 → #110 Divine Wrath #14665.",
+      "Solve Dexterity: at least +5 for Sol Mantle, preferably more for upcoming gem levels. Fate Whorl open suffix can craft Dexterity; verify resistances. Keep Soul Band until replacement attributes work.",
+      "Save 150 Fusings for guaranteed five-link on Sol Mantle in Excavation; keep Beast Salvation equipped. Prioritize 20 quality Projection and level Faster Attacks.",
+      "Progress to T6 and obtain Offering then Bastion of Elements; quality and automate Quicksilver, maintain bleed and instant life flask."
     ],
     "lastReviewedAt": "2026-11-27",
     "snapshot": {
       "reviewedAt": "2026-11-27",
       "source": {
         "kind": "Reviewed PoB XML",
-        "file": "3.30 Charged Dash Elementalist - Experimental(20261127-231230).xml",
+        "file": "3.30 Charged Dash Elementalist - Experimental(20261128-031431).xml",
         "treeVersion": "3.30"
       },
       "stats": {
-        "life": 4732,
-        "mana": 960,
-        "manaUnreserved": 226,
-        "manaRegenPerSecond": 66.1,
-        "lifeRegenPerSecond": 630.2,
+        "life": 4788,
+        "mana": 974,
+        "manaUnreserved": 194,
+        "manaRegenPerSecond": 66.4,
+        "lifeRegenPerSecond": 634.9,
         "energyShield": 70,
         "armour": 10859,
-        "evasion": 324,
+        "evasion": 314,
         "attackBlock": 34,
         "spellBlock": 49,
         "fireResistance": 75,
@@ -14057,22 +14080,22 @@
         "coldOvercap": 35,
         "lightningOvercap": 4,
         "strength": 190,
-        "dexterity": 170,
+        "dexterity": 146,
         "intelligence": 327,
-        "combinedDps": 14114.581165349,
-        "manaCostPerSecond": 66.1752,
-        "physicalMaxHit": 7575,
-        "lightningMaxHit": 21807,
-        "fireMaxHit": 21028,
-        "coldMaxHit": 21807,
-        "chaosMaxHit": 7010,
-        "accuracy": 2248,
-        "hitChance": 88,
-        "hitDps": 14102.86966088,
-        "averageHit": 3836.0542,
-        "totalEHP": 26503.143044555,
-        "attackRate": 7.3528,
-        "waveHitRate": 3.6764,
+        "combinedDps": 17785.516476425,
+        "manaCostPerSecond": 74.3652,
+        "physicalMaxHit": 7634,
+        "lightningMaxHit": 22014,
+        "fireMaxHit": 21228,
+        "coldMaxHit": 22014,
+        "chaosMaxHit": 7077,
+        "accuracy": 2453,
+        "hitChance": 90,
+        "hitDps": 17773.29209565,
+        "averageHit": 4302.00225,
+        "totalEHP": 26753.949433936,
+        "attackRate": 8.2628,
+        "waveHitRate": 4.1314,
         "mainSkill": "Charged Dash of Projection"
       },
       "skills": [
@@ -14103,7 +14126,7 @@
             "Summon Ice Golem"
           ],
           "levels": [
-            17
+            18
           ],
           "qualities": [
             0
@@ -14144,10 +14167,10 @@
           ],
           "levels": [
             18,
+            19,
+            19,
             18,
-            18,
-            18,
-            12
+            16
           ],
           "qualities": [
             3,
@@ -14165,9 +14188,9 @@
             "Precision"
           ],
           "levels": [
-            18,
-            18,
-            10
+            19,
+            19,
+            15
           ],
           "qualities": [
             0,
@@ -14186,7 +14209,7 @@
           "levels": [
             18,
             18,
-            17,
+            18,
             18
           ],
           "qualities": [
@@ -14205,8 +14228,8 @@
           ],
           "levels": [
             18,
-            17,
-            17
+            18,
+            18
           ],
           "qualities": [
             0,
@@ -14256,12 +14279,12 @@
         [
           "Gloves",
           "Honour Knuckle · Mesh Gloves",
-          "74 life, crafted 24 Dexterity, flat lightning attack damage, four-link."
+          "74 life, crafted 12% attack speed, flat lightning attacks; lost 24 Dexterity."
         ],
         [
           "Belt",
           "Corruption Lash · Rustic Sash",
-          "102 life, 37 fire/18 lightning, 21% global physical, crafted 21% elemental damage with attacks, 5 ES."
+          "102 life, 37 fire/18 lightning, 21% global physical, crafted 30% elemental attack damage."
         ],
         [
           "Amulet",
@@ -14280,59 +14303,60 @@
         ],
         [
           "Flasks",
-          "Viscous Divine Life of Sealing, Wide Divine Life of Warding, Continuous Granite of the Abalone, normal Quicksilver, Colossal Mana of Grounding",
-          "Granite automated on full charges, 21% charge recovery, 45% armour. Roll instant life and better magic utility flasks."
+          "Viscous Divine Life of Sealing, Wide Divine Life of Warding, Continuous Granite of Abalone, normal Quicksilver, Masochist's Silver of the Antelope",
+          "Granite and Silver automated on full charges; Silver gains 2 charges per hit and 46% evasion during effect."
         ]
       ],
       "findings": [
         {
           "severity": "good",
-          "title": "Level 79: speed-focused setup confirmed",
-          "detail": "Faster Attacks level 12, Gemini Claw and Sanctity equipped/allocated. Attack rate 7.35 vs 4.95 (+49%); hit rate 3.68 vs 2.48, combined DPS 14,115 vs 12,069 (+17%). Average hit 3,836 vs 4,734; final wave stage count is not captured. Player reported 8 straight/11 loop at Faster Attacks level 8."
+          "title": "Level 81: offense improving",
+          "detail": "17,786 exported combined DPS (+26%), attack rate 8.26 (+12%), 90% hit chance; Faster Attacks 16 and Precision 15. Final wave cycle not measured."
+        },
+        {
+          "severity": "warning",
+          "title": "Sol Mantle pending and attributes tight",
+          "detail": "Beast Salvation still equipped. Sol Mantle requires 151 Dex; current 146. Cold overcap 35 covers loss of 30 cold craft, but recheck after other gear changes. Fire only 75/76. Blight Vessel fixes fire and offers 11% attack speed; socket two points away."
         },
         {
           "severity": "good",
-          "title": "Defense improved",
-          "detail": "4,732 life, 10,859 armour excluding Granite, 630 regen/sec, 34/49 block; Corrupted Blood immunity confirmed, maintain bleed immunity. Fire resistance now 75% vs 76% max; lightning only 4% overcap. Fix fire immediately and add overcap."
+          "title": "Automated Silver confirmed",
+          "detail": "Masochist's Silver of the Antelope; mana flask replaced. 194 unreserved mana, 66.4 regen vs 74.4 cost/sec, plus Gemini and leech while hitting. Test missed-hit/boss sustain."
         },
         {
           "severity": "warning",
-          "title": "Accuracy and sustain",
-          "detail": "88% hit chance, 2248 accuracy despite Precision level 10. Upgrade accuracy on gloves or gear; 226 unreserved mana, 66.1 regen vs 66.18 cost/sec plus Gemini mana on hit. Keep backup mana flask until sustained boss test."
-        },
-        {
-          "severity": "warning",
-          "title": "Progression",
-          "detail": "Prioritize three 4% minion attack speed nodes from allocated Intelligence (Spiritual Command), then Lord of the Dead and Divine Wrath. Level Faster Attacks and 20-quality Projection. Aim T6 for Offering, then Bastion of Elements when safe; actual map tier not confirmed."
+          "title": "Next defensive upgrade",
+          "detail": "Save 150 Fusings for guaranteed five-link on Sol Mantle (Excavation map unlock); do not break current five-link. Equip only after Dexterity and resistances are met. Eternal Lab Bastion of Elements when safe."
         }
       ],
       "nextActions": [
-        "Restore fire resistance to 76% and build an overcap; Fate Whorl open suffix can craft fire (or combined fire/chaos when unlocked). Keep bleed flask.",
-        "Points #102–104: Minion Attack and Cast Speed #9370 → #44360 → #6685 (4% each); already connected via #5296. #105–106: Minion Damage #60554 → Lord of the Dead #27611; #107–108: Physical and Lightning Damage #7092 → Divine Wrath #14665.",
-        "Upgrade gloves with attack speed, accuracy, life and fire/chaos resistance; aim near 100% hit chance. Level Faster Attacks and quality Projection to 20%.",
-        "Gradually progress to Tier 6 maps for Offering to the Goddess; Eternal Lab Bastion of Elements when safe. Roll instant life and automate Silver/Basalt after mana sustain test."
+        "#104 Strength #34171 off allocated #60472 → #105 Basic Jewel Socket #26196; insert Blight Vessel (11% attack speed, 13% fire res).",
+        "#106 Minion Attack and Cast Speed #6685 → #107 Minion Damage #60554 → #108 Lord of the Dead #27611 → #109 Physical and Lightning Damage #7092 → #110 Divine Wrath #14665.",
+        "Solve Dexterity: at least +5 for Sol Mantle, preferably more for upcoming gem levels. Fate Whorl open suffix can craft Dexterity; verify resistances. Keep Soul Band until replacement attributes work.",
+        "Save 150 Fusings for guaranteed five-link on Sol Mantle in Excavation; keep Beast Salvation equipped. Prioritize 20 quality Projection and level Faster Attacks.",
+        "Progress to T6 and obtain Offering then Bastion of Elements; quality and automate Quicksilver, maintain bleed and instant life flask."
       ]
     },
     "findings": [
       {
         "severity": "good",
-        "title": "Level 79: speed-focused setup confirmed",
-        "detail": "Faster Attacks level 12, Gemini Claw and Sanctity equipped/allocated. Attack rate 7.35 vs 4.95 (+49%); hit rate 3.68 vs 2.48, combined DPS 14,115 vs 12,069 (+17%). Average hit 3,836 vs 4,734; final wave stage count is not captured. Player reported 8 straight/11 loop at Faster Attacks level 8."
+        "title": "Level 81: offense improving",
+        "detail": "17,786 exported combined DPS (+26%), attack rate 8.26 (+12%), 90% hit chance; Faster Attacks 16 and Precision 15. Final wave cycle not measured."
+      },
+      {
+        "severity": "warning",
+        "title": "Sol Mantle pending and attributes tight",
+        "detail": "Beast Salvation still equipped. Sol Mantle requires 151 Dex; current 146. Cold overcap 35 covers loss of 30 cold craft, but recheck after other gear changes. Fire only 75/76. Blight Vessel fixes fire and offers 11% attack speed; socket two points away."
       },
       {
         "severity": "good",
-        "title": "Defense improved",
-        "detail": "4,732 life, 10,859 armour excluding Granite, 630 regen/sec, 34/49 block; Corrupted Blood immunity confirmed, maintain bleed immunity. Fire resistance now 75% vs 76% max; lightning only 4% overcap. Fix fire immediately and add overcap."
+        "title": "Automated Silver confirmed",
+        "detail": "Masochist's Silver of the Antelope; mana flask replaced. 194 unreserved mana, 66.4 regen vs 74.4 cost/sec, plus Gemini and leech while hitting. Test missed-hit/boss sustain."
       },
       {
         "severity": "warning",
-        "title": "Accuracy and sustain",
-        "detail": "88% hit chance, 2248 accuracy despite Precision level 10. Upgrade accuracy on gloves or gear; 226 unreserved mana, 66.1 regen vs 66.18 cost/sec plus Gemini mana on hit. Keep backup mana flask until sustained boss test."
-      },
-      {
-        "severity": "warning",
-        "title": "Progression",
-        "detail": "Prioritize three 4% minion attack speed nodes from allocated Intelligence (Spiritual Command), then Lord of the Dead and Divine Wrath. Level Faster Attacks and 20-quality Projection. Aim T6 for Offering, then Bastion of Elements when safe; actual map tier not confirmed."
+        "title": "Next defensive upgrade",
+        "detail": "Save 150 Fusings for guaranteed five-link on Sol Mantle (Excavation map unlock); do not break current five-link. Equip only after Dexterity and resistances are met. Eternal Lab Bastion of Elements when safe."
       }
     ],
     "snapshotHistory": [
@@ -17175,6 +17199,288 @@
           "Roll instant Divine Life Flask; test replacing mana flask with automated Basalt or another utility flask, as mana sustain now comfortable. Keep mana flask backup.",
           "Continue leveling Inspiration and Projection; seek 250–300+ eDPS claw and gloves with life, accuracy/Dex, attack speed, chaos resistance. Eternal Lab Bastion of Elements when safe."
         ]
+      },
+      {
+        "reviewedAt": "2026-11-27",
+        "source": {
+          "kind": "Reviewed PoB XML",
+          "file": "3.30 Charged Dash Elementalist - Experimental(20261127-231230).xml",
+          "treeVersion": "3.30"
+        },
+        "stats": {
+          "life": 4732,
+          "mana": 960,
+          "manaUnreserved": 226,
+          "manaRegenPerSecond": 66.1,
+          "lifeRegenPerSecond": 630.2,
+          "energyShield": 70,
+          "armour": 10859,
+          "evasion": 324,
+          "attackBlock": 34,
+          "spellBlock": 49,
+          "fireResistance": 75,
+          "coldResistance": 76,
+          "lightningResistance": 76,
+          "chaosResistance": 17,
+          "fireOvercap": 0,
+          "coldOvercap": 35,
+          "lightningOvercap": 4,
+          "strength": 190,
+          "dexterity": 170,
+          "intelligence": 327,
+          "combinedDps": 14114.581165349,
+          "manaCostPerSecond": 66.1752,
+          "physicalMaxHit": 7575,
+          "lightningMaxHit": 21807,
+          "fireMaxHit": 21028,
+          "coldMaxHit": 21807,
+          "chaosMaxHit": 7010,
+          "accuracy": 2248,
+          "hitChance": 88,
+          "hitDps": 14102.86966088,
+          "averageHit": 3836.0542,
+          "totalEHP": 26503.143044555,
+          "attackRate": 7.3528,
+          "waveHitRate": 3.6764,
+          "mainSkill": "Charged Dash of Projection"
+        },
+        "skills": [
+          {
+            "slot": "Gloves",
+            "gems": [
+              "Tempest Shield",
+              "Determination",
+              "Enduring Cry",
+              "Frostblink"
+            ],
+            "levels": [
+              18,
+              18,
+              18,
+              18
+            ],
+            "qualities": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Summon Ice Golem"
+            ],
+            "levels": [
+              17
+            ],
+            "qualities": [
+              0
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Summon Stone Golem"
+            ],
+            "levels": [
+              17
+            ],
+            "qualities": [
+              0
+            ]
+          },
+          {
+            "slot": "Weapon 2",
+            "gems": [
+              "Summon Lightning Golem"
+            ],
+            "levels": [
+              17
+            ],
+            "qualities": [
+              0
+            ]
+          },
+          {
+            "slot": "Body Armour",
+            "gems": [
+              "Charged Dash of Projection",
+              "Added Lightning Damage",
+              "Infused Channelling",
+              "Elemental Damage with Attacks",
+              "Faster Attacks"
+            ],
+            "levels": [
+              18,
+              18,
+              18,
+              18,
+              12
+            ],
+            "qualities": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "slot": "Weapon 1",
+            "gems": [
+              "Shield Charge",
+              "Faster Attacks",
+              "Precision"
+            ],
+            "levels": [
+              18,
+              18,
+              10
+            ],
+            "qualities": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "slot": "Boots",
+            "gems": [
+              "Conductivity",
+              "Wave of Conviction",
+              "Hextouch",
+              "Added Lightning Damage"
+            ],
+            "levels": [
+              18,
+              18,
+              17,
+              18
+            ],
+            "qualities": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "gems": [
+              "Molten Shell",
+              "Automation",
+              "More Duration"
+            ],
+            "levels": [
+              18,
+              17,
+              17
+            ],
+            "qualities": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "slot": "Helmet",
+            "gems": [
+              "Summon Flame Golem"
+            ],
+            "levels": [
+              17
+            ],
+            "qualities": [
+              0
+            ]
+          }
+        ],
+        "gear": [
+          [
+            "Weapon",
+            "Armageddon Bane · Gemini Claw",
+            "20% quality, 1.81 APS, 53 life and 14 mana/hit, 38 Dex, 113 mana, 59–118 cold and crafted 5–76 lightning; 233 eDPS."
+          ],
+          [
+            "Shield",
+            "Beast Ward · Crested Tower Shield",
+            "20% quality, 551 armour, 138 life, 24% fire res, crafted 134 accuracy; 3 independent golems."
+          ],
+          [
+            "Boots",
+            "Hate Track · Ancient Greaves",
+            "20% quality, 234 armour, 61 life, 20% movement, 23 cold/21 chaos res, 37 Str; 4-link exposure/curse."
+          ],
+          [
+            "Body Armour",
+            "Beast Salvation · Colosseum Plate",
+            "20% quality, 900 armour, 93 life, 37.1 regen, 33 lightning, crafted 30 cold; main five-link."
+          ],
+          [
+            "Helmet",
+            "Viper Corona · Lacquered Helmet",
+            "20% quality, 233 armour, 185 evasion, 97 life, 11% regen rate, 16 lightning res, 12% rarity; guard 3-link and Flame Golem."
+          ],
+          [
+            "Gloves",
+            "Honour Knuckle · Mesh Gloves",
+            "74 life, crafted 24 Dexterity, flat lightning attack damage, four-link."
+          ],
+          [
+            "Belt",
+            "Corruption Lash · Rustic Sash",
+            "102 life, 37 fire/18 lightning, 21% global physical, crafted 21% elemental damage with attacks, 5 ES."
+          ],
+          [
+            "Amulet",
+            "Onslaught Gorget · Jade Amulet",
+            "114 life, 18 cold/chaos, 28 Dex, 10–17 flat physical attacks, 23% rarity, crafted 15% lightning damage; crit multiplier wasted with EO."
+          ],
+          [
+            "Ring 1",
+            "Soul Band · Two-Stone Ring",
+            "108 life, 36 Dex, 16 Str/Int, 12 fire/lightning, crafted 24 cold resistance, 3–4 physical attacks."
+          ],
+          [
+            "Ring 2",
+            "Fate Whorl · Sapphire Ring",
+            "103 life, 205 accuracy, 19 Int, 30 cold resistance, 18 ES, crafted 5–46 lightning attacks; open suffix for chaos resistance upon unlock."
+          ],
+          [
+            "Flasks",
+            "Viscous Divine Life of Sealing, Wide Divine Life of Warding, Continuous Granite of the Abalone, normal Quicksilver, Colossal Mana of Grounding",
+            "Granite automated on full charges, 21% charge recovery, 45% armour. Roll instant life and better magic utility flasks."
+          ]
+        ],
+        "findings": [
+          {
+            "severity": "good",
+            "title": "Level 79: speed-focused setup confirmed",
+            "detail": "Faster Attacks level 12, Gemini Claw and Sanctity equipped/allocated. Attack rate 7.35 vs 4.95 (+49%); hit rate 3.68 vs 2.48, combined DPS 14,115 vs 12,069 (+17%). Average hit 3,836 vs 4,734; final wave stage count is not captured. Player reported 8 straight/11 loop at Faster Attacks level 8."
+          },
+          {
+            "severity": "good",
+            "title": "Defense improved",
+            "detail": "4,732 life, 10,859 armour excluding Granite, 630 regen/sec, 34/49 block; Corrupted Blood immunity confirmed, maintain bleed immunity. Fire resistance now 75% vs 76% max; lightning only 4% overcap. Fix fire immediately and add overcap."
+          },
+          {
+            "severity": "warning",
+            "title": "Accuracy and sustain",
+            "detail": "88% hit chance, 2248 accuracy despite Precision level 10. Upgrade accuracy on gloves or gear; 226 unreserved mana, 66.1 regen vs 66.18 cost/sec plus Gemini mana on hit. Keep backup mana flask until sustained boss test."
+          },
+          {
+            "severity": "warning",
+            "title": "Progression",
+            "detail": "Prioritize three 4% minion attack speed nodes from allocated Intelligence (Spiritual Command), then Lord of the Dead and Divine Wrath. Level Faster Attacks and 20-quality Projection. Aim T6 for Offering, then Bastion of Elements when safe; actual map tier not confirmed."
+          }
+        ],
+        "nextActions": [
+          "Restore fire resistance to 76% and build an overcap; Fate Whorl open suffix can craft fire (or combined fire/chaos when unlocked). Keep bleed flask.",
+          "Points #102–104: Minion Attack and Cast Speed #9370 → #44360 → #6685 (4% each); already connected via #5296. #105–106: Minion Damage #60554 → Lord of the Dead #27611; #107–108: Physical and Lightning Damage #7092 → Divine Wrath #14665.",
+          "Upgrade gloves with attack speed, accuracy, life and fire/chaos resistance; aim near 100% hit chance. Level Faster Attacks and quality Projection to 20%.",
+          "Gradually progress to Tier 6 maps for Offering to the Goddess; Eternal Lab Bastion of Elements when safe. Roll instant life and automate Silver/Basalt after mana sustain test."
+        ]
       }
     ],
     "inventoryWatchlist": {
@@ -17293,6 +17599,14 @@
             5,
             46
           ]
+        },
+        {
+          "name": "Vengeance Turn",
+          "status": "backup; verify attributes",
+          "life": 112,
+          "fireResistance": 24,
+          "coldResistance": 37,
+          "dexterity": 28
         }
       ],
       "bodyArmour": [
@@ -17304,6 +17618,24 @@
           "lifeRegen": 37.1,
           "lightningResistance": 33,
           "coldResistance": 30
+        },
+        {
+          "name": "Sol Mantle",
+          "status": "pending linking; not equipped",
+          "armour": 1088,
+          "evasion": 1087,
+          "life": 155,
+          "lifeRegen": 46.7,
+          "chaosResistance": 35,
+          "lightningResistance": 45
+        }
+      ],
+      "jewels": [
+        {
+          "name": "Blight Vessel",
+          "status": "pending socket",
+          "attackSpeed": 11,
+          "fireResistance": 13
         }
       ]
     }
